@@ -1,0 +1,71 @@
+{
+    "boxShadow": "none",
+    "widgetName": "ButtonGroup1",
+    "isCanvas": false,
+    "displayName": "Button Group",
+    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+    "searchTags": [
+        "click",
+        "submit"
+    ],
+    "topRow": 13,
+    "bottomRow": 17,
+    "parentRowSpace": 10,
+    "type": "BUTTON_GROUP_WIDGET",
+    "groupButtons": {
+        "groupButton1": {
+            "onClick": "{{navigateTo('Dashboards', {}, 'SAME_WINDOW');}}",
+            "buttonType": "SIMPLE",
+            "iconName": "home",
+            "buttonColor": "#231f20",
+            "widgetId": "",
+            "menuItems": {},
+            "index": 0,
+            "label": "Back to Dashboards",
+            "id": "groupButton1",
+            "placement": "CENTER",
+            "isVisible": true,
+            "isDisabled": false
+        },
+        "groupButton2": {
+            "onClick": "{{QueryEmployeeList.run();\nQueryTop5kTablets.run();\nQueryTop1kInventory.run()}}",
+            "buttonType": "SIMPLE",
+            "iconName": "refresh",
+            "buttonColor": "#eab308",
+            "widgetId": "",
+            "menuItems": {},
+            "index": 1,
+            "label": "Refresh Data",
+            "id": "groupButton2",
+            "placement": "CENTER",
+            "isVisible": true,
+            "isDisabled": false
+        }
+    },
+    "hideCard": false,
+    "animateLoading": true,
+    "parentColumnSpace": 16.109375,
+    "dynamicTriggerPathList": [
+        {"key": "groupButtons.groupButton2.onClick"},
+        {"key": "groupButtons.groupButton1.onClick"}
+    ],
+    "leftColumn": 0,
+    "dynamicBindingPathList": [{"key": "borderRadius"}],
+    "key": "ng9fmc4l2k",
+    "orientation": "horizontal",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "widgetId": "lte7a87e1k",
+    "minWidth": 450,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "0",
+    "tags": ["Buttons"],
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
+    "originalTopRow": 13,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "originalBottomRow": 17,
+    "buttonVariant": "PRIMARY"
+}

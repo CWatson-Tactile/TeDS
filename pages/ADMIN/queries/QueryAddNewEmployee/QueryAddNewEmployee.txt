@@ -1,0 +1,14 @@
+INSERT INTO dbo.EmployeeList 
+(EmployeeFirstName, EmployeeLastName, EmployeeBadgeNumber, EmployeeClockInPIN, EmployeePermissionLevel, EmployeeDepartment, EmpPassword) 
+
+VALUES 
+
+(
+	'{{NewEmployeeForm.data.NewEmpFirstName}}', 
+	'{{NewEmployeeForm.data.NewEmpLastName}}', 
+	'{{NewEmployeeForm.data.NewEmpBadge}}', 
+	'{{NewEmployeeForm.data.NewEmpPin}}', 
+	'{{NewEmployeeForm.data.NewEmpPermLevel}}',
+	'{{NewEmployeeForm.data.NewEmpDept}}', 
+	'{{NewEmployeeForm.data.NewEmpPass}}'
+)

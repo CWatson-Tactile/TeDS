@@ -1,0 +1,93 @@
+{
+    "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+    "mobileBottomRow": 35,
+    "widgetName": "ButtonGroup3",
+    "isCanvas": false,
+    "dynamicPropertyPathList": [],
+    "displayName": "Button Group",
+    "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+    "searchTags": [
+        "click",
+        "submit"
+    ],
+    "topRow": 32,
+    "bottomRow": 36,
+    "parentRowSpace": 10,
+    "type": "BUTTON_GROUP_WIDGET",
+    "groupButtons": {
+        "groupButton544wcpv17s": {
+            "onClick": "{{resetWidget(\"FormLabelGenerator\", true).then(() => {\n  closeModal('ModalLabelGenerator');\n});}}",
+            "buttonType": "SIMPLE",
+            "buttonColor": "#b91c1c",
+            "iconName": "error",
+            "widgetId": "8giywy8jbd",
+            "menuItems": {},
+            "index": 2,
+            "id": "groupButton544wcpv17s",
+            "label": "Cancel",
+            "isDisabled": false,
+            "isVisible": true,
+            "placement": "CENTER"
+        },
+        "groupButton1": {
+            "onClick": "{{API_CadenceLabelFill.run().then(() => {\n  download(API_CadenceLabelFill.data, 'CadenceLabel.pdf', '');\n  showAlert('Label Created. Download should start now.', 'success');\n}).catch(() => {\n  showAlert('Error! Get Connor!', 'error');\n});}}",
+            "buttonType": "SIMPLE",
+            "iconName": "cloud-download",
+            "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+            "widgetId": "",
+            "menuItems": {},
+            "index": 0,
+            "label": "Submit & Download",
+            "id": "groupButton1",
+            "placement": "CENTER",
+            "isVisible": true,
+            "isDisabled": false
+        },
+        "groupButton2": {
+            "onClick": "{{resetWidget(\"FormLabelGenerator\", true);}}",
+            "buttonType": "SIMPLE",
+            "iconName": "eraser",
+            "buttonColor": "#eab308",
+            "widgetId": "",
+            "menuItems": {},
+            "index": 1,
+            "label": "Clear",
+            "id": "groupButton2",
+            "placement": "CENTER",
+            "isVisible": true,
+            "isDisabled": false
+        }
+    },
+    "hideCard": false,
+    "mobileRightColumn": 24,
+    "animateLoading": true,
+    "parentColumnSpace": 12.9375,
+    "dynamicTriggerPathList": [
+        {"key": "groupButtons.groupButton1.onClick"},
+        {"key": "groupButtons.groupButton2.onClick"},
+        {"key": "groupButtons.groupButton544wcpv17s.onClick"}
+    ],
+    "leftColumn": 16,
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "groupButtons.groupButton1.buttonColor"}
+    ],
+    "key": "6qi3p01bio",
+    "orientation": "horizontal",
+    "isDeprecated": false,
+    "rightColumn": 50,
+    "widgetId": "poqm7r2d43",
+    "minWidth": 450,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "y2v082dpd0",
+    "tags": ["Buttons"],
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 31,
+    "responsiveBehavior": "fill",
+    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 0,
+    "buttonVariant": "PRIMARY"
+}

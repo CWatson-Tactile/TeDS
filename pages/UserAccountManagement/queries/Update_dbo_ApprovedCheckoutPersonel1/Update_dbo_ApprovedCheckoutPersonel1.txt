@@ -1,0 +1,1 @@
+UPDATE dbo.ApprovedCheckoutPersonel SET FirstName= '{{Table1.updatedRow.FirstName}}', LastName= '{{Table1.updatedRow.LastName}}' WHERE ID= '{{Table1.updatedRow.ID}}';

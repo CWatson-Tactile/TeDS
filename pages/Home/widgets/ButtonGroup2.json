@@ -1,0 +1,72 @@
+{
+    "boxShadow": "none",
+    "widgetName": "ButtonGroup2",
+    "isCanvas": false,
+    "dynamicPropertyPathList": [],
+    "displayName": "Button Group",
+    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+    "searchTags": [
+        "click",
+        "submit"
+    ],
+    "topRow": 11,
+    "bottomRow": 15,
+    "parentRowSpace": 10,
+    "type": "BUTTON_GROUP_WIDGET",
+    "groupButtons": {
+        "groupButton1": {
+            "onClick": "{{showModal('ModalPinLogin');}}",
+            "buttonType": "SIMPLE",
+            "iconName": "pin",
+            "buttonColor": "#d8b4fe",
+            "widgetId": "",
+            "menuItems": {},
+            "index": 0,
+            "label": "PIN Login",
+            "id": "groupButton1",
+            "placement": "CENTER",
+            "isVisible": true,
+            "isDisabled": false
+        },
+        "groupButton2": {
+            "onClick": "{{showModal('ModalEmployeeIDLogin');}}",
+            "buttonType": "SIMPLE",
+            "iconName": "id-number",
+            "buttonColor": "#93c5fd",
+            "widgetId": "",
+            "menuItems": {},
+            "index": 1,
+            "label": "Employee ID Login",
+            "id": "groupButton2",
+            "placement": "CENTER",
+            "isVisible": true,
+            "isDisabled": false
+        }
+    },
+    "hideCard": false,
+    "animateLoading": true,
+    "parentColumnSpace": 16.1875,
+    "dynamicTriggerPathList": [
+        {"key": "groupButtons.groupButton1.onClick"},
+        {"key": "groupButtons.groupButton2.onClick"}
+    ],
+    "leftColumn": 12,
+    "dynamicBindingPathList": [{"key": "borderRadius"}],
+    "key": "a9u5xmp74j",
+    "orientation": "horizontal",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "widgetId": "o6boxmhnkt",
+    "minWidth": 450,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "0",
+    "tags": ["Buttons"],
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
+    "originalTopRow": 11,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "originalBottomRow": 15,
+    "buttonVariant": "PRIMARY"
+}

@@ -1,0 +1,12 @@
+SELECT
+  *
+FROM
+  dbo.ApprovedCheckoutPersonel
+WHERE
+  LastName LIKE '%{{Table1.searchText}}%'
+ORDER BY
+  {{Table1.sortOrder.column || 'ID'}} {{Table1.sortOrder.order !== "desc" ? "" : "DESC"}}
+OFFSET
+  {{Table1.pageOffset}} ROWS
+FETCH NEXT
+  {{Table1.pageSize}} ROWS ONLY

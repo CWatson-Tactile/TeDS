@@ -1,0 +1,14 @@
+INSERT INTO dbo.WipInventoryAdjustmentTracker (
+	DateOfAdjustment, 
+	SKU, 
+	AdjustmentAmount, 
+	EmployeeID,
+	QtyAfterAdjustment ) 
+	VALUES 
+	( 
+	 GetDate(), 
+	 {{InventorySubtractsku.selectedOptionValue}} , 
+	 {{InventorySubtractQtyToPick.text}} , 
+	 {{appsmith.store.EmpID}},
+	 {{InventorySubtractUpdatedWIPOH.text}}
+	)

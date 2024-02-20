@@ -1,0 +1,1 @@
+INSERT INTO dbo.ApprovedCheckoutPersonel (FirstName,LastName) VALUES ('{{(Table1.newRow || {}).FirstName}}','{{(Table1.newRow || {}).LastName}}')

@@ -1,0 +1,88 @@
+{
+  "pages": [
+    {
+      "id": "Home",
+      "isDefault": true
+    },
+    {
+      "id": "Dashboards",
+      "isDefault": false
+    },
+    {
+      "id": "ADMIN",
+      "isDefault": false
+    },
+    {
+      "id": "Inventory",
+      "isDefault": false
+    },
+    {
+      "id": "Variable Management",
+      "isDefault": false
+    },
+    {
+      "id": "Module Tracking",
+      "isDefault": false
+    },
+    {
+      "id": "Tablet Tracking",
+      "isDefault": false
+    },
+    {
+      "id": "Deployment Kitting",
+      "isDefault": false
+    },
+    {
+      "id": "CadenceTicketTracking",
+      "isDefault": false
+    },
+    {
+      "id": "UserAccountManagement",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "clonedFromApplicationId": "64e2a0a9e4270c43af6a6a84",
+  "unpublishedApplicationDetail": {
+    "appPositioning": {
+      "type": "FIXED"
+    },
+    "navigationSetting": {
+      "showNavbar": true,
+      "orientation": "top",
+      "navStyle": "stacked",
+      "position": "static",
+      "itemStyle": "text",
+      "colorStyle": "theme",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "showSignIn": false
+    }
+  },
+  "color": "#FFEBFB",
+  "icon": "bag",
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
+  "publishedAppLayout": {
+    "type": "FLUID"
+  },
+  "unpublishedCustomJSLibs": [
+    {
+      "uidString": "xmlParser_https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/3.17.5/parser.min.js"
+    }
+  ],
+  "publishedCustomJSLibs": [],
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "embedSetting": {
+    "height": "720px",
+    "width": "1024px",
+    "showNavigationBar": false
+  },
+  "collapseInvisibleWidgets": true,
+  "isManualUpdate": false,
+  "deleted": false
+}

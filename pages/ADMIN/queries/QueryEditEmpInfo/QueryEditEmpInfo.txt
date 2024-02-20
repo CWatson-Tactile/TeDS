@@ -1,0 +1,11 @@
+UPDATE dbo.EmployeeList 
+
+SET 
+	EmployeeFirstName = '{{EditEmpInfoForm.data.EditEmpFirstName}}', 
+	EmployeeLastName = '{{EditEmpInfoForm.data.EditEmpLastName}}' , 
+	EmployeeBadgeNumber = '{{EditEmpInfoForm.data.EditEmpBadgeID}}', 
+	EmployeeClockInPIN = '{{EditEmpInfoForm.data.EditEmpPin}}', 
+	EmployeePermissionLevel = '{{EditEmpInfoForm.data.EditEmpPermLevel}}', 
+	EmployeeDepartment = '{{EditEmpInfoForm.data.EditEmpDepartment}}'
+
+WHERE EmployeeID = '{{EditEmpInfoForm.data.EditEmpID}}'

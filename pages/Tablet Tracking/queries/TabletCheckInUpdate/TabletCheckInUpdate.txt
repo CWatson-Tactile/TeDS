@@ -1,0 +1,6 @@
+UPDATE dbo.TabletTracker SET 
+      Assigned_to = '',
+      Date_Assigned = '',
+			Status = 'NEW'
+Where Device_Name = '{{TabletCheckInForm.data.TabletCheckInSelection}}';
+	

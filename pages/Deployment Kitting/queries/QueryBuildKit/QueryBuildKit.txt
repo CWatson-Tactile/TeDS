@@ -1,0 +1,17 @@
+INSERT INTO dbo.CadenceDeploymentTracking 
+(LaptopSerial, LaptopBrand, CadenceDeviceName1, CadenceDeviceName2, CadenceDeviceName3, CadenceDeviceName4, KitOwner, KitType, KitVersion, KitDeploymentDate, KitStatus) 
+
+VALUES 
+('{{FormBuildKit.formData.LaptopSerial}}', 
+'{{FormBuildKit.formData.LaptopBrand}}', 
+'{{FormBuildKit.formData.Cadence1}}', 
+'{{FormBuildKit.formData.Cadence2}}', 
+'{{FormBuildKit.formData.Cadence3}}', 
+'{{FormBuildKit.formData.Cadence4}}',
+'{{FormBuildKit.formData.KitOwner}}', 
+'{{FormBuildKit.formData.KitType}}', 
+'{{FormBuildKit.formData.KitVersion}}', 
+'{{FormBuildKit.formData.KitDeploymentDate}}', 
+'{{FormBuildKit.formData.KitStatus}}')
+
+

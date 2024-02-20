@@ -1,0 +1,1 @@
+SELECT * FROM dbo.TabletTracker WHERE dbo.TabletTracker.Status = 'ASSIGNED'

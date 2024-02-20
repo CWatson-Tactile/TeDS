@@ -1,0 +1,23 @@
+INSERT INTO dbo.TabletTracker (Device_Name, Status, Current_Firmware, Date_of_Manufacture, PCB_Serial, Model_Number, Enclosure_Top_Material, Enclosure_Bottom_Material, Capture_Plate_Material, Dot_Material, Keyboard_Type, Module_1, Module_2, Module_3, Module_4, Module_5, Module_6, Module_7, Module_8, Module_9, Module_10, Module_11, Module_12) 
+VALUES
+('{{TabletAdditionForm.formData.Device_Name}}',
+'{{TabletAdditionForm.formData.Status}}', 
+'{{TabletAdditionForm.formData.Current_Firmware}}', 
+'{{TabletAdditionForm.formData.Date_of_Manufacture}}', 
+'{{TabletAdditionForm.formData.PCB_Serial}}', 
+'{{TabletAdditionForm.formData.Model_Number}}', 
+'{{TabletAdditionForm.formData.Enclosure_Top_Material}}', 		 		         '{{TabletAdditionForm.formData.Enclosure_Bottom_Material}}', '{{TabletAdditionForm.formData.Capture_Plate_Material}}', 
+'{{TabletAdditionForm.formData.Dot_Material}}', 
+'{{TabletAdditionForm.formData.Keyboard_Type}}', 
+'{{TabletAdditionForm.formData.Module_1}}', 
+'{{TabletAdditionForm.formData.Module_2}}', 
+'{{TabletAdditionForm.formData.Module_3}}', 
+'{{TabletAdditionForm.formData.Module_4}}', 
+'{{TabletAdditionForm.formData.Module_5}}', 
+'{{TabletAdditionForm.formData.Module_6}}', 
+'{{TabletAdditionForm.formData.Module_7}}', 
+'{{TabletAdditionForm.formData.Module_8}}', 
+'{{TabletAdditionForm.formData.Module_9}}', 
+'{{TabletAdditionForm.formData.Module_10}}', 
+'{{TabletAdditionForm.formData.Module_11}}', 
+'{{TabletAdditionForm.formData.Module_12}}')

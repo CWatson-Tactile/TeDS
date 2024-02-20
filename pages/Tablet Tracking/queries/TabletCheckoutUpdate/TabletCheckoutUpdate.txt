@@ -1,0 +1,6 @@
+UPDATE dbo.TabletTracker SET 
+      Assigned_to = '{{TabletCheckoutForm.data.TabletCheckoutNameSelection}}',
+      Date_Assigned = '{{TabletCheckoutForm.data.DatePicker1}}',
+			Status = 'ASSIGNED'
+Where Device_Name = '{{TabletCheckoutForm.data.TabletCheckoutSelection}}';
+	
