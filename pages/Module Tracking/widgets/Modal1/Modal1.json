@@ -2,7 +2,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 75,
     "widgetName": "Modal1",
-    "widthInPercentage": 0.37203557312252966,
+    "widthInPercentage": "0.37203557312252966",
     "isCanvas": true,
     "displayName": "Modal",
     "iconSVG": "/static/media/icon.b374721fa8e1aeab7cf326c2d865506f.svg",

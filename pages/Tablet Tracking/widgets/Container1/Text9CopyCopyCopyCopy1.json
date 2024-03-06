@@ -3,13 +3,13 @@
     "widgetName": "Text9CopyCopyCopyCopy1",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.a47d6d5dbbb718c4dc4b2eb4f218c1b7.svg",
     "displayName": "Text",
-    "topRow": 19.00000000006972,
+    "topRow": 19.000000000080362,
     "searchTags": [
         "typography",
         "paragraph",
         "label"
     ],
-    "bottomRow": 25.00000000006972,
+    "bottomRow": 25.000000000080362,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -47,10 +47,10 @@
     ],
     "isLoading": false,
     "renderMode": "CANVAS",
-    "originalTopRow": 19.00000000006675,
+    "originalTopRow": 19.00000000006972,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 25.000000000065484,
+    "originalBottomRow": 25.00000000006912,
     "fontSize": "1rem",
     "minDynamicHeight": 4
 }
