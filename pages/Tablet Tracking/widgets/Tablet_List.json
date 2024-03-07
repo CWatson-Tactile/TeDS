@@ -3,7 +3,7 @@
     "borderColor": "#E0DEDE",
     "isVisibleDownload": true,
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.e6911f8bb94dc6c4a102a74740c41763.svg",
-    "topRow": 49.99999999999508,
+    "topRow": 48,
     "isSortable": true,
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
@@ -83,7 +83,7 @@
     },
     "borderRadius": "0.375rem",
     "columnUpdatedAt": 1708396950034,
-    "originalBottomRow": 94,
+    "originalBottomRow": 92,
     "primaryColumnId": "Device_Name",
     "defaultSelectedRowIndices": [0],
     "widgetName": "Tablet_List",
@@ -121,7 +121,7 @@
     "dynamicPropertyPathList": [],
     "compactMode": "TALL",
     "displayName": "Table",
-    "bottomRow": 94,
+    "bottomRow": 92,
     "columnWidthMap": {
         "Status": 125,
         "PCB_Serial": 160,
@@ -141,7 +141,7 @@
     "hideCard": false,
     "parentColumnSpace": 29.796875,
     "dynamicTriggerPathList": [{"key": "onRowSelected"}],
-    "borderWidth": "1",
+    "borderWidth": "",
     "primaryColumns": {
         "Organization_Owner": {
             "computedValue": "{{Tablet_List.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Organization_Owner\"]))}}",
@@ -1009,7 +1009,7 @@
     "renderMode": "CANVAS",
     "horizontalAlignment": "LEFT",
     "isVisibleSearch": true,
-    "originalTopRow": 49.99999999999508,
+    "originalTopRow": 48,
     "isVisiblePagination": false,
     "verticalAlignment": "CENTER"
 }

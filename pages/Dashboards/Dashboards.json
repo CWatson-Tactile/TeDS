@@ -43,32 +43,6 @@
           ],
           [
             {
-              "id": "Dashboards_ApprovedPersonelList",
-              "name": "ApprovedPersonelList",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Dashboards_QueryASSIGNEDTablets",
-              "name": "QueryASSIGNEDTablets",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Dashboards_QueryNEWTablets",
-              "name": "QueryNEWTablets",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "Dashboards_QueryEmployeeList",
               "name": "QueryEmployeeList",
               "confirmBeforeExecute": false,

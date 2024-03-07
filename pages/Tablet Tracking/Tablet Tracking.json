@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 940,
+          "bottomRow": 920,
           "containerStyle": "none",
           "snapRows": 115,
           "parentRowSpace": 1,
@@ -31,6 +31,22 @@
         },
         "layoutOnLoadActions": [
           [
+            {
+              "id": "Tablet Tracking_ApprovedPersonelList",
+              "name": "ApprovedPersonelList",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Tablet Tracking_QueryASSIGNEDTablets",
+              "name": "QueryASSIGNEDTablets",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "Tablet Tracking_QueryTop5kTablets",
               "name": "QueryTop5kTablets",

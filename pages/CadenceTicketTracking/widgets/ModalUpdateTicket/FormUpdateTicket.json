@@ -230,7 +230,7 @@
                 "convertToISO": false,
                 "children": {},
                 "isDisabled": false,
-                "sourceData": 1.70666232649E+12,
+                "sourceData": 1706662326490,
                 "labelTextSize": "0.875rem",
                 "identifier": "IssueDate",
                 "isRequired": false,
@@ -321,7 +321,7 @@
             "PCBSerial": "C156F7BAD877",
             "TicketID": 12,
             "IssueType": "Calibration Fail",
-            "IssueDate": 1.70129322238E+12,
+            "IssueDate": 1701293222380,
             "TickedCreatorEmpID": "Connor Watson",
             "Notes": "test",
             "DeviceName": "R-5687"

@@ -104,7 +104,7 @@
     "dynamicPropertyPathList": [],
     "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 35,
+    "bottomRow": 66,
     "columnWidthMap": {"SKU": 95},
     "parentRowSpace": 10,
     "hideCard": false,
