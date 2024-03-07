@@ -55,13 +55,13 @@
       "navStyle": "stacked",
       "position": "static",
       "itemStyle": "text",
-      "colorStyle": "theme",
+      "colorStyle": "light",
       "logoAssetId": "",
-      "logoConfiguration": "logoAndApplicationTitle",
+      "logoConfiguration": "logoOnly",
       "showSignIn": false
     }
   },
-  "color": "#FFEBFB",
+  "color": "#C7F3E3",
   "icon": "bag",
   "unpublishedAppLayout": {
     "type": "FLUID"

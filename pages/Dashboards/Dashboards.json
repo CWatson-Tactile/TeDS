@@ -27,7 +27,7 @@
           "widgetId": "0",
           "containerStyle": "none",
           "snapRows": 124,
-          "version": 87,
+          "version": 89,
           "mobileTopRow": 0
         },
         "layoutOnLoadActions": [
@@ -35,32 +35,6 @@
             {
               "id": "Dashboards_Tablet_Tracker_top_5k",
               "name": "Tablet_Tracker_top_5k",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Dashboards_ApprovedPersonelList",
-              "name": "ApprovedPersonelList",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Dashboards_QueryASSIGNEDTablets",
-              "name": "QueryASSIGNEDTablets",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Dashboards_QueryNEWTablets",
-              "name": "QueryNEWTablets",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

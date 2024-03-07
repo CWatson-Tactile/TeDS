@@ -1,5 +1,5 @@
 {
-    "boxShadow": "none",
+    "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
     "mobileBottomRow": 62,
     "widgetName": "ButtonGroup2",
     "isCanvas": false,
@@ -36,6 +36,7 @@
             "menuItems": {
                 "menuItem4hlvazogkm": {
                     "backgroundColor": "",
+                    "onClick": "{{showModal('ModalTabletCheckIn');}}",
                     "iconName": "log-in",
                     "widgetId": "hehnhoicb6",
                     "iconColor": "#1d9c1f",
@@ -46,6 +47,7 @@
                     "isVisible": true
                 },
                 "menuItemj8udbezoew": {
+                    "onClick": "{{showModal('ModalTabletCheckOut');}}",
                     "iconName": "log-out",
                     "widgetId": "otteri6qc2",
                     "iconColor": "#b91c1c",
@@ -163,7 +165,9 @@
         {"key": "groupButtons.groupButton1.onClick"},
         {"key": "groupButtons.groupButton2.onClick"},
         {"key": "groupButtons.groupButtontay0ny5pyp.onClick"},
-        {"key": "groupButtons.groupButton28wsl62m34.onClick"}
+        {"key": "groupButtons.groupButton28wsl62m34.onClick"},
+        {"key": "groupButtons.groupButton8dbz598e9y.menuItems.menuItem4hlvazogkm.onClick"},
+        {"key": "groupButtons.groupButton8dbz598e9y.menuItems.menuItemj8udbezoew.onClick"}
     ],
     "leftColumn": 0,
     "dynamicBindingPathList": [{"key": "groupButtons.groupButton1.buttonColor"}],
