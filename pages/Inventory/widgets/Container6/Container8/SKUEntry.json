@@ -69,6 +69,6 @@
     "maxDynamicHeight": 9000,
     "shouldAllowAutofill": false,
     "iconAlign": "left",
-    "defaultText": "{{CodeScanner1.value||\"\"}}",
+    "defaultText": "{{InventoryTable.selectedRow.SKU}}",
     "minDynamicHeight": 4
 }
