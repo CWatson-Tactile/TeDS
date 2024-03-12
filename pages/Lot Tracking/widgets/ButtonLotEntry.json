@@ -1,0 +1,144 @@
+{
+    "isCompact": false,
+    "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+    "mobileBottomRow": 5,
+    "widgetName": "ButtonLotEntry",
+    "configureMenuItems": {
+        "label": "Configure menu items",
+        "id": "config",
+        "config": {
+            "id": "config",
+            "label": "Menu Item",
+            "isVisible": true,
+            "isDisabled": false
+        }
+    },
+    "displayName": "Menu button",
+    "iconSVG": "/static/media/icon.631848e88e7a3db05f6015f22835e81b.svg",
+    "topRow": 12,
+    "bottomRow": 18,
+    "parentRowSpace": 10,
+    "type": "MENU_BUTTON_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 18,
+    "animateLoading": true,
+    "parentColumnSpace": 15.546875,
+    "dynamicTriggerPathList": [
+        {"key": "menuItems.menuItem1.onClick"},
+        {"key": "menuItems.menuItemne71gg3f15.onClick"},
+        {"key": "menuItems.menuItem2.onClick"},
+        {"key": "menuItems.menuItem3.onClick"},
+        {"key": "menuItems.menuItemnddfrt0luq.onClick"},
+        {"key": "menuItems.menuItemg89aircyb6.onClick"},
+        {"key": "menuItems.menuItem9jk15ncvha.onClick"},
+        {"key": "menuItems.menuItemlwzwxco322.onClick"}
+    ],
+    "leftColumn": 13,
+    "dynamicBindingPathList": [{"key": "menuColor"}],
+    "isDisabled": false,
+    "sourceData": "[]",
+    "key": "02g3vpb4kv",
+    "isDeprecated": false,
+    "rightColumn": 51,
+    "iconName": "add",
+    "menuVariant": "PRIMARY",
+    "widgetId": "oljmh7nnzv",
+    "menuItems": {
+        "menuItemlc48d4qaaa": {
+            "widgetId": "ql957zhlqt",
+            "index": 0,
+            "id": "menuItemlc48d4qaaa",
+            "label": "Honeycomb",
+            "isDisabled": true,
+            "isVisible": true
+        },
+        "menuItem1": {
+            "onClick": "{{showModal('ModalCoilLotEntry');}}",
+            "widgetId": "",
+            "index": 1,
+            "label": "Coil Station",
+            "id": "menuItem1",
+            "isVisible": true,
+            "isDisabled": false
+        },
+        "menuItem3": {
+            "onClick": "{{showModal('ModalGlueStationLotEntry');}}",
+            "widgetId": "",
+            "index": 3,
+            "label": "Glue Station",
+            "id": "menuItem3",
+            "isVisible": true,
+            "isDisabled": false
+        },
+        "menuItemne71gg3f15": {
+            "onClick": "{{showModal('ModalBurnInLotEntry');}}",
+            "widgetId": "zgvfbn1y4q",
+            "index": 8,
+            "id": "menuItemne71gg3f15",
+            "label": "Burn-In Lots",
+            "isDisabled": true,
+            "isVisible": true
+        },
+        "menuItem9jk15ncvha": {
+            "onClick": "{{showModal('ModalPostGlueEqcLotEntry');}}",
+            "widgetId": "kuhn3adza9",
+            "index": 4,
+            "id": "menuItem9jk15ncvha",
+            "label": "Post-Glue EQC",
+            "isDisabled": false,
+            "isVisible": true
+        },
+        "menuItem2": {
+            "onClick": "{{showModal('ModalCoreplateWeldLotEntry');}}",
+            "widgetId": "",
+            "index": 7,
+            "label": "Coreplate Weld",
+            "id": "menuItem2",
+            "isVisible": true,
+            "isDisabled": false
+        },
+        "menuItemnddfrt0luq": {
+            "onClick": "{{showModal('ModalRubberMagnetLotEntry');}}",
+            "widgetId": "q03dhab96d",
+            "index": 6,
+            "id": "menuItemnddfrt0luq",
+            "label": "Rubber & Magnet",
+            "isDisabled": false,
+            "isVisible": true
+        },
+        "menuItemg89aircyb6": {
+            "onClick": "{{showModal('ModalPalletLoadLotEntry');}}",
+            "widgetId": "m567v90ixs",
+            "index": 2,
+            "id": "menuItemg89aircyb6",
+            "label": "Pallet Load",
+            "isDisabled": false,
+            "isVisible": true
+        },
+        "menuItemlwzwxco322": {
+            "onClick": "{{showModal('ModalModulePcbSolderLotEntry');}}",
+            "widgetId": "lsr4yxxnd5",
+            "index": 5,
+            "id": "menuItemlwzwxco322",
+            "label": "Module PCB Solder",
+            "isDisabled": false,
+            "isVisible": true
+        }
+    },
+    "isVisible": true,
+    "label": "Lot Entry",
+    "version": 1,
+    "parentId": "0",
+    "tags": ["Buttons"],
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 1,
+    "originalTopRow": 12,
+    "borderRadius": "1.5rem",
+    "mobileLeftColumn": 2,
+    "menuItemsSource": "STATIC",
+    "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+    "originalBottomRow": 18,
+    "iconAlign": "left",
+    "placement": "CENTER"
+}

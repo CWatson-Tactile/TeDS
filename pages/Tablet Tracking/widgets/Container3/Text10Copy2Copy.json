@@ -51,7 +51,7 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 8,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 19,
+    "originalBottomRow": 20,
     "fontSize": "1rem",
     "minDynamicHeight": 4
 }
