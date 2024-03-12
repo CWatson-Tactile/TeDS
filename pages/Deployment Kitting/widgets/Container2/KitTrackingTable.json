@@ -67,7 +67,7 @@
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "columnUpdatedAt": 1694900538447,
-    "originalBottomRow": 50.599999999998545,
+    "originalBottomRow": 51.19999999999709,
     "primaryColumnId": "KitID",
     "defaultSelectedRowIndices": [0],
     "widgetName": "KitTrackingTable",
@@ -465,7 +465,7 @@
     "renderMode": "CANVAS",
     "horizontalAlignment": "LEFT",
     "isVisibleSearch": true,
-    "originalTopRow": 5.6000000000000005,
+    "originalTopRow": 6.199999999998545,
     "isVisiblePagination": false,
     "verticalAlignment": "CENTER"
 }

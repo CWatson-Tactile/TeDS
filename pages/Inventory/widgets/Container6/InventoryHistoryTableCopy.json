@@ -60,7 +60,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1703015487672,
+    "columnUpdatedAt": 1709959217121,
     "originalBottomRow": 61,
     "primaryColumnId": "TransactionNumber",
     "defaultSelectedRowIndices": [0],
@@ -68,9 +68,9 @@
     "defaultPageSize": 0,
     "columnOrder": [
         "DataTimeOfAdjustment",
-        "SKU",
         "Adjustment",
         "QtyAfterAdjustment",
+        "SKU",
         "AdjustedBy",
         "TransactionNumber"
     ],
@@ -79,7 +79,7 @@
     "displayName": "Table",
     "bottomRow": 61,
     "columnWidthMap": {
-        "DataTimeOfAdjustment": 171,
+        "DataTimeOfAdjustment": 110,
         "AdjustedBy": 136,
         "Adjustment": 178,
         "SKU": 82,
@@ -110,7 +110,7 @@
             "index": 5,
             "isDiscardVisible": true,
             "isVisible": true,
-            "label": "Date of Adjustment",
+            "label": "Adj. Date",
             "fontStyle": "ITALIC",
             "columnType": "date",
             "thousandSeparator": true,
