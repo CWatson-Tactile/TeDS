@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JS_SkuData",
+    "pageId": "Inventory",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Inventory_JS_SkuData",
+  "deleted": false,
+  "gitSyncId": "65efd5244400cc0e9f2ca56a_65f0a3104400cc0e9f2ca7cc"
+}
