@@ -86,15 +86,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Lot Tracking_JSFullNameList.EmpIDFetcher",
-              "name": "JSFullNameList.EmpIDFetcher",
-              "collectionId": "Lot Tracking_JSFullNameList",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Lot Tracking_SelectQueryBurnInLots",
               "name": "SelectQueryBurnInLots",
               "confirmBeforeExecute": false,
@@ -164,6 +155,29 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Lot Tracking_SelectQueryEmployeeList",
+              "name": "SelectQueryEmployeeList",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Lot Tracking_JSFullNameList.EmpIDFetcher",
+              "name": "JSFullNameList.EmpIDFetcher",
+              "collectionId": "Lot Tracking_JSFullNameList",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async sort => {\n  const EmpInfo = SelectQueryEmployeeList.data.map(i => ({\n    label: i.EmployeeFirstName + \" \" + i.EmployeeLastName,\n    value: i.EmployeeID\n  }));\n  return EmpInfo;\n  Response.sort();\n}"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]

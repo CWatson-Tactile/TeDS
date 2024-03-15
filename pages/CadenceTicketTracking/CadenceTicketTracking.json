@@ -40,6 +40,14 @@
           ],
           [
             {
+              "id": "CadenceTicketTracking_QueryEmployeeList",
+              "name": "QueryEmployeeList",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "CadenceTicketTracking_QueryIssueTypes",
               "name": "QueryIssueTypes",
               "confirmBeforeExecute": false,

@@ -12,7 +12,7 @@
         "group"
     ],
     "topRow": 14.399999999999999,
-    "bottomRow": 30.4,
+    "bottomRow": 29.600000000001454,
     "parentRowSpace": 10,
     "type": "CONTAINER_WIDGET",
     "hideCard": false,
@@ -28,7 +28,7 @@
         "rightColumn": 173.1484375,
         "detachFromLayout": true,
         "widgetId": "18oyibrrny",
-        "bottomRow": 160,
+        "bottomRow": 152.00000000001455,
         "topRow": 0,
         "containerStyle": "none",
         "parentRowSpace": 1,

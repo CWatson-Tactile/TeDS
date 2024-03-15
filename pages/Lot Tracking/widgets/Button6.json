@@ -43,7 +43,7 @@
     "responsiveBehavior": "hug",
     "originalTopRow": 11,
     "disabledWhenInvalid": false,
-    "borderRadius": "1.5rem",
+    "borderRadius": "0px",
     "mobileLeftColumn": 0,
     "originalBottomRow": 15,
     "buttonVariant": "PRIMARY",

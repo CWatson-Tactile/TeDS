@@ -134,7 +134,7 @@
     "isLoading": false,
     "mobileTopRow": 1,
     "originalTopRow": 10,
-    "borderRadius": "1.5rem",
+    "borderRadius": "0px",
     "mobileLeftColumn": 2,
     "menuItemsSource": "STATIC",
     "menuColor": "{{appsmith.theme.colors.primaryColor}}",

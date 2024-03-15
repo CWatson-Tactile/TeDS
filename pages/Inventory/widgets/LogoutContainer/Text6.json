@@ -17,7 +17,7 @@
     "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
     "parentColumnSpace": 16.109375,
     "dynamicTriggerPathList": [],
-    "leftColumn": 16,
+    "leftColumn": 41,
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
@@ -29,26 +29,24 @@
     "text": "Logged in as: {{QueryEmployeeList.data.find(row => row.EmployeeID === appsmith.store.EmpID).EmployeeFirstName + \" \" + QueryEmployeeList.data.find(row => row.EmployeeID === appsmith.store.EmpID).EmployeeLastName}}",
     "key": "vsrt24d09l",
     "isDeprecated": false,
-    "rightColumn": 53,
+    "rightColumn": 64,
     "textAlign": "RIGHT",
     "dynamicHeight": "AUTO_HEIGHT",
-    "widgetId": "xxh29xuu4y",
+    "widgetId": "9f35i386dp",
     "minWidth": 450,
     "isVisible": true,
     "fontStyle": "",
     "textColor": "#231F20",
     "version": 1,
-    "parentId": "ynwjn2bdp1",
+    "parentId": "ktmykw67i4",
     "tags": [
         "Suggested",
         "Content"
     ],
     "renderMode": "CANVAS",
     "isLoading": false,
-    "originalTopRow": 0,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 4,
     "fontSize": "1.25rem",
     "minDynamicHeight": 4
 }

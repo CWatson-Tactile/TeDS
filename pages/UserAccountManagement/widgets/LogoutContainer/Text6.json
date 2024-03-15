@@ -17,7 +17,7 @@
     "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
     "parentColumnSpace": 16.109375,
     "dynamicTriggerPathList": [],
-    "leftColumn": 15.088408644400786,
+    "leftColumn": 41,
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
@@ -32,13 +32,13 @@
     "rightColumn": 64,
     "textAlign": "RIGHT",
     "dynamicHeight": "AUTO_HEIGHT",
-    "widgetId": "aghxfrdxrd",
+    "widgetId": "oda7ka46om",
     "minWidth": 450,
     "isVisible": true,
     "fontStyle": "",
     "textColor": "#231F20",
     "version": 1,
-    "parentId": "tsj1i0rsbq",
+    "parentId": "6hkabkm0n1",
     "tags": [
         "Suggested",
         "Content"
