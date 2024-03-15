@@ -21,7 +21,7 @@
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
         "groupButton3": {
-            "onClick": "{{}}",
+            "onClick": "{{navigateTo('UserAccountManagement', {}, 'SAME_WINDOW');}}",
             "buttonType": "SIMPLE",
             "iconName": "person",
             "buttonColor": "#000000",
@@ -104,7 +104,8 @@
     "parentColumnSpace": 15.171875,
     "dynamicTriggerPathList": [
         {"key": "groupButtons.groupButton2.onClick"},
-        {"key": "groupButtons.groupButton1.onClick"}
+        {"key": "groupButtons.groupButton1.onClick"},
+        {"key": "groupButtons.groupButton3.onClick"}
     ],
     "leftColumn": 0,
     "dynamicBindingPathList": [

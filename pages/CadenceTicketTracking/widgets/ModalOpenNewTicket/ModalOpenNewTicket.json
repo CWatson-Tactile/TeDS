@@ -10,12 +10,12 @@
         "notification"
     ],
     "topRow": 55.800000000000004,
-    "bottomRow": 58.59999999938095,
+    "bottomRow": 58.59999999937949,
     "parentRowSpace": 10,
     "type": "MODAL_WIDGET",
     "hideCard": false,
     "shouldScrollContents": true,
-    "minHeight": 585.9999999938095,
+    "minHeight": 585.999999993795,
     "animateLoading": true,
     "parentColumnSpace": 19.1875,
     "dynamicTriggerPathList": [{"key": "onClose"}],
@@ -136,7 +136,7 @@
         "minDynamicHeight": 4
     }],
     "key": "ewl5qnxubt",
-    "height": 585.9999999938095,
+    "height": 585.999999993795,
     "isDeprecated": false,
     "rightColumn": 24,
     "detachFromLayout": true,
