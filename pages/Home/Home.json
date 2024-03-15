@@ -2,6 +2,7 @@
   "unpublishedPage": {
     "name": "Home",
     "slug": "home",
+    "customSlug": "",
     "layouts": [
       {
         "viewMode": false,
