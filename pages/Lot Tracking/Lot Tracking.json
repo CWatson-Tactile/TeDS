@@ -176,7 +176,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async sort => {\n  const EmpInfo = SelectQueryEmployeeList.data.map(i => ({\n    label: i.EmployeeFirstName + \" \" + i.EmployeeLastName,\n    value: i.EmployeeID\n  }));\n  return EmpInfo;\n  Response.sort();\n}"
+                "async () => {\n  const EmpInfo = SelectQueryEmployeeList.data.map(i => ({\n    label: i.EmployeeFirstName + \" \" + i.EmployeeLastName,\n    value: i.EmployeeID\n  }));\n  return EmpInfo;\n}"
               ],
               "timeoutInMillisecond": 10000
             }
