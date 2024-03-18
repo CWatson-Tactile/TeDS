@@ -1,1 +1,1 @@
-SELECT * FROM dbo.HoneycombLotTracking
+SELECT * FROM dbo.

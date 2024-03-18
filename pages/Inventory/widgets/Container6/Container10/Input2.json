@@ -62,6 +62,6 @@
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "{{ QueryTop1kInventory.data.find(row => row.SKU === SKUEntry.text).Vendor}}",
+    "defaultText": "{{ JS_SkuData.SkuDataFetch.data.find(row => row.SKU === SKUEntry.selectedOptionValue).Vendor }}",
     "minDynamicHeight": 4
 }

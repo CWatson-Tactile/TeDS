@@ -39,7 +39,10 @@
         {"key": "schema.__root_schema__.cellBorderRadius"},
         {"key": "schema.__root_schema__.children.TickedCreatorEmpID.options"},
         {"key": "schema.__root_schema__.children.TickedCreatorEmpID.defaultValue"},
-        {"key": "schema.__root_schema__.children.IssueDate.defaultValue"}
+        {"key": "schema.__root_schema__.children.IssueDate.defaultValue"},
+        {"key": "schema.__root_schema__.children.TicketStatus.defaultValue"},
+        {"key": "schema.__root_schema__.children.TicketStatus.borderRadius"},
+        {"key": "schema.__root_schema__.children.TicketStatus.accentColor"}
     ],
     "showReset": true,
     "flexVerticalAlignment": "start",
@@ -223,7 +226,7 @@
             "IssueDate": {
                 "boxShadow": "none",
                 "minDate": "1920-12-31T18:30:00.000Z",
-                "dateFormat": "YYYY-MM-DD HH:mm",
+                "dateFormat": "LLL",
                 "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.IssueDate))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
                 "accessor": "IssueDate",
                 "shortcuts": false,
@@ -240,7 +243,7 @@
                 "isVisible": true,
                 "label": "Issue Date",
                 "originalIdentifier": "IssueDate",
-                "timePrecision": "minute",
+                "timePrecision": "second",
                 "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
                 "closeOnSelection": false,
                 "maxDate": "2121-12-31T18:29:00.000Z",
@@ -269,6 +272,28 @@
                 "isDisabled": false,
                 "sourceData": "Connor Watson",
                 "fieldType": "Select"
+            },
+            "TicketStatus": {
+                "labelTextSize": "0.875rem",
+                "identifier": "TicketStatus",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.TicketStatus))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+                "dataType": "null",
+                "accessor": "TicketStatus",
+                "isVisible": true,
+                "label": "Ticket Status",
+                "originalIdentifier": "TicketStatus",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 7,
+                "isDisabled": false,
+                "sourceData": null,
+                "fieldType": "Text Input"
             },
             "Notes": {
                 "labelTextSize": "0.875rem",

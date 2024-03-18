@@ -9,7 +9,8 @@
     "leftColumn": 32,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "defaultText"}
     ],
     "labelStyle": "",
     "inputType": "TEXT",
@@ -60,6 +61,6 @@
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "",
+    "defaultText": "{{ JS_SkuData.SkuDataFetch.data.find(row => row.SKU === SKUEntry.selectedOptionValue).Manufacturer }}",
     "minDynamicHeight": 4
 }

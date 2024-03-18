@@ -101,7 +101,7 @@
         "StandardOrderQTY",
         "RawPartCost"
     ],
-    "dynamicPropertyPathList": [],
+    "dynamicPropertyPathList": [{"key": "tableData"}],
     "compactMode": "SHORT",
     "displayName": "Table",
     "bottomRow": 66,
@@ -723,7 +723,7 @@
     "textSize": "0.875rem",
     "widgetId": "1cgeyl3uwq",
     "minWidth": 450,
-    "tableData": "{{QueryTop1kInventory.data}}",
+    "tableData": "{{JS_SkuData.SkuDataFetch.data}}",
     "label": "Data",
     "searchKey": "",
     "parentId": "mxjikq5rpl",

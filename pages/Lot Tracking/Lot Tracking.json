@@ -118,14 +118,6 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Lot Tracking_SelectQueryHoneycombLots",
-              "name": "SelectQueryHoneycombLots",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Lot Tracking_SelectQueryModulePCBSolderLots",
               "name": "SelectQueryModulePCBSolderLots",
               "confirmBeforeExecute": false,

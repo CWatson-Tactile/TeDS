@@ -40,7 +40,7 @@
         "number",
         "textarea"
     ],
-    "bottomRow": 6.599999999999994,
+    "bottomRow": 7,
     "parentRowSpace": 10,
     "autoFocus": false,
     "hideCard": false,
@@ -63,6 +63,6 @@
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "{{ QueryTop1kInventory.data.find(row => row.SKU === SKUEntry.text).PartDescription}}",
+    "defaultText": "{{ JS_SkuData.SkuDataFetch.data.find(row => row.SKU === SKUEntry.selectedOptionValue).PartDescription }}",
     "minDynamicHeight": 4
 }

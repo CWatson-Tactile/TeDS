@@ -78,7 +78,10 @@
         "TickedCreatorEmpID",
         "TicketStatus"
     ],
-    "dynamicPropertyPathList": [{"key": "primaryColumns.IssueDate.outputFormat"}],
+    "dynamicPropertyPathList": [
+        {"key": "primaryColumns.IssueDate.inputFormat"},
+        {"key": "primaryColumns.IssueDate.outputFormat"}
+    ],
     "compactMode": "SHORT",
     "displayName": "Table",
     "bottomRow": 53,
@@ -196,7 +199,7 @@
             "id": "IssueDate",
             "isDisabled": false,
             "allowSameOptionsInNewRow": true,
-            "outputFormat": "YYYY-MM-DD hh:mm A",
+            "outputFormat": "YYYY-MM-DD HH:mm",
             "validation": {},
             "isCellVisible": true,
             "isDerived": false,
@@ -207,9 +210,10 @@
             "isVisible": true,
             "label": "Issue Date",
             "fontStyle": "",
+            "inputFormat": "YYYY-MM-DD HH:mm:ss",
             "columnType": "date",
             "thousandSeparator": true,
-            "horizontalAlignment": "CENTER",
+            "horizontalAlignment": "LEFT",
             "isCellEditable": false,
             "decimals": 0,
             "width": 150,

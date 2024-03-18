@@ -27,7 +27,7 @@
     ],
     "isLoading": false,
     "borderRadius": "0.375rem",
-    "originalBottomRow": 41.20000000000073,
+    "originalBottomRow": 45.20000000000073,
     "alignment": "start",
     "mobileBottomRow": 32.6,
     "widgetName": "Input11",
@@ -64,6 +64,6 @@
     "isSpellCheck": false,
     "shouldAllowAutofill": false,
     "iconAlign": "left",
-    "defaultText": "{{ QueryTop1kInventory.data.find(row => row.SKU === SKUEntry.text).Notes}}",
+    "defaultText": "{{ JS_SkuData.SkuDataFetch.data.find(row => row.SKU === SKUEntry.selectedOptionValue).Notes }}",
     "minDynamicHeight": 4
 }
