@@ -1,1 +1,1 @@
-INSERT INTO dbo.InventoryAdjustmentTracking (SKU, Adjustment, QtyAfterAdjustment, AdjustedBy, DataTimeOfAdjustment) VALUES ({{InventorySubtractsku.selectedOptionLabel}},{{InventorySubtractQtyToPick.text}}, {{InventorySubtractUpdatedNewOnH.text}}, {{appsmith.store.EmpID}},GETDATE() )
+INSERT INTO dbo.InventoryAdjustmentTracking (SKU, Adjustment, QtyAfterAdjustment, AdjustedBy, DataTimeOfAdjustment) VALUES ({{InventorySubtractsku.selectedOptionLabel}},-{{InventorySubtractQtyToPick.text}}, {{InventorySubtractUpdatedNewOnH.text}}, {{appsmith.store.EmpID}},GETDATE() )

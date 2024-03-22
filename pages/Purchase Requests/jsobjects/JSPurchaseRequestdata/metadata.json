@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSPurchaseRequestdata",
+    "pageId": "Purchase Requests",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Purchase Requests_JSPurchaseRequestdata",
+  "deleted": false,
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_65fb6d4efdb1c038a9c0ef7a"
+}

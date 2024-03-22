@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSSkuData",
+    "pageId": "ADMIN",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "ADMIN_JSSkuData",
+  "deleted": false,
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_65f9dd7ffdb1c038a9c0ebea"
+}

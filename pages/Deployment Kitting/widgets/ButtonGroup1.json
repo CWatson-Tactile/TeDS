@@ -8,8 +8,8 @@
         "click",
         "submit"
     ],
-    "topRow": 79.59999999995982,
-    "bottomRow": 83.59999999996232,
+    "topRow": 79.59999999994943,
+    "bottomRow": 83.59999999995217,
     "parentRowSpace": 10,
     "groupButtons": {
         "groupButton3": {
@@ -128,8 +128,8 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 79.59999999996592,
+    "originalTopRow": 79.59999999995323,
     "borderRadius": "0.375rem",
-    "originalBottomRow": 83.59999999996944,
+    "originalBottomRow": 83.59999999995489,
     "buttonVariant": "PRIMARY"
 }

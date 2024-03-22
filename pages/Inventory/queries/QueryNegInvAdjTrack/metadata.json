@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO dbo.InventoryAdjustmentTracking (SKU, Adjustment, QtyAfterAdjustment, AdjustedBy, DataTimeOfAdjustment) VALUES ({{InventorySubtractsku.selectedOptionLabel}},{{InventorySubtractQtyToPick.text}}, {{InventorySubtractUpdatedNewOnH.text}}, {{appsmith.store.EmpID}},GETDATE() )\n",
+      "body": "INSERT INTO dbo.InventoryAdjustmentTracking (SKU, Adjustment, QtyAfterAdjustment, AdjustedBy, DataTimeOfAdjustment) VALUES ({{InventorySubtractsku.selectedOptionLabel}},-{{InventorySubtractQtyToPick.text}}, {{InventorySubtractUpdatedNewOnH.text}}, {{appsmith.store.EmpID}},GETDATE() )\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

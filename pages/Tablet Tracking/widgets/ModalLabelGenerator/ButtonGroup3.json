@@ -30,7 +30,7 @@
             "placement": "CENTER"
         },
         "groupButton1": {
-            "onClick": "{{API_CadenceLabelFill.run().then(() => {\n  download(API_CadenceLabelFill.data, 'CadenceLabel.pdf', '');\n  showAlert('Label Created. Download should start now.', 'success');\n}).catch(() => {\n  showAlert('Error! Get Connor!', 'error');\n});}}",
+            "onClick": "{{API_CadenceLabelFill.run().then(() => {\n  download(API_CadenceLabelFill.data, 'CadenceLabel.pdf', '');\n  showAlert('Label Created. Download should start now.', 'success');\n  resetWidget(\"ModalLabelGenerator\", true);\n  closeModal('ModalLabelGenerator');\n}).catch(() => {\n  showAlert('Error! Get Connor!', 'error');\n});}}",
             "buttonType": "SIMPLE",
             "iconName": "cloud-download",
             "buttonColor": "{{appsmith.theme.colors.primaryColor}}",

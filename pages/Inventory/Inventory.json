@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 813.9999999999708,
+          "bottomRow": 813.9999999999782,
           "containerStyle": "none",
           "snapRows": 83,
           "parentRowSpace": 1,
@@ -90,7 +90,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  const TansData = QueryInventoryHistory.data;\n  return TansData;\n  Response.sort();\n}"
+                "async () => {\n  const TansData = QueryInventoryHistory.data;\n  return TansData.reverse();\n}"
               ],
               "timeoutInMillisecond": 10000
             }

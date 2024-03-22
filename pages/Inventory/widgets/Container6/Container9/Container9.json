@@ -11,7 +11,7 @@
         "group"
     ],
     "topRow": 11,
-    "bottomRow": 28,
+    "bottomRow": 43,
     "parentRowSpace": 10,
     "type": "CONTAINER_WIDGET",
     "hideCard": false,
@@ -27,7 +27,7 @@
         "widgetName": "Canvas25",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 170,
+        "bottomRow": 320,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": false,
@@ -67,6 +67,14 @@
             {"children": [{
                 "id": "iakovihcma",
                 "align": "start"
+            }]},
+            {"children": [{
+                "id": "zlomj6qdl0",
+                "align": "start"
+            }]},
+            {"children": [{
+                "id": "7g6ser7khn",
+                "align": "start"
             }]}
         ]
     }],
@@ -88,6 +96,6 @@
     "originalTopRow": 11,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 28,
+    "originalBottomRow": 43,
     "minDynamicHeight": 10
 }

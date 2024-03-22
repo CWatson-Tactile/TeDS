@@ -28,6 +28,7 @@
             "isDisabled": false
         },
         "groupButton2": {
+            "onClick": "{{showModal('ModalSkuEdit');}}",
             "buttonType": "SIMPLE",
             "iconName": "edit",
             "buttonColor": "#e0dede",
@@ -44,7 +45,10 @@
     "hideCard": false,
     "animateLoading": true,
     "parentColumnSpace": 28.84375,
-    "dynamicTriggerPathList": [{"key": "groupButtons.groupButton1.onClick"}],
+    "dynamicTriggerPathList": [
+        {"key": "groupButtons.groupButton1.onClick"},
+        {"key": "groupButtons.groupButton2.onClick"}
+    ],
     "leftColumn": 0,
     "dynamicBindingPathList": [{"key": "borderRadius"}],
     "key": "2bihr5hfnw",

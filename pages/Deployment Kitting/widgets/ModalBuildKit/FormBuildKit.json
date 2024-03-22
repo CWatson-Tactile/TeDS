@@ -663,7 +663,7 @@
         "iconAlign": "left",
         "placement": "CENTER"
     },
-    "dynamicPropertyPathList": [],
+    "dynamicPropertyPathList": [{"key": "schema.__root_schema__.children.KitDeploymentDate.defaultValue"}],
     "displayName": "JSON Form",
     "bottomRow": 50,
     "fieldLimitExceeded": false,

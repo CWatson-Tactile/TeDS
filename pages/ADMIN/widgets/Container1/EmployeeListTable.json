@@ -65,7 +65,7 @@
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "columnUpdatedAt": 1702594669884,
-    "originalBottomRow": 44.39999999999782,
+    "originalBottomRow": 44,
     "primaryColumnId": "EmployeeID",
     "defaultSelectedRowIndices": [0],
     "widgetName": "EmployeeListTable",
@@ -364,7 +364,7 @@
     "renderMode": "CANVAS",
     "horizontalAlignment": "CENTER",
     "isVisibleSearch": true,
-    "originalTopRow": 11.399999999998546,
+    "originalTopRow": 11,
     "isVisiblePagination": false,
     "verticalAlignment": "CENTER"
 }

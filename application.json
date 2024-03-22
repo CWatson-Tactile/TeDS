@@ -1,6 +1,10 @@
 {
   "pages": [
     {
+      "id": "Purchase Requests",
+      "isDefault": false
+    },
+    {
       "id": "Home",
       "isDefault": true
     },
