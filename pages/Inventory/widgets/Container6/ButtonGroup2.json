@@ -9,11 +9,27 @@
         "click",
         "submit"
     ],
-    "topRow": 63.39999999999432,
+    "topRow": 63.39999999999063,
     "bottomRow": 67.39999999999782,
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
+        "groupButton1kfaj5i1k8": {
+            "itemType": "BUTTON",
+            "onClick": "{{API_MakeSkuLabel.run().then(() => {\n  download(API_MakeSkuLabel.data, 'SkuLabel.pdf', '');\n  showAlert('Label Created. Download should begin now.', 'success');\n});}}",
+            "buttonColor": "#000000",
+            "iconName": "label",
+            "widgetId": "l4q8ayug57",
+            "menuItems": {},
+            "index": 3,
+            "label": "Make Label",
+            "isVisible": true,
+            "buttonType": "SIMPLE",
+            "buttonVariant": "filled",
+            "id": "groupButton1kfaj5i1k8",
+            "isDisabled": false,
+            "placement": "CENTER"
+        },
         "groupButton0cl3usykwg": {
             "onClick": "{{showModal('ModalInventorySubtract');}}",
             "buttonColor": "#b91c1c",
@@ -64,7 +80,8 @@
     "dynamicTriggerPathList": [
         {"key": "groupButtons.groupButton1.onClick"},
         {"key": "groupButtons.groupButtonwt54yfoazc.onClick"},
-        {"key": "groupButtons.groupButton0cl3usykwg.onClick"}
+        {"key": "groupButtons.groupButton0cl3usykwg.onClick"},
+        {"key": "groupButtons.groupButton1kfaj5i1k8.onClick"}
     ],
     "leftColumn": 0,
     "dynamicBindingPathList": [],
@@ -81,7 +98,7 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 63.39999999999432,
+    "originalTopRow": 63.399999999992104,
     "borderRadius": "0.375rem",
     "originalBottomRow": 67.39999999999782,
     "buttonVariant": "PRIMARY"
