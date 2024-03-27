@@ -1,1 +1,1 @@
-UPDATE dbo.TactileInventory SET dbo.TactileInventory.NewOnHand={{InventorySubtractUpdatedNewOnH.text}} WHERE dbo.TactileInventory.SKU={{QuickInventorySKU.text}}
+UPDATE dbo.TactileInventory SET dbo.TactileInventory.NewOnHand={{InventorySubtractUpdatedNewOnH.text}} WHERE dbo.TactileInventory.SKU={{InventorySubtractsku.selectedOptionValue}}

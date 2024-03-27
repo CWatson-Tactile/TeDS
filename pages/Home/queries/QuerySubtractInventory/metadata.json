@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE dbo.TactileInventory SET dbo.TactileInventory.NewOnHand={{InventorySubtractUpdatedNewOnH.text}} WHERE dbo.TactileInventory.SKU={{QuickInventorySKU.text}}",
+      "body": "UPDATE dbo.TactileInventory SET dbo.TactileInventory.NewOnHand={{InventorySubtractUpdatedNewOnH.text}} WHERE dbo.TactileInventory.SKU={{InventorySubtractsku.selectedOptionValue}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -37,7 +37,7 @@
     "messages": [],
     "jsonPathKeys": [
       "InventorySubtractUpdatedNewOnH.text",
-      "QuickInventorySKU.text"
+      "InventorySubtractsku.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

@@ -9,8 +9,8 @@
         "click",
         "submit"
     ],
-    "topRow": 42.600000002731576,
-    "bottomRow": 46.6000000027042,
+    "topRow": 15,
+    "bottomRow": 19,
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
@@ -61,13 +61,13 @@
     "minWidth": 450,
     "isVisible": true,
     "version": 1,
-    "parentId": "uc3p5tykif",
+    "parentId": "kx4178fiko",
     "tags": ["Buttons"],
     "renderMode": "CANVAS",
     "isLoading": false,
     "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 42.60000000272894,
+    "originalTopRow": 43,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 46.60000000270156,
+    "originalBottomRow": 47,
     "buttonVariant": "PRIMARY"
 }
