@@ -1,7 +1,7 @@
 {
     "boxShadow": "none",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
-    "topRow": 42.399999999957856,
+    "topRow": 42.39999999995342,
     "tooltip": "Universal Product Code",
     "labelWidth": 5,
     "type": "INPUT_WIDGET_V2",
@@ -60,7 +60,7 @@
     "renderMode": "CANVAS",
     "mobileTopRow": 25,
     "responsiveBehavior": "fill",
-    "originalTopRow": 42.399999999958595,
+    "originalTopRow": 42.39999999995416,
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
     "shouldAllowAutofill": false,
