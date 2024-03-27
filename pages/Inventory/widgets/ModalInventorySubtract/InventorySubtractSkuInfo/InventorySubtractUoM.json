@@ -3,14 +3,14 @@
     "widgetName": "InventorySubtractUoM",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
     "displayName": "Input",
-    "topRow": 7.8,
+    "topRow": 8,
     "searchTags": [
         "form",
         "text input",
         "number",
         "textarea"
     ],
-    "bottomRow": 14.399999999999999,
+    "bottomRow": 15,
     "parentRowSpace": 10,
     "labelWidth": 5,
     "autoFocus": false,
@@ -34,7 +34,7 @@
     "labelTextSize": "0.875rem",
     "isRequired": false,
     "isDeprecated": false,
-    "rightColumn": 21.333333333333332,
+    "rightColumn": 21,
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "widgetId": "4goftg1sua",
@@ -54,6 +54,6 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "{{ QueryTop1kInventory.data.find(row => row.SKU === InventorySubtractsku.selectedOptionLabel).UoM }}",
+    "defaultText": "{{ QueryTop1kInventory.data.find(row => row.SKU === InventorySubtractsku.selectedOptionValue).UoM }}",
     "minDynamicHeight": 4
 }

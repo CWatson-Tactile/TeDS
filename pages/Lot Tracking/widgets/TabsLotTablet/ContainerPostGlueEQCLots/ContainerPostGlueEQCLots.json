@@ -72,7 +72,7 @@
     "backgroundColor": "#FFFFFF",
     "isDeprecated": false,
     "rightColumn": 64,
-    "dynamicHeight": "FIXED",
+    "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "aout7fzcgh",
     "containerStyle": "card",
     "minWidth": 450,
@@ -84,8 +84,10 @@
     "isLoading": false,
     "mobileTopRow": 29,
     "responsiveBehavior": "fill",
+    "originalTopRow": 0,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
+    "originalBottomRow": 34,
     "minDynamicHeight": 10
 }

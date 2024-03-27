@@ -3,14 +3,14 @@
     "widgetName": "InventoryAddUoM",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
     "displayName": "Input",
-    "topRow": 7.8,
+    "topRow": 10,
     "searchTags": [
         "form",
         "text input",
         "number",
         "textarea"
     ],
-    "bottomRow": 14.400000000000002,
+    "bottomRow": 17,
     "parentRowSpace": 10,
     "labelWidth": 5,
     "autoFocus": false,
@@ -54,6 +54,6 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "{{ QueryTop1kInventory.data.find(row => row.SKU === InventoryAddSku.selectedOptionLabel).UoM }}",
+    "defaultText": "{{ QueryTop1kInventory.data.find(row => row.SKU === InventoryAddSku.selectedOptionValue).UoM }}",
     "minDynamicHeight": 4
 }

@@ -1,19 +1,17 @@
 {
     "boxShadow": "none",
     "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
-    "labelText": "Label",
+    "labelText": "Lot #",
     "topRow": 0,
     "labelWidth": 5,
     "type": "SELECT_WIDGET",
     "serverSideFiltering": false,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( InventoryTable.selectedRow.SKU))(InventorySubtractsku.options, InventorySubtractsku.serverSideFiltering) }}",
+    "defaultOptionValue": "",
     "animateLoading": true,
     "leftColumn": 0,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"},
-        {"key": "defaultOptionValue"}
+        {"key": "borderRadius"}
     ],
     "placeholderText": "Select option",
     "isDisabled": false,
@@ -28,34 +26,46 @@
     ],
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileBottomRow": 7,
-    "widgetName": "InventorySubtractsku",
+    "mobileBottomRow": 10,
+    "widgetName": "Select1",
     "isFilterable": true,
-    "dynamicPropertyPathList": [{"key": "sourceData"}],
     "displayName": "Select",
     "searchTags": ["dropdown"],
     "bottomRow": 7,
     "parentRowSpace": 10,
     "hideCard": false,
-    "mobileRightColumn": 20,
-    "parentColumnSpace": 8.810791015625,
+    "mobileRightColumn": 31,
+    "parentColumnSpace": 6.9375,
     "dynamicTriggerPathList": [],
     "labelPosition": "Top",
-    "sourceData": "{{JS_SkuName.SkuDataFetcher.data}}",
-    "key": "4g348iv6tp",
+    "sourceData": [
+        {
+            "code": "BLUE",
+            "name": "Blue"
+        },
+        {
+            "code": "GREEN",
+            "name": "Green"
+        },
+        {
+            "code": "RED",
+            "name": "Red"
+        }
+    ],
+    "key": "pe6pm88xmo",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "ptaokexebd",
-    "optionValue": "value",
+    "rightColumn": 63,
+    "widgetId": "umc4oy3ix7",
+    "optionValue": "code",
     "minWidth": 450,
-    "parentId": "gzj7s8vxyx",
+    "parentId": "mb29vp59nt",
     "labelAlignment": "left",
     "renderMode": "CANVAS",
-    "mobileTopRow": 0,
-    "optionLabel": "label",
+    "mobileTopRow": 3,
+    "optionLabel": "name",
     "responsiveBehavior": "fill",
-    "mobileLeftColumn": 0,
+    "mobileLeftColumn": 11,
     "maxDynamicHeight": 9000,
     "minDynamicHeight": 4
 }

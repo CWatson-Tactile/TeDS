@@ -37,13 +37,13 @@
     "rightColumn": 64,
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "widgetId": "0jm4v3n5iu",
+    "widgetId": "yjxnkw75b0",
     "showStepArrows": false,
     "minWidth": 450,
     "isVisible": true,
     "label": "Current WIP\tOn-Hand",
     "version": 2,
-    "parentId": "gzj7s8vxyx",
+    "parentId": "migk9parvr",
     "tags": [
         "Suggested",
         "Inputs"

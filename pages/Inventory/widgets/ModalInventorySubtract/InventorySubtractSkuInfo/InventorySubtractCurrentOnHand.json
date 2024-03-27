@@ -3,14 +3,14 @@
     "widgetName": "InventorySubtractCurrentOnHand",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
     "displayName": "Input",
-    "topRow": 7.8,
+    "topRow": 8,
     "searchTags": [
         "form",
         "text input",
         "number",
         "textarea"
     ],
-    "bottomRow": 14.399999999999999,
+    "bottomRow": 15,
     "parentRowSpace": 10,
     "labelWidth": 5,
     "autoFocus": false,
@@ -20,7 +20,7 @@
     "parentColumnSpace": 5.0625,
     "dynamicTriggerPathList": [],
     "resetOnSubmit": true,
-    "leftColumn": 21.333333333333332,
+    "leftColumn": 22,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
@@ -34,7 +34,7 @@
     "labelTextSize": "0.875rem",
     "isRequired": false,
     "isDeprecated": false,
-    "rightColumn": 42.66666666666667,
+    "rightColumn": 42,
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "widgetId": "29wsr7pgp3",
@@ -55,6 +55,6 @@
     "maxDynamicHeight": 9000,
     "shouldAllowAutofill": false,
     "iconAlign": "left",
-    "defaultText": "{{ QueryTop1kInventory.data.find(row => row.SKU === InventorySubtractsku.selectedOptionLabel).NewOnHand }}",
+    "defaultText": "{{ QueryTop1kInventory.data.find(row => row.SKU === InventorySubtractsku.selectedOptionValue).NewOnHand }}",
     "minDynamicHeight": 4
 }
