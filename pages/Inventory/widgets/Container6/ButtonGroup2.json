@@ -9,8 +9,8 @@
         "click",
         "submit"
     ],
-    "topRow": 63.39999999998767,
-    "bottomRow": 67.39999999999782,
+    "topRow": 62.99999999999335,
+    "bottomRow": 67,
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
@@ -46,7 +46,7 @@
             "placement": "CENTER"
         },
         "groupButton1": {
-            "onClick": "{{QueryInventoryHistory.run();\nQueryTop1kInventory.run().then(() => {\n  resetWidget(\"InventoryHistoryTable\", true);\n});\nSelect_dbo_EmployeeList1.run();}}",
+            "onClick": "{{JS_SkuData.SkuDataFetch();\nJS_InvTransData.InvTransDataFetch();}}",
             "buttonType": "SIMPLE",
             "iconName": "refresh",
             "buttonColor": "#eab308",
@@ -98,8 +98,8 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 63.39999999998767,
+    "originalTopRow": 62.99999999999335,
     "borderRadius": "0.375rem",
-    "originalBottomRow": 67.39999999999782,
+    "originalBottomRow": 67,
     "buttonVariant": "PRIMARY"
 }

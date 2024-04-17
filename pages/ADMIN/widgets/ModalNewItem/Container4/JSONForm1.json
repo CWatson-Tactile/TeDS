@@ -55,7 +55,8 @@
         {"key": "schema.__root_schema__.defaultValue"},
         {"key": "schema.__root_schema__.borderRadius"},
         {"key": "schema.__root_schema__.cellBorderRadius"},
-        {"key": "schema.__root_schema__.children.UoM.borderRadius"}
+        {"key": "schema.__root_schema__.children.UoM.borderRadius"},
+        {"key": "schema.__root_schema__.children.UPC.validation"}
     ],
     "showReset": true,
     "dynamicHeight": "AUTO_HEIGHT",
@@ -318,11 +319,10 @@
                 "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                 "dataType": "string",
                 "accessor": "UPC",
-                "tooltip": "example: 042100005264",
                 "isVisible": true,
                 "label": "UPC (Universal Product Code)",
                 "originalIdentifier": "UPC",
-                "regex": "(?<=0)[0-9]{12}$",
+                "regex": "^[0-9]+$",
                 "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                 "children": {},
                 "isSpellCheck": false,
@@ -330,7 +330,8 @@
                 "position": 13,
                 "isDisabled": false,
                 "sourceData": "",
-                "fieldType": "Number Input"
+                "fieldType": "Text Input",
+                "validation": "{{((sourceData, formData, fieldState) => (formData.UPC.length == 12))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}"
             },
             "Vendor": {
                 "labelTextSize": "0.875rem",

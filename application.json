@@ -33,7 +33,7 @@
       "isDefault": false
     },
     {
-      "id": "Deployment Kitting",
+      "id": "Delivery Tracking",
       "isDefault": false
     },
     {
@@ -46,6 +46,10 @@
     },
     {
       "id": "Lot Tracking",
+      "isDefault": false
+    },
+    {
+      "id": "BOM",
       "isDefault": false
     }
   ],

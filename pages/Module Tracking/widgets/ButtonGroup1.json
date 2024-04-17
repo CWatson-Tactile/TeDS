@@ -63,6 +63,7 @@
             "isDisabled": false
         },
         "groupButton1": {
+            "onClick": "{{showModal('ModalAddModule');}}",
             "buttonType": "SIMPLE",
             "iconName": "add",
             "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -93,7 +94,7 @@
     "mobileRightColumn": 76,
     "animateLoading": true,
     "parentColumnSpace": 15.6875,
-    "dynamicTriggerPathList": [],
+    "dynamicTriggerPathList": [{"key": "groupButtons.groupButton1.onClick"}],
     "leftColumn": 0,
     "dynamicBindingPathList": [
         {"key": "borderRadius"},

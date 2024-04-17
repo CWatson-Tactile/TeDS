@@ -1,1 +1,2 @@
-{{JS_SkuData.SkuDataFetch.data.filter(row => row.SKU === SKUEntry.selectedOptionValue)}}
+[{{JS_SkuData.SkuDataFetch.data.filter(row => row.SKU === SKUEntry.selectedOptionValue)}};
+{{LotNumEntry.text}}]

@@ -10,12 +10,12 @@
         "notification"
     ],
     "topRow": 16,
-    "bottomRow": 47.40000001395435,
+    "bottomRow": 47,
     "parentRowSpace": 10,
     "type": "MODAL_WIDGET",
     "hideCard": false,
     "shouldScrollContents": true,
-    "minHeight": 474.0000001395435,
+    "minHeight": 470,
     "animateLoading": true,
     "parentColumnSpace": 16.890625,
     "dynamicTriggerPathList": [{"key": "onClose"}],
@@ -33,7 +33,7 @@
         "canExtend": true,
         "hideCard": true,
         "shouldScrollContents": false,
-        "minHeight": 392,
+        "minHeight": 470,
         "mobileRightColumn": 64,
         "useAutoLayout": false,
         "parentColumnSpace": 1,
@@ -136,7 +136,7 @@
         "minDynamicHeight": 4
     }],
     "key": "yfgnjcfmza",
-    "height": 474.0000001395435,
+    "height": 470,
     "isDeprecated": false,
     "rightColumn": 44,
     "detachFromLayout": true,
@@ -152,6 +152,6 @@
     "onClose": "",
     "borderRadius": "0.375rem",
     "maxDynamicHeight": 9000,
-    "width": 528,
+    "width": 492.8499999999999,
     "minDynamicHeight": 8
 }

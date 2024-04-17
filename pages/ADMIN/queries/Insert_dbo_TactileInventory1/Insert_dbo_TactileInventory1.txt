@@ -1,1 +1,17 @@
-INSERT INTO dbo.TactileInventory (PartName,NewOnHand,WIPOnHand,Vendor,TEPartNumber,VendorPart,ManufacturerPart,PartDescription,Notes,UoM,Manufacturer,ManufacturerModelNumber,ASIN,UPC,Status,StandardOrderQTY,RawPartCost) VALUES ('{{(JSONForm1.formData || {}).PartName}}','{{(JSONForm1.formData || {}).NewOnHand}}','{{(JSONForm1.formData || {}).WIPOnHand}}','{{(JSONForm1.formData || {}).Vendor}}','{{(JSONForm1.formData || {}).TEPartNumber}}','{{(JSONForm1.formData || {}).VendorPart}}','{{(JSONForm1.formData || {}).ManufacturerPart}}','{{(JSONForm1.formData || {}).PartDescription}}','{{(JSONForm1.formData || {}).Notes}}','{{(JSONForm1.formData || {}).UoM}}','{{(JSONForm1.formData || {}).Manufacturer}}','{{(JSONForm1.formData || {}).ManufacturerModelNumber}}','{{(JSONForm1.formData || {}).ASIN}}','{{(JSONForm1.formData || {}).UPC}}','{{(JSONForm1.formData || {}).Status}}','{{(JSONForm1.formData || {}).StandardOrderQTY}}','{{(JSONForm1.formData || {}).RawPartCost}}')
+INSERT INTO dbo.TactileInventory (PartName,NewOnHand,WIPOnHand,Vendor,TEPartNumber,VendorPart,ManufacturerPart,PartDescription,Notes,UoM,Manufacturer,ManufacturerModelNumber,ASIN,UPC,Status,StandardOrderQTY,RawPartCost) VALUES ('{{(JSONForm1.formData || {}).PartName}}',
+'{{(JSONForm1.formData || {}).NewOnHand}}',
+'{{(JSONForm1.formData || {}).WIPOnHand}}',
+'{{(JSONForm1.formData || {}).Vendor}}',
+'{{(JSONForm1.formData || {}).TEPartNumber}}',
+'{{(JSONForm1.formData || {}).VendorPart}}',
+'{{(JSONForm1.formData || {}).ManufacturerPart}}',
+'{{(JSONForm1.formData || {}).PartDescription}}',
+'{{(JSONForm1.formData || {}).Notes}}',
+'{{(JSONForm1.formData || {}).UoM}}',
+'{{(JSONForm1.formData || {}).Manufacturer}}',
+'{{(JSONForm1.formData || {}).ManufacturerModelNumber}}',
+'{{(JSONForm1.formData || {}).ASIN}}',
+'{{(JSONForm1.formData || {}).UPC}}',
+'{{(JSONForm1.formData || {}).Status}}',
+'{{(JSONForm1.formData || {}).StandardOrderQTY}}',
+'{{(JSONForm1.formData || {}).RawPartCost}}')

@@ -13,6 +13,21 @@
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
+        "groupButtonhwhalp1y80": {
+            "itemType": "BUTTON",
+            "buttonColor": "#000000",
+            "iconName": "cross",
+            "widgetId": "s8lfsc9spo",
+            "menuItems": {},
+            "index": 2,
+            "label": "Generate OUTS report",
+            "isVisible": true,
+            "buttonType": "SIMPLE",
+            "buttonVariant": "filled",
+            "id": "groupButtonhwhalp1y80",
+            "isDisabled": false,
+            "placement": "CENTER"
+        },
         "groupButton1": {
             "onClick": "{{showModal('ModalNewItem');}}",
             "buttonType": "SIMPLE",

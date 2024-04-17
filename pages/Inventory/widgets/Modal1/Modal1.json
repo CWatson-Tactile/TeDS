@@ -29,13 +29,13 @@
         "widgetName": "Canvas27",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 120,
+        "bottomRow": 150,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": true,
         "hideCard": true,
         "shouldScrollContents": false,
-        "minHeight": 126,
+        "minHeight": 150,
         "mobileRightColumn": 371.625,
         "parentColumnSpace": 1,
         "leftColumn": 0,
@@ -65,7 +65,7 @@
         "flexLayers": []
     }],
     "key": "36ys6dhhd4",
-    "height": 126,
+    "height": 150,
     "isDeprecated": false,
     "rightColumn": 26,
     "detachFromLayout": true,
@@ -82,6 +82,6 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 2,
     "maxDynamicHeight": 9000,
-    "width": 456,
+    "width": 446,
     "minDynamicHeight": 24
 }

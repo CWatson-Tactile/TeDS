@@ -5,13 +5,13 @@
     "allowScroll": false,
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.8eea39845729f7f4bfadeecd3810a09d.svg",
     "displayName": "Chart",
-    "topRow": 44.20000000001812,
+    "topRow": 39.600000000021716,
     "searchTags": [
         "graph",
         "visuals",
         "visualisations"
     ],
-    "bottomRow": 76.20000000000218,
+    "bottomRow": 71.60000000000073,
     "parentRowSpace": 10,
     "type": "CHART_WIDGET",
     "hideCard": false,
@@ -105,10 +105,10 @@
     "isLoading": false,
     "renderMode": "CANVAS",
     "yAxisName": "Tablets",
-    "originalTopRow": 44.200000000012324,
+    "originalTopRow": 44.600000000026085,
     "chartName": "NEW Cadence produced per month\n",
     "borderRadius": "0.375rem",
     "xAxisName": "Month",
-    "originalBottomRow": 76.20000000000073,
+    "originalBottomRow": 76.60000000000218,
     "chartType": "COLUMN_CHART"
 }

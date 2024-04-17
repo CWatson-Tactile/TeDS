@@ -9,7 +9,7 @@
         "click",
         "submit"
     ],
-    "topRow": 62.99999999999926,
+    "topRow": 62.999999999997044,
     "bottomRow": 67,
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
@@ -45,7 +45,7 @@
             "placement": "CENTER"
         },
         "groupButton1": {
-            "onClick": "{{resetWidget(\"ModalQuickInventory\", true).then(() => {\n  JS_SkuName.SkuDataFetcher();\n  JS_SkuData.SkuDataFetch();\n});}}",
+            "onClick": "{{JS_SkuData.SkuDataFetch();\nJS_SkuName.SkuDataFetcher();\nJS_InvTransData.InvTransDataFetch();}}",
             "buttonType": "SIMPLE",
             "iconName": "refresh",
             "buttonColor": "#eab308",
@@ -82,7 +82,7 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 63,
+    "originalTopRow": 62.999999999997044,
     "borderRadius": "0.375rem",
     "originalBottomRow": 67,
     "buttonVariant": "PRIMARY"

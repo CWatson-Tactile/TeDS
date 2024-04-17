@@ -60,7 +60,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1709959217121,
+    "columnUpdatedAt": 1711655027077,
     "originalBottomRow": 61,
     "primaryColumnId": "TransactionNumber",
     "defaultSelectedRowIndices": [0],
@@ -81,7 +81,7 @@
     "columnWidthMap": {
         "DataTimeOfAdjustment": 110,
         "AdjustedBy": 136,
-        "Adjustment": 178,
+        "Adjustment": 120,
         "SKU": 82,
         "QtyAfterAdjustment": 178
     },
@@ -206,11 +206,11 @@
             "index": 2,
             "isDiscardVisible": true,
             "isVisible": true,
-            "label": "Adjustment Amount",
+            "label": "Adj Amount",
             "fontStyle": "ITALIC",
             "columnType": "number",
             "thousandSeparator": true,
-            "horizontalAlignment": "LEFT",
+            "horizontalAlignment": "CENTER",
             "isCellEditable": false,
             "decimals": 0,
             "width": 150,

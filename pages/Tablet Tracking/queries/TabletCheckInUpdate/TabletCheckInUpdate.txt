@@ -1,6 +1,6 @@
 UPDATE dbo.TabletTracker SET 
       Assigned_to = '',
       Date_Assigned = '',
-			Status = 'QCpass'
+			Status = 'QC PASS'
 Where Device_Name = '{{TabletCheckInForm.data.TabletCheckInSelection}}';
 	

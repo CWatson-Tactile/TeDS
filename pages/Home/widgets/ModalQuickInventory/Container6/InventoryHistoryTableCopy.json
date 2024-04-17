@@ -20,7 +20,7 @@
         {"key": "tableData"}
     ],
     "needsHeightForContent": true,
-    "leftColumn": 39,
+    "leftColumn": 37,
     "delimiter": ",",
     "variant": "VARIANT3",
     "defaultSelectedRowIndex": 0,
