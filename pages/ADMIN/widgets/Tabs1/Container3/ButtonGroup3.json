@@ -15,6 +15,7 @@
     "groupButtons": {
         "groupButtonhwhalp1y80": {
             "itemType": "BUTTON",
+            "onClick": "{{GenerateLowStockReport.run().then(() => {\n  download(GenerateLowStockReport.data, 'LowStockReport.csv', '');\n});}}",
             "buttonColor": "#000000",
             "iconName": "cross",
             "widgetId": "s8lfsc9spo",
@@ -62,7 +63,8 @@
     "parentColumnSpace": 28.84375,
     "dynamicTriggerPathList": [
         {"key": "groupButtons.groupButton1.onClick"},
-        {"key": "groupButtons.groupButton2.onClick"}
+        {"key": "groupButtons.groupButton2.onClick"},
+        {"key": "groupButtons.groupButtonhwhalp1y80.onClick"}
     ],
     "leftColumn": 0,
     "dynamicBindingPathList": [{"key": "borderRadius"}],

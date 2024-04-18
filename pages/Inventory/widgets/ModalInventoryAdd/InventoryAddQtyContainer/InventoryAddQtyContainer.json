@@ -10,8 +10,8 @@
         "parent",
         "group"
     ],
-    "topRow": 26.40000000251412,
-    "bottomRow": 36.40000000251412,
+    "topRow": 26.4000000027195,
+    "bottomRow": 36.4000000027195,
     "parentRowSpace": 10,
     "type": "CONTAINER_WIDGET",
     "hideCard": false,
@@ -87,9 +87,9 @@
     "tags": ["Layout"],
     "renderMode": "CANVAS",
     "isLoading": false,
-    "originalTopRow": 26.400000002511206,
+    "originalTopRow": 26.400000002610255,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 36.40000000251166,
+    "originalBottomRow": 36.400000002609886,
     "minDynamicHeight": 10
 }

@@ -4,7 +4,7 @@
     "borderColor": "#ffffff",
     "isVisibleDownload": true,
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.e6911f8bb94dc6c4a102a74740c41763.svg",
-    "topRow": 6.199999999998551,
+    "topRow": 6,
     "isSortable": true,
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
@@ -117,7 +117,7 @@
     "dynamicPropertyPathList": [],
     "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 39.19999999999709,
+    "bottomRow": 60,
     "columnWidthMap": {
         "EditActions1": 137,
         "Device_Name": 143
