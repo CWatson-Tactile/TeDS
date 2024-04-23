@@ -6,7 +6,7 @@
     "labelWidth": 5,
     "type": "SELECT_WIDGET",
     "serverSideFiltering": true,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( if(Switch1.isSwitchedOn === \"true\"){\n\n  }))(SelectPickAdjustmentCode.options, SelectPickAdjustmentCode.serverSideFiltering) }}",
+    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( 2))(SelectPickAdjustmentCode.options, SelectPickAdjustmentCode.serverSideFiltering) }}",
     "animateLoading": true,
     "leftColumn": 44,
     "dynamicBindingPathList": [
