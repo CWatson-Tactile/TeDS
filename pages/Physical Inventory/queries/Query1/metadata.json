@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mssql-plugin",
   "unpublishedAction": {
-    "name": "QueryWIPInventoryTracking",
+    "name": "Query1",
     "datasource": {
       "name": "TE-Operations DB",
       "pluginId": "mssql-plugin",
@@ -13,16 +13,16 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Inventory",
+    "pageId": "Physical Inventory",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO dbo.WipInventoryAdjustmentTracker (\n\tDateOfAdjustment, \n\tSKU, \n\tAdjustmentAmount, \n\tEmployeeID,\n\tQtyAfterAdjustment ) \n\tVALUES \n\t( \n\t GetDate(), \n\t {{InventorySubtractsku.selectedOptionValue}} , \n\t {{InventorySubtractQtyToPick.text}} , \n\t {{appsmith.store.EmpID}},\n\t {{InventorySubtractUpdatedWIPOH.text}}\n\t)",
+      "body": "UPDATE SET dbo.TactileInventory.WIPOnHand = {{JSPIAdjustment.SkuDataFetcher.data.filter(row=>row.WIPAdjustment)}} WHERE dbo.TactileInventory.SKU = {{JSPIAdjustment.SkuDataFetcher.data.filter(row=>row.SKU)}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ]
     },
@@ -36,18 +36,16 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "InventorySubtractQtyToPick.text",
-      "InventorySubtractUpdatedWIPOH.text",
-      "InventorySubtractsku.selectedOptionValue",
-      "appsmith.store.EmpID"
+      "JSPIAdjustment.SkuDataFetcher.data.filter(row=>row.SKU)",
+      "JSPIAdjustment.SkuDataFetcher.data.filter(row=>row.WIPAdjustment)"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-01-08T23:13:55Z"
+    "createdAt": "2024-04-23T13:49:56Z"
   },
-  "id": "Inventory_QueryWIPInventoryTracking",
+  "id": "Physical Inventory_Query1",
   "deleted": false,
-  "gitSyncId": "656f7168efb1f37c57e9d7e2_657fc1514f7338014e5b4892"
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_6627bc849c4fdd0abab24a97"
 }

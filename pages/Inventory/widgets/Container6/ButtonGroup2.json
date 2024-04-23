@@ -2,18 +2,53 @@
     "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
     "widgetName": "ButtonGroup2",
     "isCanvas": false,
-    "dynamicPropertyPathList": [],
+    "dynamicPropertyPathList": [{"key": "groupButtons.groupButtonemgxwjq648.isVisible"}],
     "displayName": "Button Group",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
     "searchTags": [
         "click",
         "submit"
     ],
-    "topRow": 62.99999999999261,
-    "bottomRow": 67,
+    "topRow": 65,
+    "bottomRow": 69,
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
+        "groupButtonemgxwjq648": {
+            "itemType": "BUTTON",
+            "onClick": "",
+            "buttonColor": "#7e22ce",
+            "iconName": "changes",
+            "widgetId": "fojc6fixh2",
+            "menuItems": {
+                "menuItem0u6q3ki2bt": {
+                    "onClick": "{{showModal('ModalInventorySubtractPi');}}",
+                    "widgetId": "6si14e891i",
+                    "index": 1,
+                    "id": "menuItem0u6q3ki2bt",
+                    "label": "Pi Subtract",
+                    "isDisabled": false,
+                    "isVisible": true
+                },
+                "menuItempt4dhldnwl": {
+                    "onClick": "{{showModal('ModalInventoryAddPi');}}",
+                    "widgetId": "6427uod8bh",
+                    "index": 0,
+                    "id": "menuItempt4dhldnwl",
+                    "label": "Pi Add",
+                    "isDisabled": false,
+                    "isVisible": true
+                }
+            },
+            "index": 4,
+            "label": "Physical",
+            "isVisible": "{{appsmith.store.EmpPermissionLevel == 1 || 2}}",
+            "buttonType": "MENU",
+            "buttonVariant": "filled",
+            "id": "groupButtonemgxwjq648",
+            "isDisabled": false,
+            "placement": "CENTER"
+        },
         "groupButton1kfaj5i1k8": {
             "itemType": "BUTTON",
             "onClick": "{{showModal('Modal1');}}",
@@ -31,7 +66,7 @@
             "placement": "CENTER"
         },
         "groupButton0cl3usykwg": {
-            "onClick": "{{showModal('ModalInventorySubtract');}}",
+            "onClick": "{{showModal('ModalInventorySubtract').then(() => {}).catch(() => {});}}",
             "buttonColor": "#b91c1c",
             "iconName": "remove",
             "widgetId": "0wnjnqh2a0",
@@ -46,7 +81,7 @@
             "placement": "CENTER"
         },
         "groupButton1": {
-            "onClick": "{{JS_SkuData.SkuDataFetch();\nJS_InvTransData.InvTransDataFetch();}}",
+            "onClick": "{{QueryInventoryHistory.run().then(() => {\n  JS_InvTransData.InvTransDataFetch();\n});\nQueryTop1kInventory.run().then(() => {\n  JS_SkuData.SkuDataFetch();\n});}}",
             "buttonType": "SIMPLE",
             "iconName": "refresh",
             "buttonColor": "#eab308",
@@ -81,10 +116,13 @@
         {"key": "groupButtons.groupButton1.onClick"},
         {"key": "groupButtons.groupButtonwt54yfoazc.onClick"},
         {"key": "groupButtons.groupButton0cl3usykwg.onClick"},
-        {"key": "groupButtons.groupButton1kfaj5i1k8.onClick"}
+        {"key": "groupButtons.groupButton1kfaj5i1k8.onClick"},
+        {"key": "groupButtons.groupButtonemgxwjq648.onClick"},
+        {"key": "groupButtons.groupButtonemgxwjq648.menuItems.menuItempt4dhldnwl.onClick"},
+        {"key": "groupButtons.groupButtonemgxwjq648.menuItems.menuItem0u6q3ki2bt.onClick"}
     ],
     "leftColumn": 0,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [{"key": "groupButtons.groupButtonemgxwjq648.isVisible"}],
     "key": "4duu9pspoo",
     "orientation": "horizontal",
     "isDeprecated": false,
@@ -98,8 +136,8 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 62.99999999999261,
+    "originalTopRow": 65,
     "borderRadius": "0.375rem",
-    "originalBottomRow": 67,
+    "originalBottomRow": 69,
     "buttonVariant": "PRIMARY"
 }

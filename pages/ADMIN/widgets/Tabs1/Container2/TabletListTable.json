@@ -81,7 +81,7 @@
     },
     "borderRadius": "0.375rem",
     "columnUpdatedAt": 1710532278952,
-    "originalBottomRow": 39.19999999999709,
+    "originalBottomRow": 60,
     "primaryColumnId": "Device_Name",
     "defaultSelectedRowIndices": [0],
     "widgetName": "TabletListTable",
@@ -930,7 +930,7 @@
     "renderMode": "CANVAS",
     "horizontalAlignment": "CENTER",
     "isVisibleSearch": true,
-    "originalTopRow": 6.199999999998551,
+    "originalTopRow": 6,
     "isVisiblePagination": false,
     "cellBackground": "#ffffff",
     "verticalAlignment": "CENTER"

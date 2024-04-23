@@ -19,11 +19,11 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO dbo.LotTrackingGLueStation (GlueStationLotNum,HoneycombLotNum,CoilPalletLotNum,GlueLotNum,MainLogNum,VersionLogNum,LotStartTime,LotStartEmpID,LotEndTime,LotEndEmpID,Notes) VALUES ('{{(FormGlueStationLotEntry.formData || {}).GlueStationLotNum}}','{{(FormGlueStationLotEntry.formData || {}).HoneycombLotNum}}','{{(FormGlueStationLotEntry.formData || {}).CoilPalletLotNum}}','{{(FormGlueStationLotEntry.formData || {}).GlueLotNum}}','{{(FormGlueStationLotEntry.formData || {}).MainLogNum}}','{{(FormGlueStationLotEntry.formData || {}).VersionLogNum}}','{{(FormGlueStationLotEntry.formData || {}).LotStartTime}}','{{(FormGlueStationLotEntry.formData || {}).LotStartEmpID}}','{{(FormGlueStationLotEntry.formData || {}).LotEndTime}}','{{(FormGlueStationLotEntry.formData || {}).LotEndEmpID}}','{{(FormGlueStationLotEntry.formData || {}).Notes}}')",
+      "body": "INSERT INTO dbo.LotTrackingGLueStation (GlueStationLotNum,HoneycombLotNum,CoilPalletLotNum,GlueLotNum,MainLogNum,VersionLogNum,LotStartTime,LotStartEmpID,LotEndTime,LotEndEmpID,Notes,UnitsProducedCount) VALUES ('{{(FormGlueStationLotEntry.formData || {}).GlueStationLotNum}}','{{(FormGlueStationLotEntry.formData || {}).HoneycombLotNum}}','{{(FormGlueStationLotEntry.formData || {}).CoilPalletLotNum}}','{{(FormGlueStationLotEntry.formData || {}).GlueLotNum}}','{{(FormGlueStationLotEntry.formData || {}).MainLogNum}}','{{(FormGlueStationLotEntry.formData || {}).VersionLogNum}}','{{(FormGlueStationLotEntry.formData || {}).LotStartTime}}','{{(FormGlueStationLotEntry.formData || {}).LotStartEmpID}}','{{(FormGlueStationLotEntry.formData || {}).LotEndTime}}','{{(FormGlueStationLotEntry.formData || {}).LotEndEmpID}}','{{(FormGlueStationLotEntry.formData || {}).Notes}}',\n'{{(FormGlueStationLotEntry.formData || {}).UnitsProducedCount}}'\n)",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ]
     },
@@ -47,6 +47,7 @@
       "(FormGlueStationLotEntry.formData || {}).LotStartTime",
       "(FormGlueStationLotEntry.formData || {}).MainLogNum",
       "(FormGlueStationLotEntry.formData || {}).Notes",
+      "(FormGlueStationLotEntry.formData || {}).UnitsProducedCount",
       "(FormGlueStationLotEntry.formData || {}).VersionLogNum"
     ],
     "userSetOnLoad": false,

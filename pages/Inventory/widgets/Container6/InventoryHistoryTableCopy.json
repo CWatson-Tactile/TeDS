@@ -1,7 +1,7 @@
 {
     "boxShadow": "none",
     "borderColor": "#E0DEDE",
-    "isVisibleDownload": false,
+    "isVisibleDownload": true,
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.e6911f8bb94dc6c4a102a74740c41763.svg",
     "topRow": 11,
     "isSortable": true,
@@ -17,7 +17,8 @@
         {"key": "primaryColumns.QtyAfterAdjustment.computedValue"},
         {"key": "primaryColumns.AdjustedBy.computedValue"},
         {"key": "primaryColumns.DataTimeOfAdjustment.computedValue"},
-        {"key": "tableData"}
+        {"key": "tableData"},
+        {"key": "primaryColumns.AdjustmentCode.computedValue"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 39,
@@ -60,7 +61,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1711655027077,
+    "columnUpdatedAt": 1713886574680,
     "originalBottomRow": 61,
     "primaryColumnId": "TransactionNumber",
     "defaultSelectedRowIndices": [0],
@@ -72,7 +73,8 @@
         "QtyAfterAdjustment",
         "SKU",
         "AdjustedBy",
-        "TransactionNumber"
+        "TransactionNumber",
+        "AdjustmentCode"
     ],
     "dynamicPropertyPathList": [{"key": "tableData"}],
     "compactMode": "SHORT",
@@ -218,6 +220,40 @@
             "sticky": "",
             "originalId": "Adjustment",
             "currencyCode": "USD",
+            "verticalAlignment": "CENTER"
+        },
+        "AdjustmentCode": {
+            "computedValue": "{{InventoryHistoryTableCopy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"AdjustmentCode\"]))}}",
+            "isEditable": false,
+            "notation": "standard",
+            "alias": "AdjustmentCode",
+            "enableSort": true,
+            "isSaveVisible": true,
+            "id": "AdjustmentCode",
+            "isDisabled": false,
+            "allowSameOptionsInNewRow": true,
+            "validation": {},
+            "isCellVisible": true,
+            "isDerived": false,
+            "textSize": "0.875rem",
+            "allowCellWrapping": false,
+            "index": 6,
+            "isDiscardVisible": true,
+            "isVisible": true,
+            "label": "AdjustmentCode",
+            "fontStyle": "ITALIC",
+            "textColor": "",
+            "columnType": "text",
+            "thousandSeparator": true,
+            "horizontalAlignment": "LEFT",
+            "isCellEditable": false,
+            "decimals": 0,
+            "width": 150,
+            "enableFilter": true,
+            "sticky": "",
+            "originalId": "AdjustmentCode",
+            "currencyCode": "USD",
+            "cellBackground": "",
             "verticalAlignment": "CENTER"
         },
         "SKU": {

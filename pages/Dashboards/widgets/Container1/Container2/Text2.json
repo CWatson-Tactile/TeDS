@@ -48,7 +48,7 @@
     "originalTopRow": 6.200000000001455,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 13.200000000000728,
+    "originalBottomRow": 11.200000000000728,
     "fontSize": "1.875rem",
     "minDynamicHeight": 4
 }

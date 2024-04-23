@@ -37,7 +37,7 @@
         "number",
         "textarea"
     ],
-    "bottomRow": 6.6,
+    "bottomRow": 7,
     "parentRowSpace": 10,
     "autoFocus": true,
     "hideCard": false,
@@ -47,7 +47,7 @@
     "key": "o1pbq4vhws",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
-    "rightColumn": 64,
+    "rightColumn": 44,
     "widgetId": "72wmgi6rr1",
     "minWidth": 450,
     "label": "QTY to Pick:",

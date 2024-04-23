@@ -51,7 +51,9 @@
         {"key": "schema.__root_schema__.children.Notes.accentColor"},
         {"key": "schema.__root_schema__.cellBorderRadius"},
         {"key": "schema.__root_schema__.children.LotStartEmpID.options"},
-        {"key": "schema.__root_schema__.children.LotEndEmpID.options"}
+        {"key": "schema.__root_schema__.children.LotEndEmpID.options"},
+        {"key": "schema.__root_schema__.children.customField1.borderRadius"},
+        {"key": "schema.__root_schema__.children.customField1.accentColor"}
     ],
     "showReset": true,
     "flexVerticalAlignment": "start",
@@ -150,7 +152,7 @@
     },
     "disabledWhenInvalid": true,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 110,
+    "originalBottomRow": 118,
     "useSourceData": false,
     "schema": {"__root_schema__": {
         "labelTextSize": "0.875rem",
@@ -255,6 +257,28 @@
                 "sourceData": "",
                 "fieldType": "Text Input"
             },
+            "customField1": {
+                "labelTextSize": "0.875rem",
+                "identifier": "customField1",
+                "boxShadow": "none",
+                "isRequired": true,
+                "isCustomField": true,
+                "defaultValue": "",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
+                "dataType": "number",
+                "accessor": "UnitsProducedCount",
+                "isVisible": true,
+                "label": "Units Produced",
+                "originalIdentifier": "customField1",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 6,
+                "isDisabled": false,
+                "sourceData": 0,
+                "fieldType": "Number Input"
+            },
             "VersionLogNum": {
                 "labelTextSize": "0.875rem",
                 "identifier": "VersionLogNum",
@@ -301,7 +325,7 @@
                 "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
                 "closeOnSelection": false,
                 "maxDate": "2121-12-31T18:29:00.000Z",
-                "position": 8,
+                "position": 9,
                 "fieldType": "Datepicker"
             },
             "LotStartTime": {
@@ -328,7 +352,7 @@
                 "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
                 "closeOnSelection": false,
                 "maxDate": "2121-12-31T18:29:00.000Z",
-                "position": 6,
+                "position": 7,
                 "fieldType": "Datepicker"
             },
             "LotStartEmpID": {
@@ -349,7 +373,7 @@
                 "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
                 "children": {},
                 "options": "{{JSFullNameList.EmpIDFetcher.data}}",
-                "position": 7,
+                "position": 8,
                 "isDisabled": false,
                 "sourceData": "",
                 "fieldType": "Select"
@@ -372,7 +396,7 @@
                 "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
                 "children": {},
                 "options": "{{JSFullNameList.EmpIDFetcher.data}}",
-                "position": 9,
+                "position": 10,
                 "isDisabled": false,
                 "sourceData": "",
                 "fieldType": "Select"
@@ -394,7 +418,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 10,
+                "position": 11,
                 "isDisabled": false,
                 "sourceData": "",
                 "fieldType": "Multiline Text Input"
@@ -457,7 +481,7 @@
         {"key": "schema.__root_schema__.children.LotEndTime.defaultValue"}
     ],
     "displayName": "JSON Form",
-    "bottomRow": 110,
+    "bottomRow": 118,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "Glue station lot entry",

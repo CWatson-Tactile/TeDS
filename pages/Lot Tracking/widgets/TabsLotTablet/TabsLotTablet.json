@@ -48,7 +48,7 @@
             "isDisabled": false,
             "key": "g6tdesu54z",
             "isDeprecated": false,
-            "tabName": "Coil Lots",
+            "tabName": "Coils",
             "rightColumn": 445.125,
             "detachFromLayout": true,
             "dynamicHeight": "AUTO_HEIGHT",
@@ -92,7 +92,7 @@
             "isDisabled": false,
             "key": "g6tdesu54z",
             "isDeprecated": false,
-            "tabName": "Honeycomb Lots",
+            "tabName": "Honeycombs",
             "rightColumn": 445.125,
             "detachFromLayout": true,
             "dynamicHeight": "AUTO_HEIGHT",
@@ -134,7 +134,7 @@
             ],
             "key": "g6tdesu54z",
             "isDeprecated": false,
-            "tabName": "Pallet Load Lots",
+            "tabName": "Pallet Load",
             "rightColumn": 1149.90625,
             "detachFromLayout": true,
             "dynamicHeight": "AUTO_HEIGHT",
@@ -177,7 +177,7 @@
             ],
             "key": "g6tdesu54z",
             "isDeprecated": false,
-            "tabName": "Glue Station Lots",
+            "tabName": "Glue Station",
             "rightColumn": 1149.90625,
             "detachFromLayout": true,
             "dynamicHeight": "AUTO_HEIGHT",
@@ -220,7 +220,7 @@
             ],
             "key": "g6tdesu54z",
             "isDeprecated": false,
-            "tabName": "Post-Glue EQC Lots",
+            "tabName": "Post-Glue EQC",
             "rightColumn": 1149.90625,
             "detachFromLayout": true,
             "dynamicHeight": "AUTO_HEIGHT",
@@ -263,7 +263,7 @@
             ],
             "key": "g6tdesu54z",
             "isDeprecated": false,
-            "tabName": "Module PCB Solder Lots",
+            "tabName": "Module PCB Solder",
             "rightColumn": 1149.90625,
             "detachFromLayout": true,
             "dynamicHeight": "AUTO_HEIGHT",
@@ -306,7 +306,7 @@
             ],
             "key": "g6tdesu54z",
             "isDeprecated": false,
-            "tabName": "Rubber & Magnet Lots",
+            "tabName": "Rubber & Magnet",
             "rightColumn": 1149.90625,
             "detachFromLayout": true,
             "dynamicHeight": "AUTO_HEIGHT",
@@ -349,7 +349,7 @@
             ],
             "key": "g6tdesu54z",
             "isDeprecated": false,
-            "tabName": "Coreplate Weld Lots",
+            "tabName": "Coreplate Weld",
             "rightColumn": 1149.90625,
             "detachFromLayout": true,
             "dynamicHeight": "AUTO_HEIGHT",
@@ -392,7 +392,7 @@
             ],
             "key": "g6tdesu54z",
             "isDeprecated": false,
-            "tabName": "Burn-In Lots",
+            "tabName": "Burn-In",
             "rightColumn": 1149.90625,
             "detachFromLayout": true,
             "dynamicHeight": "AUTO_HEIGHT",
@@ -431,7 +431,7 @@
             "isDuplicateLabel": false,
             "index": 2,
             "id": "tab42g2zkb2gl",
-            "label": "Pallet Load Lots",
+            "label": "Pallet Load",
             "isVisible": true
         },
         "tabzu7c3jvbgs": {
@@ -439,7 +439,7 @@
             "isDuplicateLabel": false,
             "index": 4,
             "id": "tabzu7c3jvbgs",
-            "label": "Post-Glue EQC Lots",
+            "label": "Post-Glue EQC",
             "isVisible": true
         },
         "tabyzhklr0i89": {
@@ -447,7 +447,7 @@
             "isDuplicateLabel": false,
             "index": 3,
             "id": "tabyzhklr0i89",
-            "label": "Glue Station Lots",
+            "label": "Glue Station",
             "isVisible": true
         },
         "tabxbo7wp1mls": {
@@ -455,7 +455,7 @@
             "isDuplicateLabel": false,
             "index": 6,
             "id": "tabxbo7wp1mls",
-            "label": "Rubber & Magnet Lots",
+            "label": "Rubber & Magnet",
             "isVisible": true
         },
         "tab0nb7n5i4x9": {
@@ -463,7 +463,7 @@
             "isDuplicateLabel": false,
             "index": 8,
             "id": "tab0nb7n5i4x9",
-            "label": "Burn-In Lots",
+            "label": "Burn-In",
             "isVisible": true
         },
         "tab1": {
@@ -471,7 +471,7 @@
             "positioning": "vertical",
             "isDuplicateLabel": false,
             "index": 1,
-            "label": "Coil Lots",
+            "label": "Coils",
             "id": "tab1",
             "isVisible": true
         },
@@ -480,7 +480,7 @@
             "positioning": "vertical",
             "isDuplicateLabel": false,
             "index": 0,
-            "label": "Honeycomb Lots",
+            "label": "Honeycombs",
             "id": "tab2",
             "isVisible": true
         },
@@ -489,7 +489,7 @@
             "isDuplicateLabel": false,
             "index": 7,
             "id": "tabll7ph4ivvy",
-            "label": "Coreplate Weld Lots",
+            "label": "Coreplate Weld",
             "isVisible": true
         },
         "tabmvfxjfzyro": {
@@ -497,7 +497,7 @@
             "isDuplicateLabel": false,
             "index": 5,
             "id": "tabmvfxjfzyro",
-            "label": "Module PCB Solder Lots",
+            "label": "Module PCB Solder",
             "isVisible": true
         }
     },
@@ -513,6 +513,6 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 8,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 86,
+    "originalBottomRow": 56,
     "minDynamicHeight": 10
 }

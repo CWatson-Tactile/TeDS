@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO dbo.InventoryAdjustmentTracking (SKU, Adjustment, QtyAfterAdjustment, AdjustedBy, DataTimeOfAdjustment) VALUES (\n\t{{InventoryAddSku.selectedOptionValue}},\n\t{{InventoryAddQTYtoAdd.text}}, \n\t{{InventoryAddUpdatedQTY.text}}, \n\t{{appsmith.store.EmpID}},GETDATE() )",
+      "body": "INSERT INTO dbo.InventoryAdjustmentTracking (SKU, Adjustment, QtyAfterAdjustment, AdjustedBy, DataTimeOfAdjustment, AdjustmentCode) VALUES (\n\t{{InventoryAddSku.selectedOptionValue}},\n\t{{InventoryAddQTYtoAdd.text}}, \n\t{{InventoryAddUpdatedQTY.text}}, \n\t{{appsmith.store.EmpID}},GETDATE(),\n{{SelectPickAdjustmentCode.selectedOptionValue}})",
       "selfReferencingDataPaths": []
     },
     "executeOnLoad": false,
@@ -34,6 +34,7 @@
       "InventoryAddQTYtoAdd.text",
       "InventoryAddSku.selectedOptionValue",
       "InventoryAddUpdatedQTY.text",
+      "SelectPickAdjustmentCode.selectedOptionValue",
       "appsmith.store.EmpID"
     ],
     "userSetOnLoad": false,

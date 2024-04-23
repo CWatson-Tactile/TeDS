@@ -51,6 +51,10 @@
     {
       "id": "BOM",
       "isDefault": false
+    },
+    {
+      "id": "Physical Inventory",
+      "isDefault": false
     }
   ],
   "viewMode": false,

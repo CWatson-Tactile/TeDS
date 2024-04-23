@@ -37,7 +37,7 @@
         "number",
         "textarea"
     ],
-    "bottomRow": 6.600000000000001,
+    "bottomRow": 7,
     "parentRowSpace": 10,
     "autoFocus": true,
     "hideCard": false,
@@ -47,7 +47,7 @@
     "key": "o1pbq4vhws",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
-    "rightColumn": 32,
+    "rightColumn": 25,
     "widgetId": "u5i7d03w5f",
     "minWidth": 450,
     "label": "QTY to add:",

@@ -1,1 +1,20 @@
-UPDATE dbo.TactileInventory SET PartName='{{SkuUpdateForm.formData.PartName}}' WHERE SKU='{{SkuUpdateForm.formData.SKU}}'
+UPDATE dbo.TactileInventory 
+
+SET 
+PartName='{{SkuUpdateForm.formData.PartName}}',
+Vendor='{{SkuUpdateForm.formData.Vendor}}',
+VendorPart='{{SkuUpdateForm.formData.VendorPart}}',
+TEPartNumber='{{SkuUpdateForm.formData.TEPartNumber}}',
+Manufacturer='{{SkuUpdateForm.formData.Manufacturer}}',
+ManufacturerPart='{{SkuUpdateForm.formData.ManufacturerPart}}',
+ManufacturerModelNumber='{{SkuUpdateForm.formData.ManufacturerModelNumber}}',
+PartDescription='{{SkuUpdateForm.formData.PartDescription}}',
+Notes='{{SkuUpdateForm.formData.Notes}}',
+ASIN='{{SkuUpdateForm.formData.ASIN}}',
+UPC='{{SkuUpdateForm.formData.UPC}}',
+Status='{{SkuUpdateForm.formData.Status}}',
+StandardOrderQTY='{{SkuUpdateForm.formData.StandardOrderQTY}}',
+RawPartCost='{{SkuUpdateForm.formData.RawPartCost}}',
+MinimumOnHandQty='{{SkuUpdateForm.formData.MinimumOnHandQty}}'
+
+WHERE SKU='{{SkuUpdateForm.formData.SKU}}'

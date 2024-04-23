@@ -161,7 +161,7 @@
     "backgroundColor": "#FFFFFF",
     "isDeprecated": false,
     "rightColumn": 64,
-    "dynamicHeight": "AUTO_HEIGHT_WITH_LIMITS",
+    "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "na1qoa7ztd",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "defaultTab": "Employees",
@@ -203,7 +203,7 @@
     "originalTopRow": 17,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 0,
-    "maxDynamicHeight": 77,
-    "originalBottomRow": 84,
-    "minDynamicHeight": 15
+    "maxDynamicHeight": 9000,
+    "originalBottomRow": 66,
+    "minDynamicHeight": 10
 }

@@ -10,12 +10,12 @@
         "notification"
     ],
     "topRow": 205.80000000000007,
-    "bottomRow": 48.60000000272023,
+    "bottomRow": 48.00000001568953,
     "parentRowSpace": 10,
     "type": "MODAL_WIDGET",
     "hideCard": false,
     "shouldScrollContents": true,
-    "minHeight": 486.0000000272023,
+    "minHeight": 480.0000001568953,
     "animateLoading": true,
     "parentColumnSpace": 16.890625,
     "dynamicTriggerPathList": [{"key": "onClose"}],
@@ -33,7 +33,7 @@
         "canExtend": true,
         "hideCard": true,
         "shouldScrollContents": false,
-        "minHeight": 392,
+        "minHeight": 480.0000000440807,
         "mobileRightColumn": 64,
         "useAutoLayout": false,
         "parentColumnSpace": 1,
@@ -136,7 +136,7 @@
         "minDynamicHeight": 4
     }],
     "key": "yfgnjcfmza",
-    "height": 486.0000000272023,
+    "height": 480.0000001568953,
     "isDeprecated": false,
     "rightColumn": 44,
     "detachFromLayout": true,
@@ -152,6 +152,6 @@
     "onClose": "{{resetWidget(\"ModalInventorySubtract\", true);}}",
     "borderRadius": "0.375rem",
     "maxDynamicHeight": 9000,
-    "width": 528,
+    "width": 852,
     "minDynamicHeight": 8
 }

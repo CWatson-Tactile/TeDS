@@ -550,7 +550,7 @@
                 "isRequired": false,
                 "isFilterable": false,
                 "isCustomField": false,
-                "defaultValue": "NEW",
+                "defaultValue": "QC PASS",
                 "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(TabletAdditionForm.sourceData, TabletAdditionForm.formData, TabletAdditionForm.fieldState)}}",
                 "dataType": "string",
                 "accessor": "Status",

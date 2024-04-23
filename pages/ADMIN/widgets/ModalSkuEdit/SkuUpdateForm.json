@@ -364,7 +364,7 @@
                 "iconAlign": "left",
                 "position": 14,
                 "isDisabled": false,
-                "fieldType": "Text Input"
+                "fieldType": "Number Input"
             },
             "Vendor": {
                 "labelTextSize": "0.875rem",
@@ -443,7 +443,7 @@
                 "dataType": "string",
                 "accessor": "UoM",
                 "isVisible": true,
-                "label": "Uo M",
+                "label": "UoM",
                 "originalIdentifier": "UoM",
                 "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
                 "children": {},
