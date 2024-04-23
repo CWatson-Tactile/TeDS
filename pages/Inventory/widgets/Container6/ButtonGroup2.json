@@ -9,46 +9,11 @@
         "click",
         "submit"
     ],
-    "topRow": 65,
-    "bottomRow": 69,
+    "topRow": 62.99999999999926,
+    "bottomRow": 67,
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
-        "groupButtonemgxwjq648": {
-            "itemType": "BUTTON",
-            "onClick": "",
-            "buttonColor": "#7e22ce",
-            "iconName": "changes",
-            "widgetId": "fojc6fixh2",
-            "menuItems": {
-                "menuItem0u6q3ki2bt": {
-                    "onClick": "{{showModal('ModalInventorySubtractPi');}}",
-                    "widgetId": "6si14e891i",
-                    "index": 1,
-                    "id": "menuItem0u6q3ki2bt",
-                    "label": "Pi Subtract",
-                    "isDisabled": false,
-                    "isVisible": true
-                },
-                "menuItempt4dhldnwl": {
-                    "onClick": "{{showModal('ModalInventoryAddPi');}}",
-                    "widgetId": "6427uod8bh",
-                    "index": 0,
-                    "id": "menuItempt4dhldnwl",
-                    "label": "Pi Add",
-                    "isDisabled": false,
-                    "isVisible": true
-                }
-            },
-            "index": 4,
-            "label": "Physical",
-            "isVisible": "{{appsmith.store.EmpPermissionLevel == 1 || 2}}",
-            "buttonType": "MENU",
-            "buttonVariant": "filled",
-            "id": "groupButtonemgxwjq648",
-            "isDisabled": false,
-            "placement": "CENTER"
-        },
         "groupButton1kfaj5i1k8": {
             "itemType": "BUTTON",
             "onClick": "{{showModal('Modal1');}}",
@@ -116,13 +81,10 @@
         {"key": "groupButtons.groupButton1.onClick"},
         {"key": "groupButtons.groupButtonwt54yfoazc.onClick"},
         {"key": "groupButtons.groupButton0cl3usykwg.onClick"},
-        {"key": "groupButtons.groupButton1kfaj5i1k8.onClick"},
-        {"key": "groupButtons.groupButtonemgxwjq648.onClick"},
-        {"key": "groupButtons.groupButtonemgxwjq648.menuItems.menuItempt4dhldnwl.onClick"},
-        {"key": "groupButtons.groupButtonemgxwjq648.menuItems.menuItem0u6q3ki2bt.onClick"}
+        {"key": "groupButtons.groupButton1kfaj5i1k8.onClick"}
     ],
     "leftColumn": 0,
-    "dynamicBindingPathList": [{"key": "groupButtons.groupButtonemgxwjq648.isVisible"}],
+    "dynamicBindingPathList": [],
     "key": "4duu9pspoo",
     "orientation": "horizontal",
     "isDeprecated": false,
@@ -136,8 +98,8 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 65,
+    "originalTopRow": 62.99999999999926,
     "borderRadius": "0.375rem",
-    "originalBottomRow": 69,
+    "originalBottomRow": 67,
     "buttonVariant": "PRIMARY"
 }

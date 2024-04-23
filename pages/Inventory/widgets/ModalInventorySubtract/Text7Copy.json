@@ -28,7 +28,7 @@
     "text": "Pick Inventory",
     "key": "emn25xn0mz",
     "isDeprecated": false,
-    "rightColumn": 64,
+    "rightColumn": 63,
     "backgroundColor": "#ffffff",
     "textAlign": "CENTER",
     "dynamicHeight": "AUTO_HEIGHT",
