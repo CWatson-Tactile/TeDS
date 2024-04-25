@@ -1,10 +1,6 @@
 {
   "pages": [
     {
-      "id": "Purchase Requests",
-      "isDefault": false
-    },
-    {
       "id": "Home",
       "isDefault": true
     },
@@ -13,7 +9,7 @@
       "isDefault": false
     },
     {
-      "id": "ADMIN",
+      "id": "Tablet Tracking",
       "isDefault": false
     },
     {
@@ -21,7 +17,7 @@
       "isDefault": false
     },
     {
-      "id": "Variable Management",
+      "id": "Lot Tracking",
       "isDefault": false
     },
     {
@@ -29,7 +25,15 @@
       "isDefault": false
     },
     {
-      "id": "Tablet Tracking",
+      "id": "UserAccountManagement",
+      "isDefault": false
+    },
+    {
+      "id": "ADMIN",
+      "isDefault": false
+    },
+    {
+      "id": "Variable Management",
       "isDefault": false
     },
     {
@@ -41,11 +45,7 @@
       "isDefault": false
     },
     {
-      "id": "UserAccountManagement",
-      "isDefault": false
-    },
-    {
-      "id": "Lot Tracking",
+      "id": "Purchase Requests",
       "isDefault": false
     },
     {
@@ -55,6 +55,10 @@
     {
       "id": "Physical Inventory",
       "isDefault": false
+    },
+    {
+      "id": "Module Ticketing",
+      "isDefault": false
     }
   ],
   "viewMode": false,
@@ -62,6 +66,7 @@
   "unreadCommentThreads": 0,
   "clonedFromApplicationId": "64e2a0a9e4270c43af6a6a84",
   "unpublishedApplicationDetail": {
+    "hiddenJSLibs": [],
     "appPositioning": {
       "type": "FIXED"
     },
@@ -73,7 +78,7 @@
       "itemStyle": "text",
       "colorStyle": "light",
       "logoAssetId": "",
-      "logoConfiguration": "logoOnly",
+      "logoConfiguration": "logoAndApplicationTitle",
       "showSignIn": false
     }
   },

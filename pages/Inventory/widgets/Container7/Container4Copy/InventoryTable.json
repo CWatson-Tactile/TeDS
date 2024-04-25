@@ -106,7 +106,7 @@
     "dynamicPropertyPathList": [{"key": "tableData"}],
     "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 67,
+    "bottomRow": 65,
     "columnWidthMap": {
         "PartName": 226,
         "SKU": 95

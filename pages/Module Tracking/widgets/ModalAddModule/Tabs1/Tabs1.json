@@ -7,7 +7,7 @@
     "displayName": "Tabs",
     "iconSVG": "/static/media/icon.9e3d67c0af9c0bd092dc56240314e18a.svg",
     "topRow": 0,
-    "bottomRow": 45,
+    "bottomRow": 19,
     "parentRowSpace": 10,
     "type": "TABS_WIDGET",
     "hideCard": false,
@@ -29,7 +29,7 @@
             "mobileBottomRow": 150,
             "widgetName": "Canvas8",
             "displayName": "Canvas",
-            "bottomRow": 410,
+            "bottomRow": 150,
             "topRow": 0,
             "parentRowSpace": 1,
             "type": "CANVAS_WIDGET",
@@ -73,7 +73,7 @@
             "mobileBottomRow": 150,
             "widgetName": "Canvas9",
             "displayName": "Canvas",
-            "bottomRow": 410,
+            "bottomRow": 150,
             "topRow": 0,
             "parentRowSpace": 1,
             "type": "CANVAS_WIDGET",
@@ -121,7 +121,7 @@
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "2pidx37zmu",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "defaultTab": "Multi Module Entry",
+    "defaultTab": "Single Module Entry",
     "shouldShowTabs": true,
     "minWidth": 450,
     "tabsObj": {
@@ -154,6 +154,6 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 19,
+    "originalBottomRow": 15,
     "minDynamicHeight": 15
 }

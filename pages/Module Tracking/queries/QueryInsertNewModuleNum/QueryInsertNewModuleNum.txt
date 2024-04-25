@@ -1,0 +1,1 @@
+INSERT INTO dbo.ModuleTracker (ModuleSerialNumber) VALUES ('{{Input1.text}}')
