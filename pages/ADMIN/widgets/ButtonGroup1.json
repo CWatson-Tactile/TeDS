@@ -2,6 +2,7 @@
     "boxShadow": "none",
     "widgetName": "ButtonGroup1",
     "isCanvas": false,
+    "dynamicPropertyPathList": [],
     "displayName": "Button Group",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
     "searchTags": [

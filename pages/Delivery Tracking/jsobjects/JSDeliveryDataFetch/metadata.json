@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSDeliveryDataFetch",
+    "pageId": "Delivery Tracking",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Delivery Tracking_JSDeliveryDataFetch",
+  "deleted": false,
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_7c3048e4-7d84-49a3-b5d1-6a4da35196b0"
+}
