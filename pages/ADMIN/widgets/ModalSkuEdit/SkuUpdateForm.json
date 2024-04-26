@@ -72,7 +72,6 @@
         {"key": "schema.__root_schema__.children.RawPartCost.defaultValue"},
         {"key": "schema.__root_schema__.children.RawPartCost.accentColor"},
         {"key": "schema.__root_schema__.children.RawPartCost.borderRadius"},
-        {"key": "schema.__root_schema__.children.MinimumOnHandQty.defaultValue"},
         {"key": "schema.__root_schema__.children.MinimumOnHandQty.accentColor"},
         {"key": "schema.__root_schema__.children.MinimumOnHandQty.borderRadius"}
     ],
@@ -242,7 +241,7 @@
                 "boxShadow": "none",
                 "isRequired": false,
                 "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.MinimumOnHandQty))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+                "defaultValue": "0",
                 "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
                 "dataType": "null",
                 "accessor": "MinimumOnHandQty",
