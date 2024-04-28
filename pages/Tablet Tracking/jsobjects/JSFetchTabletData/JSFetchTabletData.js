@@ -1,6 +1,6 @@
 export default {
 	TabletNumFetch: async() =>  {
-		const TabletNums = 
+		const TabletNums = QuerySelectLatestId.data 
 
 		return TabletNums
 		Response.sort()

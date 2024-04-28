@@ -42,16 +42,8 @@
           ],
           [
             {
-              "id": "Delivery Tracking_QueryStatusTypes",
-              "name": "QueryStatusTypes",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Delivery Tracking_QueryTop5kTablets",
-              "name": "QueryTop5kTablets",
+              "id": "Delivery Tracking_QueryTop1kInventory",
+              "name": "QueryTop1kInventory",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
@@ -67,6 +59,17 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  const DeliveryData = QuerySelectAllDeliveryTracking.data;\n  return DeliveryData;\n  Response.sort();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Delivery Tracking_JS_SkuName.SkuDataFetcher",
+              "name": "JS_SkuName.SkuDataFetcher",
+              "collectionId": "Delivery Tracking_JS_SkuName",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const SkuData = QueryTop1kInventory.data.map(i => ({\n    label: i.SKU + \" \" + i.PartName,\n    value: i.SKU\n  }));\n  return SkuData;\n  Response.sort();\n}"
               ],
               "timeoutInMillisecond": 10000
             }

@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
-    "name": "FetchTabletDataCopy",
-    "pageId": "Tablet Tracking",
+    "name": "JS_SkuName",
+    "pageId": "Delivery Tracking",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -9,7 +9,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "Tablet Tracking_FetchTabletDataCopy",
+  "id": "Delivery Tracking_JS_SkuName",
   "deleted": false,
-  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_661ef4eefdb1c038a9c10422"
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_5ee33757-025a-42fe-aea2-35a69afa6d8f"
 }

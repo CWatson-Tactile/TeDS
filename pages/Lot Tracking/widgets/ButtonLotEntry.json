@@ -52,6 +52,14 @@
             "isDisabled": true,
             "isVisible": true
         },
+        "menuItem6xaxauz1cv": {
+            "widgetId": "0k52588ujq",
+            "index": 7,
+            "id": "menuItem6xaxauz1cv",
+            "label": "Plunger & Coreplate",
+            "isDisabled": false,
+            "isVisible": true
+        },
         "menuItem1": {
             "onClick": "{{showModal('ModalCoilLotEntry');}}",
             "widgetId": "",
@@ -73,7 +81,7 @@
         "menuItemne71gg3f15": {
             "onClick": "{{showModal('ModalBurnInLotEntry');}}",
             "widgetId": "zgvfbn1y4q",
-            "index": 8,
+            "index": 9,
             "id": "menuItemne71gg3f15",
             "label": "Burn-In Lots",
             "isDisabled": true,
@@ -91,7 +99,7 @@
         "menuItem2": {
             "onClick": "{{showModal('ModalCoreplateWeldLotEntry');}}",
             "widgetId": "",
-            "index": 7,
+            "index": 8,
             "label": "Coreplate Weld",
             "id": "menuItem2",
             "isVisible": true,

@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "TabletNumFetch",
-    "fullyQualifiedName": "FetchTabletDataCopy.TabletNumFetch",
+    "name": "SkuDataFetch",
+    "fullyQualifiedName": "JS_SkuData.SkuDataFetch",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Tablet Tracking",
-    "collectionId": "Tablet Tracking_FetchTabletDataCopy",
+    "pageId": "Delivery Tracking",
+    "collectionId": "Delivery Tracking_JS_SkuData",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -35,9 +35,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-04-16T22:02:29Z"
+    "createdAt": "2024-04-28T19:26:42Z"
   },
-  "id": "Tablet Tracking_FetchTabletDataCopy.TabletNumFetch",
+  "id": "Delivery Tracking_JS_SkuData.SkuDataFetch",
   "deleted": false,
-  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_661ef575fdb1c038a9c10472"
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_636ed857-8ef6-4c3b-b9d8-624010d341bf"
 }
