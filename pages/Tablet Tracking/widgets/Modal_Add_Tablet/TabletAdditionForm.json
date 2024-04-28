@@ -2,7 +2,7 @@
     "boxShadow": "none",
     "borderColor": "#E0DEDE",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.46adf7030d667f0ad9002aa31f997573.svg",
-    "onSubmit": "{{TabletAdditionQuery.run().then(() => {\n  closeModal('Modal_Add_Tablet');\n  QueryTop5kTablets.run();\n  showAlert('Tablet Created Successfully!', 'success');\n}).catch(() => {\n  showAlert('Hmm, IDK what happened, but there was an error...\\n\\nReport me to Connor!', 'error');\n});}}",
+    "onSubmit": "{{TabletAdditionQuery.run().then(() => {\n  closeModal('Modal_Add_Tablet');\n  QueryTop5kTablets.run();\n  showAlert('Tablet Created Successfully!', 'success');\n  QuerySelectLatestId.run().then(() => {\n    JSFetchLatestTablet.TabletNumFetch();\n      // showAlert('success');\n});\n}).catch(() => {\n  showAlert('Hmm, IDK what happened, but there was an error...\\n\\nReport me to Connor!', 'error');\n});}}",
     "topRow": 0,
     "type": "JSON_FORM_WIDGET",
     "animateLoading": true,
