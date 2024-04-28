@@ -281,7 +281,7 @@
                 "boxShadow": "none",
                 "isRequired": false,
                 "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (QuerySelectLatestId.data.map(LatestID => LatestID.LatestID).toString()+DatePicker1.formattedDate.substring(0,7).replace(\"-\",\"\")))(TabletAdditionForm.sourceData, TabletAdditionForm.formData, TabletAdditionForm.fieldState)}}",
+                "defaultValue": "{{((sourceData, formData, fieldState) => (QuerySelectLatestId.data.map(LatestID => LatestID.LatestID+1)+ DatePicker1.formattedDate.split(\"-\",2).toString().replace(\",\",\"\")))(TabletAdditionForm.sourceData, TabletAdditionForm.formData, TabletAdditionForm.fieldState)}}",
                 "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(TabletAdditionForm.sourceData, TabletAdditionForm.formData, TabletAdditionForm.fieldState)}}",
                 "dataType": "string",
                 "accessor": "DeviceSerialNumber",

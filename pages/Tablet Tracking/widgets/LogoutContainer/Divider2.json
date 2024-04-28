@@ -29,5 +29,7 @@
     "parentId": "4jlfpmfhwn",
     "tags": ["Layout"],
     "renderMode": "CANVAS",
-    "isLoading": false
+    "isLoading": false,
+    "originalTopRow": 4,
+    "originalBottomRow": 8
 }

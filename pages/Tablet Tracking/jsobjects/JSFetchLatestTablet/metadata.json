@@ -1,6 +1,6 @@
 {
   "unpublishedCollection": {
-    "name": "JSFetchTabletData",
+    "name": "JSFetchLatestTablet",
     "pageId": "Tablet Tracking",
     "pluginId": "js-plugin",
     "pluginType": "JS",
@@ -9,7 +9,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "Tablet Tracking_JSFetchTabletData",
+  "id": "Tablet Tracking_JSFetchLatestTablet",
   "deleted": false,
   "gitSyncId": "65f4a492fdb1c038a9c0e4c5_661ef4eefdb1c038a9c10422"
 }

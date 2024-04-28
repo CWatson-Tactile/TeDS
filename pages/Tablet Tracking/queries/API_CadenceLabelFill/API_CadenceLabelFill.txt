@@ -1,62 +1,62 @@
 {"data": { 
 "DN1": "{{SelectLabel1.selectedOptionLabel}}",
 "DoM1": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel1.selectedOptionLabel).Date_of_Manufacture}}",
-"S#1": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel1.selectedOptionLabel).PCB_Serial}}",
+"S#1": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel1.selectedOptionLabel).DeviceSerialNumber}}",
 "M1": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel1.selectedOptionLabel).Model_Number}}",
  
 "DN2": "{{SelectLabel2.selectedOptionLabel}}",
 "DoM2": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel2.selectedOptionLabel).Date_of_Manufacture}}",
-"S#2": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel2.selectedOptionLabel).PCB_Serial}}",
+"S#2": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel2.selectedOptionLabel).DeviceSerialNumber}}",
 "M2": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel2.selectedOptionLabel).Model_Number}}",
 
 "DN3": "{{SelectLabel3.selectedOptionLabel}}",
 "DoM3": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel3.selectedOptionLabel).Date_of_Manufacture}}",
-"S#3": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel3.selectedOptionLabel).PCB_Serial}}",
+"S#3": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel3.selectedOptionLabel).DeviceSerialNumber}}",
 "M3": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel3.selectedOptionLabel).Model_Number}}",
 
 "DN4": "{{SelectLabel4.selectedOptionLabel}}",
 "DoM4": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel4.selectedOptionLabel).Date_of_Manufacture}}",
-"S#4": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel4.selectedOptionLabel).PCB_Serial}}",
+"S#4": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel4.selectedOptionLabel).DeviceSerialNumber}}",
 "M4": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel4.selectedOptionLabel).Model_Number}}",
 
 "DN5": "{{SelectLabel5.selectedOptionLabel}}",
 "DoM5": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel5.selectedOptionLabel).Date_of_Manufacture}}",
-"S#5": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel5.selectedOptionLabel).PCB_Serial}}",
+"S#5": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel5.selectedOptionLabel).DeviceSerialNumber}}",
 "M5": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel5.selectedOptionLabel).Model_Number}}",
 
 "DN6": "{{SelectLabel6.selectedOptionLabel}}",
 "DoM6": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel6.selectedOptionLabel).Date_of_Manufacture}}",
-"S#6": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel6.selectedOptionLabel).PCB_Serial}}",
+"S#6": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel6.selectedOptionLabel).DeviceSerialNumber}}",
 "M6": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel6.selectedOptionLabel).Model_Number}}",
 
 "DN7": "{{SelectLabel7.selectedOptionLabel}}",
 "DoM7": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel7.selectedOptionLabel).Date_of_Manufacture}}",
-"S#7": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel7.selectedOptionLabel).PCB_Serial}}",
+"S#7": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel7.selectedOptionLabel).DeviceSerialNumber}}",
 "M7": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel7.selectedOptionLabel).Model_Number}}",
 
 "DN8": "{{SelectLabel8.selectedOptionLabel}}",
 "DoM8": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel8.selectedOptionLabel).Date_of_Manufacture}}",
-"S#8": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel8.selectedOptionLabel).PCB_Serial}}",
+"S#8": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel8.selectedOptionLabel).DeviceSerialNumber}}",
 "M8": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel8.selectedOptionLabel).Model_Number}}",
 
 "DN9": "{{SelectLabel9.selectedOptionLabel}}",
 "DoM9": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel9.selectedOptionLabel).Date_of_Manufacture}}",
-"S#9": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel9.selectedOptionLabel).PCB_Serial}}",
+"S#9": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel9.selectedOptionLabel).DeviceSerialNumber}}",
 "M9": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel9.selectedOptionLabel).Model_Number}}",
 
 "DN10": "{{SelectLabel10.selectedOptionLabel}}",
 "DoM10": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel10.selectedOptionLabel).Date_of_Manufacture}}",
-"S#10": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel10.selectedOptionLabel).PCB_Serial}}",
+"S#10": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel10.selectedOptionLabel).DeviceSerialNumber}}",
 "M10": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel10.selectedOptionLabel).Model_Number}}",
 
 "DN11": "{{SelectLabel11.selectedOptionLabel}}",
 "DoM11": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel11.selectedOptionLabel).Date_of_Manufacture}}",
-"S#11": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel11.selectedOptionLabel).PCB_Serial}}",
+"S#11": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel11.selectedOptionLabel).DeviceSerialNumber}}",
 "M11": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel11.selectedOptionLabel).Model_Number}}",
 
 "DN12": "{{SelectLabel12.selectedOptionLabel}}",
 "DoM12": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel12.selectedOptionLabel).Date_of_Manufacture}}",
-"S#12": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel12.selectedOptionLabel).PCB_Serial}}",
+"S#12": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel12.selectedOptionLabel).DeviceSerialNumber}}",
 "M12": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel12.selectedOptionLabel).Model_Number}}"
 
 	}

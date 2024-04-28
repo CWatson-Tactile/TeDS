@@ -3,7 +3,7 @@
   "pluginId": "js-plugin",
   "unpublishedAction": {
     "name": "TabletNumFetch",
-    "fullyQualifiedName": "JSFetchTabletData.TabletNumFetch",
+    "fullyQualifiedName": "JSFetchLatestTablet.TabletNumFetch",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Tablet Tracking",
-    "collectionId": "Tablet Tracking_JSFetchTabletData",
+    "collectionId": "Tablet Tracking_JSFetchLatestTablet",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,7 +37,7 @@
     "userPermissions": [],
     "createdAt": "2024-04-16T22:02:29Z"
   },
-  "id": "Tablet Tracking_JSFetchTabletData.TabletNumFetch",
+  "id": "Tablet Tracking_JSFetchLatestTablet.TabletNumFetch",
   "deleted": false,
   "gitSyncId": "65f4a492fdb1c038a9c0e4c5_661ef575fdb1c038a9c10472"
 }
