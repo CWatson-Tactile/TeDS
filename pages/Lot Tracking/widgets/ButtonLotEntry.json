@@ -31,7 +31,8 @@
         {"key": "menuItems.menuItemnddfrt0luq.onClick"},
         {"key": "menuItems.menuItemg89aircyb6.onClick"},
         {"key": "menuItems.menuItem9jk15ncvha.onClick"},
-        {"key": "menuItems.menuItemlwzwxco322.onClick"}
+        {"key": "menuItems.menuItemlwzwxco322.onClick"},
+        {"key": "menuItems.menuItem6xaxauz1cv.onClick"}
     ],
     "leftColumn": 13,
     "dynamicBindingPathList": [{"key": "menuColor"}],
@@ -53,6 +54,7 @@
             "isVisible": true
         },
         "menuItem6xaxauz1cv": {
+            "onClick": "{{showModal('ModalPlungerCoreplateLotEntry');}}",
             "widgetId": "0k52588ujq",
             "index": 7,
             "id": "menuItem6xaxauz1cv",

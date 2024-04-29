@@ -2,7 +2,10 @@
     "boxShadow": "none",
     "widgetName": "EditEmpPermLevel",
     "isFilterable": false,
-    "dynamicPropertyPathList": [{"key": "sourceData"}],
+    "dynamicPropertyPathList": [
+        {"key": "sourceData"},
+        {"key": "isDisabled"}
+    ],
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
     "displayName": "Select",
     "labelText": "Permission Level",
@@ -21,11 +24,12 @@
     "leftColumn": 32,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "isDisabled"}
     ],
     "labelPosition": "Top",
     "placeholderText": "Select option",
-    "isDisabled": true,
+    "isDisabled": "{{appsmith.store.EmpPermissionLevel =/= 1}}",
     "sourceData": "[\n  {\n    \"Label\": \"Standard\",\n    \"Value\": \"3\"\n  },\n  {\n    \"Label\": \"Management\",\n    \"Value\": \"2\"\n  },\n  {\n    \"Label\": \"Global Admin\",\n    \"Value\": \"1\"\n  }\n]",
     "key": "1y2txopke6",
     "labelTextSize": "0.875rem",

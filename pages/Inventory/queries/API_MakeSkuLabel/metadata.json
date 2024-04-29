@@ -30,7 +30,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "[{{JS_SkuData.SkuDataFetch.data.filter(row => row.SKU === SKUEntry.selectedOptionValue)}};\n{{LotNumEntry.text}}]\n",
+      "body": "[{{JS_SkuData.SkuDataFetch.data.filter(row => row.SKU === LabelSKUEntry.selectedOptionValue)}};\n{{LotNumEntry.text}}]\n",
       "bodyFormData": [],
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
@@ -54,7 +54,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "JS_SkuData.SkuDataFetch.data.filter(row => row.SKU === SKUEntry.selectedOptionValue)",
+      "JS_SkuData.SkuDataFetch.data.filter(row => row.SKU === LabelSKUEntry.selectedOptionValue)",
       "LotNumEntry.text"
     ],
     "userSetOnLoad": false,
