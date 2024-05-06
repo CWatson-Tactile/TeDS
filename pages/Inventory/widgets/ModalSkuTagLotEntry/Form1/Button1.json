@@ -5,7 +5,7 @@
     "widgetName": "Button1",
     "onClick": "{{API_MakeSkuLabel.run().then(() => {\n  download(API_MakeSkuLabel.data, 'SkuLabel.pdf', '');\n  showAlert('Label Created. Download should begin now.', 'success');\n});}}",
     "buttonColor": "#000000",
-    "dynamicPropertyPathList": [{"key": "onClick"}],
+    "dynamicPropertyPathList": [],
     "displayName": "Button",
     "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
     "searchTags": [

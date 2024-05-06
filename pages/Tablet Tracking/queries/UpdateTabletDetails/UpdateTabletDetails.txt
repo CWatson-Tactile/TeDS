@@ -12,6 +12,7 @@ UPDATE dbo.TabletTracker SET
       Capture_Plate_Material = '{{TabletDetailEditForm.formData.Capture_Plate_Material}}',
       Dot_Material = '{{TabletDetailEditForm.formData.Dot_Material}}',
       Keyboard_Type = '{{TabletDetailEditForm.formData.Keyboard_Type}}',
+			DeviceSerialNumber = '{{TabletDetailEditForm.formData.DeviceSerialNumber}}',
       Module_1 = '{{TabletDetailEditForm.formData.Module_1}}',
       Module_2 = '{{TabletDetailEditForm.formData.Module_2}}',
       Module_3 = '{{TabletDetailEditForm.formData.Module_3}}',

@@ -2,9 +2,12 @@ UPDATE dbo.TactileInventory
 
 SET 
 PartName='{{SkuUpdateForm.formData.PartName}}',
+NewOnHand='{{SkuUpdateForm.formData.NewOnHand}}',
+WIPOnHand='{{SkuUpdateForm.formData.WIPOnHand}}',
 Vendor='{{SkuUpdateForm.formData.Vendor}}',
 VendorPart='{{SkuUpdateForm.formData.VendorPart}}',
 TEPartNumber='{{SkuUpdateForm.formData.TEPartNumber}}',
+UoM='{{SkuUpdateForm.formData.UoM}}',
 Manufacturer='{{SkuUpdateForm.formData.Manufacturer}}',
 ManufacturerPart='{{SkuUpdateForm.formData.ManufacturerPart}}',
 ManufacturerModelNumber='{{SkuUpdateForm.formData.ManufacturerModelNumber}}',

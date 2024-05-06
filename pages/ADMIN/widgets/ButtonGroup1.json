@@ -9,8 +9,8 @@
         "click",
         "submit"
     ],
-    "topRow": 13,
-    "bottomRow": 17,
+    "topRow": 15,
+    "bottomRow": 19,
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {

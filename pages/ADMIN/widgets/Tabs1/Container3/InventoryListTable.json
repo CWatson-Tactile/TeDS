@@ -71,14 +71,14 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1712089622508,
+    "columnUpdatedAt": 1714859051905,
     "originalBottomRow": 59,
     "defaultSelectedRowIndices": [0],
     "widgetName": "InventoryListTable",
     "defaultPageSize": 0,
     "columnOrder": [
-        "SKU",
         "PartName",
+        "SKU",
         "NewOnHand",
         "WIPOnHand",
         "Vendor",
@@ -519,7 +519,7 @@
             "decimals": 0,
             "width": 150,
             "enableFilter": true,
-            "sticky": "",
+            "sticky": "left",
             "originalId": "PartName",
             "currencyCode": "USD",
             "verticalAlignment": "CENTER"
@@ -674,7 +674,7 @@
             "decimals": 0,
             "width": 150,
             "enableFilter": true,
-            "sticky": "",
+            "sticky": "left",
             "originalId": "SKU",
             "currencyCode": "USD",
             "verticalAlignment": "CENTER"

@@ -118,9 +118,9 @@
     "tags": ["Layout"],
     "renderMode": "CANVAS",
     "isLoading": false,
-    "originalTopRow": 5.6000000000000005,
+    "originalTopRow": 6.199999999998545,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 43.599999999998545,
+    "originalBottomRow": 44.19999999999709,
     "minDynamicHeight": 10
 }
