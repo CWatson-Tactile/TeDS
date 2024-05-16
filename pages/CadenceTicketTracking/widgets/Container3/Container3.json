@@ -1,5 +1,5 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
     "mobileBottomRow": 39,
     "widgetName": "Container3",
     "borderColor": "#E0DEDE",
@@ -20,11 +20,9 @@
     "mobileRightColumn": 38,
     "animateLoading": true,
     "parentColumnSpace": 18.453125,
+    "dynamicTriggerPathList": [],
     "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "boxShadow"}
-    ],
+    "dynamicBindingPathList": [{"key": "borderRadius"}],
     "children": [{
         "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
         "mobileBottomRow": 100,

@@ -7,8 +7,8 @@
         "paragraph",
         "label"
     ],
-    "topRow": 7.799999999999997,
-    "bottomRow": 11.799999999999997,
+    "topRow": 14,
+    "bottomRow": 18,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -29,7 +29,7 @@
     "text": "Serial # {{NewTicketSelectCadence.selectedOptionValue}}",
     "key": "xlb1nie3z3",
     "isDeprecated": false,
-    "rightColumn": 64,
+    "rightColumn": 31,
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "ajmlj3g6c2",
@@ -45,10 +45,10 @@
     ],
     "renderMode": "CANVAS",
     "isLoading": false,
-    "originalTopRow": 7.799999999999997,
+    "originalTopRow": 14,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 11.799999999999272,
-    "fontSize": "0.875rem",
+    "originalBottomRow": 19,
+    "fontSize": "1rem",
     "minDynamicHeight": 4
 }

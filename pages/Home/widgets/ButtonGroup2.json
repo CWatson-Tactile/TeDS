@@ -10,7 +10,7 @@
         "submit"
     ],
     "topRow": 11,
-    "bottomRow": 15,
+    "bottomRow": 18,
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
@@ -39,8 +39,8 @@
             "label": "Employee ID Login",
             "id": "groupButton2",
             "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
+            "isVisible": false,
+            "isDisabled": true
         }
     },
     "hideCard": false,
@@ -50,7 +50,7 @@
         {"key": "groupButtons.groupButton1.onClick"},
         {"key": "groupButtons.groupButton2.onClick"}
     ],
-    "leftColumn": 12,
+    "leftColumn": 35,
     "dynamicBindingPathList": [{"key": "borderRadius"}],
     "key": "a9u5xmp74j",
     "orientation": "horizontal",
@@ -67,6 +67,6 @@
     "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
     "originalTopRow": 11,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 15,
+    "originalBottomRow": 18,
     "buttonVariant": "PRIMARY"
 }

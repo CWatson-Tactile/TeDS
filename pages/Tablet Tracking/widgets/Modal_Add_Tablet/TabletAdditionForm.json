@@ -710,7 +710,7 @@
                 "isRequired": true,
                 "isFilterable": false,
                 "isCustomField": false,
-                "defaultValue": "Silicon Rubber V1\t",
+                "defaultValue": "Silicon Rubber V1",
                 "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(TabletAdditionForm.sourceData, TabletAdditionForm.formData, TabletAdditionForm.fieldState)}}",
                 "dataType": "string",
                 "accessor": "Keyboard_Type",

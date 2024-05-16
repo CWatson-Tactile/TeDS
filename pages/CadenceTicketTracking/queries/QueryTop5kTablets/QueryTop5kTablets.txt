@@ -1,1 +1,1 @@
-SELECT TOP 5000 * FROM dbo.TabletTracker
+SELECT TOP 5000 * FROM dbo.TabletTracker ORDER BY Device_Name ASC

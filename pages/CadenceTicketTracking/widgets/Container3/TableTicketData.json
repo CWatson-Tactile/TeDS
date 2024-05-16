@@ -1,5 +1,5 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "boxShadow": "none",
     "borderColor": "#E0DEDE",
     "isVisibleDownload": true,
     "iconSVG": "/static/media/icon.e6911f8bb94dc6c4a102a74740c41763.svg",
@@ -11,7 +11,6 @@
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
-        {"key": "boxShadow"},
         {"key": "tableData"},
         {"key": "primaryColumns.TicketID.computedValue"},
         {"key": "primaryColumns.PCBSerial.computedValue"},
@@ -78,20 +77,23 @@
         "TickedCreatorEmpID",
         "TicketStatus"
     ],
-    "dynamicPropertyPathList": [
-        {"key": "primaryColumns.IssueDate.inputFormat"},
-        {"key": "primaryColumns.IssueDate.outputFormat"}
-    ],
+    "dynamicPropertyPathList": [{"key": "primaryColumns.IssueDate.outputFormat"}],
     "compactMode": "SHORT",
     "displayName": "Table",
     "bottomRow": 53,
-    "columnWidthMap": {"IssueDate": 158},
+    "columnWidthMap": {
+        "PCBSerial": 140,
+        "TicketID": 104,
+        "IssueDate": 158,
+        "TickedCreatorEmpID": 167,
+        "DeviceName": 135
+    },
     "parentRowSpace": 10,
     "hideCard": false,
     "mobileRightColumn": 35,
     "parentColumnSpace": 6.607421875,
     "dynamicTriggerPathList": [],
-    "borderWidth": "1",
+    "borderWidth": "",
     "primaryColumns": {
         "PCBSerial": {
             "computedValue": "{{TableTicketData.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"PCBSerial\"]))}}",
@@ -210,10 +212,10 @@
             "isVisible": true,
             "label": "Issue Date",
             "fontStyle": "",
-            "inputFormat": "YYYY-MM-DD HH:mm:ss",
+            "inputFormat": "Milliseconds",
             "columnType": "date",
             "thousandSeparator": true,
-            "horizontalAlignment": "LEFT",
+            "horizontalAlignment": "CENTER",
             "isCellEditable": false,
             "decimals": 0,
             "width": 150,
@@ -241,7 +243,7 @@
             "index": 6,
             "isDiscardVisible": true,
             "isVisible": true,
-            "label": "Ticket created by:",
+            "label": "Ticket created by",
             "fontStyle": "",
             "columnType": "text",
             "thousandSeparator": true,
@@ -273,7 +275,7 @@
             "index": 7,
             "isDiscardVisible": true,
             "isVisible": true,
-            "label": "TicketStatus",
+            "label": "Ticket Status",
             "fontStyle": "",
             "textColor": "",
             "columnType": "text",

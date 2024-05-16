@@ -197,7 +197,7 @@
                 "isSpellCheck": false,
                 "iconAlign": "left",
                 "position": 0,
-                "isDisabled": false,
+                "isDisabled": true,
                 "sourceData": 11,
                 "fieldType": "Number Input"
             },
@@ -292,7 +292,6 @@
                 "iconAlign": "left",
                 "position": 7,
                 "isDisabled": false,
-                "sourceData": null,
                 "fieldType": "Text Input"
             },
             "Notes": {
@@ -315,7 +314,7 @@
                 "position": 5,
                 "isDisabled": false,
                 "sourceData": "test",
-                "fieldType": "Text Input"
+                "fieldType": "Multiline Text Input"
             },
             "DeviceName": {
                 "labelTextSize": "0.875rem",

@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT TOP 5000 * FROM dbo.TabletTracker",
+      "body": "SELECT TOP 5000 * FROM dbo.TabletTracker ORDER BY Device_Name ASC",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
