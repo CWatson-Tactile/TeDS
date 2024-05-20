@@ -88,7 +88,7 @@
         }
     },
     "borderRadius": "0.375rem",
-    "columnUpdatedAt": 1714338752635,
+    "columnUpdatedAt": 1716213980166,
     "originalBottomRow": 92,
     "primaryColumnId": "Device_Name",
     "defaultSelectedRowIndices": [0],
@@ -97,9 +97,11 @@
     "columnOrder": [
         "Device_Name",
         "Status",
+        "Organization_Owner",
         "Assigned_to",
         "Date_Assigned",
         "Model_Number",
+        "DeviceSerialNumber",
         "PCB_Serial",
         "Date_of_Manufacture",
         "Enclosure_Top_Material",
@@ -107,7 +109,6 @@
         "Capture_Plate_Material",
         "Dot_Material",
         "Keyboard_Type",
-        "Organization_Owner",
         "Module_1",
         "Module_2",
         "Module_3",
@@ -127,7 +128,6 @@
         "NavigationButtonVersion",
         "PerkinsButtonVersion",
         "FrontButtonVersion",
-        "DeviceSerialNumber",
         "ID"
     ],
     "dynamicPropertyPathList": [],
