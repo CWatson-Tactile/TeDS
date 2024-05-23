@@ -97,7 +97,6 @@
         {"key": "schema.__root_schema__.children.Notes.borderRadius"},
         {"key": "schema.__root_schema__.children.Date_Assigned.defaultValue"},
         {"key": "schema.__root_schema__.children.Date_of_Manufacture.defaultValue"},
-        {"key": "schema.__root_schema__.children.DeviceSerialNumber.defaultValue"},
         {"key": "schema.__root_schema__.children.DeviceSerialNumber.borderRadius"},
         {"key": "schema.__root_schema__.children.DeviceSerialNumber.accentColor"},
         {"key": "schema.__root_schema__.children.EnclosureTopVersion.defaultValue"},
@@ -122,7 +121,7 @@
         {"key": "schema.__root_schema__.children.ID.borderRadius"},
         {"key": "schema.__root_schema__.children.ID.accentColor"},
         {"key": "schema.__root_schema__.children.Enclosure_Top_Material.options"},
-        {"key": "schema.__root_schema__.children.Capture_Plate_Material.options"}
+        {"key": "schema.__root_schema__.children.DeviceSerialNumber.defaultValue"}
     ],
     "showReset": true,
     "dynamicHeight": "FIXED",
@@ -285,7 +284,7 @@
                 "boxShadow": "none",
                 "isRequired": false,
                 "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PCB_Serial))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
+                "defaultValue": "{{((sourceData, formData, fieldState) => (formData.PCB_Serial))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
                 "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
                 "dataType": "string",
                 "accessor": "DeviceSerialNumber",
@@ -296,8 +295,8 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 26,
-                "isDisabled": false,
+                "position": 1,
+                "isDisabled": true,
                 "sourceData": "D25E3DD72286",
                 "fieldType": "Text Input"
             },
@@ -340,7 +339,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 2,
+                "position": 5,
                 "isDisabled": false,
                 "sourceData": "null",
                 "fieldType": "Text Input"
@@ -409,7 +408,7 @@
                 "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
                 "children": {},
                 "closeOnSelection": true,
-                "position": 3,
+                "position": 6,
                 "isDisabled": false,
                 "sourceData": "1900-01-01",
                 "fieldType": "Datepicker"
@@ -568,7 +567,7 @@
                 "iconAlign": "left",
                 "position": 33,
                 "isDisabled": false,
-                "sourceData": 249,
+                "sourceData": 222,
                 "fieldType": "Number Input"
             },
             "Module_11": {
@@ -654,7 +653,7 @@
                 "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
                 "children": {},
                 "options": "{{QueryStatusTypes.data.map(item => ({ label: item.Status, value: item.Status })).sort((a, b) => a.label.localeCompare(b.label))}}",
-                "position": 1,
+                "position": 2,
                 "isDisabled": false,
                 "sourceData": "QC PASS",
                 "fieldType": "Select"
@@ -676,8 +675,8 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 5,
-                "isDisabled": true,
+                "position": 3,
+                "isDisabled": false,
                 "sourceData": "D25E3DD72286",
                 "fieldType": "Text Input"
             },
@@ -787,7 +786,7 @@
                 "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
                 "children": {},
                 "options": "{{QueryModels.data.map(item => ({ label: item[\"Model #\"], value: item[\"Model #\"] }))}}",
-                "position": 6,
+                "position": 4,
                 "isDisabled": false,
                 "sourceData": "1001-R",
                 "fieldType": "Select"
@@ -832,7 +831,7 @@
                 "originalIdentifier": "Enclosure_Top_Material",
                 "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
                 "children": {},
-                "options": "{{QueryMaterialTypes.data.map( (obj) =>{ return  {'label': obj.Material, 'value': obj.Material } })}}        ",
+                "options": "{{QueryBottomEnclosureTypes.data.map(item => ({ label: item.Material, value: item.Material }))}}",
                 "position": 8,
                 "isDisabled": false,
                 "sourceData": "Black ABS",
@@ -972,7 +971,6 @@
                 "identifier": "Capture_Plate_Material",
                 "boxShadow": "none",
                 "isRequired": false,
-                "isFilterable": false,
                 "isCustomField": false,
                 "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Capture_Plate_Material))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
                 "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
@@ -980,15 +978,15 @@
                 "accessor": "Capture_Plate_Material",
                 "isVisible": true,
                 "label": "Capture Plate Material",
-                "serverSideFiltering": false,
                 "originalIdentifier": "Capture_Plate_Material",
                 "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
                 "children": {},
-                "options": "{{QueryMaterialTypes.data.map( (obj) =>{ return  {'label': obj.Material, 'value': obj.Material } })}}",
+                "isSpellCheck": false,
+                "iconAlign": "left",
                 "position": 10,
                 "isDisabled": false,
                 "sourceData": "Black ABS",
-                "fieldType": "Select"
+                "fieldType": "Text Input"
             }
         },
         "position": -1,
@@ -1033,10 +1031,7 @@
         "buttonVariant": "PRIMARY",
         "iconAlign": "left"
     },
-    "dynamicPropertyPathList": [
-        {"key": "schema.__root_schema__.children.Date_Assigned.defaultValue"},
-        {"key": "schema.__root_schema__.children.Date_of_Manufacture.defaultValue"}
-    ],
+    "dynamicPropertyPathList": [],
     "displayName": "JSON Form",
     "bottomRow": 64,
     "fieldLimitExceeded": false,
