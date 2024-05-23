@@ -3,4 +3,21 @@ UPDATE dbo.TabletTracker SET
       Date_Assigned = '',
 			Status = 'QC PASS'
 Where Device_Name = '{{TabletCheckInForm.data.TabletCheckInSelection}}';
-	
+
+	UPDATE dbo.TabletTracker SET 
+      Assigned_to = '',
+      Date_Assigned = '',
+			Status = 'QC PASS'
+Where Device_Name = '{{TabletCheckInForm.data.TabletCheckInSelectionCopy}}';
+
+UPDATE dbo.TabletTracker SET 
+      Assigned_to = '',
+      Date_Assigned = '',
+			Status = 'QC PASS'
+Where Device_Name = '{{TabletCheckInForm.data.TabletCheckInSelectionCopy1}}';
+
+UPDATE dbo.TabletTracker SET 
+      Assigned_to = '',
+      Date_Assigned = '',
+			Status = 'QC PASS'
+Where Device_Name = '{{TabletCheckInForm.data.TabletCheckInSelectionCopy2}}';

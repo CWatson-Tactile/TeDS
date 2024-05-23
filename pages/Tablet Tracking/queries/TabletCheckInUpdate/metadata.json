@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE dbo.TabletTracker SET \n      Assigned_to = '',\n      Date_Assigned = '',\n\t\t\tStatus = 'QC PASS'\nWhere Device_Name = '{{TabletCheckInForm.data.TabletCheckInSelection}}';\n\t",
+      "body": "UPDATE dbo.TabletTracker SET \n      Assigned_to = '',\n      Date_Assigned = '',\n\t\t\tStatus = 'QC PASS'\nWhere Device_Name = '{{TabletCheckInForm.data.TabletCheckInSelection}}';\n\n\tUPDATE dbo.TabletTracker SET \n      Assigned_to = '',\n      Date_Assigned = '',\n\t\t\tStatus = 'QC PASS'\nWhere Device_Name = '{{TabletCheckInForm.data.TabletCheckInSelectionCopy}}';\n\nUPDATE dbo.TabletTracker SET \n      Assigned_to = '',\n      Date_Assigned = '',\n\t\t\tStatus = 'QC PASS'\nWhere Device_Name = '{{TabletCheckInForm.data.TabletCheckInSelectionCopy1}}';\n\nUPDATE dbo.TabletTracker SET \n      Assigned_to = '',\n      Date_Assigned = '',\n\t\t\tStatus = 'QC PASS'\nWhere Device_Name = '{{TabletCheckInForm.data.TabletCheckInSelectionCopy2}}';",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,7 +36,10 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "TabletCheckInForm.data.TabletCheckInSelection"
+      "TabletCheckInForm.data.TabletCheckInSelection",
+      "TabletCheckInForm.data.TabletCheckInSelectionCopy",
+      "TabletCheckInForm.data.TabletCheckInSelectionCopy1",
+      "TabletCheckInForm.data.TabletCheckInSelectionCopy2"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
