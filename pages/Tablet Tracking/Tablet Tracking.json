@@ -58,14 +58,6 @@
           ],
           [
             {
-              "id": "Tablet Tracking_QueryBottomEnclosureTypes",
-              "name": "QueryBottomEnclosureTypes",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Tablet Tracking_QueryDotTypes",
               "name": "QueryDotTypes",
               "confirmBeforeExecute": false,

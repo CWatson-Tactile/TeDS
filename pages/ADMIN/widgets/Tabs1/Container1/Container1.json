@@ -11,13 +11,14 @@
         "group"
     ],
     "topRow": 0,
-    "bottomRow": 61,
+    "bottomRow": 54,
     "parentRowSpace": 10,
     "type": "CONTAINER_WIDGET",
     "hideCard": false,
     "shouldScrollContents": true,
     "animateLoading": true,
     "parentColumnSpace": 16.109375,
+    "dynamicTriggerPathList": [],
     "leftColumn": 0,
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
@@ -29,7 +30,7 @@
         "widgetName": "Canvas2",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 610,
+        "bottomRow": 540,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": false,
@@ -76,7 +77,7 @@
             }]}
         ]
     }],
-    "borderWidth": "1",
+    "borderWidth": "",
     "key": "u7nd8s20a1",
     "backgroundColor": "#FFFFFF",
     "isDeprecated": false,

@@ -58,6 +58,7 @@
     "height": 660,
     "isDeprecated": false,
     "rightColumn": 44,
+    "backgroundColor": "#f4f4f5",
     "detachFromLayout": true,
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "r64phc7i0b",

@@ -10,8 +10,8 @@
         "parent",
         "group"
     ],
-    "topRow": 11,
-    "bottomRow": 62,
+    "topRow": 7,
+    "bottomRow": 58,
     "parentRowSpace": 10,
     "type": "CONTAINER_WIDGET",
     "hideCard": false,
@@ -19,7 +19,7 @@
     "animateLoading": true,
     "parentColumnSpace": 15.828125,
     "dynamicTriggerPathList": [],
-    "leftColumn": 13,
+    "leftColumn": 12,
     "dynamicBindingPathList": [{"key": "borderRadius"}],
     "children": [{
         "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
@@ -108,7 +108,7 @@
     "key": "ks0spp6crb",
     "backgroundColor": "#FFFFFF",
     "isDeprecated": false,
-    "rightColumn": 38,
+    "rightColumn": 34,
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "gw1nvecjo3",
     "containerStyle": "card",
@@ -119,9 +119,9 @@
     "tags": ["Layout"],
     "renderMode": "CANVAS",
     "isLoading": false,
-    "originalTopRow": 11,
+    "originalTopRow": 7,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 62,
+    "originalBottomRow": 58,
     "minDynamicHeight": 10
 }

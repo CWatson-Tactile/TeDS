@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 570,
+          "bottomRow": 740,
           "containerStyle": "none",
           "snapRows": 73,
           "parentRowSpace": 1,
@@ -93,6 +93,14 @@
         },
         "layoutOnLoadActions": [
           [
+            {
+              "id": "Lot Tracking_QuerySelectPlungerCoreplateLot",
+              "name": "QuerySelectPlungerCoreplateLot",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "Lot Tracking_SelectQueryBurnInLots",
               "name": "SelectQueryBurnInLots",

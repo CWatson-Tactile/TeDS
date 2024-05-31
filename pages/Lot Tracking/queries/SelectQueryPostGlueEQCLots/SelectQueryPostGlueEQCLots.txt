@@ -1,1 +1,2 @@
 SELECT * FROM dbo.LotTrackingPostGlueEqc
+ORDER BY LotEndTime DESC

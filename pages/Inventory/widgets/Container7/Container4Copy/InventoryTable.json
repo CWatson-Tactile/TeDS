@@ -4,7 +4,7 @@
     "widthInPercentage": "0.48748796920115495",
     "isVisibleDownload": true,
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.e6911f8bb94dc6c4a102a74740c41763.svg",
-    "topRow": 5,
+    "topRow": 4,
     "isSortable": true,
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
@@ -108,7 +108,7 @@
     "dynamicPropertyPathList": [{"key": "tableData"}],
     "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 65,
+    "bottomRow": 29,
     "columnWidthMap": {
         "PartName": 226,
         "SKU": 95

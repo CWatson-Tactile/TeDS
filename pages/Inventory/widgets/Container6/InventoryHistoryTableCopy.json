@@ -3,7 +3,7 @@
     "borderColor": "#E0DEDE",
     "isVisibleDownload": true,
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.e6911f8bb94dc6c4a102a74740c41763.svg",
-    "topRow": 11,
+    "topRow": 7,
     "isSortable": true,
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
@@ -21,7 +21,7 @@
         {"key": "primaryColumns.AdjustmentCode.computedValue"}
     ],
     "needsHeightForContent": true,
-    "leftColumn": 39,
+    "leftColumn": 34,
     "delimiter": ",",
     "variant": "VARIANT3",
     "defaultSelectedRowIndex": 0,
@@ -79,7 +79,7 @@
     "dynamicPropertyPathList": [{"key": "tableData"}],
     "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 61,
+    "bottomRow": 57,
     "columnWidthMap": {
         "DataTimeOfAdjustment": 110,
         "AdjustedBy": 136,
