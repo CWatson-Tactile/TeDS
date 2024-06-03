@@ -5,7 +5,7 @@
     "mobileBottomRow": 4,
     "widgetName": "Button2",
     "onClick": "{{storeValue('ShowSkuList', '1');}}",
-    "buttonColor": "#fde047",
+    "buttonColor": "#231f20",
     "displayName": "Button",
     "iconSVG": "/static/media/icon.cb7371e9a48acf9db0f2f3ea0a714255.svg",
     "searchTags": [
@@ -51,6 +51,6 @@
     "disabledWhenInvalid": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 28,
-    "buttonVariant": "PRIMARY",
+    "buttonVariant": "SECONDARY",
     "placement": "CENTER"
 }
