@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 550,
+          "bottomRow": 380,
           "containerStyle": "none",
           "snapRows": 77,
           "parentRowSpace": 1,
@@ -28,13 +28,11 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Physical Inventory_Api1",
-              "name": "Api1",
+              "id": "Physical Inventory__$QueryEmployeeList$_QueryEmployeeListModule",
+              "name": "_$QueryEmployeeList$_QueryEmployeeListModule",
               "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "FilePicker1.files[0].data"
-              ],
+              "pluginType": "DB",
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]

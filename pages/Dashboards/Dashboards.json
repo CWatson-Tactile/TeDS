@@ -43,8 +43,8 @@
           ],
           [
             {
-              "id": "Dashboards_QueryEmployeeList",
-              "name": "QueryEmployeeList",
+              "id": "Dashboards__$QueryEmployeeList$_QueryEmployeeListModule",
+              "name": "_$QueryEmployeeList$_QueryEmployeeListModule",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

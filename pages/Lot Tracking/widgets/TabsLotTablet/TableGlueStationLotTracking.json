@@ -88,8 +88,8 @@
         "UnitsProducedCount"
     ],
     "dynamicPropertyPathList": [
-        {"key": "primaryColumns.LotStartTime.outputFormat"},
-        {"key": "primaryColumns.LotEndTime.outputFormat"}
+        {"key": "primaryColumns.LotEndTime.outputFormat"},
+        {"key": "primaryColumns.LotStartTime.outputFormat"}
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
@@ -97,8 +97,9 @@
     "columnWidthMap": {
         "MainLogNum": 128,
         "HoneycombLotNum": 185,
-        "CoilPalletLotNum": 170,
+        "CoilPalletLotNum": 270,
         "GlueLotNum": 125,
+        "Notes": 697,
         "GlueStationLotNum": 175
     },
     "parentRowSpace": 10,
@@ -299,6 +300,7 @@
             "isVisible": true,
             "label": "LotEndTime",
             "fontStyle": "BOLD",
+            "inputFormat": "Milliseconds",
             "columnType": "date",
             "thousandSeparator": true,
             "horizontalAlignment": "LEFT",
@@ -332,7 +334,7 @@
             "isVisible": true,
             "label": "LotStartTime",
             "fontStyle": "BOLD",
-            "inputFormat": "YYYY-MM-DDTHH:mm:ss.SSSZ",
+            "inputFormat": "Milliseconds",
             "columnType": "date",
             "thousandSeparator": true,
             "horizontalAlignment": "LEFT",

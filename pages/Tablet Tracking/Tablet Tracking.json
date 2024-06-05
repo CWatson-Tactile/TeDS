@@ -66,14 +66,6 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Tablet Tracking_QueryEmployeeList",
-              "name": "QueryEmployeeList",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Tablet Tracking_QueryKeyboardTypes",
               "name": "QueryKeyboardTypes",
               "confirmBeforeExecute": false,
@@ -100,6 +92,14 @@
             {
               "id": "Tablet Tracking_QueryStatusTypes",
               "name": "QueryStatusTypes",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Tablet Tracking__$QueryEmployeeList$_QueryEmployeeListModule",
+              "name": "_$QueryEmployeeList$_QueryEmployeeListModule",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

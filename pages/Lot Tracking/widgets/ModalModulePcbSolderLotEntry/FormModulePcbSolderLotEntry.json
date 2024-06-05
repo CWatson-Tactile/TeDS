@@ -287,7 +287,7 @@
             },
             "LotStartTime": {
                 "boxShadow": "none",
-                "minDate": "1920-12-31T18:30:00.000Z",
+                "minDate": "2023-12-31T12:30:00.000-05:00",
                 "dateFormat": "YYYY-MM-DD h:mm A",
                 "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.LotStartTime))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
                 "accessor": "LotStartTime",
@@ -298,7 +298,7 @@
                 "sourceData": "",
                 "labelTextSize": "0.875rem",
                 "identifier": "LotStartTime",
-                "isRequired": false,
+                "isRequired": true,
                 "isCustomField": false,
                 "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
                 "dataType": "string",

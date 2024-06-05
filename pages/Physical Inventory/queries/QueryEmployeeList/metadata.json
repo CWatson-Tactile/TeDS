@@ -1,7 +1,7 @@
 {
-  "moduleInstanceId": "Tablet Tracking_QueryEmployeeList",
+  "moduleInstanceId": "Physical Inventory_QueryEmployeeList",
   "isPublic": true,
-  "rootModuleInstanceId": "Tablet Tracking_QueryEmployeeList",
+  "rootModuleInstanceId": "Physical Inventory_QueryEmployeeList",
   "pluginType": "DB",
   "pluginId": "mssql-plugin",
   "unpublishedAction": {
@@ -15,7 +15,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Tablet Tracking",
+    "pageId": "Physical Inventory",
     "contextType": "PAGE",
     "executeOnLoad": true,
     "isValid": true,
@@ -27,7 +27,7 @@
     "userPermissions": [],
     "createdAt": "2024-01-08T23:13:55Z"
   },
-  "id": "Tablet Tracking__$QueryEmployeeList$_QueryEmployeeListModule",
+  "id": "Physical Inventory__$QueryEmployeeList$_QueryEmployeeListModule",
   "deleted": false,
-  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_7b247929-116f-4e08-b0e8-358375ad0801"
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_58a0a66f-2b00-442d-8f48-f39a22fd7bb7"
 }

@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 740,
+          "bottomRow": 730,
           "containerStyle": "none",
           "snapRows": 73,
           "parentRowSpace": 1,
@@ -170,6 +170,14 @@
             {
               "id": "Lot Tracking_SelectQueryEmployeeList",
               "name": "SelectQueryEmployeeList",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Lot Tracking__$QueryEmployeeList$_QueryEmployeeListModule",
+              "name": "_$QueryEmployeeList$_QueryEmployeeListModule",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

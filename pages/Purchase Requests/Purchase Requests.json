@@ -28,6 +28,17 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Purchase Requests_JSObject1.onOpen",
+              "name": "JSObject1.onOpen",
+              "collectionId": "Purchase Requests_JSObject1",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  await storeValue('cart', appsmith.store?.cart || []);\n  await storeValue('search', appsmith.store?.search || '');\n  await storeValue('filter', appsmith.store?.filter || '');\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Purchase Requests_QueryTop1kInventory",
               "name": "QueryTop1kInventory",
               "confirmBeforeExecute": false,
@@ -51,19 +62,6 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Purchase Requests_JSObject1.onOpen",
-              "name": "JSObject1.onOpen",
-              "collectionId": "Purchase Requests_JSObject1",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  await storeValue('cart', appsmith.store?.cart || []);\n  await storeValue('search', appsmith.store?.search || '');\n  await storeValue('filter', appsmith.store?.filter || '');\n}"
-              ],
               "timeoutInMillisecond": 10000
             }
           ]

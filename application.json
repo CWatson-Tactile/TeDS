@@ -49,15 +49,7 @@
       "isDefault": false
     },
     {
-      "id": "BOM",
-      "isDefault": false
-    },
-    {
       "id": "Physical Inventory",
-      "isDefault": false
-    },
-    {
-      "id": "Module Ticketing",
       "isDefault": false
     }
   ],

@@ -1,7 +1,7 @@
 {
-  "moduleInstanceId": "Tablet Tracking_QueryEmployeeList",
+  "moduleInstanceId": "Lot Tracking_QueryEmployeeList",
   "isPublic": true,
-  "rootModuleInstanceId": "Tablet Tracking_QueryEmployeeList",
+  "rootModuleInstanceId": "Lot Tracking_QueryEmployeeList",
   "pluginType": "DB",
   "pluginId": "mssql-plugin",
   "unpublishedAction": {
@@ -15,7 +15,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Tablet Tracking",
+    "pageId": "Lot Tracking",
     "contextType": "PAGE",
     "executeOnLoad": true,
     "isValid": true,
@@ -27,7 +27,7 @@
     "userPermissions": [],
     "createdAt": "2024-01-08T23:13:55Z"
   },
-  "id": "Tablet Tracking__$QueryEmployeeList$_QueryEmployeeListModule",
+  "id": "Lot Tracking__$QueryEmployeeList$_QueryEmployeeListModule",
   "deleted": false,
-  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_7b247929-116f-4e08-b0e8-358375ad0801"
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_d788d790-a608-45cb-9f1f-3125ff63bf0d"
 }
