@@ -1,0 +1,1 @@
+UPDATE dbo.TactileInventory SET dbo.TactileInventory.NewOnHand={{InventoryAddUpdatedQTY.text}} WHERE dbo.TactileInventory.SKU={{InventoryAddSku.selectedOptionValue}}

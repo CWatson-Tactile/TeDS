@@ -16,7 +16,7 @@
     "groupButtons": {
         "groupButtonmwlcu15d9k": {
             "itemType": "BUTTON",
-            "onClick": "{{Select_dbo_ModuleTracker1.run()}}",
+            "onClick": "{{SelectModuleList.run()}}",
             "buttonColor": "#eab308",
             "iconName": "refresh",
             "widgetId": "a4u2bmou0t",
@@ -93,6 +93,7 @@
             "isDisabled": false
         },
         "groupButton2": {
+            "onClick": "{{showModal(ModalEditModuleData.name);}}",
             "buttonType": "SIMPLE",
             "iconName": "edit",
             "buttonColor": "#be185d",
@@ -112,7 +113,8 @@
     "parentColumnSpace": 15.6875,
     "dynamicTriggerPathList": [
         {"key": "groupButtons.groupButton1.onClick"},
-        {"key": "groupButtons.groupButtonmwlcu15d9k.onClick"}
+        {"key": "groupButtons.groupButtonmwlcu15d9k.onClick"},
+        {"key": "groupButtons.groupButton2.onClick"}
     ],
     "leftColumn": 0,
     "dynamicBindingPathList": [

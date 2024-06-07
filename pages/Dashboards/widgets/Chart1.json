@@ -1,5 +1,5 @@
 {
-    "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+    "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
     "setAdaptiveYMin": false,
     "widgetName": "Chart1",
     "allowScroll": false,
@@ -106,7 +106,7 @@
     "renderMode": "CANVAS",
     "yAxisName": "Tablets",
     "originalTopRow": 33,
-    "chartName": "NEW Cadence produced per month\n",
+    "chartName": "NEW Cadence® tablets produced per month\n",
     "borderRadius": "0px",
     "xAxisName": "Month",
     "originalBottomRow": 65,

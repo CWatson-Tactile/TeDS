@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSAdjustmentCodes",
+    "pageId": "Physical Inventory",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Physical Inventory_JSAdjustmentCodes",
+  "deleted": false,
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_4ebc8ed3-eaa2-42e7-b504-d70ab3a6e8df"
+}

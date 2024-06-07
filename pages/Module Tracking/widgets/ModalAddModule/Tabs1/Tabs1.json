@@ -18,7 +18,6 @@
     "dynamicTriggerPathList": [],
     "leftColumn": 0,
     "dynamicBindingPathList": [
-        {"key": "accentColor"},
         {"key": "borderRadius"},
         {"key": "boxShadow"}
     ],
@@ -112,15 +111,15 @@
             "flexLayers": []
         }
     ],
-    "borderWidth": 1,
+    "borderWidth": "",
     "flexVerticalAlignment": "stretch",
     "key": "gfv1h11ymf",
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#e0dede",
     "isDeprecated": false,
     "rightColumn": 64,
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "2pidx37zmu",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "accentColor": "#14532d",
     "defaultTab": "Single Module Entry",
     "shouldShowTabs": true,
     "minWidth": 450,
@@ -154,6 +153,6 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 19,
+    "originalBottomRow": 15,
     "minDynamicHeight": 15
 }

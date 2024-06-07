@@ -1,0 +1,2 @@
+UPDATE dbo.TactileInventory 
+SET WIPOnHand={{WipAddUpdatedQty.text}} WHERE SKU={{WipAddSku.selectedOptionValue}}

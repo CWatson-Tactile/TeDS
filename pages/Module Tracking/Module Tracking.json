@@ -51,6 +51,16 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Module Tracking_SelectModuleList",
+              "name": "SelectModuleList",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "Module Tracking_QueryEmployeeList",
               "name": "QueryEmployeeList",
               "confirmBeforeExecute": false,
@@ -61,21 +71,8 @@
           ],
           [
             {
-              "id": "Module Tracking_Select_dbo_ModuleTracker1",
-              "name": "Select_dbo_ModuleTracker1",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Table1.sortOrder.order !== \"desc\" ? \"\" : \"DESC\"",
-                "Table1.sortOrder.column || 'ID'",
-                "Table1.pageSize",
-                "Table1.pageOffset"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Module Tracking_Total_record_dbo_ModuleTracker1",
-              "name": "Total_record_dbo_ModuleTracker1",
+              "id": "Module Tracking_SelectGetNumberOfModules",
+              "name": "SelectGetNumberOfModules",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

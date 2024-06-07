@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSModuleDataFetch",
+    "pageId": "Module Tracking",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Module Tracking_JSModuleDataFetch",
+  "deleted": false,
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_562395b0-f63a-4e6c-9ea3-1b199befde7b"
+}

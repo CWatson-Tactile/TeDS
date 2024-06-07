@@ -1,0 +1,7 @@
+INSERT INTO dbo.InventoryAdjustmentTracking (SKU, Adjustment, QtyAfterAdjustment, AdjustedBy, DataTimeOfAdjustment, AdjustmentCode) VALUES (
+	{{WipAddSku.selectedOptionValue}},
+	{{WipAddQtyToAdd.text}}, 
+	{{WipAddUpdatedQty.text}}, 
+	{{appsmith.store.EmpID}},GETDATE() ,
+	{{WipAddAdjType.selectedOptionValue}}
+	)

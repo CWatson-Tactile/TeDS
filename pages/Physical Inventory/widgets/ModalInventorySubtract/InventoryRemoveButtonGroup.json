@@ -1,0 +1,73 @@
+{
+    "boxShadow": "none",
+    "widgetName": "InventoryRemoveButtonGroup",
+    "isCanvas": false,
+    "dynamicPropertyPathList": [],
+    "displayName": "Button Group",
+    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+    "searchTags": [
+        "click",
+        "submit"
+    ],
+    "topRow": 41.00000004790008,
+    "bottomRow": 45.00000004793748,
+    "parentRowSpace": 10,
+    "type": "BUTTON_GROUP_WIDGET",
+    "groupButtons": {
+        "groupButton1": {
+            "onClick": "{{closeModal('ModalInventorySubtract').then(() => {\n  resetWidget(\"ModalInventorySubtract\", true);\n});}}",
+            "buttonType": "SIMPLE",
+            "iconName": "key-backspace",
+            "buttonColor": "#fde047",
+            "widgetId": "",
+            "menuItems": {},
+            "index": 0,
+            "label": "Cancel",
+            "id": "groupButton1",
+            "placement": "CENTER",
+            "isVisible": true,
+            "isDisabled": false
+        },
+        "groupButton2": {
+            "onClick": "{{QueryNegInvAdjTrack.run().then(() => {\n  QuerySubtractInventory.run().then(() => {\n    JS_InvTransData.InvTransDataFetch();\n  });\n  showAlert('Adjustment Successfull!', '');\n  QueryInventoryHistory.run();\n  QueryTop1kInventory.run();\n}).catch(() => {\n  showAlert('Error...Get Connor!', 'error');\n});}}",
+            "iconName": "key-enter",
+            "buttonColor": "#b91c1c",
+            "widgetId": "",
+            "menuItems": {},
+            "index": 1,
+            "label": "Submit Adjustment",
+            "isVisible": true,
+            "buttonType": "SIMPLE",
+            "iconAlign": "right",
+            "id": "groupButton2",
+            "placement": "CENTER",
+            "isDisabled": false
+        }
+    },
+    "hideCard": false,
+    "animateLoading": true,
+    "parentColumnSpace": 5.625,
+    "dynamicTriggerPathList": [
+        {"key": "groupButtons.groupButton2.onClick"},
+        {"key": "groupButtons.groupButton1.onClick"}
+    ],
+    "leftColumn": 0,
+    "dynamicBindingPathList": [{"key": "borderRadius"}],
+    "key": "kxknoo2mqf",
+    "orientation": "horizontal",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "widgetId": "mat1z7rpw5",
+    "minWidth": 450,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "4vylb4eq7u",
+    "tags": ["Buttons"],
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
+    "originalTopRow": 41.00000003811247,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "originalBottomRow": 45.000000038133294,
+    "buttonVariant": "PRIMARY"
+}

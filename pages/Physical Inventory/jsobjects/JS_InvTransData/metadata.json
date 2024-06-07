@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JS_InvTransData",
+    "pageId": "Physical Inventory",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Physical Inventory_JS_InvTransData",
+  "deleted": false,
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_4ca5d1b7-b8de-4bd9-a01a-5051b79f5284"
+}

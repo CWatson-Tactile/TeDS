@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSFetchAdjCodes",
+    "pageId": "Physical Inventory",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Physical Inventory_JSFetchAdjCodes",
+  "deleted": false,
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_c03c954e-490c-44aa-afd6-702e480312e1"
+}

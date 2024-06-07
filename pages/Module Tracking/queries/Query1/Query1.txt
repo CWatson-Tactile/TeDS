@@ -1,0 +1,7 @@
+UPDATE dbo.ModuleTracker SET 
+
+Notes={{FormEditModuleData.formData.Notes}},
+HoneycombLotNumber={{FormEditModuleData.formData.HoneycombLotNum}},
+GlueStation
+
+WHERE ModuleSerialNum={{FormEditModuleData.formData.ModuleSerialNum}} -- Specify a valid condition here. Removing the condition may update every row in the table!
