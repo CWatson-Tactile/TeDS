@@ -5,7 +5,7 @@ export default {
 	value: i.SKU
 }))
 
-			return SkuData
-			Response.sort()
+			return SkuData.sort()
+			
 	}
 }
