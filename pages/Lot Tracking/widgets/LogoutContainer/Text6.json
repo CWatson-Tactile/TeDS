@@ -26,7 +26,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Logged in as: {{QueryEmployeeList.data.find(row => row.EmployeeID === appsmith.store.EmpID).EmployeeFirstName + \" \" + QueryEmployeeList.data.find(row => row.EmployeeID === appsmith.store.EmpID).EmployeeLastName}}",
+    "text": "{{JS_InvTransData.InvTransDataFetch.data.filter(row => row.SKU === SKUEntry.selectedOptionValue)}}",
     "key": "vsrt24d09l",
     "isDeprecated": false,
     "rightColumn": 64,
@@ -45,8 +45,10 @@
     ],
     "renderMode": "CANVAS",
     "isLoading": false,
+    "originalTopRow": 0,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
+    "originalBottomRow": 4,
     "fontSize": "1.25rem",
     "minDynamicHeight": 4
 }

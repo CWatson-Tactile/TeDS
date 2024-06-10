@@ -1,0 +1,2 @@
+SELECT * FROM dbo.EmployeeList
+ORDER BY EmployeeFirstName

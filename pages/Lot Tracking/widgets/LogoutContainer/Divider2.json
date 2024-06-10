@@ -29,5 +29,7 @@
     "parentId": "g8eycbr977",
     "tags": ["Layout"],
     "renderMode": "CANVAS",
-    "isLoading": false
+    "isLoading": false,
+    "originalTopRow": 4,
+    "originalBottomRow": 8
 }

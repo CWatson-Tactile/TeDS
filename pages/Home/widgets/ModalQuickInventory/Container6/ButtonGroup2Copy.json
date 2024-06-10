@@ -82,7 +82,7 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 62.99999999999483,
+    "originalTopRow": 62.99999999999409,
     "borderRadius": "0px",
     "originalBottomRow": 67,
     "buttonVariant": "PRIMARY"

@@ -1,6 +1,6 @@
 {
   "unpublishedCollection": {
-    "name": "JSFullNameList",
+    "name": "JSEmployeeNames",
     "pageId": "Lot Tracking",
     "pluginId": "js-plugin",
     "pluginType": "JS",
@@ -9,7 +9,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "Lot Tracking_JSFullNameList",
+  "id": "Lot Tracking_JSEmployeeNames",
   "deleted": false,
-  "gitSyncId": "65ea03a5beafc077b3761f46_65ef5dcd4400cc0e9f2c99ac"
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_3c1110f9-03bf-495c-ad7c-586ba18def23"
 }

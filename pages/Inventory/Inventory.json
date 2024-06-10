@@ -106,7 +106,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  const SkuData = QueryTop1kInventory.data.map(i => ({\n    label: i.SKU + \" \" + i.PartName,\n    value: i.SKU\n  }));\n  return SkuData;\n  Response.sort();\n}"
+                "async () => {\n  const SkuData = QueryTop1kInventory.data.map(i => ({\n    label: i.SKU + \" \" + i.PartName,\n    value: i.SKU\n  }));\n  return SkuData;\n}"
               ],
               "timeoutInMillisecond": 10000
             }

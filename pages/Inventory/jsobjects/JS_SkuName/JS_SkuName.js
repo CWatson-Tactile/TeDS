@@ -6,6 +6,5 @@ export default {
 }))
 
 			return SkuData
-			Response.sort()
 	}
 }

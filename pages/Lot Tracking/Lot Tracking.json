@@ -168,16 +168,8 @@
           ],
           [
             {
-              "id": "Lot Tracking_SelectQueryEmployeeList",
-              "name": "SelectQueryEmployeeList",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Lot Tracking__$QueryEmployeeList$_QueryEmployeeListModule",
-              "name": "_$QueryEmployeeList$_QueryEmployeeListModule",
+              "id": "Lot Tracking_SelectAllEmployeeNamesQuery",
+              "name": "SelectAllEmployeeNamesQuery",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
@@ -186,13 +178,13 @@
           ],
           [
             {
-              "id": "Lot Tracking_JSFullNameList.EmpIDFetcher",
-              "name": "JSFullNameList.EmpIDFetcher",
-              "collectionId": "Lot Tracking_JSFullNameList",
+              "id": "Lot Tracking_JSEmployeeNames.EmpNames",
+              "name": "JSEmployeeNames.EmpNames",
+              "collectionId": "Lot Tracking_JSEmployeeNames",
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async sort => {\n  const EmpInfo = SelectQueryEmployeeList.data.map(i => ({\n    label: i.EmployeeFirstName + \" \" + i.EmployeeLastName,\n    value: i.EmployeeID\n  }));\n  return EmpInfo;\n  Response.sort();\n}"
+                "async () => {\n  const EmpNames = SelectAllEmployeeNamesQuery.data.map(i => ({\n    label: i.EmployeeFirstName + \" \" + i.EmployeeLastName,\n    value: i.EmployeeID\n  }));\n  return EmpNames;\n}"
               ],
               "timeoutInMillisecond": 10000
             }
