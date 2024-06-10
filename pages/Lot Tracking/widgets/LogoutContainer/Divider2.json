@@ -30,6 +30,6 @@
     "tags": ["Layout"],
     "renderMode": "CANVAS",
     "isLoading": false,
-    "originalTopRow": 4,
-    "originalBottomRow": 8
+    "originalTopRow": 16,
+    "originalBottomRow": 20
 }
