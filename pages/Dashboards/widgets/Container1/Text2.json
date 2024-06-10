@@ -26,7 +26,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{Tablet_Tracker_top_5k.data.length.toString()}}",
+    "text": "{{SelectTopTablets.data.length.toString()}}",
     "key": "u3fjradwwg",
     "isDeprecated": false,
     "rightColumn": 17,

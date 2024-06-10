@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mssql-plugin",
   "unpublishedAction": {
-    "name": "Tablet_Tracker_top_5k",
+    "name": "SelectInventory",
     "datasource": {
       "name": "TE-Operations DB",
       "pluginId": "mssql-plugin",
@@ -13,27 +13,32 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Dashboards",
+    "pageId": "Home",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT TOP 5000 * FROM dbo.TabletTracker",
-      "selfReferencingDataPaths": []
+      "body": "SELECT * FROM dbo.TactileInventory",
+      "selfReferencingDataPaths": [],
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ]
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-01-08T23:13:55Z"
+    "createdAt": "2024-06-07T19:23:40Z"
   },
-  "id": "Dashboards_Tablet_Tracker_top_5k",
+  "id": "Home_SelectInventory",
   "deleted": false,
-  "gitSyncId": "656ce12b7cc83c64328e6401_656ce12c7cc83c64328e646c"
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_fe4087ac-5e31-460a-adac-4b8d10b58740"
 }

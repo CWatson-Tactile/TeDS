@@ -33,8 +33,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Dashboards_Tablet_Tracker_top_5k",
-              "name": "Tablet_Tracker_top_5k",
+              "id": "Dashboards_SelectTopTablets",
+              "name": "SelectTopTablets",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

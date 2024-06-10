@@ -43,16 +43,19 @@
           ],
           [
             {
-              "id": "Home_QueryInventoryHistory",
-              "name": "QueryInventoryHistory",
+              "id": "Home_JS_SkuName.SkuDataFetcher",
+              "name": "JS_SkuName.SkuDataFetcher",
+              "collectionId": "Home_JS_SkuName",
               "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const SkuData = QueryTop1kInventory.data.map(i => ({\n    label: i.SKU + \" \" + i.PartName,\n    value: i.SKU\n  }));\n  return SkuData.sort();\n}"
+              ],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Home__$QueryTop1kInventory$_QueryTop1kInventoryModule",
-              "name": "_$QueryTop1kInventory$_QueryTop1kInventoryModule",
+              "id": "Home_QueryInventoryHistory",
+              "name": "QueryInventoryHistory",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
@@ -61,13 +64,13 @@
           ],
           [
             {
-              "id": "Home_JS_SkuName.SkuDataFetcher",
-              "name": "JS_SkuName.SkuDataFetcher",
-              "collectionId": "Home_JS_SkuName",
+              "id": "Home_JS_SkuData.SkuDataFetch",
+              "name": "JS_SkuData.SkuDataFetch",
+              "collectionId": "Home_JS_SkuData",
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  const SkuData = QueryTop1kInventory.data.map(i => ({\n    label: i.SKU + \" \" + i.PartName,\n    value: i.SKU\n  }));\n  return SkuData.sort();\n}"
+                "async () => {\n  const SkuData = QueryTop1kInventory.data;\n  return SkuData.sort();\n}"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -81,17 +84,6 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  const TansData = QueryInventoryHistory.data;\n  return TansData.reverse();\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Home_JS_SkuData.SkuDataFetch",
-              "name": "JS_SkuData.SkuDataFetch",
-              "collectionId": "Home_JS_SkuData",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  const SkuData = QueryTop1kInventory.data;\n  return SkuData.sort();\n}"
               ],
               "timeoutInMillisecond": 10000
             }
