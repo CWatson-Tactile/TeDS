@@ -108,10 +108,7 @@
         {"key": "groupButtons.groupButton3.onClick"}
     ],
     "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "groupButtons.groupButton2.isVisible"}
-    ],
+    "dynamicBindingPathList": [{"key": "groupButtons.groupButton2.isVisible"}],
     "key": "kyspwmj94n",
     "orientation": "horizontal",
     "isDeprecated": false,
@@ -127,7 +124,7 @@
     "mobileTopRow": 4,
     "responsiveBehavior": "fill",
     "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "0px",
     "mobileLeftColumn": 0,
     "buttonVariant": "PRIMARY"
 }

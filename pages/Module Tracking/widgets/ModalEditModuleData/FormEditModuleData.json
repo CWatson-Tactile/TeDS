@@ -1,7 +1,8 @@
 {
     "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "borderColor": "#E0DEDE",
+    "borderColor": "",
     "iconSVG": "/static/media/icon.7df6f087cceba86a9a5481b6c7f4871d.svg",
+    "onSubmit": "{{UpdateModuleDataQuery.run().then(() => {\n  resetWidget(\"ModalEditModuleData\", true);\n  closeModal(ModalEditModuleData.name);\n  SelectModuleList.run();\n});}}",
     "topRow": 0,
     "type": "JSON_FORM_WIDGET",
     "animateLoading": true,
@@ -48,7 +49,7 @@
     ],
     "showReset": true,
     "flexVerticalAlignment": "start",
-    "dynamicHeight": "AUTO_HEIGHT",
+    "dynamicHeight": "FIXED",
     "autoGenerateForm": true,
     "onCanvasUI": {
         "focusBGCSSVar": "--on-canvas-ui-widget-focus",
@@ -152,7 +153,6 @@
     },
     "disabledWhenInvalid": true,
     "borderRadius": "0px",
-    "originalBottomRow": 85,
     "useSourceData": false,
     "schema": {"__root_schema__": {
         "labelTextSize": "0.875rem",
@@ -188,7 +188,6 @@
                 "iconAlign": "left",
                 "position": 3,
                 "isDisabled": false,
-                "sourceData": null,
                 "fieldType": "Text Input"
             },
             "ModuleSerialNum": {
@@ -232,7 +231,6 @@
                 "iconAlign": "left",
                 "position": 5,
                 "isDisabled": false,
-                "sourceData": null,
                 "fieldType": "Text Input"
             },
             "ID": {
@@ -276,7 +274,6 @@
                 "iconAlign": "left",
                 "position": 6,
                 "isDisabled": false,
-                "sourceData": null,
                 "fieldType": "Text Input"
             },
             "CoreplateWeldLotNum": {
@@ -298,7 +295,6 @@
                 "iconAlign": "left",
                 "position": 8,
                 "isDisabled": false,
-                "sourceData": null,
                 "fieldType": "Text Input"
             },
             "RubberMagnetLotNum": {
@@ -320,7 +316,6 @@
                 "iconAlign": "left",
                 "position": 7,
                 "isDisabled": false,
-                "sourceData": null,
                 "fieldType": "Text Input"
             },
             "BurnInLotNum": {
@@ -342,7 +337,6 @@
                 "iconAlign": "left",
                 "position": 9,
                 "isDisabled": false,
-                "sourceData": null,
                 "fieldType": "Text Input"
             },
             "Notes": {
@@ -364,7 +358,6 @@
                 "iconAlign": "left",
                 "position": 2,
                 "isDisabled": false,
-                "sourceData": null,
                 "fieldType": "Multiline Text Input"
             },
             "GlueStationLotNum": {
@@ -386,23 +379,14 @@
                 "iconAlign": "left",
                 "position": 4,
                 "isDisabled": false,
-                "sourceData": null,
                 "fieldType": "Text Input"
             }
         },
         "position": -1,
         "isDisabled": false,
         "sourceData": {
-            "HoneycombLotNum": null,
             "ModuleSerialNum": 52299,
-            "PostGlueEqcLotNum": null,
-            "ID": 3,
-            "ModulePcbSolderLotNum": null,
-            "CoreplateWeldLotNum": null,
-            "RubberMagnetLotNum": null,
-            "BurnInLotNum": null,
-            "Notes": null,
-            "GlueStationLotNum": null
+            "ID": 3
         },
         "cellBoxShadow": "none",
         "fieldType": "Object"
@@ -426,25 +410,25 @@
     "title": "Edit Module Data",
     "hideCard": false,
     "mobileRightColumn": 87,
+    "shouldScrollContents": true,
     "parentColumnSpace": 6.9375,
-    "dynamicTriggerPathList": [],
+    "dynamicTriggerPathList": [{"key": "onSubmit"}],
     "borderWidth": "",
     "sourceData": "{{TableModuleData.selectedRow}}",
     "resetButtonLabel": "Reset",
     "key": "irj4d7heqm",
-    "backgroundColor": "#e0dede",
+    "backgroundColor": "",
     "isDeprecated": false,
-    "rightColumn": 64,
+    "rightColumn": 63,
     "thumbnailSVG": "/static/media/thumbnail.1092bbfe332a9ea2da2aa7e3efd01db2.svg",
     "widgetId": "a3c8pidncl",
     "minWidth": 450,
     "parentId": "ur0czq07gk",
     "renderMode": "CANVAS",
     "mobileTopRow": 6,
-    "scrollContents": true,
+    "scrollContents": false,
     "responsiveBehavior": "fill",
     "fixedFooter": true,
-    "originalTopRow": 0,
     "mobileLeftColumn": 23,
     "maxDynamicHeight": 9000,
     "minDynamicHeight": 4

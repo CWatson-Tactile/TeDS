@@ -139,6 +139,7 @@
         "PCB_Serial": 160,
         "Model_Number": 137,
         "Enclosure_Bottom_Material": 220,
+        "DeviceSerialNumber": 200,
         "Enclosure_Top_Material": 194,
         "Assigned_to": 191,
         "Date_Assigned": 141,

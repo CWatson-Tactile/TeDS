@@ -1,7 +1,7 @@
 export default {
 	SkuDataFetch: async() =>  {
-		const SkuData = QueryTop1kInventory.data
+		const SkuData = SelectInventory.data
 
-		return SkuData.sort()
+		return SkuData
 	}
 }

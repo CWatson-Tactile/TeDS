@@ -1,0 +1,12 @@
+UPDATE dbo.ModuleTracker SET
+
+Notes='{{FormEditModuleData.formData.Notes}}',
+HoneycombLotNum='{{FormEditModuleData.formData.HoneycombLotNum}}',
+GlueStationLotNum='{{FormEditModuleData.formData.GlueStationLotNum}}',
+PostGlueEqcLotNum='{{FormEditModuleData.formData.PostGlueEqcLotNum}}',
+ModulePcbSolderLotNum='{{FormEditModuleData.formData.ModulePcbSolderLotNum}}',
+RubberMagnetLotNum='{{FormEditModuleData.formData.RubberMagnetLotNum}}',
+CoreplateWeldLotNum='{{FormEditModuleData.formData.CoreplateWeldLotNum}}',
+BurnInLotNum='{{FormEditModuleData.formData.BurnInLotNum}}'
+
+WHERE ModuleSerialNum={{FormEditModuleData.formData.ModuleSerialNum}}

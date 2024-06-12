@@ -55,6 +55,6 @@
     "maxDynamicHeight": 9000,
     "shouldAllowAutofill": false,
     "iconAlign": "left",
-    "defaultText": "{{ QueryTop1kInventory.data.find(row => row.SKU === InventorySubtractsku.selectedOptionValue).NewOnHand }}",
+    "defaultText": "{{ JS_SkuData.SkuDataFetch.data.find(row => row.SKU === InventorySubtractsku.selectedOptionValue).NewOnHand }}",
     "minDynamicHeight": 4
 }

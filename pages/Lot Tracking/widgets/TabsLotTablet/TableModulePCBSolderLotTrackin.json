@@ -37,6 +37,7 @@
     "needsHeightForContent": true,
     "leftColumn": 0,
     "delimiter": ",",
+    "variant": "VARIANT3",
     "defaultSelectedRowIndex": 0,
     "flexVerticalAlignment": "start",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -111,7 +112,7 @@
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 50,
+    "bottomRow": 76,
     "columnWidthMap": {
         "UnitsPassCount": 124,
         "UnitsFailCount": 91,
@@ -125,7 +126,7 @@
     "mobileRightColumn": 15,
     "parentColumnSpace": 15.546875,
     "dynamicTriggerPathList": [],
-    "borderWidth": "1",
+    "borderWidth": "",
     "primaryColumns": {
         "UnitsPassCount": {
             "computedValue": "{{TableModulePCBSolderLotTrackin.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"UnitsPassCount\"]))}}",

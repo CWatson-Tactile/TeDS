@@ -27,6 +27,7 @@
     "needsHeightForContent": true,
     "leftColumn": 0,
     "delimiter": ",",
+    "variant": "VARIANT3",
     "defaultSelectedRowIndex": 0,
     "flexVerticalAlignment": "start",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -91,7 +92,7 @@
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 51,
+    "bottomRow": 76,
     "columnWidthMap": {
         "PalletNum": 110,
         "CoilLotNum": 118,
@@ -104,7 +105,7 @@
     "mobileRightColumn": 15,
     "parentColumnSpace": 15.546875,
     "dynamicTriggerPathList": [],
-    "borderWidth": "1",
+    "borderWidth": "",
     "primaryColumns": {
         "PalletNum": {
             "computedValue": "{{TablePalletLoadLotTracking.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"PalletNum\"]))}}",

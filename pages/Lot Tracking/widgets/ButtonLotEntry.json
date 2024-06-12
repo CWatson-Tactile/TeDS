@@ -50,7 +50,7 @@
             "index": 0,
             "id": "menuItemlc48d4qaaa",
             "label": "Honeycombs",
-            "isDisabled": true,
+            "isDisabled": false,
             "isVisible": true
         },
         "menuItem6xaxauz1cv": {
@@ -143,12 +143,12 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "mobileTopRow": 1,
-    "originalTopRow": 23,
+    "originalTopRow": 11,
     "borderRadius": "0px",
     "mobileLeftColumn": 2,
     "menuItemsSource": "STATIC",
     "menuColor": "{{appsmith.theme.colors.primaryColor}}",
-    "originalBottomRow": 27,
+    "originalBottomRow": 15,
     "iconAlign": "left",
     "placement": "CENTER"
 }

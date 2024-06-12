@@ -15,7 +15,7 @@
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
         "groupButton1": {
-            "onClick": "{{showModal('ModalPinLogin');}}",
+            "onClick": "{{storeValue('LoginType', '2').then(() => {\n  showModal(ModalPinLogin.name);\n});}}",
             "buttonType": "SIMPLE",
             "iconName": "pin",
             "buttonColor": "#d8b4fe",

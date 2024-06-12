@@ -15,7 +15,7 @@
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
         "groupButton1": {
-            "onClick": "{{closeModal('ModalInventorySubtract').then(() => {\n  resetWidget(\"ModalInventorySubtract\", true);\n});}}",
+            "onClick": "{{closeModal(ModalInventorySubtract.name).then(() => {\n  resetWidget(\"InventorySubtractsku\", true);\n  resetWidget(\"InventorySubtractQtyToPick\", true);\n});}}",
             "buttonType": "SIMPLE",
             "iconName": "key-backspace",
             "buttonColor": "#fde047",

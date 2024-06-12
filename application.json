@@ -33,15 +33,11 @@
       "isDefault": false
     },
     {
-      "id": "Variable Management",
-      "isDefault": false
-    },
-    {
       "id": "Delivery Tracking",
       "isDefault": false
     },
     {
-      "id": "CadenceTicketTracking",
+      "id": "Cadence Service",
       "isDefault": false
     },
     {

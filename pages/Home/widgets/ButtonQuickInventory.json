@@ -2,8 +2,9 @@
     "resetFormOnClick": false,
     "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
     "widgetName": "ButtonQuickInventory",
-    "onClick": "{{showModal('ModalQuickInventoryLogin');}}",
+    "onClick": "{{storeValue('LoginType', '1').then(() => {\n  showModal(ModalPinLogin.name);\n});}}",
     "buttonColor": "#eab308",
+    "dynamicPropertyPathList": [],
     "displayName": "Button",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
     "searchTags": [

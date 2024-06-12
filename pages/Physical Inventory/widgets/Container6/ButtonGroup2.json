@@ -9,7 +9,7 @@
         "click",
         "submit"
     ],
-    "topRow": 58.99999999997783,
+    "topRow": 59,
     "bottomRow": 63,
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
@@ -48,7 +48,7 @@
         "groupButtonngqxlh016z": {
             "itemType": "BUTTON",
             "onClick": "{{showModal(ModalInventorySubtractWIP.name);}}",
-            "buttonColor": "#b91c1c",
+            "buttonColor": "#fca5a5",
             "iconName": "remove",
             "widgetId": "gqopfduq0t",
             "menuItems": {},
@@ -64,7 +64,7 @@
         "groupButtonkr1zm8ddy2": {
             "itemType": "BUTTON",
             "onClick": "{{showModal(ModalInventoryWipAdd.name);}}",
-            "buttonColor": "#15803d",
+            "buttonColor": "#86efac",
             "iconName": "add",
             "widgetId": "6vro0ywgyn",
             "menuItems": {},

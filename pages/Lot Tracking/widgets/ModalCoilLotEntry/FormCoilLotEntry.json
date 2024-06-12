@@ -85,7 +85,7 @@
     ],
     "showReset": true,
     "flexVerticalAlignment": "start",
-    "dynamicHeight": "AUTO_HEIGHT",
+    "dynamicHeight": "FIXED",
     "autoGenerateForm": false,
     "resetButtonStyles": {
         "boxShadow": "none",
@@ -180,7 +180,6 @@
     },
     "disabledWhenInvalid": true,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 205,
     "useSourceData": false,
     "schema": {"__root_schema__": {
         "labelTextSize": "0.875rem",
@@ -786,7 +785,7 @@
         {"key": "schema.__root_schema__.children.LotEndTime.defaultValue"}
     ],
     "displayName": "JSON Form",
-    "bottomRow": 205,
+    "bottomRow": 98,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "Coil lot entry",
@@ -801,7 +800,7 @@
     "key": "1a156tlbta",
     "backgroundColor": "#fff",
     "isDeprecated": false,
-    "rightColumn": 64,
+    "rightColumn": 63,
     "widgetId": "goqpxgx4tv",
     "minWidth": 450,
     "parentId": "p0q7m7tept",
@@ -810,7 +809,6 @@
     "scrollContents": true,
     "responsiveBehavior": "fill",
     "fixedFooter": true,
-    "originalTopRow": 4,
     "mobileLeftColumn": 10,
     "maxDynamicHeight": 9000,
     "minDynamicHeight": 4

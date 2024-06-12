@@ -26,7 +26,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Logged in as: {{QueryEmployeeList.data.find(row => row.EmployeeID === appsmith.store.EmpID).EmployeeFirstName + \" \" + QueryEmployeeList.data.find(row => row.EmployeeID === appsmith.store.EmpID).EmployeeLastName}}",
+    "text": "Logged in as: {{QueryEmployeeList.data.find(row => row.EmployeeID === appsmith.store.EmpID).EmployeeFirstName.toUpperCase() + \" \" + QueryEmployeeList.data.find(row => row.EmployeeID === appsmith.store.EmpID).EmployeeLastName.toUpperCase()}}",
     "key": "vsrt24d09l",
     "isDeprecated": false,
     "rightColumn": 64,
