@@ -102,13 +102,13 @@
           ],
           [
             {
-              "id": "Inventory_JS_TransactionHistory.TransDataFetch",
-              "name": "JS_TransactionHistory.TransDataFetch",
-              "collectionId": "Inventory_JS_TransactionHistory",
+              "id": "Inventory_JS_InvTransData.InvTransDataFetch",
+              "name": "JS_InvTransData.InvTransDataFetch",
+              "collectionId": "Inventory_JS_InvTransData",
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  const TransData = QueryInventoryHistory.data;\n  TransData.reverse();\n  return TransData;\n}"
+                "async () => {\n  const TansData = QueryInventoryHistory.data;\n  return TansData.reverse();\n}"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -122,19 +122,6 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  const SkuData = JS_SkuData.SkuDataFetch.data.map(i => ({\n    label: i.SKU + \" \" + i.PartName,\n    value: i.SKU\n  }));\n  return SkuData;\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Inventory_JS_TransDataTailored.TransDataTranslator",
-              "name": "JS_TransDataTailored.TransDataTranslator",
-              "collectionId": "Inventory_JS_TransDataTailored",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  const TransData = JS_TransactionHistory.TransDataFetch.data.map(i => ({\n    AdjustmentDate: i.DataTimeOfAdjustment,\n    AdjustmentAmount: i.Adjustment,\n    SKU: i.SKU,\n    EmployeeID: i.AdjustedBy,\n    TransactionNumber: i.TransactionNumber,\n    AdjustmentCodes: i.AdjustmentCode\n  }));\n  return TransData;\n}"
               ],
               "timeoutInMillisecond": 10000
             }

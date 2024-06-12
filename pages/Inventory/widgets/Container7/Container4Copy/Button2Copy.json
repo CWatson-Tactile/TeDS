@@ -27,7 +27,7 @@
     "isDisabled": false,
     "key": "gyrmi3wo77",
     "isDeprecated": false,
-    "rightColumn": 16,
+    "rightColumn": 7,
     "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
     "isDefaultClickDisabled": true,
     "widgetId": "kkbml7bkgw",
@@ -51,6 +51,6 @@
     "disabledWhenInvalid": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 28,
-    "buttonVariant": "SECONDARY",
+    "buttonVariant": "TERTIARY",
     "placement": "CENTER"
 }
