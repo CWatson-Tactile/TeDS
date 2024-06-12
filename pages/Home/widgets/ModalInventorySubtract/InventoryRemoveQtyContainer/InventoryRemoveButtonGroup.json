@@ -29,7 +29,7 @@
             "isDisabled": false
         },
         "groupButton2": {
-            "onClick": "{{QueryNegInvAdjTrack.run().then(() => {\n  QuerySubtractInventory.run();\n  QueryInventoryHistory.run();\n  QueryTop1kInventory.run();\n  closeModal('ModalInventorySubtract');\n  showAlert('Adjustment confirmed', 'success');\n}).catch(() => {\n  showAlert('Error...Get Connor!', 'error');\n});}}",
+            "onClick": "{{QueryNegInvAdjTrack.run().then(() => {\n  QuerySubtractInventory.run();\n  QueryInventoryHistory.run();\n  SelectInventoryQuery.run();\n  closeModal('ModalInventorySubtract');\n  showAlert('Adjustment confirmed', 'success');\n}).catch(() => {\n  showAlert('Error...Get Connor!', 'error');\n});}}",
             "iconName": "key-enter",
             "buttonColor": "#b91c1c",
             "widgetId": "",

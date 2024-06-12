@@ -1,6 +1,6 @@
 export default {
 	SkuDataFetch: async() =>  {
-		const SkuData = SelectInventory.data
+		const SkuData = SelectInventoryQuery.data
 
 		return SkuData
 	}

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mssql-plugin",
   "unpublishedAction": {
-    "name": "SelectInventory",
+    "name": "SelectInventoryQuery",
     "datasource": {
       "name": "TE-Operations DB",
       "pluginId": "mssql-plugin",
@@ -38,7 +38,7 @@
     "userPermissions": [],
     "createdAt": "2024-06-07T19:23:40Z"
   },
-  "id": "Home_SelectInventory",
+  "id": "Home_SelectInventoryQuery",
   "deleted": false,
   "gitSyncId": "65f4a492fdb1c038a9c0e4c5_fe4087ac-5e31-460a-adac-4b8d10b58740"
 }
