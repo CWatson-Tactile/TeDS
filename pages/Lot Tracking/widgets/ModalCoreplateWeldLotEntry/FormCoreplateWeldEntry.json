@@ -79,7 +79,7 @@
     ],
     "showReset": true,
     "flexVerticalAlignment": "start",
-    "dynamicHeight": "AUTO_HEIGHT",
+    "dynamicHeight": "FIXED",
     "autoGenerateForm": false,
     "resetButtonStyles": {
         "boxShadow": "none",
@@ -174,7 +174,6 @@
     },
     "disabledWhenInvalid": true,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 169,
     "useSourceData": false,
     "schema": {"__root_schema__": {
         "labelTextSize": "0.875rem",
@@ -671,7 +670,7 @@
         {"key": "schema.__root_schema__.children.LotEndTime.dateFormat"}
     ],
     "displayName": "JSON Form",
-    "bottomRow": 169,
+    "bottomRow": 57,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "Coreplate weld lot entry",
@@ -695,7 +694,6 @@
     "scrollContents": true,
     "responsiveBehavior": "fill",
     "fixedFooter": true,
-    "originalTopRow": 4,
     "mobileLeftColumn": 10,
     "maxDynamicHeight": 9000,
     "minDynamicHeight": 4

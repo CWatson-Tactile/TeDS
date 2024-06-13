@@ -3,7 +3,7 @@
     "borderColor": "#E0DEDE",
     "iconSVG": "/static/media/icon.46adf7030d667f0ad9002aa31f997573.svg",
     "onSubmit": "{{InsertQueryCoilLots.run().then(() => {\n  resetWidget(\"ModalPlungerCoreplateLotEntry\", true);\n  closeModal('ModalPlungerCoreplateLotEntry');\n  showAlert('Lot Entered Successfully', 'success');\n  SelectQueryCoilLots.run();\n}).catch(() => {\n  showAlert('Error! Get Connor!', 'error');\n});}}",
-    "topRow": 0,
+    "topRow": 4,
     "type": "JSON_FORM_WIDGET",
     "animateLoading": true,
     "leftColumn": 0,
@@ -85,7 +85,7 @@
     ],
     "showReset": true,
     "flexVerticalAlignment": "start",
-    "dynamicHeight": "AUTO_HEIGHT",
+    "dynamicHeight": "FIXED",
     "autoGenerateForm": false,
     "resetButtonStyles": {
         "boxShadow": "none",
@@ -180,7 +180,6 @@
     },
     "disabledWhenInvalid": true,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 201,
     "useSourceData": false,
     "schema": {"__root_schema__": {
         "labelTextSize": "0.875rem",
@@ -786,7 +785,7 @@
         {"key": "schema.__root_schema__.children.LotEndTime.defaultValue"}
     ],
     "displayName": "JSON Form",
-    "bottomRow": 201,
+    "bottomRow": 56,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "Coil lot entry",
@@ -801,7 +800,7 @@
     "key": "1a156tlbta",
     "backgroundColor": "#fff",
     "isDeprecated": false,
-    "rightColumn": 64,
+    "rightColumn": 62,
     "widgetId": "odaa6onfrh",
     "minWidth": 450,
     "parentId": "b6n56uz87o",
@@ -810,7 +809,6 @@
     "scrollContents": true,
     "responsiveBehavior": "fill",
     "fixedFooter": true,
-    "originalTopRow": 0,
     "mobileLeftColumn": 10,
     "maxDynamicHeight": 9000,
     "minDynamicHeight": 4

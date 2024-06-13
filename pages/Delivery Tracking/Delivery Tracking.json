@@ -32,42 +32,12 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Delivery Tracking_QuerySelectAllDeliveryTracking",
-              "name": "QuerySelectAllDeliveryTracking",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Delivery Tracking_QueryTop1kInventory",
-              "name": "QueryTop1kInventory",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Delivery Tracking__$QueryEmployeeList$_QueryEmployeeListModule",
-              "name": "_$QueryEmployeeList$_QueryEmployeeListModule",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "Delivery Tracking_JSDeliveryDataFetch.DeliveryDataFetch",
               "name": "JSDeliveryDataFetch.DeliveryDataFetch",
               "collectionId": "Delivery Tracking_JSDeliveryDataFetch",
               "confirmBeforeExecute": false,
               "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  const DeliveryData = QuerySelectAllDeliveryTracking.data;\n  return DeliveryData;\n  Response.sort();\n}"
-              ],
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
@@ -76,9 +46,17 @@
               "collectionId": "Delivery Tracking_JS_SkuName",
               "confirmBeforeExecute": false,
               "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  const SkuData = QueryTop1kInventory.data.map(i => ({\n    label: i.SKU + \" \" + i.PartName,\n    value: i.SKU\n  }));\n  return SkuData;\n  Response.sort();\n}"
-              ],
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Delivery Tracking__$QueryEmployeeList$_QueryEmployeeListModule",
+              "name": "_$QueryEmployeeList$_QueryEmployeeListModule",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]

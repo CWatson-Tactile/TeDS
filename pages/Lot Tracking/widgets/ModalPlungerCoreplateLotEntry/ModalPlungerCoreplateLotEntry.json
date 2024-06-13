@@ -12,13 +12,13 @@
         "notification"
     ],
     "topRow": 87,
-    "bottomRow": 2117,
+    "bottomRow": 667,
     "parentRowSpace": 10,
     "type": "MODAL_WIDGET",
     "hideCard": false,
     "shouldScrollContents": true,
     "mobileRightColumn": 24,
-    "minHeight": 2030,
+    "minHeight": 2070,
     "animateLoading": true,
     "parentColumnSpace": 16.109375,
     "dynamicTriggerPathList": [],
@@ -30,13 +30,13 @@
         "widgetName": "Canvas1Copy1",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 2030,
+        "bottomRow": 580,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": true,
         "hideCard": true,
         "shouldScrollContents": false,
-        "minHeight": 2070,
+        "minHeight": 580,
         "mobileRightColumn": 64,
         "useAutoLayout": true,
         "parentColumnSpace": 1,
@@ -154,11 +154,15 @@
             {"children": [{
                 "id": "y7rulbu3pl",
                 "align": "start"
+            }]},
+            {"children": [{
+                "id": "5nhwod9h8k",
+                "align": "start"
             }]}
         ]
     }],
     "key": "r42xggbuws",
-    "height": 2030,
+    "height": 580,
     "isDeprecated": false,
     "rightColumn": 24,
     "detachFromLayout": true,
@@ -177,7 +181,7 @@
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
     "originalBottomRow": 189,
-    "width": 468,
+    "width": 494,
     "alignment": "start",
     "minDynamicHeight": 10
 }

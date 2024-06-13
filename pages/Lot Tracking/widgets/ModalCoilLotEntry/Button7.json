@@ -4,7 +4,7 @@
     "mobileBottomRow": 4,
     "widgetName": "Button7",
     "onClick": "{{resetWidget(\"ModalCoilLotEntry\", true).then(() => {\n  closeModal('ModalCoilLotEntry');\n}).catch(() => {\n  showAlert('Error! Get Connor', 'error');\n});}}",
-    "buttonColor": "#eab308",
+    "buttonColor": "#b91c1c",
     "displayName": "Button",
     "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
     "searchTags": [
@@ -43,6 +43,6 @@
     "disabledWhenInvalid": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 25,
-    "buttonVariant": "PRIMARY",
+    "buttonVariant": "TERTIARY",
     "placement": "CENTER"
 }

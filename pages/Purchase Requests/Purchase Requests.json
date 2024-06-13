@@ -33,9 +33,7 @@
               "collectionId": "Purchase Requests_JSObject1",
               "confirmBeforeExecute": false,
               "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  await storeValue('cart', appsmith.store?.cart || []);\n  await storeValue('search', appsmith.store?.search || '');\n  await storeValue('filter', appsmith.store?.filter || '');\n}"
-              ],
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {

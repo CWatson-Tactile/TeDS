@@ -11,8 +11,6 @@
         {"key": "borderRadius"},
         {"key": "boxShadow"},
         {"key": "submitButtonStyles.buttonColor"},
-        {"key": "submitButtonStyles.borderRadius"},
-        {"key": "resetButtonStyles.buttonColor"},
         {"key": "resetButtonStyles.borderRadius"},
         {"key": "schema.__root_schema__.defaultValue"},
         {"key": "schema.__root_schema__.borderRadius"},
@@ -90,8 +88,11 @@
     "resetButtonStyles": {
         "boxShadow": "none",
         "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-        "buttonVariant": "SECONDARY"
+        "buttonColor": "#eab308",
+        "iconName": "reset",
+        "buttonVariant": "TERTIARY",
+        "iconAlign": "left",
+        "placement": "CENTER"
     },
     "isVisible": true,
     "version": 1,
@@ -772,10 +773,13 @@
     "mobileBottomRow": 51,
     "widgetName": "FormCoilLotEntry",
     "submitButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+        "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+        "borderRadius": "0px",
         "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-        "buttonVariant": "PRIMARY"
+        "iconName": "key-enter",
+        "buttonVariant": "PRIMARY",
+        "iconAlign": "left",
+        "placement": "CENTER"
     },
     "dynamicPropertyPathList": [
         {"key": "sourceData"},
@@ -785,7 +789,7 @@
         {"key": "schema.__root_schema__.children.LotEndTime.defaultValue"}
     ],
     "displayName": "JSON Form",
-    "bottomRow": 98,
+    "bottomRow": 57,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "Coil lot entry",
@@ -798,7 +802,7 @@
     "sourceData": "{\n  \"CoilLotNum\": \"\",\n  \"BobbinLotNum\": \"\",\n  \"WireLotNum\": \"\",\n  \"FluxLotNum\": \"\",\n  \"SolderLotNum\": \"\",\n  \"MaintLogNum\": \"\",\n  \"VersionLogNum\": \"\",\n  \"UnitsProducedCount\": \"\",\n  \"UnitsFailedCount\": \"\",\n\t\"UnitsPassCount\":\"\",\n  \"SolderOverCount\": \"\",\n  \"SolderUnderCount\": \"\",\n  \"BaseOverWrapCount\": \"\",\n  \"CenterOverWrapCount\": \"\",\n  \"UnderWrapCount\": \"\",\n  \"BobbinWrapCount\": \"\",\n  \"BrokenCoilCount\": \"\",\n  \"ResistanceCount\": \"\",\n  \"OtherCount\": \"\",\n\t\"LotStartTime\":\"\",\n\t\"LotStartEmpID\":\"\",\n\t\"LotEndTime\":\"\",\n\t\"LotEndEmpID\":\"\",\n\t\"Notes\":\"\"\n}",
     "resetButtonLabel": "Reset",
     "key": "1a156tlbta",
-    "backgroundColor": "#fff",
+    "backgroundColor": "#e0dede",
     "isDeprecated": false,
     "rightColumn": 63,
     "widgetId": "goqpxgx4tv",

@@ -12,7 +12,7 @@
         "notification"
     ],
     "topRow": 187,
-    "bottomRow": 1817,
+    "bottomRow": 777,
     "parentRowSpace": 10,
     "type": "MODAL_WIDGET",
     "hideCard": false,
@@ -30,7 +30,7 @@
         "widgetName": "Canvas1CopyCopy2",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 1630,
+        "bottomRow": 590,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": true,
@@ -154,7 +154,7 @@
         ]
     }],
     "key": "r42xggbuws",
-    "height": 1630,
+    "height": 590,
     "isDeprecated": false,
     "rightColumn": 24,
     "detachFromLayout": true,
