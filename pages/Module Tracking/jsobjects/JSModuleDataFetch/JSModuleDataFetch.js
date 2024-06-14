@@ -3,6 +3,6 @@ export default {
 		const ModuleData = SelectModuleList.data
 
 		return ModuleData
-		Response.sort()
+
 	}
 }

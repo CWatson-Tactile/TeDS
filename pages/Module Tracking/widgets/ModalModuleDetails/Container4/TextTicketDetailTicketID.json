@@ -11,8 +11,7 @@
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
         {"key": "borderRadius"},
-        {"key": "text"},
-        {"key": "backgroundColor"}
+        {"key": "text"}
     ],
     "text": "{{TableModuleData.selectedRow.ModuleSerialNum}}",
     "disableLink": false,
@@ -50,7 +49,7 @@
     "key": "88seysd8vm",
     "isDeprecated": false,
     "rightColumn": 51,
-    "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
+    "backgroundColor": "#ffffff",
     "widgetId": "jkxka2do7g",
     "minWidth": 450,
     "parentId": "k8fq5zf3ys",

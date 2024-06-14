@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Module Tracking",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Module Tracking_JSObject1",
+  "deleted": false,
+  "gitSyncId": "666b27d34105bf614fd3798d_fc28661e-a639-4556-b0c4-d6906a68cec2"
+}

@@ -77,10 +77,10 @@
   "color": "#C7F3E3",
   "icon": "bag",
   "unpublishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "TABLET_LARGE"
   },
   "publishedAppLayout": {
-    "type": "TABLET_LARGE"
+    "type": "DESKTOP"
   },
   "unpublishedCustomJSLibs": [
     {

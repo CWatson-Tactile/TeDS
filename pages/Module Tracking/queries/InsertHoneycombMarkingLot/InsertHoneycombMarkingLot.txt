@@ -1,0 +1,1 @@
+INSERT INTO dbo.ModuleTracker (ID, ModuleSerialNum, Notes, HoneycombLotNum, GlueStationLotNum, PostGlueEqcLotNum, ModulePcbSolderLotNum, RubberMagnetLotNum, CoreplateWeldLotNum, BurnInLotNum) VALUES (1, NULL, 'text', 'text', 'text', 'text', 'text', 'text', 'text', 'text')
