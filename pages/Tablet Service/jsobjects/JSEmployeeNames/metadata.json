@@ -1,0 +1,18 @@
+{
+  "moduleInstanceId": "Tablet Service_JSEmployeeNames",
+  "isPublic": true,
+  "rootModuleInstanceId": "Tablet Service_JSEmployeeNames",
+  "unpublishedCollection": {
+    "name": "_$JSEmployeeNames$_JSEmployeeNames",
+    "pageId": "Tablet Service",
+    "contextType": "PAGE",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "userPermissions": []
+  },
+  "id": "Tablet Service__$JSEmployeeNames$_JSEmployeeNames",
+  "deleted": false,
+  "gitSyncId": "666b27d34105bf614fd3798d_ffbb6d3e-d823-4ada-95ec-81a7757aad13"
+}

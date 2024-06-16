@@ -1,0 +1,18 @@
+{
+  "moduleInstanceId": "Dashboards_JSEmployeeNames",
+  "isPublic": true,
+  "rootModuleInstanceId": "Dashboards_JSEmployeeNames",
+  "unpublishedCollection": {
+    "name": "_$JSEmployeeNames$_JSEmployeeNames",
+    "pageId": "Dashboards",
+    "contextType": "PAGE",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "userPermissions": []
+  },
+  "id": "Dashboards__$JSEmployeeNames$_JSEmployeeNames",
+  "deleted": false,
+  "gitSyncId": "666b27d34105bf614fd3798d_f8abd108-d292-4ccc-8ee8-c4dc861c4144"
+}

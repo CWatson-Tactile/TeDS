@@ -12,7 +12,7 @@
         "notification"
     ],
     "topRow": 187,
-    "bottomRow": 1897,
+    "bottomRow": 1017,
     "parentRowSpace": 10,
     "type": "MODAL_WIDGET",
     "hideCard": false,
@@ -23,14 +23,17 @@
     "parentColumnSpace": 16.109375,
     "dynamicTriggerPathList": [],
     "leftColumn": 0,
-    "dynamicBindingPathList": [{"key": "borderRadius"}],
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "backgroundColor"}
+    ],
     "children": [{
         "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
         "mobileBottomRow": 240,
         "widgetName": "Canvas1CopyCopyCopy",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 1710,
+        "bottomRow": 830,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": true,
@@ -154,9 +157,10 @@
         ]
     }],
     "key": "r42xggbuws",
-    "height": 1710,
+    "height": 830,
     "isDeprecated": false,
     "rightColumn": 24,
+    "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
     "detachFromLayout": true,
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "jixhb8hlbi",

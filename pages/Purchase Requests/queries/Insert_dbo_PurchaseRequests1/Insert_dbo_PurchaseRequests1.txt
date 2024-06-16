@@ -1,1 +1,0 @@
-INSERT INTO dbo.PurchaseRequests (OrderNum,SKU,EmpID,OrderDate,NeedByDate,OrderStatus) VALUES ('{{(JSONForm1.formData || {}).OrderNum}}','{{(JSONForm1.formData || {}).SKU}}','{{(JSONForm1.formData || {}).EmpID}}','{{(JSONForm1.formData || {}).OrderDate}}','{{(JSONForm1.formData || {}).NeedByDate}}','{{(JSONForm1.formData || {}).OrderStatus}}')

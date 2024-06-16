@@ -9,7 +9,7 @@
           "mobileBottomRow": 4468,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 1080,
+          "bottomRow": 1079.9999999999927,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -60,19 +60,32 @@
           ],
           [
             {
-              "id": "Inventory_QueryEmployeeList",
-              "name": "QueryEmployeeList",
+              "id": "Inventory_QuerySelectAdjustmentCodes",
+              "name": "QuerySelectAdjustmentCodes",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Inventory_QuerySelectAdjustmentCodes",
-              "name": "QuerySelectAdjustmentCodes",
+              "id": "Inventory__$JSEmployeeNames$_SelectEmployeeListQuery",
+              "name": "_$JSEmployeeNames$_SelectEmployeeListQuery",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Inventory__$JSEmployeeNames$_JSEmployeeNames.EmpNames",
+              "name": "_$JSEmployeeNames$_JSEmployeeNames.EmpNames",
+              "collectionId": "Inventory__$JSEmployeeNames$_JSEmployeeNames",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const EmpNames = _$JSEmployeeNames$_SelectEmployeeListQuery.data.map(i => ({\n    label: i.EmployeeFirstName + \" \" + i.EmployeeLastName,\n    value: i.EmployeeID\n  }));\n  return EmpNames;\n}"
+              ],
               "timeoutInMillisecond": 10000
             }
           ],

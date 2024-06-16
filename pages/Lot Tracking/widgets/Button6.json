@@ -46,7 +46,7 @@
     "borderRadius": "0px",
     "mobileLeftColumn": 0,
     "originalBottomRow": 15,
-    "buttonVariant": "PRIMARY",
+    "buttonVariant": "TERTIARY",
     "iconAlign": "left",
     "placement": "CENTER"
 }

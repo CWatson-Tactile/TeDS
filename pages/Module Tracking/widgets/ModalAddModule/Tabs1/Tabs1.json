@@ -2,7 +2,7 @@
     "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
     "mobileBottomRow": 15,
     "widgetName": "Tabs1",
-    "borderColor": "#E0DEDE",
+    "borderColor": "{{appsmith.theme.colors.backgroundColor}}",
     "isCanvas": true,
     "displayName": "Tabs",
     "iconSVG": "/static/media/icon.9e3d67c0af9c0bd092dc56240314e18a.svg",
@@ -19,7 +19,9 @@
     "leftColumn": 0,
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
-        {"key": "boxShadow"}
+        {"key": "boxShadow"},
+        {"key": "backgroundColor"},
+        {"key": "borderColor"}
     ],
     "children": [
         {
@@ -114,7 +116,7 @@
     "borderWidth": "",
     "flexVerticalAlignment": "stretch",
     "key": "gfv1h11ymf",
-    "backgroundColor": "#e0dede",
+    "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
     "isDeprecated": false,
     "rightColumn": 64,
     "dynamicHeight": "AUTO_HEIGHT",

@@ -79,7 +79,8 @@
         {"key": "schema.__root_schema__.children.LotStartEmpID.accentColor"},
         {"key": "schema.__root_schema__.children.LotStartEmpID.options"},
         {"key": "schema.__root_schema__.children.LotEndEmpID.options"},
-        {"key": "schema.__root_schema__.children.LotStartEmpID.defaultValue"}
+        {"key": "schema.__root_schema__.children.LotStartEmpID.defaultValue"},
+        {"key": "backgroundColor"}
     ],
     "showReset": true,
     "flexVerticalAlignment": "start",
@@ -666,7 +667,7 @@
                 "originalIdentifier": "LotEndEmpID",
                 "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCoilLotEntry.sourceData, FormCoilLotEntry.formData, FormCoilLotEntry.fieldState)}}",
                 "children": {},
-                "options": "{{JSEmployeeNames.EmpNames.data}}",
+                "options": "{{js.EmpNames.data}}",
                 "position": 22,
                 "isDisabled": false,
                 "sourceData": "",
@@ -789,7 +790,7 @@
         {"key": "schema.__root_schema__.children.LotEndTime.defaultValue"}
     ],
     "displayName": "JSON Form",
-    "bottomRow": 57,
+    "bottomRow": 81,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "Coil lot entry",
@@ -802,7 +803,7 @@
     "sourceData": "{\n  \"CoilLotNum\": \"\",\n  \"BobbinLotNum\": \"\",\n  \"WireLotNum\": \"\",\n  \"FluxLotNum\": \"\",\n  \"SolderLotNum\": \"\",\n  \"MaintLogNum\": \"\",\n  \"VersionLogNum\": \"\",\n  \"UnitsProducedCount\": \"\",\n  \"UnitsFailedCount\": \"\",\n\t\"UnitsPassCount\":\"\",\n  \"SolderOverCount\": \"\",\n  \"SolderUnderCount\": \"\",\n  \"BaseOverWrapCount\": \"\",\n  \"CenterOverWrapCount\": \"\",\n  \"UnderWrapCount\": \"\",\n  \"BobbinWrapCount\": \"\",\n  \"BrokenCoilCount\": \"\",\n  \"ResistanceCount\": \"\",\n  \"OtherCount\": \"\",\n\t\"LotStartTime\":\"\",\n\t\"LotStartEmpID\":\"\",\n\t\"LotEndTime\":\"\",\n\t\"LotEndEmpID\":\"\",\n\t\"Notes\":\"\"\n}",
     "resetButtonLabel": "Reset",
     "key": "1a156tlbta",
-    "backgroundColor": "#e0dede",
+    "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
     "isDeprecated": false,
     "rightColumn": 63,
     "widgetId": "goqpxgx4tv",

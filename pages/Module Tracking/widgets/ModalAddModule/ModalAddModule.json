@@ -23,7 +23,10 @@
     "parentColumnSpace": 15.6875,
     "dynamicTriggerPathList": [],
     "leftColumn": 7,
-    "dynamicBindingPathList": [{"key": "borderRadius"}],
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "backgroundColor"}
+    ],
     "children": [{
         "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
         "mobileBottomRow": 240,
@@ -69,7 +72,7 @@
     "height": 210,
     "isDeprecated": false,
     "rightColumn": 31,
-    "backgroundColor": "#e0dede",
+    "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
     "detachFromLayout": true,
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "w3w1yoid5w",

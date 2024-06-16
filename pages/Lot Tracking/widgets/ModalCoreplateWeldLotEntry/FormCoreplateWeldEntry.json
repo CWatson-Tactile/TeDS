@@ -12,7 +12,6 @@
         {"key": "boxShadow"},
         {"key": "submitButtonStyles.buttonColor"},
         {"key": "submitButtonStyles.borderRadius"},
-        {"key": "resetButtonStyles.buttonColor"},
         {"key": "resetButtonStyles.borderRadius"},
         {"key": "schema.__root_schema__.defaultValue"},
         {"key": "schema.__root_schema__.borderRadius"},
@@ -75,7 +74,8 @@
         {"key": "schema.__root_schema__.children.Notes.accentColor"},
         {"key": "schema.__root_schema__.cellBorderRadius"},
         {"key": "schema.__root_schema__.children.LotStartEmpID.options"},
-        {"key": "schema.__root_schema__.children.LotEndEmpID.options"}
+        {"key": "schema.__root_schema__.children.LotEndEmpID.options"},
+        {"key": "backgroundColor"}
     ],
     "showReset": true,
     "flexVerticalAlignment": "start",
@@ -84,8 +84,11 @@
     "resetButtonStyles": {
         "boxShadow": "none",
         "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-        "buttonVariant": "SECONDARY"
+        "buttonColor": "#eab308",
+        "iconName": "refresh",
+        "buttonVariant": "TERTIARY",
+        "iconAlign": "left",
+        "placement": "CENTER"
     },
     "isVisible": true,
     "version": 1,
@@ -661,7 +664,10 @@
         "boxShadow": "none",
         "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
         "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-        "buttonVariant": "PRIMARY"
+        "iconName": "key-enter",
+        "buttonVariant": "PRIMARY",
+        "iconAlign": "left",
+        "placement": "CENTER"
     },
     "dynamicPropertyPathList": [
         {"key": "sourceData"},
@@ -670,7 +676,7 @@
         {"key": "schema.__root_schema__.children.LotEndTime.dateFormat"}
     ],
     "displayName": "JSON Form",
-    "bottomRow": 57,
+    "bottomRow": 81,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "Coreplate weld lot entry",
@@ -683,7 +689,7 @@
     "sourceData": "{\n  \"CoreplateWeldLotNum\":\"\",\n  \"MagnetModuleLotNum\": \"\",\n  \"PlungerLotNum\": \"\",\n  \"CoreplateLotNum\": \"\",\n  \"ArgonLotNum\": \"\",\n  \"MaintLogNum\": \"\",\n  \"VersionLogNum\": \"\",\n  \"WeldFailCount\": \"\",\n  \"MosfetPreWeldFailCount\": \"\",\n  \"MosfetPostWeldFailCount\": \"\",\n  \"OtherFailCount\": \"\",\n  \"UnitsProducedCount\": \"\",\n  \"UnitsFailCount\": \"\",\n  \"UnitsPassCount\": \"\",\n  \"LotStartTime\": \"\",\n  \"LotStartEmpID\": \"\",\n  \"LotEndTime\": \"\",\n  \"LotEndEmpID\": \"\",\n  \"Notes\": \"\"\n}",
     "resetButtonLabel": "Reset",
     "key": "1a156tlbta",
-    "backgroundColor": "#fff",
+    "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
     "isDeprecated": false,
     "rightColumn": 64,
     "widgetId": "tx5ouygbg9",

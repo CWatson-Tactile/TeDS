@@ -176,8 +176,8 @@
           ],
           [
             {
-              "id": "Lot Tracking_SelectAllEmployeeNamesQuery",
-              "name": "SelectAllEmployeeNamesQuery",
+              "id": "Lot Tracking__$JSEmployeeNames$_SelectEmployeeListQuery",
+              "name": "_$JSEmployeeNames$_SelectEmployeeListQuery",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
@@ -186,13 +186,13 @@
           ],
           [
             {
-              "id": "Lot Tracking_JSEmployeeNames.EmpNames",
-              "name": "JSEmployeeNames.EmpNames",
-              "collectionId": "Lot Tracking_JSEmployeeNames",
+              "id": "Lot Tracking__$JSEmployeeNames$_JSEmployeeNames.EmpNames",
+              "name": "_$JSEmployeeNames$_JSEmployeeNames.EmpNames",
+              "collectionId": "Lot Tracking__$JSEmployeeNames$_JSEmployeeNames",
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  const EmpNames = SelectAllEmployeeNamesQuery.data.map(i => ({\n    label: i.EmployeeFirstName + \" \" + i.EmployeeLastName,\n    value: i.EmployeeID\n  }));\n  return EmpNames;\n}"
+                "async () => {\n  const EmpNames = _$JSEmployeeNames$_SelectEmployeeListQuery.data.map(i => ({\n    label: i.EmployeeFirstName + \" \" + i.EmployeeLastName,\n    value: i.EmployeeID\n  }));\n  return EmpNames;\n}"
               ],
               "timeoutInMillisecond": 10000
             }

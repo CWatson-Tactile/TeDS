@@ -67,6 +67,7 @@
             "placement": "CENTER"
         },
         "groupButton3": {
+            "onClick": "{{showModal(ModalTabletDetails.name);}}",
             "buttonType": "SIMPLE",
             "iconName": "eye-open",
             "buttonColor": "#7e22ce",
@@ -167,7 +168,8 @@
         {"key": "groupButtons.groupButtontay0ny5pyp.onClick"},
         {"key": "groupButtons.groupButton28wsl62m34.onClick"},
         {"key": "groupButtons.groupButton8dbz598e9y.menuItems.menuItem4hlvazogkm.onClick"},
-        {"key": "groupButtons.groupButton8dbz598e9y.menuItems.menuItemj8udbezoew.onClick"}
+        {"key": "groupButtons.groupButton8dbz598e9y.menuItems.menuItemj8udbezoew.onClick"},
+        {"key": "groupButtons.groupButton3.onClick"}
     ],
     "leftColumn": 0,
     "dynamicBindingPathList": [{"key": "groupButtons.groupButton1.buttonColor"}],

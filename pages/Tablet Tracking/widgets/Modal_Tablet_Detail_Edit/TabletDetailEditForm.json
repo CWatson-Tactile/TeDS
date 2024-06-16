@@ -126,11 +126,11 @@
         {"key": "schema.__root_schema__.children.Capture_Plate_Material.options"}
     ],
     "showReset": true,
-    "dynamicHeight": "AUTO_HEIGHT",
+    "dynamicHeight": "FIXED",
     "autoGenerateForm": true,
     "resetButtonStyles": {
         "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+        "borderRadius": "0px",
         "buttonColor": "#eab308",
         "iconName": "reset",
         "buttonVariant": "SECONDARY",
@@ -224,7 +224,6 @@
     },
     "disabledWhenInvalid": true,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 64,
     "useSourceData": false,
     "schema": {"__root_schema__": {
         "labelTextSize": "0.875rem",
@@ -1033,7 +1032,7 @@
     "widgetName": "TabletDetailEditForm",
     "submitButtonStyles": {
         "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-        "borderRadius": "0.375rem",
+        "borderRadius": "0px",
         "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
         "iconName": "key-enter",
         "buttonVariant": "SECONDARY",
@@ -1042,7 +1041,7 @@
     },
     "dynamicPropertyPathList": [],
     "displayName": "JSON Form",
-    "bottomRow": 267,
+    "bottomRow": 103,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "Tablet Detail Edit Form",
@@ -1063,7 +1062,6 @@
     "renderMode": "CANVAS",
     "scrollContents": true,
     "fixedFooter": true,
-    "originalTopRow": 0,
     "maxDynamicHeight": 9000,
     "minDynamicHeight": 4
 }

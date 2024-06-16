@@ -12,7 +12,6 @@
         {"key": "boxShadow"},
         {"key": "submitButtonStyles.buttonColor"},
         {"key": "submitButtonStyles.borderRadius"},
-        {"key": "resetButtonStyles.buttonColor"},
         {"key": "resetButtonStyles.borderRadius"},
         {"key": "schema.__root_schema__.defaultValue"},
         {"key": "schema.__root_schema__.borderRadius"},
@@ -81,7 +80,8 @@
         {"key": "schema.__root_schema__.children.LotEndEmpID.options"},
         {"key": "schema.__root_schema__.children.UnitsPassCount.defaultValue"},
         {"key": "schema.__root_schema__.children.UnitsFailedCount.defaultValue"},
-        {"key": "schema.__root_schema__.children.LotStartEmpID.defaultValue"}
+        {"key": "schema.__root_schema__.children.LotStartEmpID.defaultValue"},
+        {"key": "backgroundColor"}
     ],
     "showReset": true,
     "flexVerticalAlignment": "start",
@@ -90,8 +90,11 @@
     "resetButtonStyles": {
         "boxShadow": "none",
         "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-        "buttonVariant": "SECONDARY"
+        "buttonColor": "#eab308",
+        "iconName": "refresh",
+        "buttonVariant": "TERTIARY",
+        "iconAlign": "left",
+        "placement": "CENTER"
     },
     "isVisible": true,
     "version": 1,
@@ -775,7 +778,9 @@
         "boxShadow": "none",
         "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
         "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-        "buttonVariant": "PRIMARY"
+        "iconName": "key-enter",
+        "buttonVariant": "PRIMARY",
+        "iconAlign": "left"
     },
     "dynamicPropertyPathList": [
         {"key": "sourceData"},
@@ -785,7 +790,7 @@
         {"key": "schema.__root_schema__.children.LotEndTime.defaultValue"}
     ],
     "displayName": "JSON Form",
-    "bottomRow": 56,
+    "bottomRow": 81,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "Coil lot entry",
@@ -798,7 +803,7 @@
     "sourceData": "{\n  \"CoilLotNum\": \"\",\n  \"BobbinLotNum\": \"\",\n  \"WireLotNum\": \"\",\n  \"FluxLotNum\": \"\",\n  \"SolderLotNum\": \"\",\n  \"MaintLogNum\": \"\",\n  \"VersionLogNum\": \"\",\n  \"UnitsProducedCount\": \"\",\n  \"UnitsFailedCount\": \"\",\n\t\"UnitsPassCount\":\"\",\n  \"SolderOverCount\": \"\",\n  \"SolderUnderCount\": \"\",\n  \"BaseOverWrapCount\": \"\",\n  \"CenterOverWrapCount\": \"\",\n  \"UnderWrapCount\": \"\",\n  \"BobbinWrapCount\": \"\",\n  \"BrokenCoilCount\": \"\",\n  \"ResistanceCount\": \"\",\n  \"OtherCount\": \"\",\n\t\"LotStartTime\":\"\",\n\t\"LotStartEmpID\":\"\",\n\t\"LotEndTime\":\"\",\n\t\"LotEndEmpID\":\"\",\n\t\"Notes\":\"\"\n}",
     "resetButtonLabel": "Reset",
     "key": "1a156tlbta",
-    "backgroundColor": "#fff",
+    "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
     "isDeprecated": false,
     "rightColumn": 62,
     "widgetId": "odaa6onfrh",

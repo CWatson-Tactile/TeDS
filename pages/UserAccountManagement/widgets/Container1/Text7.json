@@ -26,7 +26,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Name: {{QueryEmployeeList.data.find(row => row.EmployeeID === appsmith.store.EmpID).EmployeeFirstName + \" \" + QueryEmployeeList.data.find(row => row.EmployeeID === appsmith.store.EmpID).EmployeeLastName}}\n\nEmployee ID: {{QueryEmployeeList.data.find(row => row.EmployeeID === appsmith.store.EmpID).EmployeeID}}\n\nPIN: {{QueryEmployeeList.data.find(row => row.EmployeeID === appsmith.store.EmpID).EmployeeClockInPIN}}",
+    "text": "Name: {{JSEmployeeNames.EmpNames.data.find(row => row.value === appsmith.store.EmpID).label}}\n\nEmployee ID: {{QueryEmployeeList.data.find(row => row.EmployeeID === appsmith.store.EmpID).EmployeeID}}\n\nPIN: {{QueryEmployeeList.data.find(row => row.EmployeeID === appsmith.store.EmpID).EmployeeClockInPIN}}",
     "key": "rq56ebp7qb",
     "isDeprecated": false,
     "rightColumn": 64,

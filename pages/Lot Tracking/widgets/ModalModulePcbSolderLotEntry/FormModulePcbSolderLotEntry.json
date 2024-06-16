@@ -12,7 +12,6 @@
         {"key": "boxShadow"},
         {"key": "submitButtonStyles.buttonColor"},
         {"key": "submitButtonStyles.borderRadius"},
-        {"key": "resetButtonStyles.buttonColor"},
         {"key": "resetButtonStyles.borderRadius"},
         {"key": "schema.__root_schema__.defaultValue"},
         {"key": "schema.__root_schema__.borderRadius"},
@@ -81,17 +80,21 @@
         {"key": "schema.__root_schema__.children.LotStartEmpID.options"},
         {"key": "schema.__root_schema__.children.LotEndEmpID.options"},
         {"key": "schema.__root_schema__.children.LotStartEmpID.defaultValue"},
-        {"key": "schema.__root_schema__.children.LotEndEmpID.defaultValue"}
+        {"key": "schema.__root_schema__.children.LotEndEmpID.defaultValue"},
+        {"key": "backgroundColor"}
     ],
     "showReset": true,
     "flexVerticalAlignment": "start",
-    "dynamicHeight": "AUTO_HEIGHT",
+    "dynamicHeight": "FIXED",
     "autoGenerateForm": true,
     "resetButtonStyles": {
         "boxShadow": "none",
         "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-        "buttonVariant": "SECONDARY"
+        "buttonColor": "#eab308",
+        "iconName": "refresh",
+        "buttonVariant": "TERTIARY",
+        "iconAlign": "left",
+        "placement": "CENTER"
     },
     "isVisible": true,
     "version": 1,
@@ -180,7 +183,6 @@
     },
     "disabledWhenInvalid": true,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 183,
     "useSourceData": false,
     "schema": {"__root_schema__": {
         "labelTextSize": "0.875rem",
@@ -713,7 +715,10 @@
         "boxShadow": "none",
         "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
         "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-        "buttonVariant": "PRIMARY"
+        "iconName": "key-enter",
+        "buttonVariant": "PRIMARY",
+        "iconAlign": "left",
+        "placement": "CENTER"
     },
     "dynamicPropertyPathList": [
         {"key": "schema.__root_schema__.children.LotStartTime.dateFormat"},
@@ -722,7 +727,7 @@
         {"key": "sourceData"}
     ],
     "displayName": "JSON Form",
-    "bottomRow": 183,
+    "bottomRow": 93,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "Module PCB Solder lot entry",
@@ -735,7 +740,7 @@
     "sourceData": "{\n  \"ModulePcbSolderLotNum\":\"\",\n  \"ModuleEqcLotNum\": \"\",\n  \"ModulePcbLotNum\": \"\",\n  \"FluxLotNum\": \"\",\n  \"FluxMaintLogNum\": \"\",\n  \"FluxVersionLogNum\": \"\",\n  \"LaserMaintLogNum\": \"\",\n  \"LaserVersionLogNum\": \"\",\n  \"UnitsProducedCount\": \"\",\n  \"ColumnShortCount\": \"\",\n  \"HoneycombShortCount\": \"\",\n  \"MosfetOpenFailCount\": \"\",\n  \"MosfetLowCount\": \"\",\n  \"OtherFailCount\": \"\",\n  \"UnitsFailCount\": \"\",\n  \"UnitsPassCount\": \"\",\n  \"LotStartTime\": \"\",\n  \"LotStartEmpID\": \"\",\n  \"LotEndTime\": \"\",\n  \"LotEndEmpID\": \"\",\n  \"Notes\": \"\"\n}",
     "resetButtonLabel": "Reset",
     "key": "1a156tlbta",
-    "backgroundColor": "#fff",
+    "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
     "isDeprecated": false,
     "rightColumn": 64,
     "widgetId": "vm2x9zfa4b",
@@ -746,7 +751,6 @@
     "scrollContents": true,
     "responsiveBehavior": "fill",
     "fixedFooter": true,
-    "originalTopRow": 4,
     "mobileLeftColumn": 10,
     "maxDynamicHeight": 9000,
     "minDynamicHeight": 4

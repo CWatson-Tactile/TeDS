@@ -19,7 +19,8 @@
     "leftColumn": 0,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "backgroundColor"}
     ],
     "children": [
         {
@@ -459,7 +460,7 @@
     "borderWidth": "",
     "flexVerticalAlignment": "stretch",
     "key": "7kvj3erua5",
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
     "isDeprecated": false,
     "rightColumn": 64,
     "dynamicHeight": "FIXED",
@@ -515,7 +516,7 @@
             "index": 9,
             "id": "tab0nb7n5i4x9",
             "label": "Burn-In",
-            "isVisible": true
+            "isVisible": false
         },
         "tab1": {
             "widgetId": "r7ylmnwjz4",
@@ -533,7 +534,7 @@
             "index": 0,
             "label": "Honeycombs",
             "id": "tab2",
-            "isVisible": true
+            "isVisible": false
         },
         "tabll7ph4ivvy": {
             "widgetId": "0jep8qc0wh",

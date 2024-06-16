@@ -1,9 +1,12 @@
 {
+  "moduleInstanceId": "Lot Tracking_JSEmployeeNames",
+  "isPublic": true,
+  "rootModuleInstanceId": "Lot Tracking_JSEmployeeNames",
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
     "name": "EmpNames",
-    "fullyQualifiedName": "JSEmployeeNames.EmpNames",
+    "fullyQualifiedName": "_$JSEmployeeNames$_JSEmployeeNames.EmpNames",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,30 +17,19 @@
       "userPermissions": []
     },
     "pageId": "Lot Tracking",
-    "collectionId": "Lot Tracking_JSEmployeeNames",
-    "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
-      "paginationType": "NONE",
-      "encodeParamsToggle": true,
-      "selfReferencingDataPaths": [],
-      "jsArguments": []
-    },
+    "contextType": "PAGE",
+    "collectionId": "Lot Tracking__$JSEmployeeNames$_JSEmployeeNames",
     "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-06-10T20:52:45Z"
+    "createdAt": "2024-06-16T01:27:36Z"
   },
-  "id": "Lot Tracking_JSEmployeeNames.EmpNames",
+  "id": "Lot Tracking__$JSEmployeeNames$_JSEmployeeNames.EmpNames",
   "deleted": false,
-  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_5383db31-e2c7-46d7-8622-cf775e8da2b3"
+  "gitSyncId": "666b27d34105bf614fd3798d_cbe78621-7efd-4f28-9677-7318f705d8e4"
 }

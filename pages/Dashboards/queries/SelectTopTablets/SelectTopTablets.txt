@@ -1,1 +1,1 @@
-SELECT TOP 5000 * FROM dbo.TabletTracker
+SELECT * FROM dbo.TabletTracker

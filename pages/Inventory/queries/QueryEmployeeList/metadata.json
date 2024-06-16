@@ -21,7 +21,7 @@
       "body": "SELECT TOP 100 * FROM dbo.EmployeeList",
       "selfReferencingDataPaths": []
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],

@@ -14,6 +14,23 @@
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
+        "groupButton2gten8eqdf": {
+            "itemType": "BUTTON",
+            "onClick": "{{storeValue('ModuleTab', 'Production');}}",
+            "buttonColor": "#000000",
+            "iconName": "fast-backward",
+            "widgetId": "l4hyuuhasc",
+            "menuItems": {},
+            "index": 0,
+            "label": "Back to Production",
+            "isVisible": true,
+            "buttonType": "SIMPLE",
+            "buttonVariant": "filled",
+            "id": "groupButton2gten8eqdf",
+            "isDisabled": false,
+            "placement": "CENTER",
+            "isSeparator": false
+        },
         "groupButtonmwlcu15d9k": {
             "itemType": "BUTTON",
             "onClick": "{{SelectModuleList.run()}}",
@@ -21,7 +38,7 @@
             "iconName": "refresh",
             "widgetId": "a4u2bmou0t",
             "menuItems": {},
-            "index": 3,
+            "index": 4,
             "label": "Refresh",
             "isVisible": true,
             "buttonType": "SIMPLE",
@@ -72,7 +89,7 @@
                     "isDisabled": false
                 }
             },
-            "index": 2,
+            "index": 3,
             "label": "View selected module",
             "id": "groupButton3",
             "placement": "CENTER",
@@ -86,7 +103,7 @@
             "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
             "widgetId": "",
             "menuItems": {},
-            "index": 0,
+            "index": 1,
             "label": "Add new module",
             "id": "groupButton1",
             "placement": "CENTER",
@@ -100,7 +117,7 @@
             "buttonColor": "#be185d",
             "widgetId": "",
             "menuItems": {},
-            "index": 1,
+            "index": 2,
             "label": "Edit selected module",
             "id": "groupButton2",
             "placement": "CENTER",
@@ -116,7 +133,8 @@
         {"key": "groupButtons.groupButton1.onClick"},
         {"key": "groupButtons.groupButtonmwlcu15d9k.onClick"},
         {"key": "groupButtons.groupButton2.onClick"},
-        {"key": "groupButtons.groupButton3.onClick"}
+        {"key": "groupButtons.groupButton3.onClick"},
+        {"key": "groupButtons.groupButton2gten8eqdf.onClick"}
     ],
     "leftColumn": 0,
     "dynamicBindingPathList": [
@@ -126,7 +144,7 @@
     "key": "9ieoba4q6j",
     "orientation": "horizontal",
     "isDeprecated": false,
-    "rightColumn": 25,
+    "rightColumn": 41,
     "widgetId": "fqwbhb3vng",
     "minWidth": 450,
     "isVisible": true,

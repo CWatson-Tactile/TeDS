@@ -12,7 +12,6 @@
         {"key": "boxShadow"},
         {"key": "submitButtonStyles.buttonColor"},
         {"key": "submitButtonStyles.borderRadius"},
-        {"key": "resetButtonStyles.buttonColor"},
         {"key": "resetButtonStyles.borderRadius"},
         {"key": "schema.__root_schema__.defaultValue"},
         {"key": "schema.__root_schema__.borderRadius"},
@@ -75,17 +74,21 @@
         {"key": "schema.__root_schema__.children.LotStartEmpID.options"},
         {"key": "schema.__root_schema__.children.LotEndEmpID.options"},
         {"key": "schema.__root_schema__.children.LotStartEmpID.defaultValue"},
-        {"key": "schema.__root_schema__.children.LotEndEmpID.defaultValue"}
+        {"key": "schema.__root_schema__.children.LotEndEmpID.defaultValue"},
+        {"key": "backgroundColor"}
     ],
     "showReset": true,
     "flexVerticalAlignment": "start",
-    "dynamicHeight": "AUTO_HEIGHT",
+    "dynamicHeight": "FIXED",
     "autoGenerateForm": false,
     "resetButtonStyles": {
         "boxShadow": "none",
         "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-        "buttonVariant": "SECONDARY"
+        "buttonColor": "#eab308",
+        "iconName": "refresh",
+        "buttonVariant": "TERTIARY",
+        "iconAlign": "left",
+        "placement": "CENTER"
     },
     "isVisible": true,
     "version": 1,
@@ -174,7 +177,6 @@
     },
     "disabledWhenInvalid": true,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 169,
     "useSourceData": false,
     "schema": {"__root_schema__": {
         "labelTextSize": "0.875rem",
@@ -660,7 +662,10 @@
         "boxShadow": "none",
         "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
         "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-        "buttonVariant": "PRIMARY"
+        "iconName": "key-enter",
+        "buttonVariant": "PRIMARY",
+        "iconAlign": "left",
+        "placement": "CENTER"
     },
     "dynamicPropertyPathList": [
         {"key": "schema.__root_schema__.children.LotStartTime.dateFormat"},
@@ -671,7 +676,7 @@
         {"key": "sourceData"}
     ],
     "displayName": "JSON Form",
-    "bottomRow": 169,
+    "bottomRow": 81,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "Rubber & Magnet lot entry",
@@ -684,7 +689,7 @@
     "sourceData": "{\n  \"RubberMagnetLotNum\":\"\",\n  \"SolderedModuleLotNum\": \"\",\n  \"MagnetLotNum\": \"\",\n  \"RubberLotNum\": \"\",\n  \"MaintLogNum\": \"\",\n  \"VersionLogNum\": \"\",\n  \"UnitsProducedCount\": \"\",\n  \"JammedMagnetFailCount\": \"\",\n  \"PolarityFailCount\": \"\",\n  \"DoubleRubberFailCount\": \"\",\n  \"SidewaysRubberFailCount\": \"\",\n  \"OtherFailCount\": \"\",\n\t\"UnitsFailCount\":\"\",\n\t\"UnitsPassCount\":\"\",\n  \"LotStartTime\": \"\",\n  \"LotStartEmpID\": \"\",\n  \"LotEndTime\": \"\",\n  \"LotEndEmpID\": \"\",\n  \"Notes\": \"\"\n}",
     "resetButtonLabel": "Reset",
     "key": "1a156tlbta",
-    "backgroundColor": "#fff",
+    "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
     "isDeprecated": false,
     "rightColumn": 64,
     "widgetId": "18b7dwuo7o",
@@ -695,7 +700,6 @@
     "scrollContents": true,
     "responsiveBehavior": "fill",
     "fixedFooter": true,
-    "originalTopRow": 4,
     "mobileLeftColumn": 10,
     "maxDynamicHeight": 9000,
     "minDynamicHeight": 4

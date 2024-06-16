@@ -9,7 +9,7 @@
           "mobileBottomRow": 1170,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 722,
+          "bottomRow": 682,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -53,25 +53,38 @@
                   "align": "start"
                 }
               ]
+            },
+            {
+              "children": [
+                {
+                  "id": "ul18lewzcz",
+                  "align": "start"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "t0klf7gg14",
+                  "align": "start"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "62h26i88a2",
+                  "align": "start"
+                }
+              ]
             }
           ]
         },
         "layoutOnLoadActions": [
           [
             {
-              "id": "Module Tracking_JSObject1.CurrentTimeFetcher",
-              "name": "JSObject1.CurrentTimeFetcher",
-              "collectionId": "Module Tracking_JSObject1",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "() => {\n  const CurrentTime = moment.now();\n  return CurrentTime;\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Module Tracking_SelectLast5Modules",
-              "name": "SelectLast5Modules",
+              "id": "Module Tracking_SelectLast5HcMarkModules",
+              "name": "SelectLast5HcMarkModules",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
@@ -88,14 +101,6 @@
           ],
           [
             {
-              "id": "Module Tracking_QueryEmployeeList",
-              "name": "QueryEmployeeList",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Module Tracking__$JSCurrentTime$_JSCurrentTime.runInterval",
               "name": "_$JSCurrentTime$_JSCurrentTime.runInterval",
               "collectionId": "Module Tracking__$JSCurrentTime$_JSCurrentTime",
@@ -104,6 +109,14 @@
               "jsonPathKeys": [
                 "() => {\n  setInterval(() => {\n    _$JSCurrentTime$_JSCurrentTime.getNow();\n  }, 1000, \"myTimer\");\n}"
               ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Module Tracking__$JSEmployeeNames$_SelectEmployeeListQuery",
+              "name": "_$JSEmployeeNames$_SelectEmployeeListQuery",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ],
@@ -114,6 +127,17 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Module Tracking__$JSEmployeeNames$_JSEmployeeNames.EmpNames",
+              "name": "_$JSEmployeeNames$_JSEmployeeNames.EmpNames",
+              "collectionId": "Module Tracking__$JSEmployeeNames$_JSEmployeeNames",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const EmpNames = _$JSEmployeeNames$_SelectEmployeeListQuery.data.map(i => ({\n    label: i.EmployeeFirstName + \" \" + i.EmployeeLastName,\n    value: i.EmployeeID\n  }));\n  return EmpNames;\n}"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]

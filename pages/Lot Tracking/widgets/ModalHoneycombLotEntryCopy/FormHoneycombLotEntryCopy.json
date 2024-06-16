@@ -782,8 +782,7 @@
         {"key": "schema.__root_schema__.children.LotStartTime.dateFormat"},
         {"key": "schema.__root_schema__.children.LotEndTime.dateFormat"},
         {"key": "schema.__root_schema__.children.LotStartTime.defaultValue"},
-        {"key": "schema.__root_schema__.children.LotEndTime.defaultValue"},
-        {"key": "sourceData"}
+        {"key": "schema.__root_schema__.children.LotEndTime.defaultValue"}
     ],
     "displayName": "JSON Form",
     "bottomRow": 98,

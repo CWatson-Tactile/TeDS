@@ -50,7 +50,8 @@
         {"key": "schema.__root_schema__.children.PalletLoadLotNum.borderRadius"},
         {"key": "schema.__root_schema__.children.PalletLoadLotNum.accentColor"},
         {"key": "schema.__root_schema__.children.LotStartEmpID.options"},
-        {"key": "schema.__root_schema__.children.LotEndEmpID.options"}
+        {"key": "schema.__root_schema__.children.LotEndEmpID.options"},
+        {"key": "backgroundColor"}
     ],
     "showReset": true,
     "flexVerticalAlignment": "start",
@@ -461,7 +462,7 @@
         {"key": "schema.__root_schema__.children.LotEndTime.defaultValue"}
     ],
     "displayName": "JSON Form",
-    "bottomRow": 57,
+    "bottomRow": 81,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "Pallet Load lot entry",
@@ -474,7 +475,7 @@
     "sourceData": "{\n  \"PalletLoadLotNum\":\"\",\n  \"CoilLotNum\": \"\",\n  \"PalletNum\": \"\",\n  \"MaintLogNum\": \"\",\n  \"VersionLogNum\": \"\",\n  \"UnitsProducedCount\": \"\",\n  \"LotStartTime\": \"\",\n  \"LotStartEmpID\": \"\",\n  \"LotEndTime\": \"\",\n  \"LotEndEmpID\": \"\",\n  \"Notes\": \"\"\n}",
     "resetButtonLabel": "Reset",
     "key": "1a156tlbta",
-    "backgroundColor": "#e0dede",
+    "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
     "isDeprecated": false,
     "rightColumn": 64,
     "widgetId": "nriftgx676",

@@ -1,0 +1,18 @@
+{
+  "moduleInstanceId": "ADMIN_JSEmployeeNames",
+  "isPublic": true,
+  "rootModuleInstanceId": "ADMIN_JSEmployeeNames",
+  "unpublishedCollection": {
+    "name": "_$JSEmployeeNames$_JSEmployeeNames",
+    "pageId": "ADMIN",
+    "contextType": "PAGE",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "userPermissions": []
+  },
+  "id": "ADMIN__$JSEmployeeNames$_JSEmployeeNames",
+  "deleted": false,
+  "gitSyncId": "666b27d34105bf614fd3798d_1b907511-5d44-4128-ac59-4b0965f3a140"
+}

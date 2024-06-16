@@ -9,7 +9,7 @@
           "mobileBottomRow": 2021.9531249999995,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 650,
+          "bottomRow": 640,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -39,15 +39,26 @@
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dashboards__$JSEmployeeNames$_SelectEmployeeListQuery",
+              "name": "_$JSEmployeeNames$_SelectEmployeeListQuery",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
             }
           ],
           [
             {
-              "id": "Dashboards__$QueryEmployeeList$_QueryEmployeeListModule",
-              "name": "_$QueryEmployeeList$_QueryEmployeeListModule",
+              "id": "Dashboards__$JSEmployeeNames$_JSEmployeeNames.EmpNames",
+              "name": "_$JSEmployeeNames$_JSEmployeeNames.EmpNames",
+              "collectionId": "Dashboards__$JSEmployeeNames$_JSEmployeeNames",
               "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const EmpNames = _$JSEmployeeNames$_SelectEmployeeListQuery.data.map(i => ({\n    label: i.EmployeeFirstName + \" \" + i.EmployeeLastName,\n    value: i.EmployeeID\n  }));\n  return EmpNames;\n}"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]

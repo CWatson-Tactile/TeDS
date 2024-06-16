@@ -1,0 +1,18 @@
+{
+  "moduleInstanceId": "Module Tracking_JSEmployeeNames",
+  "isPublic": true,
+  "rootModuleInstanceId": "Module Tracking_JSEmployeeNames",
+  "unpublishedCollection": {
+    "name": "_$JSEmployeeNames$_JSEmployeeNames",
+    "pageId": "Module Tracking",
+    "contextType": "PAGE",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "userPermissions": []
+  },
+  "id": "Module Tracking__$JSEmployeeNames$_JSEmployeeNames",
+  "deleted": false,
+  "gitSyncId": "666b27d34105bf614fd3798d_a4ba9229-2a08-49c3-a1c6-64bb1c48560a"
+}

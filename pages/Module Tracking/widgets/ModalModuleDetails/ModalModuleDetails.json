@@ -10,8 +10,8 @@
         "popup",
         "notification"
     ],
-    "topRow": 14.399999999999999,
-    "bottomRow": 334.4,
+    "topRow": 12.399999999999999,
+    "bottomRow": 332.4,
     "parentRowSpace": 10,
     "type": "MODAL_WIDGET",
     "hideCard": false,
@@ -22,7 +22,7 @@
     "parentColumnSpace": 18.140625,
     "dynamicTriggerPathList": [],
     "leftColumn": 0,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [{"key": "backgroundColor"}],
     "children": [{
         "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
         "mobileBottomRow": 240,
@@ -68,7 +68,7 @@
     "height": 336,
     "isDeprecated": false,
     "rightColumn": 24,
-    "backgroundColor": "",
+    "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
     "detachFromLayout": true,
     "dynamicHeight": "FIXED",
     "widgetId": "c7bxyw42ab",

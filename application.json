@@ -13,11 +13,19 @@
       "isDefault": false
     },
     {
+      "id": "Tablet Service",
+      "isDefault": false
+    },
+    {
       "id": "Inventory",
       "isDefault": false
     },
     {
       "id": "Lot Tracking",
+      "isDefault": false
+    },
+    {
+      "id": "Delivery Tracking",
       "isDefault": false
     },
     {
@@ -33,23 +41,7 @@
       "isDefault": false
     },
     {
-      "id": "Delivery Tracking",
-      "isDefault": false
-    },
-    {
-      "id": "Cadence Service",
-      "isDefault": false
-    },
-    {
-      "id": "Purchase Requests",
-      "isDefault": false
-    },
-    {
       "id": "Physical Inventory",
-      "isDefault": false
-    },
-    {
-      "id": "Production",
       "isDefault": false
     }
   ],
@@ -77,10 +69,10 @@
   "color": "#C7F3E3",
   "icon": "bag",
   "unpublishedAppLayout": {
-    "type": "TABLET_LARGE"
+    "type": "FLUID"
   },
   "publishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "TABLET_LARGE"
   },
   "unpublishedCustomJSLibs": [
     {
