@@ -47,7 +47,7 @@
             "onClick": "{{showModal('ModalSkuEdit');}}",
             "buttonType": "SIMPLE",
             "iconName": "edit",
-            "buttonColor": "#e0dede",
+            "buttonColor": "#1d4ed8",
             "widgetId": "",
             "menuItems": {},
             "index": 1,
@@ -71,7 +71,7 @@
     "key": "2bihr5hfnw",
     "orientation": "horizontal",
     "isDeprecated": false,
-    "rightColumn": 64,
+    "rightColumn": 19,
     "widgetId": "1o0wlaq5lc",
     "minWidth": 450,
     "isVisible": true,
@@ -84,5 +84,5 @@
     "originalTopRow": 6,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "originalBottomRow": 10,
-    "buttonVariant": "PRIMARY"
+    "buttonVariant": "TERTIARY"
 }

@@ -4,7 +4,7 @@
     "mobileBottomRow": 4,
     "widgetName": "Button7CopyCopy2",
     "onClick": "{{resetWidget(\"ModalPostGlueEqcLotEntry\", true).then(() => {\n  closeModal('ModalPostGlueEqcLotEntry');\n  SelectQueryPostGlueEQCLots.run();\n}).catch(() => {\n  showAlert('Error! Get Connor', 'error');\n});}}",
-    "buttonColor": "#eab308",
+    "buttonColor": "#b91c1c",
     "displayName": "Button",
     "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
     "searchTags": [

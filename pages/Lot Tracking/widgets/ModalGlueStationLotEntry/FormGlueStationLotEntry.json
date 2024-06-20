@@ -486,7 +486,7 @@
         {"key": "schema.__root_schema__.children.LotEndTime.defaultValue"}
     ],
     "displayName": "JSON Form",
-    "bottomRow": 81,
+    "bottomRow": 67,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "Glue station lot entry",

@@ -9,7 +9,7 @@
           "mobileBottomRow": 1170,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 682,
+          "bottomRow": 822,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -83,8 +83,24 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "Module Tracking_SelectLast5GlueModules",
+              "name": "SelectLast5GlueModules",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Module Tracking_SelectLast5HcMarkModules",
               "name": "SelectLast5HcMarkModules",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Module Tracking_SelectLast5PrSolderEqcPass",
+              "name": "SelectLast5PrSolderEqcPass",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

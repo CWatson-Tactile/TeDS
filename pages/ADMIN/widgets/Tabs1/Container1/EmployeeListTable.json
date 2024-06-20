@@ -83,7 +83,7 @@
     "dynamicPropertyPathList": [],
     "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 52,
+    "bottomRow": 53,
     "columnWidthMap": {},
     "parentRowSpace": 10,
     "hideCard": false,
@@ -125,6 +125,7 @@
             "sticky": "",
             "originalId": "EmployeeLastName",
             "currencyCode": "USD",
+            "cellBackground": "",
             "verticalAlignment": "CENTER"
         },
         "EmployeeDepartment": {
@@ -156,6 +157,7 @@
             "sticky": "",
             "originalId": "EmployeeDepartment",
             "currencyCode": "USD",
+            "cellBackground": "",
             "verticalAlignment": "CENTER"
         },
         "EmployeeFirstName": {
@@ -187,6 +189,7 @@
             "sticky": "",
             "originalId": "EmployeeFirstName",
             "currencyCode": "USD",
+            "cellBackground": "",
             "verticalAlignment": "CENTER"
         },
         "EmployeeClockInPIN": {
@@ -218,6 +221,7 @@
             "sticky": "",
             "originalId": "EmployeeClockInPIN",
             "currencyCode": "USD",
+            "cellBackground": "",
             "verticalAlignment": "CENTER"
         },
         "EmployeePermissionLevel": {
@@ -249,6 +253,7 @@
             "sticky": "",
             "originalId": "EmployeePermissionLevel",
             "currencyCode": "USD",
+            "cellBackground": "",
             "verticalAlignment": "CENTER"
         },
         "EmployeeBadgeNumber": {
@@ -280,6 +285,7 @@
             "sticky": "",
             "originalId": "EmployeeBadgeNumber",
             "currencyCode": "USD",
+            "cellBackground": "",
             "verticalAlignment": "CENTER"
         },
         "EmployeeID": {
@@ -311,6 +317,7 @@
             "sticky": "left",
             "originalId": "EmployeeID",
             "currencyCode": "USD",
+            "cellBackground": "",
             "verticalAlignment": "CENTER"
         },
         "EmpPassword": {
@@ -366,5 +373,6 @@
     "isVisibleSearch": true,
     "originalTopRow": 11,
     "isVisiblePagination": false,
+    "cellBackground": "",
     "verticalAlignment": "CENTER"
 }

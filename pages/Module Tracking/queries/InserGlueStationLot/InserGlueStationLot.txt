@@ -1,0 +1,7 @@
+UPDATE dbo.ModuleTracker 
+SET 
+	CurrentStatus='Glued',
+	GlueStationScanDateTime='{{appsmith.store.IsoTimeNow}}',
+	GlueStationScanEmpId='{{appsmith.store.EmpID}}'
+
+WHERE ModuleSerialNum={{GlueSerialInput.text}}

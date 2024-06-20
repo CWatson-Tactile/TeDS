@@ -106,7 +106,10 @@
     "compactMode": "SHORT",
     "displayName": "Table",
     "bottomRow": 76,
-    "columnWidthMap": {"LotStartTime": 206},
+    "columnWidthMap": {
+        "MagnetModuleLotNum": 230,
+        "LotStartTime": 206
+    },
     "parentRowSpace": 10,
     "hideCard": false,
     "mobileRightColumn": 15,

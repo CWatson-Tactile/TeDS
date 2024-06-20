@@ -108,7 +108,7 @@
             "id": "groupButton1",
             "placement": "CENTER",
             "isVisible": true,
-            "isDisabled": false
+            "isDisabled": true
         },
         "groupButton2": {
             "onClick": "{{showModal(ModalEditModuleData.name);}}",

@@ -4,6 +4,8 @@
 "S#1": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel1.selectedOptionLabel).DeviceSerialNumber}}",
 "M1": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel1.selectedOptionLabel).Model_Number}}",
 "QR1": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel1.selectedOptionLabel).DeviceSerialNumber}}",
+"Indicator1": "",
+"Internal1": "",	
  
 "DN2": "{{SelectLabel2.selectedOptionLabel}}",
 "DoM2": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel2.selectedOptionLabel).Date_of_Manufacture}}",

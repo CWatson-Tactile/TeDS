@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO dbo.ModuleTracker \n\n(ModuleSerialNum, HoneycombLotNum, HoneycombScanEmpId, HoneycombScanDateTime, CurrentStatus) \n\nVALUES ({{HcMarkingSerialInput.text}}, '{{HcMarkingLotNumber.text}}', '{{appsmith.store.EmpID}}', '{{appsmith.store.IsoTimeNow}}', 'HCMark')",
+      "body": "INSERT INTO dbo.ModuleTracker \n\n(ModuleSerialNum, HoneycombLotNum, HoneycombScanEmpId, HoneycombScanDateTime, CurrentStatus) \n\nVALUES ({{HcMarkingSerialInput.text}}, '{{HcMarkingLotNumber.text}}', '{{appsmith.store.EmpID}}', '{{appsmith.store.IsoTimeNow}}', 'HCMarked')",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

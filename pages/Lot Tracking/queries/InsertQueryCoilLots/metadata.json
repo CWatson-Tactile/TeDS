@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO dbo.LotTrackingCoilStation (CoilStationLotNum,BobbinLotNum,WireLotNum,FluxLotNum,SolderLotNum,MaintLogNum,VersionLogNum,UnitsProducedCount,UnitsFailedCount,SolderOverCount,SolderUnderCount,BaseOverWrapCount,CenterOverWrapCount,UnderWrapCount,BobbinWrapCount,BrokenCoilCount,ResistanceCount,OtherCount) VALUES ('{{(FormCoilLotEntry.formData || {}).CoilLotNum}}','{{(FormCoilLotEntry.formData || {}).BobbinLotNum}}','{{(FormCoilLotEntry.formData || {}).WireLotNum}}','{{(FormCoilLotEntry.formData || {}).FluxLotNum}}','{{(FormCoilLotEntry.formData || {}).SolderLotNum}}','{{(FormCoilLotEntry.formData || {}).MaintLogNum}}','{{(FormCoilLotEntry.formData || {}).VersionLogNum}}','{{(FormCoilLotEntry.formData || {}).UnitsProducedCount}}','{{(FormCoilLotEntry.formData || {}).UnitsFailedCount}}','{{(FormCoilLotEntry.formData || {}).SolderOverCount}}','{{(FormCoilLotEntry.formData || {}).SolderUnderCount}}','{{(FormCoilLotEntry.formData || {}).BaseOverWrapCount}}','{{(FormCoilLotEntry.formData || {}).CenterOverWrapCount}}','{{(FormCoilLotEntry.formData || {}).UnderWrapCount}}','{{(FormCoilLotEntry.formData || {}).BobbinWrapCount}}','{{(FormCoilLotEntry.formData || {}).BrokenCoilCount}}','{{(FormCoilLotEntry.formData || {}).ResistanceCount}}','{{(FormCoilLotEntry.formData || {}).OtherCount}}')",
+      "body": "INSERT INTO dbo.LotTrackingCoilStation (CoilStationLotNum,BobbinLotNum,WireLotNum,FluxLotNum,SolderLotNum,MaintLogNum,VersionLogNum,UnitsProducedCount,UnitsFailedCount,UnitsPassCount,SolderOverCount,SolderUnderCount,BaseOverWrapCount,CenterOverWrapCount,UnderWrapCount,BobbinWrapCount,BrokenCoilCount,ResistanceCount,OtherCount, LotStartTime, LotStartEmpID, LotEndTime, LotEndEmpID, Notes) VALUES \n('{{(FormCoilLotEntry.formData || {}).CoilLotNum}}',\n '{{(FormCoilLotEntry.formData || {}).BobbinLotNum}}',\n '{{(FormCoilLotEntry.formData || {}).WireLotNum}}',\n '{{(FormCoilLotEntry.formData || {}).FluxLotNum}}',\n '{{(FormCoilLotEntry.formData || {}).SolderLotNum}}',\n '{{(FormCoilLotEntry.formData || {}).MaintLogNum}}',\n '{{(FormCoilLotEntry.formData || {}).VersionLogNum}}',\n '{{(FormCoilLotEntry.formData || {}).UnitsProducedCount}}',\n '{{(FormCoilLotEntry.formData || {}).UnitsFailedCount}}',\n '{{(FormCoilLotEntry.formData || {}).UnitsPassCount}}',\n '{{(FormCoilLotEntry.formData || {}).SolderOverCount}}',\n '{{(FormCoilLotEntry.formData || {}).SolderUnderCount}}',\n '{{(FormCoilLotEntry.formData || {}).BaseOverWrapCount}}',\n '{{(FormCoilLotEntry.formData || {}).CenterOverWrapCount}}',\n '{{(FormCoilLotEntry.formData || {}).UnderWrapCount}}',\n '{{(FormCoilLotEntry.formData || {}).BobbinWrapCount}}',\n '{{(FormCoilLotEntry.formData || {}).BrokenCoilCount}}',\n '{{(FormCoilLotEntry.formData || {}).ResistanceCount}}',\n '{{(FormCoilLotEntry.formData || {}).OtherCount}}',\n '{{(FormCoilLotEntry.formData || {}).LotStartTime}}',\n '{{(FormCoilLotEntry.formData || {}).LotStartEmpID}}',\n '{{(FormCoilLotEntry.formData || {}).LotEndTime}}',\n '{{(FormCoilLotEntry.formData || {}).LotEndEmpID}}',\n '{{(FormCoilLotEntry.formData || {}).Notes}}'\n\n\n\n\n)",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -44,7 +44,12 @@
       "(FormCoilLotEntry.formData || {}).CenterOverWrapCount",
       "(FormCoilLotEntry.formData || {}).CoilLotNum",
       "(FormCoilLotEntry.formData || {}).FluxLotNum",
+      "(FormCoilLotEntry.formData || {}).LotEndEmpID",
+      "(FormCoilLotEntry.formData || {}).LotEndTime",
+      "(FormCoilLotEntry.formData || {}).LotStartEmpID",
+      "(FormCoilLotEntry.formData || {}).LotStartTime",
       "(FormCoilLotEntry.formData || {}).MaintLogNum",
+      "(FormCoilLotEntry.formData || {}).Notes",
       "(FormCoilLotEntry.formData || {}).OtherCount",
       "(FormCoilLotEntry.formData || {}).ResistanceCount",
       "(FormCoilLotEntry.formData || {}).SolderLotNum",
@@ -52,6 +57,7 @@
       "(FormCoilLotEntry.formData || {}).SolderUnderCount",
       "(FormCoilLotEntry.formData || {}).UnderWrapCount",
       "(FormCoilLotEntry.formData || {}).UnitsFailedCount",
+      "(FormCoilLotEntry.formData || {}).UnitsPassCount",
       "(FormCoilLotEntry.formData || {}).UnitsProducedCount",
       "(FormCoilLotEntry.formData || {}).VersionLogNum",
       "(FormCoilLotEntry.formData || {}).WireLotNum"

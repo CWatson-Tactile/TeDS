@@ -336,11 +336,12 @@
                 "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm2.sourceData, JSONForm2.formData, JSONForm2.fieldState)}}",
                 "children": {},
                 "isSpellCheck": false,
+                "shouldAllowAutofill": true,
                 "iconAlign": "left",
                 "position": 7,
                 "isDisabled": false,
                 "sourceData": "3433",
-                "fieldType": "Text Input"
+                "fieldType": "Password Input"
             }
         },
         "position": -1,

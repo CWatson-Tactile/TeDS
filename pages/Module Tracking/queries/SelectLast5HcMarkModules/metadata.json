@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT TOP 5 * FROM dbo.ModuleTracker WHERE (CurrentStatus = 'HCMark') ORDER BY ID DESC",
+      "body": "SELECT TOP 5 * FROM dbo.ModuleTracker WHERE (CurrentStatus = 'Marked') ORDER BY ID DESC",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

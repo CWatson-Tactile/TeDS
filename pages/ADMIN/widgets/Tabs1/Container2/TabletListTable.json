@@ -87,7 +87,7 @@
             "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}"
         }
     },
-    "borderRadius": "0.375rem",
+    "borderRadius": "0px",
     "columnUpdatedAt": 1717169381417,
     "originalBottomRow": 60,
     "primaryColumnId": "Device_Name",
@@ -133,7 +133,7 @@
     "dynamicPropertyPathList": [],
     "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 54,
+    "bottomRow": 53,
     "columnWidthMap": {
         "EditActions1": 137,
         "Device_Name": 143

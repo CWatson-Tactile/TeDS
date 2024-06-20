@@ -12,7 +12,7 @@
         "notification"
     ],
     "topRow": 187,
-    "bottomRow": 1017,
+    "bottomRow": 877,
     "parentRowSpace": 10,
     "type": "MODAL_WIDGET",
     "hideCard": false,
@@ -33,7 +33,7 @@
         "widgetName": "Canvas1CopyCopyCopy",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 830,
+        "bottomRow": 690,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": true,
@@ -157,7 +157,7 @@
         ]
     }],
     "key": "r42xggbuws",
-    "height": 830,
+    "height": 690,
     "isDeprecated": false,
     "rightColumn": 24,
     "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",

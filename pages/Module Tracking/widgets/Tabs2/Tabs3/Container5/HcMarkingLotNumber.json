@@ -10,7 +10,7 @@
         "paragraph",
         "label"
     ],
-    "bottomRow": 5,
+    "bottomRow": 7,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -32,7 +32,7 @@
     "text": "{{HcMarkingLot1Input.text+HcMarkingLot2Input.text+HcMarkingLot3Input.text}}",
     "key": "tajynjfdo6",
     "isDeprecated": false,
-    "rightColumn": 36,
+    "rightColumn": 42,
     "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
@@ -62,7 +62,7 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 17,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 5,
+    "originalBottomRow": 7,
     "fontSize": "1.25rem",
     "minDynamicHeight": 4
 }

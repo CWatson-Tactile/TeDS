@@ -676,7 +676,7 @@
         {"key": "sourceData"}
     ],
     "displayName": "JSON Form",
-    "bottomRow": 81,
+    "bottomRow": 67,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "Rubber & Magnet lot entry",

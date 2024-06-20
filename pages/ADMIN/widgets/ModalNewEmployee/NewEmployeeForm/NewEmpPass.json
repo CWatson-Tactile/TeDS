@@ -3,14 +3,14 @@
     "widgetName": "NewEmpPass",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
     "displayName": "Input",
-    "topRow": 31.2,
+    "topRow": 31,
     "searchTags": [
         "form",
         "text input",
         "number",
         "textarea"
     ],
-    "bottomRow": 37.8,
+    "bottomRow": 38,
     "parentRowSpace": 10,
     "labelWidth": 5,
     "autoFocus": false,
