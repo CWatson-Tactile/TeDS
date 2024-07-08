@@ -2,6 +2,7 @@
     "boxShadow": "none",
     "widgetName": "InventoryAddButtonGroup",
     "isCanvas": false,
+    "dynamicPropertyPathList": [{"key": "groupButtons.groupButton2.onClick"}],
     "displayName": "Button Group",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
     "searchTags": [

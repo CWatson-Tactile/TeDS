@@ -9,7 +9,7 @@
           "mobileBottomRow": 1170,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 682,
+          "bottomRow": 822,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,

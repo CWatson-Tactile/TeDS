@@ -76,12 +76,15 @@
         "TransactionNumber",
         "AdjustmentCode"
     ],
-    "dynamicPropertyPathList": [{"key": "tableData"}],
+    "dynamicPropertyPathList": [
+        {"key": "tableData"},
+        {"key": "primaryColumns.DataTimeOfAdjustment.outputFormat"}
+    ],
     "compactMode": "SHORT",
     "displayName": "Table",
     "bottomRow": 57,
     "columnWidthMap": {
-        "DataTimeOfAdjustment": 110,
+        "DataTimeOfAdjustment": 184,
         "AdjustedBy": 136,
         "Adjustment": 120,
         "AdjustmentCode": 166,
@@ -104,7 +107,7 @@
             "id": "DataTimeOfAdjustment",
             "isDisabled": false,
             "allowSameOptionsInNewRow": true,
-            "outputFormat": "MM-DD-YYYY",
+            "outputFormat": "YYYY-MM-DD - h:mm A",
             "validation": {},
             "isCellVisible": true,
             "isDerived": false,

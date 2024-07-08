@@ -9,8 +9,8 @@
         "click",
         "submit"
     ],
-    "topRow": 41.00000004801477,
-    "bottomRow": 45.00000004806129,
+    "topRow": 41.00000004890544,
+    "bottomRow": 45.00000004894837,
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
@@ -29,7 +29,7 @@
             "isDisabled": false
         },
         "groupButton2": {
-            "onClick": "{{QueryNegInvAdjTrack.run().then(() => {\n  QuerySubtractInventory.run().then(() => {\n    JS_InvTransData.InvTransDataFetch();\n  });\n  showAlert('Adjustment Successfull!', '');\n  QueryInventoryHistory.run();\n  QueryTop1kInventory.run();\n}).catch(() => {\n  showAlert('Error...Get Connor!', 'error');\n});}}",
+            "onClick": "{{QueryNegInvAdjTrack.run().then(() => {\n  QuerySubtractInventory.run().then(() => {\n    JS_InvTransData.InvTransDataFetch();\n  });\n  showAlert('Adjustment Successfull!', '');\n  QueryInventoryHistory.run();\n  QueryTop1kInventory.run();\n  resetWidget(\"ModalInventorySubtract\", true);\n}).catch(() => {\n  showAlert('Error...Get Connor!', 'error');\n});}}",
             "iconName": "key-enter",
             "buttonColor": "#b91c1c",
             "widgetId": "",
@@ -66,8 +66,8 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 41.00000004801482,
+    "originalTopRow": 41.00000004889473,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 45.00000004806134,
+    "originalBottomRow": 45.00000004893809,
     "buttonVariant": "PRIMARY"
 }

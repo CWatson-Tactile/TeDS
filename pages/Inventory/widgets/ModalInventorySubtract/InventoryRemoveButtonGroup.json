@@ -2,15 +2,15 @@
     "boxShadow": "none",
     "widgetName": "InventoryRemoveButtonGroup",
     "isCanvas": false,
-    "dynamicPropertyPathList": [],
+    "dynamicPropertyPathList": [{"key": "groupButtons.groupButton2.onClick"}],
     "displayName": "Button Group",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
     "searchTags": [
         "click",
         "submit"
     ],
-    "topRow": 41.00000002417096,
-    "bottomRow": 45.00000002421654,
+    "topRow": 41.00000002451986,
+    "bottomRow": 45.000000024536995,
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
@@ -66,8 +66,8 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 41.000000024168806,
+    "originalTopRow": 41.00000002417096,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 45.00000002421439,
+    "originalBottomRow": 45.000000024218025,
     "buttonVariant": "PRIMARY"
 }
