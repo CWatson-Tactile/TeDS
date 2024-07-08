@@ -20,7 +20,7 @@
     "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
     "parentColumnSpace": 16.75,
     "dynamicTriggerPathList": [],
-    "leftColumn": 30,
+    "leftColumn": 32,
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
@@ -32,7 +32,7 @@
     "text": "{{PreSolderEqcLot1Input.text+PreSolderEqcLot2Input.text+PreSolderEqcLot3Input.text}}",
     "key": "tajynjfdo6",
     "isDeprecated": false,
-    "rightColumn": 42,
+    "rightColumn": 44,
     "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",

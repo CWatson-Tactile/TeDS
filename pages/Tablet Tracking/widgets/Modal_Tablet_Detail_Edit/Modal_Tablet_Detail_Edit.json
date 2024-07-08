@@ -11,7 +11,7 @@
         "notification"
     ],
     "topRow": 94.315625,
-    "bottomRow": 1144.315625,
+    "bottomRow": 744.315625,
     "parentRowSpace": 10,
     "type": "MODAL_WIDGET",
     "hideCard": false,
@@ -27,7 +27,7 @@
         "widgetName": "Canvas4",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 1050,
+        "bottomRow": 650,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": true,
@@ -56,7 +56,7 @@
         "mobileLeftColumn": 0
     }],
     "key": "sanciorigq",
-    "height": 1050,
+    "height": 650,
     "isDeprecated": false,
     "rightColumn": 44,
     "backgroundColor": "#f4f4f5",

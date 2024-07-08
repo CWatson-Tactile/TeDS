@@ -1,0 +1,19 @@
+{
+  "packageUUID": "40fbc923-c4c9-40b0-89f6-f8b44197b355",
+  "moduleUUID": "d00bca54-0cbe-46f3-8647-d01896b713f7",
+  "type": "JS_MODULE",
+  "unpublishedModuleInstance": {
+    "version": "0.0.5",
+    "name": "JSEmployeeNames",
+    "contextType": "PAGE",
+    "pageId": "ADMIN",
+    "inputs": {},
+    "jsonPathKeys": [],
+    "isValid": true,
+    "invalids": [],
+    "userPermissions": []
+  },
+  "id": "ADMIN_JSEmployeeNames",
+  "deleted": false,
+  "gitSyncId": "666b27d34105bf614fd3798d_483e890b-abda-4fd0-9fed-31a9cebdb870"
+}

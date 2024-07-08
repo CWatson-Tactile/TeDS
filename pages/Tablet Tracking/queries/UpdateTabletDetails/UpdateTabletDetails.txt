@@ -24,6 +24,8 @@ UPDATE dbo.TabletTracker SET
       Module_9 = '{{TabletDetailEditForm.formData.Module_9}}',
       Module_10 = '{{TabletDetailEditForm.formData.Module_10}}',
       Module_11 = '{{TabletDetailEditForm.formData.Module_11}}',
-      Module_12 = '{{TabletDetailEditForm.formData.Module_12}}'
+      Module_12 = '{{TabletDetailEditForm.formData.Module_12}}',
+			[Use] = '{{TabletDetailEditForm.formData.Use}}',
+			Indicator = '{{TabletDetailEditForm.formData.Indicator}}'
 Where Device_Name = '{{Tablet_List.selectedRow.Device_Name}}';
 	

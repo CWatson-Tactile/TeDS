@@ -10,7 +10,7 @@
         "paragraph",
         "label"
     ],
-    "bottomRow": 8,
+    "bottomRow": 5,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -31,7 +31,7 @@
     "text": "Lot #",
     "key": "p0px4uod65",
     "isDeprecated": false,
-    "rightColumn": 30,
+    "rightColumn": 33,
     "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
@@ -61,7 +61,7 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 42,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 8,
+    "originalBottomRow": 6,
     "fontSize": "1rem",
     "minDynamicHeight": 4
 }

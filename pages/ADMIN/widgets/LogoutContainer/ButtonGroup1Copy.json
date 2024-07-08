@@ -20,6 +20,23 @@
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
+        "groupButton0ro2wmfz81": {
+            "itemType": "BUTTON",
+            "onClick": "{{navigateTo('Physical Inventory', {}, 'SAME_WINDOW');}}",
+            "buttonColor": "#000000",
+            "iconName": "numbered-list",
+            "widgetId": "bp8lhfcabz",
+            "menuItems": {},
+            "index": 2,
+            "label": "Physical Inventory",
+            "isVisible": true,
+            "buttonType": "SIMPLE",
+            "variant": "filled",
+            "id": "groupButton0ro2wmfz81",
+            "isDisabled": false,
+            "placement": "CENTER",
+            "isSeparator": false
+        },
         "groupButton1": {
             "onClick": "{{removeValue('EmpID').then(() => {\n  navigateTo('Home', {}, 'SAME_WINDOW');\n});}}",
             "buttonType": "SIMPLE",
@@ -55,7 +72,8 @@
     "parentColumnSpace": 15.171875,
     "dynamicTriggerPathList": [
         {"key": "groupButtons.groupButton2.onClick"},
-        {"key": "groupButtons.groupButton1.onClick"}
+        {"key": "groupButtons.groupButton1.onClick"},
+        {"key": "groupButtons.groupButton0ro2wmfz81.onClick"}
     ],
     "leftColumn": 0,
     "dynamicBindingPathList": [

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mssql-plugin",
   "unpublishedAction": {
-    "name": "InserGlueStationLot",
+    "name": "SelectGluedModules",
     "datasource": {
       "name": "TE-ModuleTracking-Azure",
       "pluginId": "mssql-plugin",
@@ -18,35 +18,27 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE dbo.ModuleTracker \nSET \n\tCurrentStatus='Glued',\n\tGlueStationScanDateTime='{{appsmith.store.IsoTimeNow}}',\n\tGlueStationScanEmpId='{{appsmith.store.EmpID}}'\n\nWHERE ModuleSerialNum={{GlueSerialInput.text}}",
+      "body": "SELECT * FROM dbo.ModuleTracker WHERE CurrentStatus = 'Glued'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "GlueSerialInput.text",
-      "appsmith.store.EmpID",
-      "appsmith.store.IsoTimeNow"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-06-16T16:10:37Z"
+    "createdAt": "2024-06-29T23:10:41Z"
   },
-  "id": "Module Tracking_InserGlueStationLot",
+  "id": "Module Tracking_SelectGluedModules",
   "deleted": false,
-  "gitSyncId": "666b27d34105bf614fd3798d_b8ccdb83-582c-4b2e-95cf-39c6ed554aa2"
+  "gitSyncId": "666b27d34105bf614fd3798d_b72ef4b6-bc97-406f-8326-c131d5b9bc5a"
 }

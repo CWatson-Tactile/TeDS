@@ -9,10 +9,14 @@
     "animateLoading": true,
     "resetOnSubmit": true,
     "leftColumn": 0,
-    "dynamicBindingPathList": [{"key": "accentColor"}],
+    "dynamicBindingPathList": [
+        {"key": "accentColor"},
+        {"key": "validation"}
+    ],
     "labelStyle": "",
     "inputType": "NUMBER",
     "isDisabled": false,
+    "validation": "{{SelectLast5GlueModules.data.some(u => u.ModuleSerialNum === PreSolderEqcSerialInput.text)}}",
     "isRequired": false,
     "dynamicHeight": "FIXED",
     "iconName": "barcode",

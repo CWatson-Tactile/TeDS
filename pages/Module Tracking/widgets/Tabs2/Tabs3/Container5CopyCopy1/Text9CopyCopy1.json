@@ -10,7 +10,7 @@
         "paragraph",
         "label"
     ],
-    "bottomRow": 6,
+    "bottomRow": 5,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -31,7 +31,7 @@
     "text": "Lot #",
     "key": "p0px4uod65",
     "isDeprecated": false,
-    "rightColumn": 30,
+    "rightColumn": 32,
     "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",

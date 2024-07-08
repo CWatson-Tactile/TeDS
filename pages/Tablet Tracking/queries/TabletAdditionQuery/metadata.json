@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO dbo.TabletTracker (Device_Name, Status, Date_of_Manufacture, PCB_Serial, Model_Number, Enclosure_Top_Material, Enclosure_Bottom_Material, Capture_Plate_Material, Dot_Material, Keyboard_Type, Module_1, Module_2, Module_3, Module_4, Module_5, Module_6, Module_7, Module_8, Module_9, Module_10, Module_11, Module_12) \nVALUES\n('{{TabletAdditionForm.formData.Device_Name}}',\n'{{TabletAdditionForm.formData.Status}}',  \n'{{TabletAdditionForm.formData.Date_of_Manufacture}}', \n'{{TabletAdditionForm.formData.PCB_Serial}}', \n'{{TabletAdditionForm.formData.Model_Number}}', \n'{{TabletAdditionForm.formData.Enclosure_Top_Material}}', \t\t \t\t         '{{TabletAdditionForm.formData.Enclosure_Bottom_Material}}', '{{TabletAdditionForm.formData.Capture_Plate_Material}}', \n'{{TabletAdditionForm.formData.Dot_Material}}', \n'{{TabletAdditionForm.formData.Keyboard_Type}}', \n'{{TabletAdditionForm.formData.Module_1}}', \n'{{TabletAdditionForm.formData.Module_2}}', \n'{{TabletAdditionForm.formData.Module_3}}', \n'{{TabletAdditionForm.formData.Module_4}}', \n'{{TabletAdditionForm.formData.Module_5}}', \n'{{TabletAdditionForm.formData.Module_6}}', \n'{{TabletAdditionForm.formData.Module_7}}', \n'{{TabletAdditionForm.formData.Module_8}}', \n'{{TabletAdditionForm.formData.Module_9}}', \n'{{TabletAdditionForm.formData.Module_10}}', \n'{{TabletAdditionForm.formData.Module_11}}', \n'{{TabletAdditionForm.formData.Module_12}}')",
+      "body": "INSERT INTO dbo.TabletTracker (Device_Name, Status, Date_of_Manufacture, PCB_Serial, Model_Number, Enclosure_Top_Material, Enclosure_Bottom_Material, Capture_Plate_Material, Dot_Material, Keyboard_Type, Module_1, Module_2, Module_3, Module_4, Module_5, Module_6, Module_7, Module_8, Module_9, Module_10, Module_11, Module_12, [Use], Indicator) \nVALUES\n('{{TabletAdditionForm.formData.Device_Name}}',\n'{{TabletAdditionForm.formData.Status}}',  \n'{{TabletAdditionForm.formData.Date_of_Manufacture}}', \n'{{TabletAdditionForm.formData.PCB_Serial}}', \n'{{TabletAdditionForm.formData.Model_Number}}', \n'{{TabletAdditionForm.formData.Enclosure_Top_Material}}', \t\t \t\t         '{{TabletAdditionForm.formData.Enclosure_Bottom_Material}}', '{{TabletAdditionForm.formData.Capture_Plate_Material}}', \n'{{TabletAdditionForm.formData.Dot_Material}}', \n'{{TabletAdditionForm.formData.Keyboard_Type}}', \n'{{TabletAdditionForm.formData.Module_1}}', \n'{{TabletAdditionForm.formData.Module_2}}', \n'{{TabletAdditionForm.formData.Module_3}}', \n'{{TabletAdditionForm.formData.Module_4}}', \n'{{TabletAdditionForm.formData.Module_5}}', \n'{{TabletAdditionForm.formData.Module_6}}', \n'{{TabletAdditionForm.formData.Module_7}}', \n'{{TabletAdditionForm.formData.Module_8}}', \n'{{TabletAdditionForm.formData.Module_9}}', \n'{{TabletAdditionForm.formData.Module_10}}', \n'{{TabletAdditionForm.formData.Module_11}}', \n'{{TabletAdditionForm.formData.Module_12}}', \n'{{TabletAdditionForm.formData.Use}}',\n'{{TabletAdditionForm.formData.Indicator}}')",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -42,6 +42,7 @@
       "TabletAdditionForm.formData.Dot_Material",
       "TabletAdditionForm.formData.Enclosure_Bottom_Material",
       "TabletAdditionForm.formData.Enclosure_Top_Material",
+      "TabletAdditionForm.formData.Indicator",
       "TabletAdditionForm.formData.Keyboard_Type",
       "TabletAdditionForm.formData.Model_Number",
       "TabletAdditionForm.formData.Module_1",
@@ -57,7 +58,8 @@
       "TabletAdditionForm.formData.Module_8",
       "TabletAdditionForm.formData.Module_9",
       "TabletAdditionForm.formData.PCB_Serial",
-      "TabletAdditionForm.formData.Status"
+      "TabletAdditionForm.formData.Status",
+      "TabletAdditionForm.formData.Use"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

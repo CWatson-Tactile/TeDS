@@ -4,13 +4,13 @@
     "widgetName": "GlueLotNum",
     "iconSVG": "/static/media/icon.a55b701a2ae86aa2c6718ecb7b4083f0.svg",
     "displayName": "Text",
-    "topRow": 1,
+    "topRow": 0,
     "searchTags": [
         "typography",
         "paragraph",
         "label"
     ],
-    "bottomRow": 5,
+    "bottomRow": 4,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -20,7 +20,7 @@
     "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
     "parentColumnSpace": 16.75,
     "dynamicTriggerPathList": [],
-    "leftColumn": 30,
+    "leftColumn": 32,
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
@@ -32,7 +32,7 @@
     "text": "{{GlueLot1Input.text+GlueLot2Input.text+GlueLot3Input.text}}",
     "key": "tajynjfdo6",
     "isDeprecated": false,
-    "rightColumn": 42,
+    "rightColumn": 44,
     "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
@@ -58,11 +58,11 @@
     "renderMode": "CANVAS",
     "mobileTopRow": 73,
     "responsiveBehavior": "fill",
-    "originalTopRow": 1,
+    "originalTopRow": 0,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 17,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 5,
+    "originalBottomRow": 4,
     "fontSize": "1.25rem",
     "minDynamicHeight": 4
 }

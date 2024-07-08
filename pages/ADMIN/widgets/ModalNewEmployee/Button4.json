@@ -11,7 +11,7 @@
         "click",
         "submit"
     ],
-    "topRow": 47.400000000753074,
+    "topRow": 47.40000000079386,
     "bottomRow": 51.399999999995636,
     "parentRowSpace": 10,
     "type": "BUTTON_WIDGET",
@@ -39,7 +39,7 @@
     "tags": ["Buttons"],
     "renderMode": "CANVAS",
     "isLoading": false,
-    "originalTopRow": 47.40000000075162,
+    "originalTopRow": 47.400000000790946,
     "disabledWhenInvalid": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "originalBottomRow": 51.39999999999418,

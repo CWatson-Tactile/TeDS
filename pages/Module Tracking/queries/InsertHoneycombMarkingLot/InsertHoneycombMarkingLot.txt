@@ -2,4 +2,4 @@ INSERT INTO dbo.ModuleTracker
 
 (ModuleSerialNum, HoneycombLotNum, HoneycombScanEmpId, HoneycombScanDateTime, CurrentStatus) 
 
-VALUES ({{HcMarkingSerialInput.text}}, '{{HcMarkingLotNumber.text}}', '{{appsmith.store.EmpID}}', '{{appsmith.store.IsoTimeNow}}', 'HCMarked')
+VALUES ({{HcMarkingSerialInput.text}}, '{{HcMarkingLotNumber.text}}', '{{appsmith.store.EmpID}}', '{{appsmith.store.IsoTimeNow}}', 'Marked')

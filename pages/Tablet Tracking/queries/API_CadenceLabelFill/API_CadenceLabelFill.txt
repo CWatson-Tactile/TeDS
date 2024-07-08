@@ -4,73 +4,95 @@
 "S#1": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel1.selectedOptionLabel).DeviceSerialNumber}}",
 "M1": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel1.selectedOptionLabel).Model_Number}}",
 "QR1": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel1.selectedOptionLabel).DeviceSerialNumber}}",
-"Indicator1": "",
-"Internal1": "",	
+"Indicator1": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel1.selectedOptionLabel).Indicator}}",
+"Internal1": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel1.selectedOptionLabel).Use}}",	
  
 "DN2": "{{SelectLabel2.selectedOptionLabel}}",
 "DoM2": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel2.selectedOptionLabel).Date_of_Manufacture}}",
 "S#2": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel2.selectedOptionLabel).DeviceSerialNumber}}",
 "M2": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel2.selectedOptionLabel).Model_Number}}",
 "QR2": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel2.selectedOptionLabel).DeviceSerialNumber}}",
+"Indicator2": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel2.selectedOptionLabel).Indicator}}",
+"Internal2": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel2.selectedOptionLabel).Use}}",
 
 "DN3": "{{SelectLabel3.selectedOptionLabel}}",
 "DoM3": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel3.selectedOptionLabel).Date_of_Manufacture}}",
 "S#3": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel3.selectedOptionLabel).DeviceSerialNumber}}",
 "M3": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel3.selectedOptionLabel).Model_Number}}",
 "QR3": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel3.selectedOptionLabel).DeviceSerialNumber}}",
-
+"Indicator3": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel3.selectedOptionLabel).Indicator}}",
+"Internal3": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel3.selectedOptionLabel).Use}}",
+	
 "DN4": "{{SelectLabel4.selectedOptionLabel}}",
 "DoM4": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel4.selectedOptionLabel).Date_of_Manufacture}}",
 "S#4": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel4.selectedOptionLabel).DeviceSerialNumber}}",
 "M4": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel4.selectedOptionLabel).Model_Number}}",
 "QR4": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel4.selectedOptionLabel).DeviceSerialNumber}}",
-
+"Indicator4": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel4.selectedOptionLabel).Indicator}}",
+"Internal4": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel4.selectedOptionLabel).Use}}",
+	
 "DN5": "{{SelectLabel5.selectedOptionLabel}}",
 "DoM5": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel5.selectedOptionLabel).Date_of_Manufacture}}",
 "S#5": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel5.selectedOptionLabel).DeviceSerialNumber}}",
 "M5": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel5.selectedOptionLabel).Model_Number}}",
 "QR5": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel5.selectedOptionLabel).DeviceSerialNumber}}",
-
+"Indicator5": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel5.selectedOptionLabel).Indicator}}",
+"Internal5": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel5.selectedOptionLabel).Use}}",
+	
 "DN6": "{{SelectLabel6.selectedOptionLabel}}",
 "DoM6": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel6.selectedOptionLabel).Date_of_Manufacture}}",
 "S#6": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel6.selectedOptionLabel).DeviceSerialNumber}}",
 "M6": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel6.selectedOptionLabel).Model_Number}}",
 "QR6": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel6.selectedOptionLabel).DeviceSerialNumber}}",
-
+"Indicator6": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel6.selectedOptionLabel).Indicator}}",
+"Internal6": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel6.selectedOptionLabel).Use}}",
+	
 "DN7": "{{SelectLabel7.selectedOptionLabel}}",
 "DoM7": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel7.selectedOptionLabel).Date_of_Manufacture}}",
 "S#7": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel7.selectedOptionLabel).DeviceSerialNumber}}",
 "M7": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel7.selectedOptionLabel).Model_Number}}",
 "QR7": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel7.selectedOptionLabel).DeviceSerialNumber}}",
-
+"Indicator7": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel7.selectedOptionLabel).Indicator}}",
+"Internal7": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel7.selectedOptionLabel).Use}}",
+	
 "DN8": "{{SelectLabel8.selectedOptionLabel}}",
 "DoM8": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel8.selectedOptionLabel).Date_of_Manufacture}}",
 "S#8": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel8.selectedOptionLabel).DeviceSerialNumber}}",
 "M8": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel8.selectedOptionLabel).Model_Number}}",
 "QR8": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel8.selectedOptionLabel).DeviceSerialNumber}}",
+"Indicator8": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel8.selectedOptionLabel).Indicator}}",
+"Internal8": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel8.selectedOptionLabel).Use}}",
 	
 "DN9": "{{SelectLabel9.selectedOptionLabel}}",
 "DoM9": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel9.selectedOptionLabel).Date_of_Manufacture}}",
 "S#9": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel9.selectedOptionLabel).DeviceSerialNumber}}",
 "M9": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel9.selectedOptionLabel).Model_Number}}",
 "QR9": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel9.selectedOptionLabel).DeviceSerialNumber}}",
+"Indicator9": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel9.selectedOptionLabel).Indicator}}",
+"Internal9": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel9.selectedOptionLabel).Use}}",
 
 "DN10": "{{SelectLabel10.selectedOptionLabel}}",
 "DoM10": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel10.selectedOptionLabel).Date_of_Manufacture}}",
 "S#10": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel10.selectedOptionLabel).DeviceSerialNumber}}",
 "M10": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel10.selectedOptionLabel).Model_Number}}",
 "QR10": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel10.selectedOptionLabel).DeviceSerialNumber}}",
-
+"Indicator10": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel10.selectedOptionLabel).Indicator}}",
+"Internal10": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel10.selectedOptionLabel).Use}}",
+	
 "DN11": "{{SelectLabel11.selectedOptionLabel}}",
 "DoM11": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel11.selectedOptionLabel).Date_of_Manufacture}}",
 "S#11": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel11.selectedOptionLabel).DeviceSerialNumber}}",
 "M11": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel11.selectedOptionLabel).Model_Number}}",
 "QR11": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel11.selectedOptionLabel).DeviceSerialNumber}}",
-
+"Indicator11": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel11.selectedOptionLabel).Indicator}}",
+"Internal11": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel11.selectedOptionLabel).Use}}",
+	
 "DN12": "{{SelectLabel12.selectedOptionLabel}}",
 "DoM12": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel12.selectedOptionLabel).Date_of_Manufacture}}",
 "S#12": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel12.selectedOptionLabel).DeviceSerialNumber}}",
 "M12": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel12.selectedOptionLabel).Model_Number}}",
-"QR12": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel12.selectedOptionLabel).DeviceSerialNumber}}"
+"QR12": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel12.selectedOptionLabel).DeviceSerialNumber}}",
+"Indicator12": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel12.selectedOptionLabel).Indicator}}",
+"Internal12": "{{ QueryTop5kTablets.data.find(row => row.Device_Name === SelectLabel12.selectedOptionLabel).Use}}"
 	}
 }

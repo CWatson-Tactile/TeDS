@@ -1,0 +1,19 @@
+{
+  "packageUUID": "4fb5897a-e072-4e4c-8a73-b4c9ddf234dc",
+  "moduleUUID": "a5b3e302-b629-4ee8-a586-1e6652c65a8d",
+  "type": "JS_MODULE",
+  "unpublishedModuleInstance": {
+    "version": "0.0.1",
+    "name": "JSCurrentTime",
+    "contextType": "PAGE",
+    "pageId": "Module Tracking",
+    "inputs": {},
+    "jsonPathKeys": [],
+    "isValid": true,
+    "invalids": [],
+    "userPermissions": []
+  },
+  "id": "Module Tracking_JSCurrentTime",
+  "deleted": false,
+  "gitSyncId": "666b27d34105bf614fd3798d_603f989d-29ea-49ac-a9e2-46585b860f8a"
+}

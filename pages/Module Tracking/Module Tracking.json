@@ -9,7 +9,7 @@
           "mobileBottomRow": 1170,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 822,
+          "bottomRow": 682,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -77,6 +77,14 @@
                   "align": "start"
                 }
               ]
+            },
+            {
+              "children": [
+                {
+                  "id": "9r8slpmlro",
+                  "align": "start"
+                }
+              ]
             }
           ]
         },
@@ -116,6 +124,14 @@
             }
           ],
           [
+            {
+              "id": "Module Tracking_SelectMarkedModulesQuery",
+              "name": "SelectMarkedModulesQuery",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "Module Tracking__$JSCurrentTime$_JSCurrentTime.runInterval",
               "name": "_$JSCurrentTime$_JSCurrentTime.runInterval",
