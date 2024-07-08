@@ -61,7 +61,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1713886574680,
+    "columnUpdatedAt": 1720463478807,
     "originalBottomRow": 61,
     "primaryColumnId": "TransactionNumber",
     "defaultSelectedRowIndices": [0],
@@ -70,8 +70,8 @@
     "columnOrder": [
         "DataTimeOfAdjustment",
         "Adjustment",
-        "QtyAfterAdjustment",
         "SKU",
+        "QtyAfterAdjustment",
         "AdjustedBy",
         "TransactionNumber",
         "AdjustmentCode"
@@ -309,7 +309,7 @@
             "allowCellWrapping": true,
             "index": 3,
             "isDiscardVisible": true,
-            "isVisible": false,
+            "isVisible": true,
             "label": "Qty After Adjustment",
             "fontStyle": "ITALIC",
             "columnType": "number",
