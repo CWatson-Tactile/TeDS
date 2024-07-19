@@ -1,18 +1,14 @@
 {
-  "moduleInstanceId": "Lot Tracking_JSEmployeeNames",
+  "gitSyncId": "666b27d34105bf614fd3798d_b6458b9b-5372-440e-b5ee-c4f26b605c9e",
+  "id": "Lot Tracking__$JSEmployeeNames$_JSEmployeeNames",
   "isPublic": true,
+  "moduleInstanceId": "Lot Tracking_JSEmployeeNames",
   "rootModuleInstanceId": "Lot Tracking_JSEmployeeNames",
   "unpublishedCollection": {
+    "contextType": "PAGE",
     "name": "_$JSEmployeeNames$_JSEmployeeNames",
     "pageId": "Lot Tracking",
-    "contextType": "PAGE",
     "pluginId": "js-plugin",
-    "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "userPermissions": []
-  },
-  "id": "Lot Tracking__$JSEmployeeNames$_JSEmployeeNames",
-  "deleted": false,
-  "gitSyncId": "666b27d34105bf614fd3798d_b6458b9b-5372-440e-b5ee-c4f26b605c9e"
+    "pluginType": "JS"
+  }
 }

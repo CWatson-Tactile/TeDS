@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_65f9aea2fdb1c038a9c0ea85",
+  "id": "Home_JS_SkuName",
   "unpublishedCollection": {
     "name": "JS_SkuName",
     "pageId": "Home",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Home_JS_SkuName",
-  "deleted": false,
-  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_65f9aea2fdb1c038a9c0ea85"
+    "variables": []
+  }
 }

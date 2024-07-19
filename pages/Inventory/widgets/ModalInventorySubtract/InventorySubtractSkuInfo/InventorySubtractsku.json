@@ -1,61 +1,75 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
-    "labelText": "SKU / Part Name",
-    "topRow": 0,
-    "labelWidth": 5,
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( SKUEntry.selectedOptionValue))(InventorySubtractsku.options, InventorySubtractsku.serverSideFiltering) }}",
-    "animateLoading": true,
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"},
-        {"key": "defaultOptionValue"}
-    ],
-    "placeholderText": "Select option",
-    "isDisabled": false,
-    "isRequired": false,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "version": 1,
-    "tags": [
-        "Suggested",
-        "Select"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileBottomRow": 7,
-    "widgetName": "InventorySubtractsku",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [{"key": "sourceData"}],
-    "displayName": "Select",
-    "searchTags": ["dropdown"],
-    "bottomRow": 7,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "mobileRightColumn": 20,
-    "parentColumnSpace": 8.810791015625,
-    "dynamicTriggerPathList": [],
-    "labelPosition": "Top",
-    "sourceData": "{{JS_SkuName.SkuDataFetcher.data}}",
-    "key": "4g348iv6tp",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "ptaokexebd",
-    "optionValue": "value",
-    "minWidth": 450,
-    "parentId": "gzj7s8vxyx",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 0,
-    "optionLabel": "label",
-    "responsiveBehavior": "fill",
-    "mobileLeftColumn": 0,
-    "maxDynamicHeight": 9000,
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( SKUEntry.selectedOptionValue))(InventorySubtractsku.options, InventorySubtractsku.serverSideFiltering) }}",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "4g348iv6tp",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "SKU / Part Name",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 0,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 8.810791015625,
+  "parentId": "gzj7s8vxyx",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "{{JS_SkuName.SkuDataFetcher.data}}",
+  "tags": [
+    "Suggested",
+    "Select"
+  ],
+  "topRow": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "ptaokexebd",
+  "widgetName": "InventorySubtractsku"
 }

@@ -1,18 +1,14 @@
 {
-  "moduleInstanceId": "Module Tracking_JSCurrentTime",
+  "gitSyncId": "666b27d34105bf614fd3798d_d88e39ce-7644-4b49-8a00-84e397a44e31",
+  "id": "Module Tracking__$JSCurrentTime$_JSCurrentTime",
   "isPublic": true,
+  "moduleInstanceId": "Module Tracking_JSCurrentTime",
   "rootModuleInstanceId": "Module Tracking_JSCurrentTime",
   "unpublishedCollection": {
+    "contextType": "PAGE",
     "name": "_$JSCurrentTime$_JSCurrentTime",
     "pageId": "Module Tracking",
-    "contextType": "PAGE",
     "pluginId": "js-plugin",
-    "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "userPermissions": []
-  },
-  "id": "Module Tracking__$JSCurrentTime$_JSCurrentTime",
-  "deleted": false,
-  "gitSyncId": "666b27d34105bf614fd3798d_d88e39ce-7644-4b49-8a00-84e397a44e31"
+    "pluginType": "JS"
+  }
 }

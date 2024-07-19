@@ -1,18 +1,14 @@
 {
-  "moduleInstanceId": "Delivery Tracking_JSEmployeeNames",
+  "gitSyncId": "666b27d34105bf614fd3798d_39a4e4d3-43b6-404d-8345-7aaec05c8e9f",
+  "id": "Delivery Tracking__$JSEmployeeNames$_JSEmployeeNames",
   "isPublic": true,
+  "moduleInstanceId": "Delivery Tracking_JSEmployeeNames",
   "rootModuleInstanceId": "Delivery Tracking_JSEmployeeNames",
   "unpublishedCollection": {
+    "contextType": "PAGE",
     "name": "_$JSEmployeeNames$_JSEmployeeNames",
     "pageId": "Delivery Tracking",
-    "contextType": "PAGE",
     "pluginId": "js-plugin",
-    "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "userPermissions": []
-  },
-  "id": "Delivery Tracking__$JSEmployeeNames$_JSEmployeeNames",
-  "deleted": false,
-  "gitSyncId": "666b27d34105bf614fd3798d_39a4e4d3-43b6-404d-8345-7aaec05c8e9f"
+    "pluginType": "JS"
+  }
 }

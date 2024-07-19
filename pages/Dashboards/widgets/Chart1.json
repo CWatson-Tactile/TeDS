@@ -1,114 +1,126 @@
 {
-    "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-    "setAdaptiveYMin": false,
-    "widgetName": "Chart1",
-    "allowScroll": false,
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.8eea39845729f7f4bfadeecd3810a09d.svg",
-    "displayName": "Chart",
-    "topRow": 32,
-    "searchTags": [
-        "graph",
-        "visuals",
-        "visualisations"
-    ],
-    "bottomRow": 64,
-    "parentRowSpace": 10,
-    "type": "CHART_WIDGET",
-    "hideCard": false,
-    "chartData": {
-        "1w31wzuit3": {
-            "data": "[\n  {\n    \"x\": \"January\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-01'))\n  .length.toString()\n}}\n  },\n    {\n    \"x\": \"February\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-02'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"March\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-03'))\n  .length.toString()\n}}\n  },\n    {\n    \"x\": \"April\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-04'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"May\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-05'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"June\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-06'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"July\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-07'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"August\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-08'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"September\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-09'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"October\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-10'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"November\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-11'))\n  .length.toString()\n}}\n  },\n    {\n    \"x\": \"December\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-12'))\n  .length.toString()\n}}\n  }\n  \n]",
-            "seriesName": "2023"
-        },
-        "hqlkgjy3fg": {
-            "data": "[\n  {\n    \"x\": \"January\",\n    \"y\": 42\n  },\n    {\n    \"x\": \"February\",\n    \"y\": 40\n  },\n  {\n    \"x\": \"March\",\n    \"y\": 42\n  },\n    {\n    \"x\": \"April\",\n    \"y\": 44\n  },\n  {\n    \"x\": \"May\",\n    \"y\": 44\n  },\n  {\n    \"x\": \"June\",\n    \"y\": 38\n  },\n  {\n    \"x\": \"July\",\n    \"y\": 44\n  },\n  {\n    \"x\": \"August\",\n    \"y\": 44\n  },\n  {\n    \"x\": \"September\",\n    \"y\": 40\n  },\n  {\n    \"x\": \"October\",\n    \"y\": 44\n  },\n  {\n    \"x\": \"November\",\n    \"y\": 38\n  },\n    {\n    \"x\": \"December\",\n    \"y\": 42\n  }\n  \n]",
-            "color": "#d4d4d8",
-            "seriesName": "projected production (2/day)"
-        },
-        "us33xso9ry": {
-            "data": "[\n  {\n    \"x\": \"January\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-01'))\n  .length.toString()\n}}\n  },\n    {\n    \"x\": \"February\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-02'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"March\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-03'))\n  .length.toString()\n}}\n  },\n    {\n    \"x\": \"April\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-04'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"May\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-05'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"June\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-06'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"July\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-07'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"August\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-08'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"September\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-09'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"October\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-10'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"November\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-11'))\n  .length.toString()\n}}\n  },\n    {\n    \"x\": \"December\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-12'))\n  .length.toString()\n}}\n  }\n  \n]",
-            "seriesName": "2024"
-        }
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowScroll": false,
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 64,
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+  "chartData": {
+    "1w31wzuit3": {
+      "data": "[\n  {\n    \"x\": \"January\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-01'))\n  .length.toString()\n}}\n  },\n    {\n    \"x\": \"February\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-02'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"March\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-03'))\n  .length.toString()\n}}\n  },\n    {\n    \"x\": \"April\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-04'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"May\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-05'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"June\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-06'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"July\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-07'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"August\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-08'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"September\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-09'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"October\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-10'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"November\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-11'))\n  .length.toString()\n}}\n  },\n    {\n    \"x\": \"December\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2023-12'))\n  .length.toString()\n}}\n  }\n  \n]",
+      "seriesName": "2023"
     },
-    "animateLoading": true,
-    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-    "parentColumnSpace": 16.78125,
-    "dynamicTriggerPathList": [],
-    "dynamicBindingPathList": [
-        {"key": "customEChartConfig"},
-        {"key": "accentColor"},
-        {"key": "fontFamily"},
-        {"key": "chartData.us33xso9ry.data"},
-        {"key": "chartData.1w31wzuit3.data"}
-    ],
-    "leftColumn": 0,
-    "customFusionChartConfig": {
-        "type": "column2d",
-        "dataSource": {
-            "data": [
-                {
-                    "label": "Product1",
-                    "value": 20000
-                },
-                {
-                    "label": "Product2",
-                    "value": 22000
-                },
-                {
-                    "label": "Product3",
-                    "value": 32000
-                }
-            ],
-            "chart": {
-                "legendIconSides": "4",
-                "canvasPadding": "0",
-                "captionAlignment": "center",
-                "yAxisNameFontSize": "14",
-                "caption": "Sales Report",
-                "labelFontColor": "#716e6e",
-                "chartLeftMargin": "20",
-                "captionFontSize": "24",
-                "chartTopMargin": "10",
-                "theme": "fusion",
-                "legendIconAlpha": "100",
-                "chartBottomMargin": "10",
-                "labelFontSize": "12",
-                "xAxisNameFontColor": "#716e6e",
-                "yAxisNameFontColor": "#716e6e",
-                "captionFontColor": "#231F20",
-                "yAxisValueFontColor": "#716e6e",
-                "captionPadding": "20",
-                "yAxisName": "Revenue($)",
-                "legendIconBgAlpha": "100",
-                "xAxisName": "Product Line",
-                "alignCaptionWithCanvas": 1,
-                "chartRightMargin": "40",
-                "legendPosition": "top",
-                "xAxisNameFontSize": "14",
-                "yAxisValueFontSize": "12"
-            }
-        }
+    "hqlkgjy3fg": {
+      "color": "#d4d4d8",
+      "data": "[\n  {\n    \"x\": \"January\",\n    \"y\": 42\n  },\n    {\n    \"x\": \"February\",\n    \"y\": 40\n  },\n  {\n    \"x\": \"March\",\n    \"y\": 42\n  },\n    {\n    \"x\": \"April\",\n    \"y\": 44\n  },\n  {\n    \"x\": \"May\",\n    \"y\": 44\n  },\n  {\n    \"x\": \"June\",\n    \"y\": 38\n  },\n  {\n    \"x\": \"July\",\n    \"y\": 44\n  },\n  {\n    \"x\": \"August\",\n    \"y\": 44\n  },\n  {\n    \"x\": \"September\",\n    \"y\": 40\n  },\n  {\n    \"x\": \"October\",\n    \"y\": 44\n  },\n  {\n    \"x\": \"November\",\n    \"y\": 38\n  },\n    {\n    \"x\": \"December\",\n    \"y\": 42\n  }\n  \n]",
+      "seriesName": "projected production (2/day)"
     },
-    "customEChartConfig": "{{\n{\n  \"dataset\": {\n    \"source\": [\n      [\n        \"Day\",\n        \"Baidu\",\n        \"Google\",\n        \"Bing\"\n      ],\n      [\n        \"Mon\",\n        620,\n        120,\n        60\n      ],\n      [\n        \"Tue\",\n        732,\n        132,\n        72\n      ],\n      [\n        \"Wed\",\n        701,\n        101,\n        71\n      ],\n      [\n        \"Thu\",\n        734,\n        134,\n        74\n      ],\n      [\n        \"Fri\",\n        1090,\n        290,\n        190\n      ],\n      [\n        \"Sat\",\n        1130,\n        230,\n        130\n      ],\n      [\n        \"Sun\",\n        1120,\n        220,\n        110\n      ]\n    ]\n  },\n  \"tooltip\": {\n    \"trigger\": \"axis\",\n    \"axisPointer\": {\n      \"type\": \"shadow\"\n    }\n  },\n  \"title\": {\n    \"text\": \"Search Engine Usage\",\n    \"left\": \"center\",\n    \"textStyle\": {\n      \"width\": 200,\n      \"overflow\": \"truncate\"\n    }\n  },\n  \"legend\": {\n    \"top\": 40,\n    \"type\": \"scroll\"\n  },\n  \"grid\": {\n    \"left\": 15,\n    \"right\": 15,\n    \"bottom\": 30,\n    \"top\": 100,\n    \"containLabel\": true\n  },\n  \"xAxis\": [\n    {\n      \"type\": \"category\"\n    }\n  ],\n  \"yAxis\": [\n    {\n      \"type\": \"value\"\n    }\n  ],\n  \"series\": [\n    {\n      \"type\": \"bar\",\n      \"stack\": \"Search Engine\"\n    },\n    {\n      \"type\": \"bar\",\n      \"stack\": \"Search Engine\"\n    },\n    {\n      \"type\": \"bar\",\n      \"stack\": \"Search Engine\"\n    }\n  ]\n}\n}}",
-    "showDataPointLabel": true,
-    "key": "v3ajg1fzv2",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "widgetId": "thdb9952b6",
-    "minWidth": 450,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "0",
-    "tags": ["Display"],
-    "labelOrientation": "slant",
-    "isLoading": false,
-    "renderMode": "CANVAS",
-    "yAxisName": "Tablets",
-    "originalTopRow": 33,
-    "chartName": "NEW Cadence® tablets produced per month\n",
-    "borderRadius": "0px",
-    "xAxisName": "Month",
-    "originalBottomRow": 65,
-    "chartType": "COLUMN_CHART"
+    "us33xso9ry": {
+      "data": "[\n  {\n    \"x\": \"January\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-01'))\n  .length.toString()\n}}\n  },\n    {\n    \"x\": \"February\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-02'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"March\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-03'))\n  .length.toString()\n}}\n  },\n    {\n    \"x\": \"April\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-04'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"May\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-05'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"June\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-06'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"July\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-07'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"August\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-08'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"September\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-09'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"October\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-10'))\n  .length.toString()\n}}\n  },\n  {\n    \"x\": \"November\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-11'))\n  .length.toString()\n}}\n  },\n    {\n    \"x\": \"December\",\n    \"y\": {{\nSelectTopTablets.data\n  .filter(item => item\n    .Date_of_Manufacture\n    .includes('2024-12'))\n  .length.toString()\n}}\n  }\n  \n]",
+      "seriesName": "2024"
+    }
+  },
+  "chartName": "NEW Cadence® tablets produced per month\n",
+  "chartType": "COLUMN_CHART",
+  "customEChartConfig": "{{\n{\n  \"dataset\": {\n    \"source\": [\n      [\n        \"Day\",\n        \"Baidu\",\n        \"Google\",\n        \"Bing\"\n      ],\n      [\n        \"Mon\",\n        620,\n        120,\n        60\n      ],\n      [\n        \"Tue\",\n        732,\n        132,\n        72\n      ],\n      [\n        \"Wed\",\n        701,\n        101,\n        71\n      ],\n      [\n        \"Thu\",\n        734,\n        134,\n        74\n      ],\n      [\n        \"Fri\",\n        1090,\n        290,\n        190\n      ],\n      [\n        \"Sat\",\n        1130,\n        230,\n        130\n      ],\n      [\n        \"Sun\",\n        1120,\n        220,\n        110\n      ]\n    ]\n  },\n  \"tooltip\": {\n    \"trigger\": \"axis\",\n    \"axisPointer\": {\n      \"type\": \"shadow\"\n    }\n  },\n  \"title\": {\n    \"text\": \"Search Engine Usage\",\n    \"left\": \"center\",\n    \"textStyle\": {\n      \"width\": 200,\n      \"overflow\": \"truncate\"\n    }\n  },\n  \"legend\": {\n    \"top\": 40,\n    \"type\": \"scroll\"\n  },\n  \"grid\": {\n    \"left\": 15,\n    \"right\": 15,\n    \"bottom\": 30,\n    \"top\": 100,\n    \"containLabel\": true\n  },\n  \"xAxis\": [\n    {\n      \"type\": \"category\"\n    }\n  ],\n  \"yAxis\": [\n    {\n      \"type\": \"value\"\n    }\n  ],\n  \"series\": [\n    {\n      \"type\": \"bar\",\n      \"stack\": \"Search Engine\"\n    },\n    {\n      \"type\": \"bar\",\n      \"stack\": \"Search Engine\"\n    },\n    {\n      \"type\": \"bar\",\n      \"stack\": \"Search Engine\"\n    }\n  ]\n}\n}}",
+  "customFusionChartConfig": {
+    "dataSource": {
+      "chart": {
+        "alignCaptionWithCanvas": 1,
+        "canvasPadding": "0",
+        "caption": "Sales Report",
+        "captionAlignment": "center",
+        "captionFontColor": "#231F20",
+        "captionFontSize": "24",
+        "captionPadding": "20",
+        "chartBottomMargin": "10",
+        "chartLeftMargin": "20",
+        "chartRightMargin": "40",
+        "chartTopMargin": "10",
+        "labelFontColor": "#716e6e",
+        "labelFontSize": "12",
+        "legendIconAlpha": "100",
+        "legendIconBgAlpha": "100",
+        "legendIconSides": "4",
+        "legendPosition": "top",
+        "theme": "fusion",
+        "xAxisName": "Product Line",
+        "xAxisNameFontColor": "#716e6e",
+        "xAxisNameFontSize": "14",
+        "yAxisName": "Revenue($)",
+        "yAxisNameFontColor": "#716e6e",
+        "yAxisNameFontSize": "14",
+        "yAxisValueFontColor": "#716e6e",
+        "yAxisValueFontSize": "12"
+      },
+      "data": [
+        {
+          "label": "Product1",
+          "value": 20000
+        },
+        {
+          "label": "Product2",
+          "value": 22000
+        },
+        {
+          "label": "Product3",
+          "value": 32000
+        }
+      ]
+    },
+    "type": "column2d"
+  },
+  "displayName": "Chart",
+  "dynamicBindingPathList": [
+    {
+      "key": "customEChartConfig"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "chartData.us33xso9ry.data"
+    },
+    {
+      "key": "chartData.1w31wzuit3.data"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.8eea39845729f7f4bfadeecd3810a09d.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "v3ajg1fzv2",
+  "labelOrientation": "slant",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "originalBottomRow": 65,
+  "originalTopRow": 33,
+  "parentColumnSpace": 16.78125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchTags": [
+    "graph",
+    "visuals",
+    "visualisations"
+  ],
+  "setAdaptiveYMin": false,
+  "showDataPointLabel": true,
+  "tags": [
+    "Display"
+  ],
+  "topRow": 32,
+  "type": "CHART_WIDGET",
+  "version": 1,
+  "widgetId": "thdb9952b6",
+  "widgetName": "Chart1",
+  "xAxisName": "Month",
+  "yAxisName": "Tablets"
 }

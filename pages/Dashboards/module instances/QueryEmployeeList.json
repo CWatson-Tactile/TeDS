@@ -1,20 +1,15 @@
 {
-  "packageUUID": "40fbc923-c4c9-40b0-89f6-f8b44197b355",
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_f527d936-9cdf-4549-aed7-dc188e22bf71",
+  "id": "Dashboards_QueryEmployeeList",
   "moduleUUID": "c6e48dfd-dd36-4c28-8333-afafd518afb7",
+  "packageUUID": "40fbc923-c4c9-40b0-89f6-f8b44197b355",
   "type": "QUERY_MODULE",
   "unpublishedModuleInstance": {
-    "version": "0.0.5",
-    "name": "QueryEmployeeList",
     "contextType": "PAGE",
-    "pageId": "Dashboards",
     "inputs": {},
     "moduleInputs": {},
-    "jsonPathKeys": [],
-    "isValid": true,
-    "invalids": [],
-    "userPermissions": []
-  },
-  "id": "Dashboards_QueryEmployeeList",
-  "deleted": false,
-  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_f527d936-9cdf-4549-aed7-dc188e22bf71"
+    "name": "QueryEmployeeList",
+    "pageId": "Dashboards",
+    "version": "0.0.5"
+  }
 }

@@ -1,137 +1,36 @@
 {
+  "gitSyncId": "656ce12b7cc83c64328e6401_656ce12b7cc83c64328e6408",
   "unpublishedPage": {
-    "name": "Tablet Tracking",
-    "slug": "tablet-tracking",
+    "isHidden": false,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 3150.734375,
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 1170,
-          "containerStyle": "none",
-          "snapRows": 115,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 89,
-          "minHeight": 1170,
-          "mobileTopRow": 0,
-          "useAutoLayout": false,
-          "parentColumnSpace": 1,
+          "containerStyle": "none",
+          "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "positioning": "fixed"
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Tablet Tracking_QueryASSIGNEDTablets",
-              "name": "QueryASSIGNEDTablets",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Tablet Tracking_QueryNewTablets",
-              "name": "QueryNewTablets",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Tablet Tracking_QueryTop5kTablets",
-              "name": "QueryTop5kTablets",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Tablet Tracking_QueryDotTypes",
-              "name": "QueryDotTypes",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Tablet Tracking_QueryKeyboardTypes",
-              "name": "QueryKeyboardTypes",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Tablet Tracking_QueryMaterialTypes",
-              "name": "QueryMaterialTypes",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Tablet Tracking_QueryModels",
-              "name": "QueryModels",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Tablet Tracking_QueryStatusTypes",
-              "name": "QueryStatusTypes",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Tablet Tracking__$JSEmployeeNames$_SelectEmployeeListQuery",
-              "name": "_$JSEmployeeNames$_SelectEmployeeListQuery",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Tablet Tracking__$JSEmployeeNames$_JSEmployeeNames.EmpNames",
-              "name": "_$JSEmployeeNames$_JSEmployeeNames.EmpNames",
-              "collectionId": "Tablet Tracking__$JSEmployeeNames$_JSEmployeeNames",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  const EmpNames = _$JSEmployeeNames$_SelectEmployeeListQuery.data.map(i => ({\n    label: i.EmployeeFirstName + \" \" + i.EmployeeLastName,\n    value: i.EmployeeID\n  }));\n  return EmpNames;\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Tablet Tracking",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "minHeight": 1170,
+          "mobileBottomRow": 3150.734375,
+          "mobileTopRow": 0,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "fixed",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 115,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "useAutoLayout": false,
+          "version": 89,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": false
-  },
-  "deleted": false,
-  "gitSyncId": "656ce12b7cc83c64328e6401_656ce12b7cc83c64328e6408"
+    "name": "Tablet Tracking",
+    "slug": "tablet-tracking"
+  }
 }

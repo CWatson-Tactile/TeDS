@@ -1,7 +1,7 @@
 {
-  "packageUUID": "40fbc923-c4c9-40b0-89f6-f8b44197b355",
-  "packageName": "PackageEmployeeList",
-  "moduleUUID": "d00bca54-0cbe-46f3-8647-d01896b713f7",
   "moduleName": "JSEmployeeNames",
+  "moduleUUID": "d00bca54-0cbe-46f3-8647-d01896b713f7",
+  "packageName": "PackageEmployeeList",
+  "packageUUID": "40fbc923-c4c9-40b0-89f6-f8b44197b355",
   "version": "0.0.5"
 }

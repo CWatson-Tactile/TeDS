@@ -1,80 +1,37 @@
 {
+  "gitSyncId": "656ce12b7cc83c64328e6401_656ce12b7cc83c64328e6417",
   "unpublishedPage": {
-    "name": "Dashboards",
-    "slug": "dashboards",
+    "isHidden": false,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 2021.9531249999995,
-          "widgetName": "MainContainer",
-          "topRow": 0,
-          "bottomRow": 640,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
-          "canExtend": true,
-          "minHeight": 1292,
-          "useAutoLayout": false,
-          "dynamicTriggerPathList": [],
-          "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "positioning": "fixed",
           "backgroundColor": "none",
+          "bottomRow": 640,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
+          "leftColumn": 0,
+          "minHeight": 1292,
+          "mobileBottomRow": 2021.9531249999995,
+          "mobileTopRow": 0,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "fixed",
           "rightColumn": 4896,
           "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "containerStyle": "none",
           "snapRows": 124,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "useAutoLayout": false,
           "version": 89,
-          "mobileTopRow": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Dashboards_SelectTopTablets",
-              "name": "SelectTopTablets",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Dashboards__$JSEmployeeNames$_SelectEmployeeListQuery",
-              "name": "_$JSEmployeeNames$_SelectEmployeeListQuery",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Dashboards__$JSEmployeeNames$_JSEmployeeNames.EmpNames",
-              "name": "_$JSEmployeeNames$_JSEmployeeNames.EmpNames",
-              "collectionId": "Dashboards__$JSEmployeeNames$_JSEmployeeNames",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  const EmpNames = _$JSEmployeeNames$_SelectEmployeeListQuery.data.map(i => ({\n    label: i.EmployeeFirstName + \" \" + i.EmployeeLastName,\n    value: i.EmployeeID\n  }));\n  return EmpNames;\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Dashboards",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": false
-  },
-  "deleted": false,
-  "gitSyncId": "656ce12b7cc83c64328e6401_656ce12b7cc83c64328e6417"
+    "name": "Dashboards",
+    "slug": "dashboards"
+  }
 }

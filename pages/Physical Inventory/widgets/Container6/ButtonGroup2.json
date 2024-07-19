@@ -1,139 +1,161 @@
 {
-    "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-    "widgetName": "ButtonGroup2",
-    "isCanvas": false,
-    "dynamicPropertyPathList": [{"key": "groupButtons.groupButtonemgxwjq648.isVisible"}],
-    "displayName": "Button Group",
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 58.99999999999483,
-    "bottomRow": 63,
-    "parentRowSpace": 10,
-    "type": "BUTTON_GROUP_WIDGET",
-    "groupButtons": {
-        "groupButton1kfaj5i1k8": {
-            "itemType": "BUTTON",
-            "onClick": "{{showModal('ModalSkuTagLotEntry');}}",
-            "buttonColor": "#000000",
-            "iconName": "label",
-            "widgetId": "l4q8ayug57",
-            "menuItems": {},
-            "index": 5,
-            "label": "Make Label",
-            "isVisible": true,
-            "buttonType": "SIMPLE",
-            "buttonVariant": "filled",
-            "id": "groupButton1kfaj5i1k8",
-            "isDisabled": false,
-            "placement": "CENTER"
-        },
-        "groupButton0cl3usykwg": {
-            "onClick": "{{showModal('ModalInventorySubtract').then(() => {}).catch(() => {});}}",
-            "buttonColor": "#b91c1c",
-            "iconName": "remove",
-            "widgetId": "0wnjnqh2a0",
-            "menuItems": {},
-            "index": 2,
-            "label": "Pick NEW Inventory",
-            "isVisible": true,
-            "buttonType": "SIMPLE",
-            "iconAlign": "left",
-            "id": "groupButton0cl3usykwg",
-            "isDisabled": false,
-            "placement": "CENTER"
-        },
-        "groupButtonngqxlh016z": {
-            "itemType": "BUTTON",
-            "onClick": "{{showModal(ModalInventorySubtractWIP.name);}}",
-            "buttonColor": "#fca5a5",
-            "iconName": "remove",
-            "widgetId": "gqopfduq0t",
-            "menuItems": {},
-            "index": 4,
-            "label": "Pick WIP Inventory",
-            "isVisible": true,
-            "buttonType": "SIMPLE",
-            "buttonVariant": "filled",
-            "id": "groupButtonngqxlh016z",
-            "isDisabled": false,
-            "placement": "CENTER"
-        },
-        "groupButtonkr1zm8ddy2": {
-            "itemType": "BUTTON",
-            "onClick": "{{showModal(ModalInventoryWipAdd.name);}}",
-            "buttonColor": "#86efac",
-            "iconName": "add",
-            "widgetId": "6vro0ywgyn",
-            "menuItems": {},
-            "index": 3,
-            "label": "Add WIP Inventory",
-            "isVisible": true,
-            "buttonType": "SIMPLE",
-            "buttonVariant": "filled",
-            "id": "groupButtonkr1zm8ddy2",
-            "isDisabled": false,
-            "placement": "CENTER"
-        },
-        "groupButton1": {
-            "onClick": "{{QueryInventoryHistory.run().then(() => {\n  JS_InvTransData.InvTransDataFetch();\n});\nQueryTop1kInventory.run().then(() => {\n  JS_SkuData.SkuDataFetch();\n});}}",
-            "buttonType": "SIMPLE",
-            "iconName": "refresh",
-            "buttonColor": "#eab308",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 0,
-            "label": "Refresh",
-            "id": "groupButton1",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "groupButtonwt54yfoazc": {
-            "onClick": "{{showModal('ModalInventoryAdd');}}",
-            "buttonType": "SIMPLE",
-            "buttonColor": "#15803d",
-            "iconName": "add",
-            "widgetId": "a5t5cvigzf",
-            "menuItems": {},
-            "index": 1,
-            "id": "groupButtonwt54yfoazc",
-            "label": "Add NEW Inventory",
-            "isDisabled": false,
-            "isVisible": true,
-            "placement": "CENTER"
-        }
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 63,
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "displayName": "Button Group",
+  "dynamicBindingPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButtonemgxwjq648.isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
     },
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 16.109375,
-    "dynamicTriggerPathList": [
-        {"key": "groupButtons.groupButton1.onClick"},
-        {"key": "groupButtons.groupButtonwt54yfoazc.onClick"},
-        {"key": "groupButtons.groupButton0cl3usykwg.onClick"},
-        {"key": "groupButtons.groupButton1kfaj5i1k8.onClick"},
-        {"key": "groupButtons.groupButtonngqxlh016z.onClick"},
-        {"key": "groupButtons.groupButtonkr1zm8ddy2.onClick"}
-    ],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [],
-    "key": "4duu9pspoo",
-    "orientation": "horizontal",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "7ha3vzrufe",
-    "minWidth": 450,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "ewjibdgf02",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 58.999999999995566,
-    "borderRadius": "0px",
-    "originalBottomRow": 63,
-    "buttonVariant": "PRIMARY"
+    {
+      "key": "groupButtons.groupButtonwt54yfoazc.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton0cl3usykwg.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1kfaj5i1k8.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonngqxlh016z.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonkr1zm8ddy2.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton0cl3usykwg": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "iconAlign": "left",
+      "iconName": "remove",
+      "id": "groupButton0cl3usykwg",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Pick NEW Inventory",
+      "menuItems": {},
+      "onClick": "{{showModal('ModalInventorySubtract').then(() => {}).catch(() => {});}}",
+      "placement": "CENTER",
+      "widgetId": "0wnjnqh2a0"
+    },
+    "groupButton1": {
+      "buttonColor": "#eab308",
+      "buttonType": "SIMPLE",
+      "iconName": "refresh",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Refresh",
+      "menuItems": {},
+      "onClick": "{{QueryInventoryHistory.run().then(() => {\n  JS_InvTransData.InvTransDataFetch();\n});\nQueryTop1kInventory.run().then(() => {\n  JS_SkuData.SkuDataFetch();\n});}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton1kfaj5i1k8": {
+      "buttonColor": "#000000",
+      "buttonType": "SIMPLE",
+      "buttonVariant": "filled",
+      "iconName": "label",
+      "id": "groupButton1kfaj5i1k8",
+      "index": 5,
+      "isDisabled": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Make Label",
+      "menuItems": {},
+      "onClick": "{{showModal('ModalSkuTagLotEntry');}}",
+      "placement": "CENTER",
+      "widgetId": "l4q8ayug57"
+    },
+    "groupButtonkr1zm8ddy2": {
+      "buttonColor": "#86efac",
+      "buttonType": "SIMPLE",
+      "buttonVariant": "filled",
+      "iconName": "add",
+      "id": "groupButtonkr1zm8ddy2",
+      "index": 3,
+      "isDisabled": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Add WIP Inventory",
+      "menuItems": {},
+      "onClick": "{{showModal(ModalInventoryWipAdd.name);}}",
+      "placement": "CENTER",
+      "widgetId": "6vro0ywgyn"
+    },
+    "groupButtonngqxlh016z": {
+      "buttonColor": "#fca5a5",
+      "buttonType": "SIMPLE",
+      "buttonVariant": "filled",
+      "iconName": "remove",
+      "id": "groupButtonngqxlh016z",
+      "index": 4,
+      "isDisabled": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Pick WIP Inventory",
+      "menuItems": {},
+      "onClick": "{{showModal(ModalInventorySubtractWIP.name);}}",
+      "placement": "CENTER",
+      "widgetId": "gqopfduq0t"
+    },
+    "groupButtonwt54yfoazc": {
+      "buttonColor": "#15803d",
+      "buttonType": "SIMPLE",
+      "iconName": "add",
+      "id": "groupButtonwt54yfoazc",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Add NEW Inventory",
+      "menuItems": {},
+      "onClick": "{{showModal('ModalInventoryAdd');}}",
+      "placement": "CENTER",
+      "widgetId": "a5t5cvigzf"
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "4duu9pspoo",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "orientation": "horizontal",
+  "originalBottomRow": 63,
+  "originalTopRow": 58.999999999995566,
+  "parentColumnSpace": 16.109375,
+  "parentId": "ewjibdgf02",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 58.99999999999483,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "7ha3vzrufe",
+  "widgetName": "ButtonGroup2"
 }

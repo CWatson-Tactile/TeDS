@@ -1,72 +1,86 @@
 {
-    "boxShadow": "none",
-    "widgetName": "ButtonGroup1",
-    "isCanvas": false,
-    "dynamicPropertyPathList": [],
-    "displayName": "Button Group",
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 13,
-    "bottomRow": 17,
-    "parentRowSpace": 10,
-    "type": "BUTTON_GROUP_WIDGET",
-    "groupButtons": {
-        "groupButton1": {
-            "onClick": "{{navigateTo('Dashboards', {}, 'SAME_WINDOW');}}",
-            "buttonType": "SIMPLE",
-            "iconName": "home",
-            "buttonColor": "#231f20",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 0,
-            "label": "Back to Dashboards",
-            "id": "groupButton1",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "groupButton2": {
-            "onClick": "{{QueryEmployeeList.run();\nQueryTop5kTablets.run();\nQueryTop1kInventory.run()}}",
-            "buttonType": "SIMPLE",
-            "iconName": "refresh",
-            "buttonColor": "#eab308",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 1,
-            "label": "Refresh Data",
-            "id": "groupButton2",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        }
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 17,
+  "boxShadow": "none",
+  "buttonVariant": "TERTIARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "displayName": "Button Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton2.onClick"
     },
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 16.109375,
-    "dynamicTriggerPathList": [
-        {"key": "groupButtons.groupButton2.onClick"},
-        {"key": "groupButtons.groupButton1.onClick"}
-    ],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [{"key": "borderRadius"}],
-    "key": "ng9fmc4l2k",
-    "orientation": "horizontal",
-    "isDeprecated": false,
-    "rightColumn": 14,
-    "widgetId": "lte7a87e1k",
-    "minWidth": 450,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "0",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 13,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 17,
-    "buttonVariant": "TERTIARY"
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "#231f20",
+      "buttonType": "SIMPLE",
+      "iconName": "home",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Back to Dashboards",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Dashboards', {}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "#eab308",
+      "buttonType": "SIMPLE",
+      "iconName": "refresh",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Refresh Data",
+      "menuItems": {},
+      "onClick": "{{QueryEmployeeList.run();\nQueryTop5kTablets.run();\nQueryTop1kInventory.run()}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ng9fmc4l2k",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "orientation": "horizontal",
+  "originalBottomRow": 17,
+  "originalTopRow": 13,
+  "parentColumnSpace": 16.109375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 14,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 13,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "lte7a87e1k",
+  "widgetName": "ButtonGroup1"
 }

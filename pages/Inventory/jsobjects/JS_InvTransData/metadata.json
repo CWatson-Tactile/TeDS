@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "65efd5244400cc0e9f2ca56a_65f0b2724400cc0e9f2ca871",
+  "id": "Inventory_JS_InvTransData",
   "unpublishedCollection": {
     "name": "JS_InvTransData",
     "pageId": "Inventory",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Inventory_JS_InvTransData",
-  "deleted": false,
-  "gitSyncId": "65efd5244400cc0e9f2ca56a_65f0b2724400cc0e9f2ca871"
+    "variables": []
+  }
 }

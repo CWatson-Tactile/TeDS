@@ -1,64 +1,74 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
-    "onSubmit": "{{storeValue('EmpID', QueryEmployeeList.data.find(row => row.EmployeeBadgeNumber === BadgeID.text).EmployeeID).then(() => {\n  navigateTo('Inventory', {}, 'SAME_WINDOW');\n  closeModal('Modal1');\n});}}",
-    "topRow": 5.2,
-    "labelWidth": 5,
-    "type": "INPUT_WIDGET_V2",
-    "animateLoading": true,
-    "resetOnSubmit": true,
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "validation"}
-    ],
-    "labelStyle": "",
-    "inputType": "PASSWORD",
-    "placeholderText": "Case Sensitive",
-    "isDisabled": false,
-    "validation": "{{Input1.text === QueryEmployeeList.data.find(row => row.EmployeeBadgeNumber === BadgeID.text).EmpPassword }}",
-    "isRequired": true,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "showStepArrows": false,
-    "isVisible": true,
-    "version": 2,
-    "tags": [
-        "Suggested",
-        "Inputs"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "widgetName": "Input1",
-    "dynamicPropertyPathList": [],
-    "displayName": "Input",
-    "searchTags": [
-        "form",
-        "text input",
-        "number",
-        "textarea"
-    ],
-    "bottomRow": 11.8,
-    "parentRowSpace": 10,
-    "autoFocus": true,
-    "hideCard": false,
-    "parentColumnSpace": 6.96875,
-    "dynamicTriggerPathList": [{"key": "onSubmit"}],
-    "labelPosition": "Top",
-    "key": "g1dfbnabg8",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "apprum7skd",
-    "minWidth": 450,
-    "label": "Password",
-    "parentId": "8c69mfyytl",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "maxDynamicHeight": 9000,
-    "shouldAllowAutofill": false,
-    "iconAlign": "left",
-    "defaultText": "",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 11.8,
+  "boxShadow": "none",
+  "defaultText": "",
+  "displayName": "Input",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "validation"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSubmit"
+    }
+  ],
+  "hideCard": false,
+  "iconAlign": "left",
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
+  "inputType": "PASSWORD",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "g1dfbnabg8",
+  "label": "Password",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "onSubmit": "{{storeValue('EmpID', QueryEmployeeList.data.find(row => row.EmployeeBadgeNumber === BadgeID.text).EmployeeID).then(() => {\n  navigateTo('Inventory', {}, 'SAME_WINDOW');\n  closeModal('Modal1');\n});}}",
+  "parentColumnSpace": 6.96875,
+  "parentId": "8c69mfyytl",
+  "parentRowSpace": 10,
+  "placeholderText": "Case Sensitive",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "rightColumn": 64,
+  "searchTags": [
+    "form",
+    "text input",
+    "number",
+    "textarea"
+  ],
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "tags": [
+    "Suggested",
+    "Inputs"
+  ],
+  "topRow": 5.2,
+  "type": "INPUT_WIDGET_V2",
+  "validation": "{{Input1.text === QueryEmployeeList.data.find(row => row.EmployeeBadgeNumber === BadgeID.text).EmpPassword }}",
+  "version": 2,
+  "widgetId": "apprum7skd",
+  "widgetName": "Input1"
 }

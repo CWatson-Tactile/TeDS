@@ -1,42 +1,52 @@
 {
-    "boxShadow": "none",
-    "mobileBottomRow": 5,
-    "widgetName": "IconButton1Copy",
-    "onClick": "{{copyToClipboard(TextTicketDetailIssueType.text).then(() => {\n  showAlert('copied', 'info');\n});}}",
-    "buttonColor": "#00c039",
-    "displayName": "Icon button",
-    "iconSVG": "/static/media/icon.b08054586989b185a0801e9a34f8ad49.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 5,
-    "bottomRow": 9,
-    "parentRowSpace": 10,
-    "type": "ICON_BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 64,
-    "animateLoading": true,
-    "parentColumnSpace": 0.28125,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 56,
-    "dynamicBindingPathList": [{"key": "borderRadius"}],
-    "isDisabled": false,
-    "key": "aigcxp51nx",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "iconName": "clipboard",
-    "widgetId": "6ajow9zjhk",
-    "minWidth": 50,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "k8fq5zf3ys",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 1,
-    "responsiveBehavior": "hug",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 62,
-    "buttonVariant": "TERTIARY"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 9,
+  "boxShadow": "none",
+  "buttonColor": "#00c039",
+  "buttonVariant": "TERTIARY",
+  "displayName": "Icon button",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconName": "clipboard",
+  "iconSVG": "/static/media/icon.b08054586989b185a0801e9a34f8ad49.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "aigcxp51nx",
+  "leftColumn": 56,
+  "minWidth": 50,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 62,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 1,
+  "onClick": "{{copyToClipboard(TextTicketDetailIssueType.text).then(() => {\n  showAlert('copied', 'info');\n});}}",
+  "parentColumnSpace": 0.28125,
+  "parentId": "k8fq5zf3ys",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 5,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "6ajow9zjhk",
+  "widgetName": "IconButton1Copy"
 }

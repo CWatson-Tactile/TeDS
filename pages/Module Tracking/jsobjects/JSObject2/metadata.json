@@ -1,11 +1,11 @@
 {
+  "gitSyncId": "666b27d34105bf614fd3798d_ceae2af9-75ac-4a87-86d9-a96ed2eb1b38",
+  "id": "Module Tracking_JSObject2",
   "unpublishedCollection": {
     "name": "JSObject2",
     "pageId": "Module Tracking",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "myVar1",
@@ -15,10 +15,6 @@
         "name": "myVar2",
         "value": "{}"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "Module Tracking_JSObject2",
-  "deleted": false,
-  "gitSyncId": "666b27d34105bf614fd3798d_ceae2af9-75ac-4a87-86d9-a96ed2eb1b38"
+    ]
+  }
 }

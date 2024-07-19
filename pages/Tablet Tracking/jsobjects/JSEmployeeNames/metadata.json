@@ -1,18 +1,14 @@
 {
-  "moduleInstanceId": "Tablet Tracking_JSEmployeeNames",
+  "gitSyncId": "666b27d34105bf614fd3798d_ac9debd8-77dc-4ac5-a3b7-51530fa18e2b",
+  "id": "Tablet Tracking__$JSEmployeeNames$_JSEmployeeNames",
   "isPublic": true,
+  "moduleInstanceId": "Tablet Tracking_JSEmployeeNames",
   "rootModuleInstanceId": "Tablet Tracking_JSEmployeeNames",
   "unpublishedCollection": {
+    "contextType": "PAGE",
     "name": "_$JSEmployeeNames$_JSEmployeeNames",
     "pageId": "Tablet Tracking",
-    "contextType": "PAGE",
     "pluginId": "js-plugin",
-    "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "userPermissions": []
-  },
-  "id": "Tablet Tracking__$JSEmployeeNames$_JSEmployeeNames",
-  "deleted": false,
-  "gitSyncId": "666b27d34105bf614fd3798d_ac9debd8-77dc-4ac5-a3b7-51530fa18e2b"
+    "pluginType": "JS"
+  }
 }

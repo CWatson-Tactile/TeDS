@@ -1,157 +1,46 @@
 {
+  "gitSyncId": "656ce12b7cc83c64328e6401_656ce12b7cc83c64328e6414",
   "unpublishedPage": {
-    "name": "Inventory",
-    "slug": "inventory",
+    "isHidden": false,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 4468,
-          "widgetName": "MainContainer",
-          "topRow": 0,
-          "bottomRow": 1080,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
-          "canExtend": true,
-          "minHeight": 850,
-          "useAutoLayout": false,
-          "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "positioning": "fixed",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
+          "bottomRow": 1080,
+          "canExtend": true,
           "containerStyle": "none",
-          "snapRows": 83,
-          "version": 89,
-          "mobileTopRow": 0,
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
           "flexLayers": [
             {
               "children": [
                 {
-                  "id": "puxckblc7h",
-                  "align": "start"
+                  "align": "start",
+                  "id": "puxckblc7h"
                 }
               ]
             }
-          ]
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Inventory_QueryInventoryHistory",
-              "name": "QueryInventoryHistory",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Inventory_QueryTop1kInventory",
-              "name": "QueryTop1kInventory",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
           ],
-          [
-            {
-              "id": "Inventory_QuerySelectAdjustmentCodes",
-              "name": "QuerySelectAdjustmentCodes",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Inventory__$JSEmployeeNames$_SelectEmployeeListQuery",
-              "name": "_$JSEmployeeNames$_SelectEmployeeListQuery",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Inventory__$JSEmployeeNames$_JSEmployeeNames.EmpNames",
-              "name": "_$JSEmployeeNames$_JSEmployeeNames.EmpNames",
-              "collectionId": "Inventory__$JSEmployeeNames$_JSEmployeeNames",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  const EmpNames = _$JSEmployeeNames$_SelectEmployeeListQuery.data.map(i => ({\n    label: i.EmployeeFirstName + \" \" + i.EmployeeLastName,\n    value: i.EmployeeID\n  }));\n  return EmpNames;\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Inventory_JSAdjustmentCodes.AdjustmentCodeFetcher",
-              "name": "JSAdjustmentCodes.AdjustmentCodeFetcher",
-              "collectionId": "Inventory_JSAdjustmentCodes",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  const AdjustmentCode = QuerySelectAdjustmentCodes.data.map(i => ({\n    label: i.Code + \" - \" + i.CodeName,\n    value: i.Code\n  }));\n  return AdjustmentCode;\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Inventory_JS_SkuData.SkuDataFetch",
-              "name": "JS_SkuData.SkuDataFetch",
-              "collectionId": "Inventory_JS_SkuData",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  const SkuData = QueryTop1kInventory.data;\n  return SkuData.sort();\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Inventory_JS_InvTransData.InvTransDataFetch",
-              "name": "JS_InvTransData.InvTransDataFetch",
-              "collectionId": "Inventory_JS_InvTransData",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  const TansData = QueryInventoryHistory.data;\n  return TansData.reverse();\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Inventory_JS_SkuName.SkuDataFetcher",
-              "name": "JS_SkuName.SkuDataFetcher",
-              "collectionId": "Inventory_JS_SkuName",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  const SkuData = JS_SkuData.SkuDataFetch.data.map(i => ({\n    label: i.SKU + \" \" + i.PartName,\n    value: i.SKU\n  }));\n  return SkuData;\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Inventory",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "leftColumn": 0,
+          "minHeight": 850,
+          "mobileBottomRow": 4468,
+          "mobileTopRow": 0,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "fixed",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 83,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "useAutoLayout": false,
+          "version": 89,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": false
-  },
-  "deleted": false,
-  "gitSyncId": "656ce12b7cc83c64328e6401_656ce12b7cc83c64328e6414"
+    "name": "Inventory",
+    "slug": "inventory"
+  }
 }

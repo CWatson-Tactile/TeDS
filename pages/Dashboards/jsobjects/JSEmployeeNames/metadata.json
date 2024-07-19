@@ -1,18 +1,14 @@
 {
-  "moduleInstanceId": "Dashboards_JSEmployeeNames",
+  "gitSyncId": "666b27d34105bf614fd3798d_f8abd108-d292-4ccc-8ee8-c4dc861c4144",
+  "id": "Dashboards__$JSEmployeeNames$_JSEmployeeNames",
   "isPublic": true,
+  "moduleInstanceId": "Dashboards_JSEmployeeNames",
   "rootModuleInstanceId": "Dashboards_JSEmployeeNames",
   "unpublishedCollection": {
+    "contextType": "PAGE",
     "name": "_$JSEmployeeNames$_JSEmployeeNames",
     "pageId": "Dashboards",
-    "contextType": "PAGE",
     "pluginId": "js-plugin",
-    "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "userPermissions": []
-  },
-  "id": "Dashboards__$JSEmployeeNames$_JSEmployeeNames",
-  "deleted": false,
-  "gitSyncId": "666b27d34105bf614fd3798d_f8abd108-d292-4ccc-8ee8-c4dc861c4144"
+    "pluginType": "JS"
+  }
 }

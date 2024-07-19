@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_6627d5919c4fdd0abab24dad",
+  "id": "Inventory_JSAdjustmentCodes",
   "unpublishedCollection": {
     "name": "JSAdjustmentCodes",
     "pageId": "Inventory",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Inventory_JSAdjustmentCodes",
-  "deleted": false,
-  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_6627d5919c4fdd0abab24dad"
+    "variables": []
+  }
 }

@@ -1,191 +1,95 @@
 {
+  "gitSyncId": "656ce12b7cc83c64328e6401_656ce12b7cc83c64328e640c",
   "unpublishedPage": {
-    "name": "Module Tracking",
-    "slug": "module-tracking",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 1170,
-          "widgetName": "MainContainer",
-          "topRow": 0,
-          "bottomRow": 822,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
-          "canExtend": true,
-          "minHeight": 1170,
-          "useAutoLayout": true,
-          "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "positioning": "vertical",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
+          "bottomRow": 822,
+          "canExtend": true,
           "containerStyle": "none",
-          "snapRows": 115,
-          "version": 89,
-          "mobileTopRow": 0,
-          "responsiveBehavior": "fill",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
           "flexLayers": [
             {
               "children": [
                 {
-                  "id": "9ot7wfdurg",
-                  "align": "start"
+                  "align": "start",
+                  "id": "9ot7wfdurg"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "ege75orkas",
-                  "align": "start"
+                  "align": "start",
+                  "id": "ege75orkas"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "c7bxyw42ab",
-                  "align": "start"
+                  "align": "start",
+                  "id": "c7bxyw42ab"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "ul18lewzcz",
-                  "align": "start"
+                  "align": "start",
+                  "id": "ul18lewzcz"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "t0klf7gg14",
-                  "align": "start"
+                  "align": "start",
+                  "id": "t0klf7gg14"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "62h26i88a2",
-                  "align": "start"
+                  "align": "start",
+                  "id": "62h26i88a2"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "9r8slpmlro",
-                  "align": "start"
+                  "align": "start",
+                  "id": "9r8slpmlro"
                 }
               ]
-            }
-          ]
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Module Tracking_SelectLast5GlueModules",
-              "name": "SelectLast5GlueModules",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Module Tracking_SelectLast5HcMarkModules",
-              "name": "SelectLast5HcMarkModules",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Module Tracking_SelectLast5PrSolderEqcPass",
-              "name": "SelectLast5PrSolderEqcPass",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Module Tracking_SelectModuleList",
-              "name": "SelectModuleList",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
             }
           ],
-          [
-            {
-              "id": "Module Tracking_SelectMarkedModulesQuery",
-              "name": "SelectMarkedModulesQuery",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Module Tracking__$JSCurrentTime$_JSCurrentTime.runInterval",
-              "name": "_$JSCurrentTime$_JSCurrentTime.runInterval",
-              "collectionId": "Module Tracking__$JSCurrentTime$_JSCurrentTime",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "() => {\n  setInterval(() => {\n    _$JSCurrentTime$_JSCurrentTime.getNow();\n  }, 1000, \"myTimer\");\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Module Tracking__$JSEmployeeNames$_SelectEmployeeListQuery",
-              "name": "_$JSEmployeeNames$_SelectEmployeeListQuery",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Module Tracking_SelectGetNumberOfModules",
-              "name": "SelectGetNumberOfModules",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Module Tracking__$JSEmployeeNames$_JSEmployeeNames.EmpNames",
-              "name": "_$JSEmployeeNames$_JSEmployeeNames.EmpNames",
-              "collectionId": "Module Tracking__$JSEmployeeNames$_JSEmployeeNames",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  const EmpNames = _$JSEmployeeNames$_SelectEmployeeListQuery.data.map(i => ({\n    label: i.EmployeeFirstName + \" \" + i.EmployeeLastName,\n    value: i.EmployeeID\n  }));\n  return EmpNames;\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Module Tracking",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "leftColumn": 0,
+          "minHeight": 1170,
+          "mobileBottomRow": 1170,
+          "mobileTopRow": 0,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "vertical",
+          "responsiveBehavior": "fill",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 115,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "useAutoLayout": true,
+          "version": 89,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "656ce12b7cc83c64328e6401_656ce12b7cc83c64328e640c"
+    "name": "Module Tracking",
+    "slug": "module-tracking"
+  }
 }

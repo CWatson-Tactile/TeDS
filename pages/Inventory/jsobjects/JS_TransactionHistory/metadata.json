@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_689820a1-a2bd-471e-b53e-86a5054faf53",
+  "id": "Inventory_JS_TransactionHistory",
   "unpublishedCollection": {
     "name": "JS_TransactionHistory",
     "pageId": "Inventory",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Inventory_JS_TransactionHistory",
-  "deleted": false,
-  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_689820a1-a2bd-471e-b53e-86a5054faf53"
+    "variables": []
+  }
 }

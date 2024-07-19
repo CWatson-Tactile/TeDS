@@ -1,93 +1,109 @@
 {
-    "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-    "mobileBottomRow": 35,
-    "widgetName": "ButtonGroup3",
-    "isCanvas": false,
-    "dynamicPropertyPathList": [],
-    "displayName": "Button Group",
-    "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 32,
-    "bottomRow": 36,
-    "parentRowSpace": 10,
-    "type": "BUTTON_GROUP_WIDGET",
-    "groupButtons": {
-        "groupButton544wcpv17s": {
-            "onClick": "{{resetWidget(\"FormLabelGenerator\", true).then(() => {\n  closeModal('ModalLabelGenerator');\n});}}",
-            "buttonType": "SIMPLE",
-            "buttonColor": "#b91c1c",
-            "iconName": "error",
-            "widgetId": "8giywy8jbd",
-            "menuItems": {},
-            "index": 2,
-            "id": "groupButton544wcpv17s",
-            "label": "Cancel",
-            "isDisabled": false,
-            "isVisible": true,
-            "placement": "CENTER"
-        },
-        "groupButton1": {
-            "onClick": "{{API_CadenceLabelFill.run().then(() => {\n  download(API_CadenceLabelFill.data, 'CadenceLabel.pdf', '');\n  showAlert('Label Created. Download should start now.', 'success');\n  resetWidget(\"ModalLabelGenerator\", true);\n  closeModal('ModalLabelGenerator');\n}).catch(() => {\n  showAlert('Error! Get Connor!', 'error');\n});}}",
-            "buttonType": "SIMPLE",
-            "iconName": "cloud-download",
-            "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 0,
-            "label": "Submit & Download",
-            "id": "groupButton1",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "groupButton2": {
-            "onClick": "{{resetWidget(\"FormLabelGenerator\", true);}}",
-            "buttonType": "SIMPLE",
-            "iconName": "eraser",
-            "buttonColor": "#eab308",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 1,
-            "label": "Clear",
-            "id": "groupButton2",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        }
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 36,
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "displayName": "Button Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
     },
-    "hideCard": false,
-    "mobileRightColumn": 24,
-    "animateLoading": true,
-    "parentColumnSpace": 12.9375,
-    "dynamicTriggerPathList": [
-        {"key": "groupButtons.groupButton1.onClick"},
-        {"key": "groupButtons.groupButton2.onClick"},
-        {"key": "groupButtons.groupButton544wcpv17s.onClick"}
-    ],
-    "leftColumn": 16,
-    "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "groupButtons.groupButton1.buttonColor"}
-    ],
-    "key": "6qi3p01bio",
-    "orientation": "horizontal",
-    "isDeprecated": false,
-    "rightColumn": 50,
-    "widgetId": "poqm7r2d43",
-    "minWidth": 450,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "y2v082dpd0",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 31,
-    "responsiveBehavior": "fill",
-    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 0,
-    "buttonVariant": "PRIMARY"
+    {
+      "key": "groupButtons.groupButton1.buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton544wcpv17s.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "cloud-download",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Submit & Download",
+      "menuItems": {},
+      "onClick": "{{API_CadenceLabelFill.run().then(() => {\n  download(API_CadenceLabelFill.data, 'CadenceLabel.pdf', '');\n  showAlert('Label Created. Download should start now.', 'success');\n  resetWidget(\"ModalLabelGenerator\", true);\n  closeModal('ModalLabelGenerator');\n}).catch(() => {\n  showAlert('Error! Get Connor!', 'error');\n});}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "#eab308",
+      "buttonType": "SIMPLE",
+      "iconName": "eraser",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Clear",
+      "menuItems": {},
+      "onClick": "{{resetWidget(\"FormLabelGenerator\", true);}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton544wcpv17s": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "iconName": "error",
+      "id": "groupButton544wcpv17s",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Cancel",
+      "menuItems": {},
+      "onClick": "{{resetWidget(\"FormLabelGenerator\", true).then(() => {\n  closeModal('ModalLabelGenerator');\n});}}",
+      "placement": "CENTER",
+      "widgetId": "8giywy8jbd"
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "6qi3p01bio",
+  "leftColumn": 16,
+  "minWidth": 450,
+  "mobileBottomRow": 35,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 24,
+  "mobileTopRow": 31,
+  "orientation": "horizontal",
+  "parentColumnSpace": 12.9375,
+  "parentId": "y2v082dpd0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 50,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 32,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "poqm7r2d43",
+  "widgetName": "ButtonGroup3"
 }

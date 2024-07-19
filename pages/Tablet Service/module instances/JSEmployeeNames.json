@@ -1,19 +1,14 @@
 {
-  "packageUUID": "40fbc923-c4c9-40b0-89f6-f8b44197b355",
+  "gitSyncId": "666b27d34105bf614fd3798d_940d0001-6638-44f8-a023-45c45dfa910d",
+  "id": "Tablet Service_JSEmployeeNames",
   "moduleUUID": "d00bca54-0cbe-46f3-8647-d01896b713f7",
+  "packageUUID": "40fbc923-c4c9-40b0-89f6-f8b44197b355",
   "type": "JS_MODULE",
   "unpublishedModuleInstance": {
-    "version": "0.0.5",
-    "name": "JSEmployeeNames",
     "contextType": "PAGE",
-    "pageId": "Tablet Service",
     "inputs": {},
-    "jsonPathKeys": [],
-    "isValid": true,
-    "invalids": [],
-    "userPermissions": []
-  },
-  "id": "Tablet Service_JSEmployeeNames",
-  "deleted": false,
-  "gitSyncId": "666b27d34105bf614fd3798d_940d0001-6638-44f8-a023-45c45dfa910d"
+    "name": "JSEmployeeNames",
+    "pageId": "Tablet Service",
+    "version": "0.0.5"
+  }
 }

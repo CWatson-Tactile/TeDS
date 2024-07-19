@@ -1,879 +1,1069 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "borderColor": "",
-    "iconSVG": "/static/media/icon.7df6f087cceba86a9a5481b6c7f4871d.svg",
-    "onSubmit": "{{UpdateModuleDataQuery.run().then(() => {\n  resetWidget(\"ModalEditModuleData\", true);\n  closeModal(ModalEditModuleData.name);\n  SelectModuleList.run();\n});}}",
-    "topRow": 0,
-    "type": "JSON_FORM_WIDGET",
-    "animateLoading": true,
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "boxShadow"},
-        {"key": "submitButtonStyles.buttonColor"},
-        {"key": "submitButtonStyles.borderRadius"},
-        {"key": "sourceData"},
-        {"key": "schema.__root_schema__.children.ID.defaultValue"},
-        {"key": "schema.__root_schema__.children.ID.accentColor"},
-        {"key": "schema.__root_schema__.children.ID.borderRadius"},
-        {"key": "schema.__root_schema__.children.ModuleSerialNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.ModuleSerialNum.accentColor"},
-        {"key": "schema.__root_schema__.children.ModuleSerialNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.Notes.defaultValue"},
-        {"key": "schema.__root_schema__.children.Notes.accentColor"},
-        {"key": "schema.__root_schema__.children.Notes.borderRadius"},
-        {"key": "schema.__root_schema__.children.HoneycombLotNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.HoneycombLotNum.accentColor"},
-        {"key": "schema.__root_schema__.children.HoneycombLotNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.GlueStationLotNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.GlueStationLotNum.accentColor"},
-        {"key": "schema.__root_schema__.children.GlueStationLotNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.RubberMagnetLotNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.RubberMagnetLotNum.accentColor"},
-        {"key": "schema.__root_schema__.children.RubberMagnetLotNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.CoreplateWeldLotNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.CoreplateWeldLotNum.accentColor"},
-        {"key": "schema.__root_schema__.children.CoreplateWeldLotNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.BurnInLotNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.BurnInLotNum.accentColor"},
-        {"key": "schema.__root_schema__.children.BurnInLotNum.borderRadius"},
-        {"key": "schema.__root_schema__.defaultValue"},
-        {"key": "schema.__root_schema__.borderRadius"},
-        {"key": "schema.__root_schema__.cellBorderRadius"},
-        {"key": "backgroundColor"},
-        {"key": "schema.__root_schema__.children.HoneycombScanEmpId.defaultValue"},
-        {"key": "schema.__root_schema__.children.HoneycombScanEmpId.borderRadius"},
-        {"key": "schema.__root_schema__.children.HoneycombScanEmpId.accentColor"},
-        {"key": "schema.__root_schema__.children.HoneycombScanDateTime.defaultValue"},
-        {"key": "schema.__root_schema__.children.HoneycombScanDateTime.borderRadius"},
-        {"key": "schema.__root_schema__.children.HoneycombScanDateTime.accentColor"},
-        {"key": "schema.__root_schema__.children.GlueStationScanEmpId.defaultValue"},
-        {"key": "schema.__root_schema__.children.GlueStationScanEmpId.borderRadius"},
-        {"key": "schema.__root_schema__.children.GlueStationScanEmpId.accentColor"},
-        {"key": "schema.__root_schema__.children.GlueStationScanDateTime.defaultValue"},
-        {"key": "schema.__root_schema__.children.GlueStationScanDateTime.borderRadius"},
-        {"key": "schema.__root_schema__.children.GlueStationScanDateTime.accentColor"},
-        {"key": "schema.__root_schema__.children.RubberMagnetScanEmpId.defaultValue"},
-        {"key": "schema.__root_schema__.children.RubberMagnetScanEmpId.borderRadius"},
-        {"key": "schema.__root_schema__.children.RubberMagnetScanEmpId.accentColor"},
-        {"key": "schema.__root_schema__.children.RubberMagnetScanDateTime.defaultValue"},
-        {"key": "schema.__root_schema__.children.RubberMagnetScanDateTime.borderRadius"},
-        {"key": "schema.__root_schema__.children.RubberMagnetScanDateTime.accentColor"},
-        {"key": "schema.__root_schema__.children.CoreplateWeldScanEmpId.defaultValue"},
-        {"key": "schema.__root_schema__.children.CoreplateWeldScanEmpId.borderRadius"},
-        {"key": "schema.__root_schema__.children.CoreplateWeldScanEmpId.accentColor"},
-        {"key": "schema.__root_schema__.children.CoreplateWeldScanDateTime.defaultValue"},
-        {"key": "schema.__root_schema__.children.CoreplateWeldScanDateTime.borderRadius"},
-        {"key": "schema.__root_schema__.children.CoreplateWeldScanDateTime.accentColor"},
-        {"key": "schema.__root_schema__.children.BurnInScanEmpId.defaultValue"},
-        {"key": "schema.__root_schema__.children.BurnInScanEmpId.borderRadius"},
-        {"key": "schema.__root_schema__.children.BurnInScanEmpId.accentColor"},
-        {"key": "schema.__root_schema__.children.BurnInScanDateTime.defaultValue"},
-        {"key": "schema.__root_schema__.children.BurnInScanDateTime.borderRadius"},
-        {"key": "schema.__root_schema__.children.BurnInScanDateTime.accentColor"},
-        {"key": "schema.__root_schema__.children.CurrentStatus.defaultValue"},
-        {"key": "schema.__root_schema__.children.CurrentStatus.borderRadius"},
-        {"key": "schema.__root_schema__.children.CurrentStatus.accentColor"},
-        {"key": "schema.__root_schema__.children.PreSolderEqcLotNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.PreSolderEqcLotNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.PreSolderEqcLotNum.accentColor"},
-        {"key": "schema.__root_schema__.children.PreSolderEqcScanEmpId.defaultValue"},
-        {"key": "schema.__root_schema__.children.PreSolderEqcScanEmpId.borderRadius"},
-        {"key": "schema.__root_schema__.children.PreSolderEqcScanEmpId.accentColor"},
-        {"key": "schema.__root_schema__.children.PreSolderEqcScanDateTime.defaultValue"},
-        {"key": "schema.__root_schema__.children.PreSolderEqcScanDateTime.borderRadius"},
-        {"key": "schema.__root_schema__.children.PreSolderEqcScanDateTime.accentColor"},
-        {"key": "schema.__root_schema__.children.PcbSolderLotNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.PcbSolderLotNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.PcbSolderLotNum.accentColor"},
-        {"key": "schema.__root_schema__.children.PcbSolderScanEmpId.defaultValue"},
-        {"key": "schema.__root_schema__.children.PcbSolderScanEmpId.borderRadius"},
-        {"key": "schema.__root_schema__.children.PcbSolderScanEmpId.accentColor"},
-        {"key": "schema.__root_schema__.children.PcbSolderScanDateTime.defaultValue"},
-        {"key": "schema.__root_schema__.children.PcbSolderScanDateTime.borderRadius"},
-        {"key": "schema.__root_schema__.children.PcbSolderScanDateTime.accentColor"},
-        {"key": "schema.__root_schema__.children.PostSolderEqcLotNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.PostSolderEqcLotNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.PostSolderEqcLotNum.accentColor"},
-        {"key": "schema.__root_schema__.children.PostSolderEqcScanEmpId.defaultValue"},
-        {"key": "schema.__root_schema__.children.PostSolderEqcScanEmpId.borderRadius"},
-        {"key": "schema.__root_schema__.children.PostSolderEqcScanEmpId.accentColor"},
-        {"key": "schema.__root_schema__.children.PostSolderEqcScanDateTime.defaultValue"},
-        {"key": "schema.__root_schema__.children.PostSolderEqcScanDateTime.borderRadius"},
-        {"key": "schema.__root_schema__.children.PostSolderEqcScanDateTime.accentColor"}
-    ],
-    "showReset": true,
-    "flexVerticalAlignment": "start",
-    "dynamicHeight": "FIXED",
-    "autoGenerateForm": true,
-    "onCanvasUI": {
-        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-        "disableParentSelection": false,
-        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
-        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
-        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  "animateLoading": true,
+  "autoGenerateForm": true,
+  "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
+  "borderColor": "",
+  "borderRadius": "0px",
+  "borderWidth": "",
+  "bottomRow": 92,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "childStylesheet": {
+    "ARRAY": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "cellBoxShadow": "none"
     },
-    "resetButtonStyles": {
-        "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-        "borderRadius": "0px",
-        "buttonColor": "#fde047",
-        "iconName": "reset",
-        "buttonVariant": "PRIMARY",
-        "iconAlign": "left",
-        "placement": "CENTER"
+    "CHECKBOX": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
     },
-    "isVisible": true,
-    "version": 1,
-    "tags": [
-        "Suggested",
-        "Layout"
-    ],
-    "isLoading": false,
-    "submitButtonLabel": "Submit",
-    "childStylesheet": {
-        "CHECKBOX": {
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "ARRAY": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-            "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "cellBoxShadow": "none"
-        },
-        "CURRENCY_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "DATEPICKER": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "PHONE_NUMBER_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "OBJECT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "cellBoxShadow": "none"
-        },
-        "MULTISELECT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "SELECT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "NUMBER_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "PASSWORD_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "EMAIL_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "RADIO_GROUP": {
-            "boxShadow": "none",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "SWITCH": {
-            "boxShadow": "none",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "TEXT_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "MULTILINE_TEXT_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        }
+    "CURRENCY_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
     },
-    "disabledWhenInvalid": true,
+    "DATEPICKER": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "EMAIL_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "MULTILINE_TEXT_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "MULTISELECT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "NUMBER_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "OBJECT": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "cellBoxShadow": "none"
+    },
+    "PASSWORD_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "PHONE_NUMBER_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "RADIO_GROUP": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "boxShadow": "none"
+    },
+    "SELECT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "SWITCH": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "boxShadow": "none"
+    },
+    "TEXT_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    }
+  },
+  "disabledWhenInvalid": true,
+  "displayName": "JSON Form",
+  "dynamicBindingPathList": [
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "submitButtonStyles.buttonColor"
+    },
+    {
+      "key": "submitButtonStyles.borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "schema.__root_schema__.children.ID.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.ID.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.ID.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.ModuleSerialNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.ModuleSerialNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.ModuleSerialNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.Notes.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.Notes.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.Notes.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.HoneycombLotNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.HoneycombLotNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.HoneycombLotNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.GlueStationLotNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.GlueStationLotNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.GlueStationLotNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.RubberMagnetLotNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.RubberMagnetLotNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.RubberMagnetLotNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.CoreplateWeldLotNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.CoreplateWeldLotNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.CoreplateWeldLotNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.BurnInLotNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.BurnInLotNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.BurnInLotNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.cellBorderRadius"
+    },
+    {
+      "key": "backgroundColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.HoneycombScanEmpId.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.HoneycombScanEmpId.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.HoneycombScanEmpId.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.HoneycombScanDateTime.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.HoneycombScanDateTime.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.HoneycombScanDateTime.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.GlueStationScanEmpId.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.GlueStationScanEmpId.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.GlueStationScanEmpId.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.GlueStationScanDateTime.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.GlueStationScanDateTime.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.GlueStationScanDateTime.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.RubberMagnetScanEmpId.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.RubberMagnetScanEmpId.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.RubberMagnetScanEmpId.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.RubberMagnetScanDateTime.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.RubberMagnetScanDateTime.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.RubberMagnetScanDateTime.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.CoreplateWeldScanEmpId.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.CoreplateWeldScanEmpId.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.CoreplateWeldScanEmpId.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.CoreplateWeldScanDateTime.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.CoreplateWeldScanDateTime.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.CoreplateWeldScanDateTime.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.BurnInScanEmpId.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.BurnInScanEmpId.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.BurnInScanEmpId.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.BurnInScanDateTime.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.BurnInScanDateTime.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.BurnInScanDateTime.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.CurrentStatus.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.CurrentStatus.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.CurrentStatus.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.PreSolderEqcLotNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.PreSolderEqcLotNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.PreSolderEqcLotNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.PreSolderEqcScanEmpId.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.PreSolderEqcScanEmpId.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.PreSolderEqcScanEmpId.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.PreSolderEqcScanDateTime.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.PreSolderEqcScanDateTime.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.PreSolderEqcScanDateTime.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.PcbSolderLotNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.PcbSolderLotNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.PcbSolderLotNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.PcbSolderScanEmpId.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.PcbSolderScanEmpId.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.PcbSolderScanEmpId.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.PcbSolderScanDateTime.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.PcbSolderScanDateTime.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.PcbSolderScanDateTime.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.PostSolderEqcLotNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.PostSolderEqcLotNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.PostSolderEqcLotNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.PostSolderEqcScanEmpId.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.PostSolderEqcScanEmpId.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.PostSolderEqcScanEmpId.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.PostSolderEqcScanDateTime.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.PostSolderEqcScanDateTime.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.PostSolderEqcScanDateTime.accentColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSubmit"
+    }
+  ],
+  "fieldLimitExceeded": false,
+  "fixedFooter": true,
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.7df6f087cceba86a9a5481b6c7f4871d.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "irj4d7heqm",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 47,
+  "mobileLeftColumn": 23,
+  "mobileRightColumn": 87,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "onSubmit": "{{UpdateModuleDataQuery.run().then(() => {\n  resetWidget(\"ModalEditModuleData\", true);\n  closeModal(ModalEditModuleData.name);\n  SelectModuleList.run();\n});}}",
+  "parentColumnSpace": 6.9375,
+  "parentId": "ur0czq07gk",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetButtonLabel": "Reset",
+  "resetButtonStyles": {
     "borderRadius": "0px",
-    "useSourceData": false,
-    "schema": {"__root_schema__": {
-        "labelTextSize": "0.875rem",
-        "identifier": "__root_schema__",
-        "boxShadow": "none",
-        "isRequired": false,
-        "isCustomField": false,
-        "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-        "dataType": "object",
-        "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-        "accessor": "__root_schema__",
-        "isVisible": true,
-        "label": "",
-        "originalIdentifier": "__root_schema__",
-        "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-        "children": {
-            "PreSolderEqcScanEmpId": {
-                "labelTextSize": "0.875rem",
-                "identifier": "PreSolderEqcScanEmpId",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PreSolderEqcScanEmpId))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "PreSolderEqcScanEmpId",
-                "isVisible": true,
-                "label": "Pre Solder Eqc Scan Emp Id",
-                "originalIdentifier": "PreSolderEqcScanEmpId",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 20,
-                "isDisabled": false,
-                "sourceData": null,
-                "fieldType": "Text Input"
-            },
-            "RubberMagnetScanEmpId": {
-                "labelTextSize": "0.875rem",
-                "identifier": "RubberMagnetScanEmpId",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.RubberMagnetScanEmpId))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "RubberMagnetScanEmpId",
-                "isVisible": true,
-                "label": "Rubber Magnet Scan Emp Id",
-                "originalIdentifier": "RubberMagnetScanEmpId",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 18,
-                "isDisabled": false,
-                "fieldType": "Text Input"
-            },
-            "RubberMagnetScanDateTime": {
-                "labelTextSize": "0.875rem",
-                "identifier": "RubberMagnetScanDateTime",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.RubberMagnetScanDateTime))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "RubberMagnetScanDateTime",
-                "isVisible": true,
-                "label": "Rubber Magnet Scan Date Time",
-                "originalIdentifier": "RubberMagnetScanDateTime",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 19,
-                "isDisabled": false,
-                "fieldType": "Text Input"
-            },
-            "PostSolderEqcScanDateTime": {
-                "labelTextSize": "0.875rem",
-                "identifier": "PostSolderEqcScanDateTime",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PostSolderEqcScanDateTime))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "PostSolderEqcScanDateTime",
-                "isVisible": true,
-                "label": "Post Solder Eqc Scan Date Time",
-                "originalIdentifier": "PostSolderEqcScanDateTime",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 27,
-                "isDisabled": false,
-                "sourceData": null,
-                "fieldType": "Text Input"
-            },
-            "HoneycombLotNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "HoneycombLotNum",
-                "boxShadow": "none",
-                "isRequired": true,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.HoneycombLotNum))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "HoneycombLotNum",
-                "isVisible": true,
-                "label": "Honeycomb Lot Num",
-                "originalIdentifier": "HoneycombLotNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 3,
-                "isDisabled": false,
-                "fieldType": "Text Input"
-            },
-            "ModuleSerialNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "ModuleSerialNum",
-                "boxShadow": "none",
-                "isRequired": true,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ModuleSerialNum))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "number",
-                "accessor": "ModuleSerialNum",
-                "isVisible": true,
-                "label": "Module Serial Num",
-                "originalIdentifier": "ModuleSerialNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 1,
-                "isDisabled": true,
-                "sourceData": 52299,
-                "fieldType": "Number Input"
-            },
-            "PcbSolderScanDateTime": {
-                "labelTextSize": "0.875rem",
-                "identifier": "PcbSolderScanDateTime",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PcbSolderScanDateTime))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "PcbSolderScanDateTime",
-                "isVisible": true,
-                "label": "Pcb Solder Scan Date Time",
-                "originalIdentifier": "PcbSolderScanDateTime",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 24,
-                "isDisabled": false,
-                "sourceData": null,
-                "fieldType": "Text Input"
-            },
-            "BurnInScanDateTime": {
-                "labelTextSize": "0.875rem",
-                "identifier": "BurnInScanDateTime",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.BurnInScanDateTime))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "BurnInScanDateTime",
-                "isVisible": true,
-                "label": "Burn In Scan Date Time",
-                "originalIdentifier": "BurnInScanDateTime",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 23,
-                "isDisabled": false,
-                "fieldType": "Text Input"
-            },
-            "GlueStationLotNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "GlueStationLotNum",
-                "boxShadow": "none",
-                "isRequired": true,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.GlueStationLotNum))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "GlueStationLotNum",
-                "isVisible": true,
-                "label": "Glue Station Lot Num",
-                "originalIdentifier": "GlueStationLotNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 4,
-                "isDisabled": false,
-                "fieldType": "Text Input"
-            },
-            "PostSolderEqcScanEmpId": {
-                "labelTextSize": "0.875rem",
-                "identifier": "PostSolderEqcScanEmpId",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PostSolderEqcScanEmpId))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "PostSolderEqcScanEmpId",
-                "isVisible": true,
-                "label": "Post Solder Eqc Scan Emp Id",
-                "originalIdentifier": "PostSolderEqcScanEmpId",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 26,
-                "isDisabled": false,
-                "sourceData": null,
-                "fieldType": "Text Input"
-            },
-            "CoreplateWeldScanDateTime": {
-                "labelTextSize": "0.875rem",
-                "identifier": "CoreplateWeldScanDateTime",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.CoreplateWeldScanDateTime))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "CoreplateWeldScanDateTime",
-                "isVisible": true,
-                "label": "Coreplate Weld Scan Date Time",
-                "originalIdentifier": "CoreplateWeldScanDateTime",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 21,
-                "isDisabled": false,
-                "fieldType": "Text Input"
-            },
-            "PreSolderEqcLotNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "PreSolderEqcLotNum",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PreSolderEqcLotNum))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "PreSolderEqcLotNum",
-                "isVisible": true,
-                "label": "Pre Solder Eqc Lot Num",
-                "originalIdentifier": "PreSolderEqcLotNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 19,
-                "isDisabled": false,
-                "sourceData": null,
-                "fieldType": "Text Input"
-            },
-            "PostSolderEqcLotNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "PostSolderEqcLotNum",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PostSolderEqcLotNum))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "PostSolderEqcLotNum",
-                "isVisible": true,
-                "label": "Post Solder Eqc Lot Num",
-                "originalIdentifier": "PostSolderEqcLotNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 25,
-                "isDisabled": false,
-                "sourceData": null,
-                "fieldType": "Text Input"
-            },
-            "ID": {
-                "labelTextSize": "0.875rem",
-                "identifier": "ID",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ID))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "number",
-                "accessor": "ID",
-                "isVisible": false,
-                "label": "ID",
-                "originalIdentifier": "ID",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 0,
-                "isDisabled": false,
-                "sourceData": 3,
-                "fieldType": "Number Input"
-            },
-            "GlueStationScanDateTime": {
-                "labelTextSize": "0.875rem",
-                "identifier": "GlueStationScanDateTime",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.GlueStationScanDateTime))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "GlueStationScanDateTime",
-                "isVisible": true,
-                "label": "Glue Station Scan Date Time",
-                "originalIdentifier": "GlueStationScanDateTime",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 13,
-                "isDisabled": false,
-                "fieldType": "Text Input"
-            },
-            "BurnInLotNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "BurnInLotNum",
-                "boxShadow": "none",
-                "isRequired": true,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.BurnInLotNum))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "BurnInLotNum",
-                "isVisible": true,
-                "label": "Burn In Lot Num",
-                "originalIdentifier": "BurnInLotNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 9,
-                "isDisabled": false,
-                "fieldType": "Text Input"
-            },
-            "Notes": {
-                "labelTextSize": "0.875rem",
-                "identifier": "Notes",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Notes))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "Notes",
-                "isVisible": true,
-                "label": "Notes",
-                "originalIdentifier": "Notes",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 2,
-                "isDisabled": false,
-                "fieldType": "Multiline Text Input"
-            },
-            "CoreplateWeldScanEmpId": {
-                "labelTextSize": "0.875rem",
-                "identifier": "CoreplateWeldScanEmpId",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.CoreplateWeldScanEmpId))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "CoreplateWeldScanEmpId",
-                "isVisible": true,
-                "label": "Coreplate Weld Scan Emp Id",
-                "originalIdentifier": "CoreplateWeldScanEmpId",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 20,
-                "isDisabled": false,
-                "fieldType": "Text Input"
-            },
-            "BurnInScanEmpId": {
-                "labelTextSize": "0.875rem",
-                "identifier": "BurnInScanEmpId",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.BurnInScanEmpId))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "BurnInScanEmpId",
-                "isVisible": true,
-                "label": "Burn In Scan Emp Id",
-                "originalIdentifier": "BurnInScanEmpId",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 22,
-                "isDisabled": false,
-                "fieldType": "Text Input"
-            },
-            "CurrentStatus": {
-                "labelTextSize": "0.875rem",
-                "identifier": "CurrentStatus",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.CurrentStatus))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "string",
-                "accessor": "CurrentStatus",
-                "isVisible": true,
-                "label": "Current Status",
-                "originalIdentifier": "CurrentStatus",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 18,
-                "isDisabled": false,
-                "sourceData": "Marked",
-                "fieldType": "Text Input"
-            },
-            "HoneycombScanDateTime": {
-                "labelTextSize": "0.875rem",
-                "identifier": "HoneycombScanDateTime",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.HoneycombScanDateTime))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "HoneycombScanDateTime",
-                "isVisible": true,
-                "label": "Honeycomb Scan Date Time",
-                "originalIdentifier": "HoneycombScanDateTime",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 11,
-                "isDisabled": false,
-                "fieldType": "Text Input"
-            },
-            "PreSolderEqcScanDateTime": {
-                "labelTextSize": "0.875rem",
-                "identifier": "PreSolderEqcScanDateTime",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PreSolderEqcScanDateTime))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "PreSolderEqcScanDateTime",
-                "isVisible": true,
-                "label": "Pre Solder Eqc Scan Date Time",
-                "originalIdentifier": "PreSolderEqcScanDateTime",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 21,
-                "isDisabled": false,
-                "sourceData": null,
-                "fieldType": "Text Input"
-            },
-            "CoreplateWeldLotNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "CoreplateWeldLotNum",
-                "boxShadow": "none",
-                "isRequired": true,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.CoreplateWeldLotNum))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "CoreplateWeldLotNum",
-                "isVisible": true,
-                "label": "Coreplate Weld Lot Num",
-                "originalIdentifier": "CoreplateWeldLotNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 8,
-                "isDisabled": false,
-                "fieldType": "Text Input"
-            },
-            "HoneycombScanEmpId": {
-                "labelTextSize": "0.875rem",
-                "identifier": "HoneycombScanEmpId",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.HoneycombScanEmpId))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "HoneycombScanEmpId",
-                "isVisible": true,
-                "label": "Honeycomb Scan Emp Id",
-                "originalIdentifier": "HoneycombScanEmpId",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 10,
-                "isDisabled": false,
-                "fieldType": "Text Input"
-            },
-            "RubberMagnetLotNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "RubberMagnetLotNum",
-                "boxShadow": "none",
-                "isRequired": true,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.RubberMagnetLotNum))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "RubberMagnetLotNum",
-                "isVisible": true,
-                "label": "Rubber Magnet Lot Num",
-                "originalIdentifier": "RubberMagnetLotNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 7,
-                "isDisabled": false,
-                "fieldType": "Text Input"
-            },
-            "PcbSolderScanEmpId": {
-                "labelTextSize": "0.875rem",
-                "identifier": "PcbSolderScanEmpId",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PcbSolderScanEmpId))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "PcbSolderScanEmpId",
-                "isVisible": true,
-                "label": "Pcb Solder Scan Emp Id",
-                "originalIdentifier": "PcbSolderScanEmpId",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 23,
-                "isDisabled": false,
-                "sourceData": null,
-                "fieldType": "Text Input"
-            },
-            "PcbSolderLotNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "PcbSolderLotNum",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PcbSolderLotNum))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "PcbSolderLotNum",
-                "isVisible": true,
-                "label": "Pcb Solder Lot Num",
-                "originalIdentifier": "PcbSolderLotNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 22,
-                "isDisabled": false,
-                "sourceData": null,
-                "fieldType": "Text Input"
-            },
-            "GlueStationScanEmpId": {
-                "labelTextSize": "0.875rem",
-                "identifier": "GlueStationScanEmpId",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.GlueStationScanEmpId))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "dataType": "null",
-                "accessor": "GlueStationScanEmpId",
-                "isVisible": true,
-                "label": "Glue Station Scan Emp Id",
-                "originalIdentifier": "GlueStationScanEmpId",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 12,
-                "isDisabled": false,
-                "fieldType": "Text Input"
-            }
+    "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+    "buttonColor": "#fde047",
+    "buttonVariant": "PRIMARY",
+    "iconAlign": "left",
+    "iconName": "reset",
+    "placement": "CENTER"
+  },
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "schema": {
+    "__root_schema__": {
+      "accessor": "__root_schema__",
+      "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+      "cellBoxShadow": "none",
+      "children": {
+        "BurnInLotNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "BurnInLotNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.BurnInLotNum))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "BurnInLotNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": true,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Burn In Lot Num",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "BurnInLotNum",
+          "position": 9
         },
-        "position": -1,
-        "isDisabled": false,
-        "sourceData": {
-            "ModuleSerialNum": 52299,
-            "ID": 3
+        "BurnInScanDateTime": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "BurnInScanDateTime",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.BurnInScanDateTime))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "BurnInScanDateTime",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Burn In Scan Date Time",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "BurnInScanDateTime",
+          "position": 23
         },
-        "cellBoxShadow": "none",
-        "fieldType": "Object"
-    }},
-    "needsErrorInfo": false,
-    "mobileBottomRow": 47,
-    "widgetName": "FormEditModuleData",
-    "submitButtonStyles": {
-        "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-        "iconName": "key-enter",
-        "buttonVariant": "PRIMARY",
-        "iconAlign": "left",
-        "placement": "CENTER"
-    },
-    "dynamicPropertyPathList": [],
-    "displayName": "JSON Form",
-    "bottomRow": 92,
-    "fieldLimitExceeded": false,
-    "parentRowSpace": 10,
-    "title": "Edit Module Data",
-    "hideCard": false,
-    "mobileRightColumn": 87,
-    "shouldScrollContents": true,
-    "parentColumnSpace": 6.9375,
-    "dynamicTriggerPathList": [{"key": "onSubmit"}],
-    "borderWidth": "",
-    "sourceData": "{{TableModuleData.selectedRow}}",
-    "resetButtonLabel": "Reset",
-    "key": "irj4d7heqm",
-    "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
-    "isDeprecated": false,
-    "rightColumn": 63,
-    "thumbnailSVG": "/static/media/thumbnail.1092bbfe332a9ea2da2aa7e3efd01db2.svg",
-    "widgetId": "a3c8pidncl",
-    "minWidth": 450,
-    "parentId": "ur0czq07gk",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 6,
-    "scrollContents": false,
-    "responsiveBehavior": "fill",
-    "fixedFooter": true,
-    "mobileLeftColumn": 23,
-    "maxDynamicHeight": 9000,
-    "minDynamicHeight": 4
+        "BurnInScanEmpId": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "BurnInScanEmpId",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.BurnInScanEmpId))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "BurnInScanEmpId",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Burn In Scan Emp Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "BurnInScanEmpId",
+          "position": 22
+        },
+        "CoreplateWeldLotNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "CoreplateWeldLotNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.CoreplateWeldLotNum))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "CoreplateWeldLotNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": true,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Coreplate Weld Lot Num",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "CoreplateWeldLotNum",
+          "position": 8
+        },
+        "CoreplateWeldScanDateTime": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "CoreplateWeldScanDateTime",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.CoreplateWeldScanDateTime))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "CoreplateWeldScanDateTime",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Coreplate Weld Scan Date Time",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "CoreplateWeldScanDateTime",
+          "position": 21
+        },
+        "CoreplateWeldScanEmpId": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "CoreplateWeldScanEmpId",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.CoreplateWeldScanEmpId))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "CoreplateWeldScanEmpId",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Coreplate Weld Scan Emp Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "CoreplateWeldScanEmpId",
+          "position": 20
+        },
+        "CurrentStatus": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "CurrentStatus",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.CurrentStatus))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "CurrentStatus",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Current Status",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "CurrentStatus",
+          "position": 18,
+          "sourceData": "Marked"
+        },
+        "GlueStationLotNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "GlueStationLotNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.GlueStationLotNum))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "GlueStationLotNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": true,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Glue Station Lot Num",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "GlueStationLotNum",
+          "position": 4
+        },
+        "GlueStationScanDateTime": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "GlueStationScanDateTime",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.GlueStationScanDateTime))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "GlueStationScanDateTime",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Glue Station Scan Date Time",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "GlueStationScanDateTime",
+          "position": 13
+        },
+        "GlueStationScanEmpId": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "GlueStationScanEmpId",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.GlueStationScanEmpId))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "GlueStationScanEmpId",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Glue Station Scan Emp Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "GlueStationScanEmpId",
+          "position": 12
+        },
+        "HoneycombLotNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "HoneycombLotNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.HoneycombLotNum))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "HoneycombLotNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": true,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Honeycomb Lot Num",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "HoneycombLotNum",
+          "position": 3
+        },
+        "HoneycombScanDateTime": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "HoneycombScanDateTime",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.HoneycombScanDateTime))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "HoneycombScanDateTime",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Honeycomb Scan Date Time",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "HoneycombScanDateTime",
+          "position": 11
+        },
+        "HoneycombScanEmpId": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "HoneycombScanEmpId",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.HoneycombScanEmpId))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "HoneycombScanEmpId",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Honeycomb Scan Emp Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "HoneycombScanEmpId",
+          "position": 10
+        },
+        "ID": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "ID",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ID))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "ID",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": false,
+          "label": "ID",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "ID",
+          "position": 0,
+          "sourceData": 3
+        },
+        "ModuleSerialNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "ModuleSerialNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ModuleSerialNum))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "ModuleSerialNum",
+          "isCustomField": false,
+          "isDisabled": true,
+          "isRequired": true,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Module Serial Num",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "ModuleSerialNum",
+          "position": 1,
+          "sourceData": 52299
+        },
+        "Notes": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "Notes",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Notes))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Multiline Text Input",
+          "iconAlign": "left",
+          "identifier": "Notes",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Notes",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "Notes",
+          "position": 2
+        },
+        "PcbSolderLotNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "PcbSolderLotNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PcbSolderLotNum))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "PcbSolderLotNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Pcb Solder Lot Num",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "PcbSolderLotNum",
+          "position": 22,
+          "sourceData": null
+        },
+        "PcbSolderScanDateTime": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "PcbSolderScanDateTime",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PcbSolderScanDateTime))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "PcbSolderScanDateTime",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Pcb Solder Scan Date Time",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "PcbSolderScanDateTime",
+          "position": 24,
+          "sourceData": null
+        },
+        "PcbSolderScanEmpId": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "PcbSolderScanEmpId",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PcbSolderScanEmpId))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "PcbSolderScanEmpId",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Pcb Solder Scan Emp Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "PcbSolderScanEmpId",
+          "position": 23,
+          "sourceData": null
+        },
+        "PostSolderEqcLotNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "PostSolderEqcLotNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PostSolderEqcLotNum))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "PostSolderEqcLotNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Post Solder Eqc Lot Num",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "PostSolderEqcLotNum",
+          "position": 25,
+          "sourceData": null
+        },
+        "PostSolderEqcScanDateTime": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "PostSolderEqcScanDateTime",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PostSolderEqcScanDateTime))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "PostSolderEqcScanDateTime",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Post Solder Eqc Scan Date Time",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "PostSolderEqcScanDateTime",
+          "position": 27,
+          "sourceData": null
+        },
+        "PostSolderEqcScanEmpId": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "PostSolderEqcScanEmpId",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PostSolderEqcScanEmpId))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "PostSolderEqcScanEmpId",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Post Solder Eqc Scan Emp Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "PostSolderEqcScanEmpId",
+          "position": 26,
+          "sourceData": null
+        },
+        "PreSolderEqcLotNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "PreSolderEqcLotNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PreSolderEqcLotNum))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "PreSolderEqcLotNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Pre Solder Eqc Lot Num",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "PreSolderEqcLotNum",
+          "position": 19,
+          "sourceData": null
+        },
+        "PreSolderEqcScanDateTime": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "PreSolderEqcScanDateTime",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PreSolderEqcScanDateTime))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "PreSolderEqcScanDateTime",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Pre Solder Eqc Scan Date Time",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "PreSolderEqcScanDateTime",
+          "position": 21,
+          "sourceData": null
+        },
+        "PreSolderEqcScanEmpId": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "PreSolderEqcScanEmpId",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PreSolderEqcScanEmpId))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "PreSolderEqcScanEmpId",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Pre Solder Eqc Scan Emp Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "PreSolderEqcScanEmpId",
+          "position": 20,
+          "sourceData": null
+        },
+        "RubberMagnetLotNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "RubberMagnetLotNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.RubberMagnetLotNum))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "RubberMagnetLotNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": true,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Rubber Magnet Lot Num",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "RubberMagnetLotNum",
+          "position": 7
+        },
+        "RubberMagnetScanDateTime": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "RubberMagnetScanDateTime",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.RubberMagnetScanDateTime))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "RubberMagnetScanDateTime",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Rubber Magnet Scan Date Time",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "RubberMagnetScanDateTime",
+          "position": 19
+        },
+        "RubberMagnetScanEmpId": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "accessor": "RubberMagnetScanEmpId",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.RubberMagnetScanEmpId))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "RubberMagnetScanEmpId",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Rubber Magnet Scan Emp Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "RubberMagnetScanEmpId",
+          "position": 18
+        }
+      },
+      "dataType": "object",
+      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
+      "fieldType": "Object",
+      "identifier": "__root_schema__",
+      "isCustomField": false,
+      "isDisabled": false,
+      "isRequired": false,
+      "isVisible": true,
+      "label": "",
+      "labelTextSize": "0.875rem",
+      "originalIdentifier": "__root_schema__",
+      "position": -1,
+      "sourceData": {
+        "ID": 3,
+        "ModuleSerialNum": 52299
+      }
+    }
+  },
+  "scrollContents": false,
+  "shouldScrollContents": true,
+  "showReset": true,
+  "sourceData": "{{TableModuleData.selectedRow}}",
+  "submitButtonLabel": "Submit",
+  "submitButtonStyles": {
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonVariant": "PRIMARY",
+    "iconAlign": "left",
+    "iconName": "key-enter",
+    "placement": "CENTER"
+  },
+  "tags": [
+    "Suggested",
+    "Layout"
+  ],
+  "thumbnailSVG": "/static/media/thumbnail.1092bbfe332a9ea2da2aa7e3efd01db2.svg",
+  "title": "Edit Module Data",
+  "topRow": 0,
+  "type": "JSON_FORM_WIDGET",
+  "useSourceData": false,
+  "version": 1,
+  "widgetId": "a3c8pidncl",
+  "widgetName": "FormEditModuleData"
 }

@@ -1,73 +1,91 @@
 {
-    "boxShadow": "none",
-    "widgetName": "InventoryAddButtonGroupCopy1",
-    "isCanvas": false,
-    "dynamicPropertyPathList": [{"key": "groupButtons.groupButton2.onClick"}],
-    "displayName": "Button Group",
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 33,
-    "bottomRow": 37,
-    "parentRowSpace": 10,
-    "type": "BUTTON_GROUP_WIDGET",
-    "groupButtons": {
-        "groupButton1": {
-            "onClick": "{{closeModal('ModalInventoryAdd').then(() => {\n  resetWidget(\"ModalInventoryAdd\", true);\n});}}",
-            "buttonType": "SIMPLE",
-            "iconName": "key-backspace",
-            "buttonColor": "#eab308",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 0,
-            "label": "Cancel",
-            "id": "groupButton1",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "groupButton2": {
-            "onClick": "{{QueryWipAddTrack.run().then(() => {\n  QueryWipAdd.run().then(() => {QueryInventoryHistory.run(); QueryTop1kInventory.run(); })  ;\n}).catch(() => {\n  showAlert('Error. Get Connor (TrackingError)', 'error');\n});}}",
-            "iconName": "key-enter",
-            "buttonColor": "#15803d",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 1,
-            "label": "Submit Adjustment",
-            "isVisible": true,
-            "buttonType": "SIMPLE",
-            "iconAlign": "right",
-            "id": "groupButton2",
-            "placement": "CENTER",
-            "isDisabled": false
-        }
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 37,
+  "boxShadow": "none",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "displayName": "Button Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton2.onClick"
     },
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 5.625,
-    "dynamicTriggerPathList": [
-        {"key": "groupButtons.groupButton2.onClick"},
-        {"key": "groupButtons.groupButton1.onClick"}
-    ],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [{"key": "borderRadius"}],
-    "key": "kxknoo2mqf",
-    "orientation": "horizontal",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "muptaxefu8",
-    "minWidth": 450,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "8f6tklhg7j",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 33,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 37,
-    "buttonVariant": "PRIMARY"
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "#eab308",
+      "buttonType": "SIMPLE",
+      "iconName": "key-backspace",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Cancel",
+      "menuItems": {},
+      "onClick": "{{closeModal('ModalInventoryAdd').then(() => {\n  resetWidget(\"ModalInventoryAdd\", true);\n});}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "#15803d",
+      "buttonType": "SIMPLE",
+      "iconAlign": "right",
+      "iconName": "key-enter",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Submit Adjustment",
+      "menuItems": {},
+      "onClick": "{{QueryWipAddTrack.run().then(() => {\n  QueryWipAdd.run().then(() => {QueryInventoryHistory.run(); QueryTop1kInventory.run(); })  ;\n}).catch(() => {\n  showAlert('Error. Get Connor (TrackingError)', 'error');\n});}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "kxknoo2mqf",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "orientation": "horizontal",
+  "originalBottomRow": 37,
+  "originalTopRow": 33,
+  "parentColumnSpace": 5.625,
+  "parentId": "8f6tklhg7j",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 33,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "muptaxefu8",
+  "widgetName": "InventoryAddButtonGroupCopy1"
 }

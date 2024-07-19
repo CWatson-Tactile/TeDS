@@ -1,215 +1,106 @@
 {
+  "gitSyncId": "65ea03a5beafc077b3761f46_65ef300b4400cc0e9f2c9530",
   "unpublishedPage": {
-    "name": "Lot Tracking",
-    "slug": "lot-tracking",
+    "isHidden": false,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 970,
-          "containerStyle": "none",
-          "snapRows": 73,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 89,
-          "minHeight": 750,
-          "parentColumnSpace": 1,
+          "containerStyle": "none",
+          "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "leftColumn": 0,
           "flexLayers": [
             {
               "children": [
                 {
-                  "id": "dbjqf8jn2b",
-                  "align": "start"
+                  "align": "start",
+                  "id": "dbjqf8jn2b"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "agdvgddknu",
-                  "align": "start"
+                  "align": "start",
+                  "id": "agdvgddknu"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "y029pxikel",
-                  "align": "start"
+                  "align": "start",
+                  "id": "y029pxikel"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "m4ldzg0fm5",
-                  "align": "start"
+                  "align": "start",
+                  "id": "m4ldzg0fm5"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "jixhb8hlbi",
-                  "align": "start"
+                  "align": "start",
+                  "id": "jixhb8hlbi"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "1tx4rmvlby",
-                  "align": "start"
+                  "align": "start",
+                  "id": "1tx4rmvlby"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "qt52jk9mc7",
-                  "align": "start"
+                  "align": "start",
+                  "id": "qt52jk9mc7"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "tjyjljkj8i",
-                  "align": "start"
+                  "align": "start",
+                  "id": "tjyjljkj8i"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "dwdcyfinbu",
-                  "align": "start"
+                  "align": "start",
+                  "id": "dwdcyfinbu"
                 }
               ]
-            }
-          ]
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Lot Tracking_QuerySelectPlungerCoreplateLot",
-              "name": "QuerySelectPlungerCoreplateLot",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Lot Tracking_SelectQueryBurnInLots",
-              "name": "SelectQueryBurnInLots",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Lot Tracking_SelectQueryCPWeldLots",
-              "name": "SelectQueryCPWeldLots",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Lot Tracking_SelectQueryCoilLots",
-              "name": "SelectQueryCoilLots",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Lot Tracking_SelectQueryGlueStationLots",
-              "name": "SelectQueryGlueStationLots",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Lot Tracking_SelectQueryModulePCBSolderLots",
-              "name": "SelectQueryModulePCBSolderLots",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Lot Tracking_SelectQueryPalletLoadLots",
-              "name": "SelectQueryPalletLoadLots",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Lot Tracking_SelectQueryPostGlueEQCLots",
-              "name": "SelectQueryPostGlueEQCLots",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Lot Tracking_SelectQueryRubberMagnetLots",
-              "name": "SelectQueryRubberMagnetLots",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
             }
           ],
-          [
-            {
-              "id": "Lot Tracking__$JSEmployeeNames$_SelectEmployeeListQuery",
-              "name": "_$JSEmployeeNames$_SelectEmployeeListQuery",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Lot Tracking__$JSEmployeeNames$_JSEmployeeNames.EmpNames",
-              "name": "_$JSEmployeeNames$_JSEmployeeNames.EmpNames",
-              "collectionId": "Lot Tracking__$JSEmployeeNames$_JSEmployeeNames",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  const EmpNames = _$JSEmployeeNames$_SelectEmployeeListQuery.data.map(i => ({\n    label: i.EmployeeFirstName + \" \" + i.EmployeeLastName,\n    value: i.EmployeeID\n  }));\n  return EmpNames;\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Lot Tracking",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "leftColumn": 0,
+          "minHeight": 750,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 73,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 89,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": false
-  },
-  "deleted": false,
-  "gitSyncId": "65ea03a5beafc077b3761f46_65ef300b4400cc0e9f2c9530"
+    "name": "Lot Tracking",
+    "slug": "lot-tracking"
+  }
 }

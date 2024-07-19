@@ -1,88 +1,104 @@
 {
-    "boxShadow": "none",
-    "widgetName": "ButtonGroup3",
-    "isCanvas": false,
-    "displayName": "Button Group",
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 0,
-    "bottomRow": 4,
-    "parentRowSpace": 10,
-    "type": "BUTTON_GROUP_WIDGET",
-    "groupButtons": {
-        "groupButtonhwhalp1y80": {
-            "itemType": "BUTTON",
-            "onClick": "{{GenerateLowStockReport.run().then(() => {\n  download(GenerateLowStockReport.data, 'LowStockReport.csv', '');\n});}}",
-            "buttonColor": "#000000",
-            "iconName": "cross",
-            "widgetId": "s8lfsc9spo",
-            "menuItems": {},
-            "index": 2,
-            "label": "Generate OUTS report",
-            "isVisible": true,
-            "buttonType": "SIMPLE",
-            "buttonVariant": "filled",
-            "id": "groupButtonhwhalp1y80",
-            "isDisabled": false,
-            "placement": "CENTER"
-        },
-        "groupButton1": {
-            "onClick": "{{showModal('ModalNewItem');}}",
-            "buttonType": "SIMPLE",
-            "iconName": "add",
-            "buttonColor": "#7e22ce",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 0,
-            "label": "Add New Item",
-            "id": "groupButton1",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "groupButton2": {
-            "onClick": "{{showModal('ModalSkuEdit');}}",
-            "buttonType": "SIMPLE",
-            "iconName": "edit",
-            "buttonColor": "#1d4ed8",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 1,
-            "label": "Edit Item",
-            "id": "groupButton2",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        }
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonVariant": "TERTIARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "displayName": "Button Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
     },
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 28.84375,
-    "dynamicTriggerPathList": [
-        {"key": "groupButtons.groupButton1.onClick"},
-        {"key": "groupButtons.groupButton2.onClick"},
-        {"key": "groupButtons.groupButtonhwhalp1y80.onClick"}
-    ],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [{"key": "borderRadius"}],
-    "key": "2bihr5hfnw",
-    "orientation": "horizontal",
-    "isDeprecated": false,
-    "rightColumn": 25,
-    "widgetId": "1o0wlaq5lc",
-    "minWidth": 450,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "bqhmwdpeiu",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 6,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 10,
-    "buttonVariant": "TERTIARY"
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonhwhalp1y80.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "#7e22ce",
+      "buttonType": "SIMPLE",
+      "iconName": "add",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Add New Item",
+      "menuItems": {},
+      "onClick": "{{showModal('ModalNewItem');}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "#1d4ed8",
+      "buttonType": "SIMPLE",
+      "iconName": "edit",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Edit Item",
+      "menuItems": {},
+      "onClick": "{{showModal('ModalSkuEdit');}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButtonhwhalp1y80": {
+      "buttonColor": "#000000",
+      "buttonType": "SIMPLE",
+      "buttonVariant": "filled",
+      "iconName": "cross",
+      "id": "groupButtonhwhalp1y80",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Generate OUTS report",
+      "menuItems": {},
+      "onClick": "{{GenerateLowStockReport.run().then(() => {\n  download(GenerateLowStockReport.data, 'LowStockReport.csv', '');\n});}}",
+      "placement": "CENTER",
+      "widgetId": "s8lfsc9spo"
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "2bihr5hfnw",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "orientation": "horizontal",
+  "originalBottomRow": 10,
+  "originalTopRow": 6,
+  "parentColumnSpace": 28.84375,
+  "parentId": "bqhmwdpeiu",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 25,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 0,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "1o0wlaq5lc",
+  "widgetName": "ButtonGroup3"
 }

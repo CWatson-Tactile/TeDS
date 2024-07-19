@@ -1,18 +1,14 @@
 {
-  "moduleInstanceId": "Inventory_JSEmployeeNames",
+  "gitSyncId": "666b27d34105bf614fd3798d_b8e139f0-3545-4cbd-9554-ab492a18028b",
+  "id": "Inventory__$JSEmployeeNames$_JSEmployeeNames",
   "isPublic": true,
+  "moduleInstanceId": "Inventory_JSEmployeeNames",
   "rootModuleInstanceId": "Inventory_JSEmployeeNames",
   "unpublishedCollection": {
+    "contextType": "PAGE",
     "name": "_$JSEmployeeNames$_JSEmployeeNames",
     "pageId": "Inventory",
-    "contextType": "PAGE",
     "pluginId": "js-plugin",
-    "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "userPermissions": []
-  },
-  "id": "Inventory__$JSEmployeeNames$_JSEmployeeNames",
-  "deleted": false,
-  "gitSyncId": "666b27d34105bf614fd3798d_b8e139f0-3545-4cbd-9554-ab492a18028b"
+    "pluginType": "JS"
+  }
 }

@@ -1,48 +1,58 @@
 {
-    "resetFormOnClick": false,
-    "boxShadow": "none",
-    "widgetName": "Button4",
-    "onClick": "{{QueryAddNewEmployee.run().then(() => {\n  closeModal('ModalNewEmployee');\n  resetWidget(\"ModalNewEmployee\", true);\n  showAlert('New Employee Added!', '');\n  QueryEmployeeList.run();\n});}}",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [],
-    "displayName": "Button",
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 47.40000000079386,
-    "bottomRow": 51.399999999995636,
-    "parentRowSpace": 10,
-    "type": "BUTTON_WIDGET",
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 6.96875,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 23,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
-    "text": "Submit",
-    "isDisabled": false,
-    "key": "b7xmkz0sfv",
-    "isDeprecated": false,
-    "rightColumn": 40,
-    "isDefaultClickDisabled": true,
-    "widgetId": "eccsxut8x3",
-    "minWidth": 120,
-    "isVisible": true,
-    "recaptchaType": "V3",
-    "version": 1,
-    "parentId": "ksc2nz6yt9",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "originalTopRow": 47.400000000790946,
-    "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 51.39999999999418,
-    "buttonVariant": "PRIMARY",
-    "placement": "CENTER"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 51.399999999995636,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "b7xmkz0sfv",
+  "leftColumn": 23,
+  "minWidth": 120,
+  "onClick": "{{QueryAddNewEmployee.run().then(() => {\n  closeModal('ModalNewEmployee');\n  resetWidget(\"ModalNewEmployee\", true);\n  showAlert('New Employee Added!', '');\n  QueryEmployeeList.run();\n});}}",
+  "originalBottomRow": 51.39999999999418,
+  "originalTopRow": 47.400000000790946,
+  "parentColumnSpace": 6.96875,
+  "parentId": "ksc2nz6yt9",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "rightColumn": 40,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "text": "Submit",
+  "topRow": 47.40000000079386,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "eccsxut8x3",
+  "widgetName": "Button4"
 }

@@ -1,706 +1,860 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "borderColor": "#E0DEDE",
-    "iconSVG": "/static/media/icon.46adf7030d667f0ad9002aa31f997573.svg",
-    "onSubmit": "{{InseryQueryRubberMagnetLots.run(() => {\n  showAlert('Rubber & Magnet lot successfully created', 'success');\n  resetWidget(\"ModalRubberMagnetLotEntry\", true);\n  closeModal('ModalRubberMagnetLotEntry');\n}, () => {\n  showAlert(\"Unable to create!\", 'error');\n});}}",
-    "topRow": 4,
-    "type": "JSON_FORM_WIDGET",
-    "animateLoading": true,
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "boxShadow"},
-        {"key": "submitButtonStyles.buttonColor"},
-        {"key": "submitButtonStyles.borderRadius"},
-        {"key": "resetButtonStyles.borderRadius"},
-        {"key": "schema.__root_schema__.defaultValue"},
-        {"key": "schema.__root_schema__.borderRadius"},
-        {"key": "schema.__root_schema__.children.VersionLogNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.VersionLogNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.VersionLogNum.accentColor"},
-        {"key": "schema.__root_schema__.children.LotStartTime.defaultValue"},
-        {"key": "schema.__root_schema__.children.LotStartTime.borderRadius"},
-        {"key": "schema.__root_schema__.children.LotStartTime.accentColor"},
-        {"key": "schema.__root_schema__.children.LotStartEmpID.borderRadius"},
-        {"key": "schema.__root_schema__.children.LotStartEmpID.accentColor"},
-        {"key": "schema.__root_schema__.children.LotEndTime.defaultValue"},
-        {"key": "schema.__root_schema__.children.LotEndTime.borderRadius"},
-        {"key": "schema.__root_schema__.children.LotEndTime.accentColor"},
-        {"key": "schema.__root_schema__.children.LotEndEmpID.borderRadius"},
-        {"key": "schema.__root_schema__.children.LotEndEmpID.accentColor"},
-        {"key": "schema.__root_schema__.children.Notes.defaultValue"},
-        {"key": "schema.__root_schema__.children.Notes.borderRadius"},
-        {"key": "schema.__root_schema__.children.Notes.accentColor"},
-        {"key": "schema.__root_schema__.cellBorderRadius"},
-        {"key": "schema.__root_schema__.children.SolderedModuleLotNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.SolderedModuleLotNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.SolderedModuleLotNum.accentColor"},
-        {"key": "schema.__root_schema__.children.MagnetLotNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.MagnetLotNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.MagnetLotNum.accentColor"},
-        {"key": "schema.__root_schema__.children.RubberLotNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.RubberLotNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.RubberLotNum.accentColor"},
-        {"key": "schema.__root_schema__.children.MaintLogNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.MaintLogNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.MaintLogNum.accentColor"},
-        {"key": "schema.__root_schema__.children.UnitsProducedCount.defaultValue"},
-        {"key": "schema.__root_schema__.children.UnitsProducedCount.borderRadius"},
-        {"key": "schema.__root_schema__.children.UnitsProducedCount.accentColor"},
-        {"key": "schema.__root_schema__.children.JammedMagnetFailCount.defaultValue"},
-        {"key": "schema.__root_schema__.children.JammedMagnetFailCount.borderRadius"},
-        {"key": "schema.__root_schema__.children.JammedMagnetFailCount.accentColor"},
-        {"key": "schema.__root_schema__.children.PolarityFailCount.defaultValue"},
-        {"key": "schema.__root_schema__.children.PolarityFailCount.borderRadius"},
-        {"key": "schema.__root_schema__.children.PolarityFailCount.accentColor"},
-        {"key": "schema.__root_schema__.children.DoubleRubberFailCount.defaultValue"},
-        {"key": "schema.__root_schema__.children.DoubleRubberFailCount.borderRadius"},
-        {"key": "schema.__root_schema__.children.DoubleRubberFailCount.accentColor"},
-        {"key": "schema.__root_schema__.children.SidewaysRubberFailCount.defaultValue"},
-        {"key": "schema.__root_schema__.children.SidewaysRubberFailCount.borderRadius"},
-        {"key": "schema.__root_schema__.children.SidewaysRubberFailCount.accentColor"},
-        {"key": "schema.__root_schema__.children.OtherFailCount.defaultValue"},
-        {"key": "schema.__root_schema__.children.OtherFailCount.borderRadius"},
-        {"key": "schema.__root_schema__.children.OtherFailCount.accentColor"},
-        {"key": "schema.__root_schema__.children.RubberMagnetLotNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.RubberMagnetLotNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.RubberMagnetLotNum.accentColor"},
-        {"key": "schema.__root_schema__.children.UnitsFailCount.borderRadius"},
-        {"key": "schema.__root_schema__.children.UnitsFailCount.accentColor"},
-        {"key": "schema.__root_schema__.children.UnitsPassCount.borderRadius"},
-        {"key": "schema.__root_schema__.children.UnitsPassCount.accentColor"},
-        {"key": "schema.__root_schema__.children.UnitsFailCount.defaultValue"},
-        {"key": "schema.__root_schema__.children.UnitsPassCount.defaultValue"},
-        {"key": "schema.__root_schema__.children.LotStartEmpID.options"},
-        {"key": "schema.__root_schema__.children.LotEndEmpID.options"},
-        {"key": "schema.__root_schema__.children.LotStartEmpID.defaultValue"},
-        {"key": "schema.__root_schema__.children.LotEndEmpID.defaultValue"},
-        {"key": "backgroundColor"}
-    ],
-    "showReset": true,
-    "flexVerticalAlignment": "start",
-    "dynamicHeight": "FIXED",
-    "autoGenerateForm": false,
-    "resetButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-        "buttonColor": "#eab308",
-        "iconName": "refresh",
-        "buttonVariant": "TERTIARY",
-        "iconAlign": "left",
-        "placement": "CENTER"
+  "animateLoading": true,
+  "autoGenerateForm": false,
+  "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "",
+  "bottomRow": 67,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "childStylesheet": {
+    "ARRAY": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "cellBoxShadow": "none"
     },
-    "isVisible": true,
-    "version": 1,
-    "tags": [
-        "Suggested",
-        "Layout"
-    ],
-    "isLoading": false,
-    "submitButtonLabel": "Submit",
-    "childStylesheet": {
-        "CHECKBOX": {
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "ARRAY": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-            "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "cellBoxShadow": "none"
-        },
-        "CURRENCY_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "DATEPICKER": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "PHONE_NUMBER_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "OBJECT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "cellBoxShadow": "none"
-        },
-        "MULTISELECT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "SELECT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "NUMBER_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "PASSWORD_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "EMAIL_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "RADIO_GROUP": {
-            "boxShadow": "none",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "SWITCH": {
-            "boxShadow": "none",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "TEXT_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "MULTILINE_TEXT_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        }
+    "CHECKBOX": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
     },
-    "disabledWhenInvalid": true,
+    "CURRENCY_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "DATEPICKER": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "EMAIL_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "MULTILINE_TEXT_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "MULTISELECT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "NUMBER_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "OBJECT": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "cellBoxShadow": "none"
+    },
+    "PASSWORD_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "PHONE_NUMBER_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "RADIO_GROUP": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "boxShadow": "none"
+    },
+    "SELECT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "SWITCH": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "boxShadow": "none"
+    },
+    "TEXT_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    }
+  },
+  "disabledWhenInvalid": true,
+  "displayName": "JSON Form",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "submitButtonStyles.buttonColor"
+    },
+    {
+      "key": "submitButtonStyles.borderRadius"
+    },
+    {
+      "key": "resetButtonStyles.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.VersionLogNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.VersionLogNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.VersionLogNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotStartTime.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotStartTime.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotStartTime.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotStartEmpID.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotStartEmpID.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotEndTime.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotEndTime.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotEndTime.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotEndEmpID.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotEndEmpID.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.Notes.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.Notes.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.Notes.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.cellBorderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.SolderedModuleLotNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.SolderedModuleLotNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.SolderedModuleLotNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.MagnetLotNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.MagnetLotNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.MagnetLotNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.RubberLotNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.RubberLotNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.RubberLotNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.MaintLogNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.MaintLogNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.MaintLogNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.UnitsProducedCount.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.UnitsProducedCount.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.UnitsProducedCount.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.JammedMagnetFailCount.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.JammedMagnetFailCount.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.JammedMagnetFailCount.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.PolarityFailCount.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.PolarityFailCount.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.PolarityFailCount.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.DoubleRubberFailCount.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.DoubleRubberFailCount.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.DoubleRubberFailCount.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.SidewaysRubberFailCount.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.SidewaysRubberFailCount.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.SidewaysRubberFailCount.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.OtherFailCount.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.OtherFailCount.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.OtherFailCount.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.RubberMagnetLotNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.RubberMagnetLotNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.RubberMagnetLotNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.UnitsFailCount.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.UnitsFailCount.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.UnitsPassCount.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.UnitsPassCount.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.UnitsFailCount.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.UnitsPassCount.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotStartEmpID.options"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotEndEmpID.options"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotStartEmpID.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotEndEmpID.defaultValue"
+    },
+    {
+      "key": "backgroundColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "schema.__root_schema__.children.LotStartTime.dateFormat"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotEndTime.dateFormat"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotStartTime.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotEndTime.defaultValue"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSubmit"
+    }
+  ],
+  "fieldLimitExceeded": false,
+  "fixedFooter": true,
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.46adf7030d667f0ad9002aa31f997573.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "1a156tlbta",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 51,
+  "mobileLeftColumn": 10,
+  "mobileRightColumn": 74,
+  "mobileTopRow": 10,
+  "onSubmit": "{{InseryQueryRubberMagnetLots.run(() => {\n  showAlert('Rubber & Magnet lot successfully created', 'success');\n  resetWidget(\"ModalRubberMagnetLotEntry\", true);\n  closeModal('ModalRubberMagnetLotEntry');\n}, () => {\n  showAlert(\"Unable to create!\", 'error');\n});}}",
+  "parentColumnSpace": 7.84375,
+  "parentId": "a5bucbz1uz",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetButtonLabel": "Reset",
+  "resetButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "useSourceData": false,
-    "schema": {"__root_schema__": {
-        "labelTextSize": "0.875rem",
-        "identifier": "__root_schema__",
-        "boxShadow": "none",
-        "isRequired": false,
-        "isCustomField": false,
-        "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-        "dataType": "object",
-        "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-        "accessor": "__root_schema__",
-        "isVisible": true,
-        "label": "",
-        "originalIdentifier": "__root_schema__",
-        "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-        "children": {
-            "UnitsPassCount": {
-                "labelTextSize": "0.875rem",
-                "identifier": "UnitsPassCount",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (Number(formData.UnitsProducedCount)\n-Number(formData.UnitsFailCount)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "UnitsPassCount",
-                "isVisible": true,
-                "label": "Units Pass Count",
-                "originalIdentifier": "UnitsPassCount",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 13,
-                "isDisabled": true,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "MaintLogNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "MaintLogNum",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.MaintLogNum))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "MaintLogNum",
-                "isVisible": true,
-                "label": "Maint Log Num",
-                "originalIdentifier": "MaintLogNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 4,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "PolarityFailCount": {
-                "labelTextSize": "0.875rem",
-                "identifier": "PolarityFailCount",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PolarityFailCount))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "PolarityFailCount",
-                "isVisible": true,
-                "label": "Polarity Fail Count",
-                "originalIdentifier": "PolarityFailCount",
-                "regex": "^[0-9]+$",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 8,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "MagnetLotNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "MagnetLotNum",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.MagnetLotNum))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "MagnetLotNum",
-                "isVisible": true,
-                "label": "Magnet Lot Num",
-                "originalIdentifier": "MagnetLotNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 2,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "LotStartTime": {
-                "boxShadow": "none",
-                "minDate": "1920-12-31T18:30:00.000Z",
-                "dateFormat": "YYYY-MM-DD h:mm A",
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.LotStartTime))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
-                "accessor": "LotStartTime",
-                "shortcuts": false,
-                "convertToISO": true,
-                "children": {},
-                "isDisabled": false,
-                "sourceData": "",
-                "labelTextSize": "0.875rem",
-                "identifier": "LotStartTime",
-                "isRequired": false,
-                "isCustomField": false,
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
-                "dataType": "string",
-                "isVisible": true,
-                "label": "Lot Start Time",
-                "originalIdentifier": "LotStartTime",
-                "timePrecision": "minute",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
-                "closeOnSelection": false,
-                "maxDate": "2121-12-31T18:29:00.000Z",
-                "position": 14,
-                "fieldType": "Datepicker"
-            },
-            "UnitsProducedCount": {
-                "labelTextSize": "0.875rem",
-                "identifier": "UnitsProducedCount",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.UnitsProducedCount))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "UnitsProducedCount",
-                "isVisible": true,
-                "label": "Units Produced Count",
-                "originalIdentifier": "UnitsProducedCount",
-                "regex": "^[0-9]+$",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 6,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "RubberMagnetLotNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "RubberMagnetLotNum",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.RubberMagnetLotNum))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "RubberMagnetLotNum",
-                "isVisible": true,
-                "label": "Rubber Magnet Lot Num",
-                "originalIdentifier": "RubberMagnetLotNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 0,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "DoubleRubberFailCount": {
-                "labelTextSize": "0.875rem",
-                "identifier": "DoubleRubberFailCount",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.DoubleRubberFailCount))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "DoubleRubberFailCount",
-                "isVisible": true,
-                "label": "Double Rubber Fail Count",
-                "originalIdentifier": "DoubleRubberFailCount",
-                "regex": "^[0-9]+$",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 9,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "SidewaysRubberFailCount": {
-                "labelTextSize": "0.875rem",
-                "identifier": "SidewaysRubberFailCount",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.SidewaysRubberFailCount))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "SidewaysRubberFailCount",
-                "isVisible": true,
-                "label": "Sideways Rubber Fail Count",
-                "originalIdentifier": "SidewaysRubberFailCount",
-                "regex": "^[0-9]+$",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 10,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "UnitsFailCount": {
-                "labelTextSize": "0.875rem",
-                "identifier": "UnitsFailCount",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (Number(formData.DoubleRubberFailCount)\n+Number(formData.JammedMagnetFailCount)\n+Number(formData.OtherFailCount)\n+Number(formData.PolarityFailCount)\n+Number(formData.SidewaysRubberFailCount)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "UnitsFailCount",
-                "isVisible": true,
-                "label": "Units Fail Count",
-                "originalIdentifier": "UnitsFailCount",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 12,
-                "isDisabled": true,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "OtherFailCount": {
-                "labelTextSize": "0.875rem",
-                "identifier": "OtherFailCount",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.OtherFailCount))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "OtherFailCount",
-                "isVisible": true,
-                "label": "Other Fail Count",
-                "originalIdentifier": "OtherFailCount",
-                "regex": "^[0-9]+$",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 11,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "SolderedModuleLotNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "SolderedModuleLotNum",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.SolderedModuleLotNum))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "SolderedModuleLotNum",
-                "isVisible": true,
-                "label": "Soldered Module Lot Num",
-                "originalIdentifier": "SolderedModuleLotNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 1,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "VersionLogNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "VersionLogNum",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.VersionLogNum))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "VersionLogNum",
-                "isVisible": true,
-                "label": "Version Log Num",
-                "originalIdentifier": "VersionLogNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 5,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "LotEndTime": {
-                "boxShadow": "none",
-                "minDate": "1920-12-31T18:30:00.000Z",
-                "dateFormat": "YYYY-MM-DD h:mm A",
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.LotEndTime))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
-                "accessor": "LotEndTime",
-                "shortcuts": false,
-                "convertToISO": true,
-                "children": {},
-                "isDisabled": false,
-                "sourceData": "",
-                "labelTextSize": "0.875rem",
-                "identifier": "LotEndTime",
-                "isRequired": false,
-                "isCustomField": false,
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
-                "dataType": "string",
-                "isVisible": true,
-                "label": "Lot End Time",
-                "originalIdentifier": "LotEndTime",
-                "timePrecision": "minute",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
-                "closeOnSelection": false,
-                "maxDate": "2121-12-31T18:29:00.000Z",
-                "position": 16,
-                "fieldType": "Datepicker"
-            },
-            "LotStartEmpID": {
-                "labelTextSize": "0.875rem",
-                "identifier": "LotStartEmpID",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isFilterable": true,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (appsmith.store.EmpID))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "LotStartEmpID",
-                "isVisible": true,
-                "label": "Lot Start Emp ID",
-                "serverSideFiltering": true,
-                "originalIdentifier": "LotStartEmpID",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "children": {},
-                "options": "{{JSEmployeeNames.EmpNames.data}}",
-                "position": 15,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Select"
-            },
-            "LotEndEmpID": {
-                "labelTextSize": "0.875rem",
-                "identifier": "LotEndEmpID",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isFilterable": true,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (appsmith.store.EmpID))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "LotEndEmpID",
-                "isVisible": true,
-                "label": "Lot End Emp ID",
-                "serverSideFiltering": true,
-                "originalIdentifier": "LotEndEmpID",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "children": {},
-                "options": "{{JSEmployeeNames.EmpNames.data}}",
-                "position": 17,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Select"
-            },
-            "Notes": {
-                "labelTextSize": "0.875rem",
-                "identifier": "Notes",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Notes))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "Notes",
-                "isVisible": true,
-                "label": "Notes",
-                "originalIdentifier": "Notes",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 18,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Multiline Text Input"
-            },
-            "RubberLotNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "RubberLotNum",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.RubberLotNum))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "RubberLotNum",
-                "isVisible": true,
-                "label": "Rubber Lot Num",
-                "originalIdentifier": "RubberLotNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 3,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "JammedMagnetFailCount": {
-                "labelTextSize": "0.875rem",
-                "identifier": "JammedMagnetFailCount",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.JammedMagnetFailCount))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "JammedMagnetFailCount",
-                "isVisible": true,
-                "label": "Jammed Magnet Fail Count",
-                "originalIdentifier": "JammedMagnetFailCount",
-                "regex": "^[0-9]+$",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 7,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            }
+    "boxShadow": "none",
+    "buttonColor": "#eab308",
+    "buttonVariant": "TERTIARY",
+    "iconAlign": "left",
+    "iconName": "refresh",
+    "placement": "CENTER"
+  },
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "schema": {
+    "__root_schema__": {
+      "accessor": "__root_schema__",
+      "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+      "cellBoxShadow": "none",
+      "children": {
+        "DoubleRubberFailCount": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "accessor": "DoubleRubberFailCount",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.DoubleRubberFailCount))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "DoubleRubberFailCount",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Double Rubber Fail Count",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "DoubleRubberFailCount",
+          "position": 9,
+          "regex": "^[0-9]+$",
+          "sourceData": ""
         },
-        "position": -1,
-        "isDisabled": false,
-        "sourceData": {
-            "UnitsPassCount": "",
-            "MaintLogNum": "",
-            "PolarityFailCount": "",
-            "MagnetLotNum": "",
-            "LotStartTime": "",
-            "UnitsProducedCount": "",
-            "RubberMagnetLotNum": "",
-            "DoubleRubberFailCount": "",
-            "SidewaysRubberFailCount": "",
-            "UnitsFailCount": "",
-            "OtherFailCount": "",
-            "SolderedModuleLotNum": "",
-            "VersionLogNum": "",
-            "LotEndTime": "",
-            "LotStartEmpID": "",
-            "LotEndEmpID": "",
-            "RubberLotNum": "",
-            "Notes": "",
-            "JammedMagnetFailCount": ""
+        "JammedMagnetFailCount": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "accessor": "JammedMagnetFailCount",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.JammedMagnetFailCount))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "JammedMagnetFailCount",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Jammed Magnet Fail Count",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "JammedMagnetFailCount",
+          "position": 7,
+          "regex": "^[0-9]+$",
+          "sourceData": ""
         },
-        "cellBoxShadow": "none",
-        "fieldType": "Object"
-    }},
-    "mobileBottomRow": 51,
-    "widgetName": "FormRubberMagnetLotEntry",
-    "submitButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-        "iconName": "key-enter",
-        "buttonVariant": "PRIMARY",
-        "iconAlign": "left",
-        "placement": "CENTER"
-    },
-    "dynamicPropertyPathList": [
-        {"key": "schema.__root_schema__.children.LotStartTime.dateFormat"},
-        {"key": "schema.__root_schema__.children.LotEndTime.dateFormat"},
-        {"key": "schema.__root_schema__.children.LotStartTime.defaultValue"},
-        {"key": "schema.__root_schema__.children.LotEndTime.defaultValue"},
-        {"key": "sourceData"},
-        {"key": "sourceData"}
-    ],
-    "displayName": "JSON Form",
-    "bottomRow": 67,
-    "fieldLimitExceeded": false,
-    "parentRowSpace": 10,
-    "title": "Rubber & Magnet lot entry",
-    "hideCard": false,
-    "mobileRightColumn": 74,
-    "shouldScrollContents": true,
-    "parentColumnSpace": 7.84375,
-    "dynamicTriggerPathList": [{"key": "onSubmit"}],
-    "borderWidth": "",
-    "sourceData": "{\n  \"RubberMagnetLotNum\":\"\",\n  \"SolderedModuleLotNum\": \"\",\n  \"MagnetLotNum\": \"\",\n  \"RubberLotNum\": \"\",\n  \"MaintLogNum\": \"\",\n  \"VersionLogNum\": \"\",\n  \"UnitsProducedCount\": \"\",\n  \"JammedMagnetFailCount\": \"\",\n  \"PolarityFailCount\": \"\",\n  \"DoubleRubberFailCount\": \"\",\n  \"SidewaysRubberFailCount\": \"\",\n  \"OtherFailCount\": \"\",\n\t\"UnitsFailCount\":\"\",\n\t\"UnitsPassCount\":\"\",\n  \"LotStartTime\": \"\",\n  \"LotStartEmpID\": \"\",\n  \"LotEndTime\": \"\",\n  \"LotEndEmpID\": \"\",\n  \"Notes\": \"\"\n}",
-    "resetButtonLabel": "Reset",
-    "key": "1a156tlbta",
-    "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "18b7dwuo7o",
-    "minWidth": 450,
-    "parentId": "a5bucbz1uz",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 10,
-    "scrollContents": true,
-    "responsiveBehavior": "fill",
-    "fixedFooter": true,
-    "mobileLeftColumn": 10,
-    "maxDynamicHeight": 9000,
-    "minDynamicHeight": 4
+        "LotEndEmpID": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "accessor": "LotEndEmpID",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (appsmith.store.EmpID))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "fieldType": "Select",
+          "identifier": "LotEndEmpID",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isFilterable": true,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Lot End Emp ID",
+          "labelTextSize": "0.875rem",
+          "options": "{{JSEmployeeNames.EmpNames.data}}",
+          "originalIdentifier": "LotEndEmpID",
+          "position": 17,
+          "serverSideFiltering": true,
+          "sourceData": ""
+        },
+        "LotEndTime": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
+          "accessor": "LotEndTime",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "closeOnSelection": false,
+          "convertToISO": true,
+          "dataType": "string",
+          "dateFormat": "YYYY-MM-DD h:mm A",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.LotEndTime))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
+          "fieldType": "Datepicker",
+          "identifier": "LotEndTime",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Lot End Time",
+          "labelTextSize": "0.875rem",
+          "maxDate": "2121-12-31T18:29:00.000Z",
+          "minDate": "1920-12-31T18:30:00.000Z",
+          "originalIdentifier": "LotEndTime",
+          "position": 16,
+          "shortcuts": false,
+          "sourceData": "",
+          "timePrecision": "minute"
+        },
+        "LotStartEmpID": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "accessor": "LotStartEmpID",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (appsmith.store.EmpID))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "fieldType": "Select",
+          "identifier": "LotStartEmpID",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isFilterable": true,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Lot Start Emp ID",
+          "labelTextSize": "0.875rem",
+          "options": "{{JSEmployeeNames.EmpNames.data}}",
+          "originalIdentifier": "LotStartEmpID",
+          "position": 15,
+          "serverSideFiltering": true,
+          "sourceData": ""
+        },
+        "LotStartTime": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
+          "accessor": "LotStartTime",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "closeOnSelection": false,
+          "convertToISO": true,
+          "dataType": "string",
+          "dateFormat": "YYYY-MM-DD h:mm A",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.LotStartTime))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
+          "fieldType": "Datepicker",
+          "identifier": "LotStartTime",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Lot Start Time",
+          "labelTextSize": "0.875rem",
+          "maxDate": "2121-12-31T18:29:00.000Z",
+          "minDate": "1920-12-31T18:30:00.000Z",
+          "originalIdentifier": "LotStartTime",
+          "position": 14,
+          "shortcuts": false,
+          "sourceData": "",
+          "timePrecision": "minute"
+        },
+        "MagnetLotNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "accessor": "MagnetLotNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.MagnetLotNum))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "MagnetLotNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Magnet Lot Num",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "MagnetLotNum",
+          "position": 2,
+          "sourceData": ""
+        },
+        "MaintLogNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "accessor": "MaintLogNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.MaintLogNum))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "MaintLogNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Maint Log Num",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "MaintLogNum",
+          "position": 4,
+          "sourceData": ""
+        },
+        "Notes": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "accessor": "Notes",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Notes))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
+          "fieldType": "Multiline Text Input",
+          "iconAlign": "left",
+          "identifier": "Notes",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Notes",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "Notes",
+          "position": 18,
+          "sourceData": ""
+        },
+        "OtherFailCount": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "accessor": "OtherFailCount",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.OtherFailCount))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "OtherFailCount",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Other Fail Count",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "OtherFailCount",
+          "position": 11,
+          "regex": "^[0-9]+$",
+          "sourceData": ""
+        },
+        "PolarityFailCount": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "accessor": "PolarityFailCount",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PolarityFailCount))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "PolarityFailCount",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Polarity Fail Count",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "PolarityFailCount",
+          "position": 8,
+          "regex": "^[0-9]+$",
+          "sourceData": ""
+        },
+        "RubberLotNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "accessor": "RubberLotNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.RubberLotNum))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "RubberLotNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Rubber Lot Num",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "RubberLotNum",
+          "position": 3,
+          "sourceData": ""
+        },
+        "RubberMagnetLotNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "accessor": "RubberMagnetLotNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.RubberMagnetLotNum))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "RubberMagnetLotNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Rubber Magnet Lot Num",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "RubberMagnetLotNum",
+          "position": 0,
+          "sourceData": ""
+        },
+        "SidewaysRubberFailCount": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "accessor": "SidewaysRubberFailCount",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.SidewaysRubberFailCount))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "SidewaysRubberFailCount",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Sideways Rubber Fail Count",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "SidewaysRubberFailCount",
+          "position": 10,
+          "regex": "^[0-9]+$",
+          "sourceData": ""
+        },
+        "SolderedModuleLotNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "accessor": "SolderedModuleLotNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.SolderedModuleLotNum))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "SolderedModuleLotNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Soldered Module Lot Num",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "SolderedModuleLotNum",
+          "position": 1,
+          "sourceData": ""
+        },
+        "UnitsFailCount": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "accessor": "UnitsFailCount",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (Number(formData.DoubleRubberFailCount)\n+Number(formData.JammedMagnetFailCount)\n+Number(formData.OtherFailCount)\n+Number(formData.PolarityFailCount)\n+Number(formData.SidewaysRubberFailCount)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "UnitsFailCount",
+          "isCustomField": false,
+          "isDisabled": true,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Units Fail Count",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "UnitsFailCount",
+          "position": 12,
+          "sourceData": ""
+        },
+        "UnitsPassCount": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "accessor": "UnitsPassCount",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (Number(formData.UnitsProducedCount)\n-Number(formData.UnitsFailCount)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "UnitsPassCount",
+          "isCustomField": false,
+          "isDisabled": true,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Units Pass Count",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "UnitsPassCount",
+          "position": 13,
+          "sourceData": ""
+        },
+        "UnitsProducedCount": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "accessor": "UnitsProducedCount",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.UnitsProducedCount))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "UnitsProducedCount",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Units Produced Count",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "UnitsProducedCount",
+          "position": 6,
+          "regex": "^[0-9]+$",
+          "sourceData": ""
+        },
+        "VersionLogNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
+          "accessor": "VersionLogNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.VersionLogNum))(FormGlueStationLotEntry.sourceData, FormGlueStationLotEntry.formData, FormGlueStationLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "VersionLogNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Version Log Num",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "VersionLogNum",
+          "position": 5,
+          "sourceData": ""
+        }
+      },
+      "dataType": "object",
+      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(FormRubberMagnetLotEntry.sourceData, FormRubberMagnetLotEntry.formData, FormRubberMagnetLotEntry.fieldState)}}",
+      "fieldType": "Object",
+      "identifier": "__root_schema__",
+      "isCustomField": false,
+      "isDisabled": false,
+      "isRequired": false,
+      "isVisible": true,
+      "label": "",
+      "labelTextSize": "0.875rem",
+      "originalIdentifier": "__root_schema__",
+      "position": -1,
+      "sourceData": {
+        "DoubleRubberFailCount": "",
+        "JammedMagnetFailCount": "",
+        "LotEndEmpID": "",
+        "LotEndTime": "",
+        "LotStartEmpID": "",
+        "LotStartTime": "",
+        "MagnetLotNum": "",
+        "MaintLogNum": "",
+        "Notes": "",
+        "OtherFailCount": "",
+        "PolarityFailCount": "",
+        "RubberLotNum": "",
+        "RubberMagnetLotNum": "",
+        "SidewaysRubberFailCount": "",
+        "SolderedModuleLotNum": "",
+        "UnitsFailCount": "",
+        "UnitsPassCount": "",
+        "UnitsProducedCount": "",
+        "VersionLogNum": ""
+      }
+    }
+  },
+  "scrollContents": true,
+  "shouldScrollContents": true,
+  "showReset": true,
+  "sourceData": "{\n  \"RubberMagnetLotNum\":\"\",\n  \"SolderedModuleLotNum\": \"\",\n  \"MagnetLotNum\": \"\",\n  \"RubberLotNum\": \"\",\n  \"MaintLogNum\": \"\",\n  \"VersionLogNum\": \"\",\n  \"UnitsProducedCount\": \"\",\n  \"JammedMagnetFailCount\": \"\",\n  \"PolarityFailCount\": \"\",\n  \"DoubleRubberFailCount\": \"\",\n  \"SidewaysRubberFailCount\": \"\",\n  \"OtherFailCount\": \"\",\n\t\"UnitsFailCount\":\"\",\n\t\"UnitsPassCount\":\"\",\n  \"LotStartTime\": \"\",\n  \"LotStartEmpID\": \"\",\n  \"LotEndTime\": \"\",\n  \"LotEndEmpID\": \"\",\n  \"Notes\": \"\"\n}",
+  "submitButtonLabel": "Submit",
+  "submitButtonStyles": {
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "boxShadow": "none",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonVariant": "PRIMARY",
+    "iconAlign": "left",
+    "iconName": "key-enter",
+    "placement": "CENTER"
+  },
+  "tags": [
+    "Suggested",
+    "Layout"
+  ],
+  "title": "Rubber & Magnet lot entry",
+  "topRow": 4,
+  "type": "JSON_FORM_WIDGET",
+  "useSourceData": false,
+  "version": 1,
+  "widgetId": "18b7dwuo7o",
+  "widgetName": "FormRubberMagnetLotEntry"
 }

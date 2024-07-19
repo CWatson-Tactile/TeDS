@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_661ef3abfdb1c038a9c10395",
+  "id": "Tablet Tracking_JSFetchNewTablets",
   "unpublishedCollection": {
     "name": "JSFetchNewTablets",
     "pageId": "Tablet Tracking",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Tablet Tracking_JSFetchNewTablets",
-  "deleted": false,
-  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_661ef3abfdb1c038a9c10395"
+    "variables": []
+  }
 }

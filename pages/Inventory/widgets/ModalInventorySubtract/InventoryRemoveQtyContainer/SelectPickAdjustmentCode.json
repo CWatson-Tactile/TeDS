@@ -1,61 +1,75 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
-    "labelText": "Adjustment Type",
-    "topRow": 0,
-    "labelWidth": 5,
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": true,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( 2))(SelectPickAdjustmentCode.options, SelectPickAdjustmentCode.serverSideFiltering) }}",
-    "animateLoading": true,
-    "leftColumn": 44,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"},
-        {"key": "defaultOptionValue"}
-    ],
-    "placeholderText": "Select option",
-    "isDisabled": false,
-    "isRequired": false,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "version": 1,
-    "tags": [
-        "Suggested",
-        "Select"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileBottomRow": 7,
-    "widgetName": "SelectPickAdjustmentCode",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [{"key": "sourceData"}],
-    "displayName": "Select",
-    "searchTags": ["dropdown"],
-    "bottomRow": 7,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "mobileRightColumn": 64,
-    "parentColumnSpace": 12.8125,
-    "dynamicTriggerPathList": [],
-    "labelPosition": "Top",
-    "sourceData": "{{JSAdjustmentCodes.AdjustmentCodeFetcher.data}}",
-    "key": "5nsnojqgl3",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "6sjvc552et",
-    "optionValue": "value",
-    "minWidth": 450,
-    "parentId": "mrhbrvrext",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 0,
-    "optionLabel": "label",
-    "responsiveBehavior": "fill",
-    "mobileLeftColumn": 44,
-    "maxDynamicHeight": 9000,
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( 2))(SelectPickAdjustmentCode.options, SelectPickAdjustmentCode.serverSideFiltering) }}",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "5nsnojqgl3",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Adjustment Type",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 44,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 44,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 0,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 12.8125,
+  "parentId": "mrhbrvrext",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": true,
+  "sourceData": "{{JSAdjustmentCodes.AdjustmentCodeFetcher.data}}",
+  "tags": [
+    "Suggested",
+    "Select"
+  ],
+  "topRow": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "6sjvc552et",
+  "widgetName": "SelectPickAdjustmentCode"
 }

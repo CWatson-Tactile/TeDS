@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_0eb7640a-c6d9-47fe-92d9-c2e597c9bc07",
+  "id": "Physical Inventory_JS_SkuData",
   "unpublishedCollection": {
     "name": "JS_SkuData",
     "pageId": "Physical Inventory",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Physical Inventory_JS_SkuData",
-  "deleted": false,
-  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_0eb7640a-c6d9-47fe-92d9-c2e597c9bc07"
+    "variables": []
+  }
 }

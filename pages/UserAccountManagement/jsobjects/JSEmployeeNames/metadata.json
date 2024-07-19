@@ -1,18 +1,14 @@
 {
-  "moduleInstanceId": "UserAccountManagement_JSEmployeeNames",
+  "gitSyncId": "666b27d34105bf614fd3798d_c375952f-6922-468a-bf72-d46be9966a6b",
+  "id": "UserAccountManagement__$JSEmployeeNames$_JSEmployeeNames",
   "isPublic": true,
+  "moduleInstanceId": "UserAccountManagement_JSEmployeeNames",
   "rootModuleInstanceId": "UserAccountManagement_JSEmployeeNames",
   "unpublishedCollection": {
+    "contextType": "PAGE",
     "name": "_$JSEmployeeNames$_JSEmployeeNames",
     "pageId": "UserAccountManagement",
-    "contextType": "PAGE",
     "pluginId": "js-plugin",
-    "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "userPermissions": []
-  },
-  "id": "UserAccountManagement__$JSEmployeeNames$_JSEmployeeNames",
-  "deleted": false,
-  "gitSyncId": "666b27d34105bf614fd3798d_c375952f-6922-468a-bf72-d46be9966a6b"
+    "pluginType": "JS"
+  }
 }

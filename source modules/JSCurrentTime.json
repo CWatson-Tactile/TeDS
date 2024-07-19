@@ -1,7 +1,7 @@
 {
-  "packageUUID": "4fb5897a-e072-4e4c-8a73-b4c9ddf234dc",
-  "packageName": "PackageTimeKeeper",
-  "moduleUUID": "a5b3e302-b629-4ee8-a586-1e6652c65a8d",
   "moduleName": "JSCurrentTime",
+  "moduleUUID": "a5b3e302-b629-4ee8-a586-1e6652c65a8d",
+  "packageName": "PackageTimeKeeper",
+  "packageUUID": "4fb5897a-e072-4e4c-8a73-b4c9ddf234dc",
   "version": "0.0.1"
 }

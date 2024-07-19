@@ -1,715 +1,865 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "borderColor": "#E0DEDE",
-    "iconSVG": "/static/media/icon.46adf7030d667f0ad9002aa31f997573.svg",
-    "onSubmit": "{{QueryUpdateSkuInfo.run().then(() => {\n  closeModal('ModalSkuEdit');\n  QueryTop1kInventory.run();\n  showAlert('SKU Info Updated', 'success');\n}).catch(() => {\n  showAlert('Error. Get Connor!', 'error');\n});}}",
-    "topRow": 0,
-    "type": "JSON_FORM_WIDGET",
-    "animateLoading": true,
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "boxShadow"},
-        {"key": "submitButtonStyles.buttonColor"},
-        {"key": "submitButtonStyles.borderRadius"},
-        {"key": "resetButtonStyles.borderRadius"},
-        {"key": "schema.__root_schema__.defaultValue"},
-        {"key": "schema.__root_schema__.borderRadius"},
-        {"key": "schema.__root_schema__.cellBorderRadius"},
-        {"key": "sourceData"},
-        {"key": "schema.__root_schema__.children.SKU.defaultValue"},
-        {"key": "schema.__root_schema__.children.SKU.accentColor"},
-        {"key": "schema.__root_schema__.children.SKU.borderRadius"},
-        {"key": "schema.__root_schema__.children.PartName.defaultValue"},
-        {"key": "schema.__root_schema__.children.PartName.accentColor"},
-        {"key": "schema.__root_schema__.children.PartName.borderRadius"},
-        {"key": "schema.__root_schema__.children.NewOnHand.defaultValue"},
-        {"key": "schema.__root_schema__.children.NewOnHand.accentColor"},
-        {"key": "schema.__root_schema__.children.NewOnHand.borderRadius"},
-        {"key": "schema.__root_schema__.children.WIPOnHand.defaultValue"},
-        {"key": "schema.__root_schema__.children.WIPOnHand.accentColor"},
-        {"key": "schema.__root_schema__.children.WIPOnHand.borderRadius"},
-        {"key": "schema.__root_schema__.children.Vendor.defaultValue"},
-        {"key": "schema.__root_schema__.children.Vendor.accentColor"},
-        {"key": "schema.__root_schema__.children.Vendor.borderRadius"},
-        {"key": "schema.__root_schema__.children.TEPartNumber.defaultValue"},
-        {"key": "schema.__root_schema__.children.TEPartNumber.accentColor"},
-        {"key": "schema.__root_schema__.children.TEPartNumber.borderRadius"},
-        {"key": "schema.__root_schema__.children.VendorPart.defaultValue"},
-        {"key": "schema.__root_schema__.children.VendorPart.accentColor"},
-        {"key": "schema.__root_schema__.children.VendorPart.borderRadius"},
-        {"key": "schema.__root_schema__.children.ManufacturerPart.defaultValue"},
-        {"key": "schema.__root_schema__.children.ManufacturerPart.accentColor"},
-        {"key": "schema.__root_schema__.children.ManufacturerPart.borderRadius"},
-        {"key": "schema.__root_schema__.children.PartDescription.defaultValue"},
-        {"key": "schema.__root_schema__.children.PartDescription.accentColor"},
-        {"key": "schema.__root_schema__.children.PartDescription.borderRadius"},
-        {"key": "schema.__root_schema__.children.Notes.defaultValue"},
-        {"key": "schema.__root_schema__.children.Notes.accentColor"},
-        {"key": "schema.__root_schema__.children.Notes.borderRadius"},
-        {"key": "schema.__root_schema__.children.UoM.defaultValue"},
-        {"key": "schema.__root_schema__.children.UoM.accentColor"},
-        {"key": "schema.__root_schema__.children.UoM.borderRadius"},
-        {"key": "schema.__root_schema__.children.Manufacturer.defaultValue"},
-        {"key": "schema.__root_schema__.children.Manufacturer.accentColor"},
-        {"key": "schema.__root_schema__.children.Manufacturer.borderRadius"},
-        {"key": "schema.__root_schema__.children.ManufacturerModelNumber.defaultValue"},
-        {"key": "schema.__root_schema__.children.ManufacturerModelNumber.accentColor"},
-        {"key": "schema.__root_schema__.children.ManufacturerModelNumber.borderRadius"},
-        {"key": "schema.__root_schema__.children.ASIN.defaultValue"},
-        {"key": "schema.__root_schema__.children.ASIN.accentColor"},
-        {"key": "schema.__root_schema__.children.ASIN.borderRadius"},
-        {"key": "schema.__root_schema__.children.UPC.defaultValue"},
-        {"key": "schema.__root_schema__.children.UPC.accentColor"},
-        {"key": "schema.__root_schema__.children.UPC.borderRadius"},
-        {"key": "schema.__root_schema__.children.Status.defaultValue"},
-        {"key": "schema.__root_schema__.children.Status.accentColor"},
-        {"key": "schema.__root_schema__.children.Status.borderRadius"},
-        {"key": "schema.__root_schema__.children.StandardOrderQTY.defaultValue"},
-        {"key": "schema.__root_schema__.children.StandardOrderQTY.accentColor"},
-        {"key": "schema.__root_schema__.children.StandardOrderQTY.borderRadius"},
-        {"key": "schema.__root_schema__.children.RawPartCost.defaultValue"},
-        {"key": "schema.__root_schema__.children.RawPartCost.accentColor"},
-        {"key": "schema.__root_schema__.children.RawPartCost.borderRadius"},
-        {"key": "schema.__root_schema__.children.MinimumOnHandQty.accentColor"},
-        {"key": "schema.__root_schema__.children.MinimumOnHandQty.borderRadius"},
-        {"key": "schema.__root_schema__.children.AverageLeadTime_Days.defaultValue"},
-        {"key": "schema.__root_schema__.children.AverageLeadTime_Days.borderRadius"},
-        {"key": "schema.__root_schema__.children.AverageLeadTime_Days.accentColor"},
-        {"key": "schema.__root_schema__.children.Procured.defaultValue"},
-        {"key": "schema.__root_schema__.children.Procured.borderRadius"},
-        {"key": "schema.__root_schema__.children.Procured.accentColor"},
-        {"key": "backgroundColor"}
-    ],
-    "showReset": true,
-    "flexVerticalAlignment": "start",
-    "dynamicHeight": "FIXED",
-    "autoGenerateForm": true,
-    "resetButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-        "buttonColor": "#eab308",
-        "iconName": "refresh",
-        "buttonVariant": "TERTIARY",
-        "iconAlign": "left",
-        "placement": "CENTER"
+  "animateLoading": true,
+  "autoGenerateForm": true,
+  "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "",
+  "bottomRow": 67,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "childStylesheet": {
+    "ARRAY": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "cellBoxShadow": "none"
     },
-    "isVisible": true,
-    "version": 1,
-    "tags": [
-        "Suggested",
-        "Layout"
-    ],
-    "isLoading": false,
-    "submitButtonLabel": "Submit",
-    "childStylesheet": {
-        "CHECKBOX": {
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "ARRAY": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-            "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "cellBoxShadow": "none"
-        },
-        "CURRENCY_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "DATEPICKER": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "PHONE_NUMBER_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "OBJECT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "cellBoxShadow": "none"
-        },
-        "MULTISELECT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "SELECT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "NUMBER_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "PASSWORD_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "EMAIL_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "RADIO_GROUP": {
-            "boxShadow": "none",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "SWITCH": {
-            "boxShadow": "none",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "TEXT_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "MULTILINE_TEXT_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        }
+    "CHECKBOX": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
     },
-    "disabledWhenInvalid": true,
+    "CURRENCY_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "DATEPICKER": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "EMAIL_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "MULTILINE_TEXT_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "MULTISELECT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "NUMBER_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "OBJECT": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "cellBoxShadow": "none"
+    },
+    "PASSWORD_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "PHONE_NUMBER_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "RADIO_GROUP": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "boxShadow": "none"
+    },
+    "SELECT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "SWITCH": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "boxShadow": "none"
+    },
+    "TEXT_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    }
+  },
+  "disabledWhenInvalid": true,
+  "displayName": "JSON Form",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "submitButtonStyles.buttonColor"
+    },
+    {
+      "key": "submitButtonStyles.borderRadius"
+    },
+    {
+      "key": "resetButtonStyles.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.cellBorderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "schema.__root_schema__.children.SKU.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.SKU.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.SKU.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.PartName.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.PartName.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.PartName.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.NewOnHand.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.NewOnHand.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.NewOnHand.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.WIPOnHand.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.WIPOnHand.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.WIPOnHand.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.Vendor.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.Vendor.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.Vendor.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.TEPartNumber.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.TEPartNumber.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.TEPartNumber.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.VendorPart.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.VendorPart.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.VendorPart.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.ManufacturerPart.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.ManufacturerPart.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.ManufacturerPart.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.PartDescription.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.PartDescription.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.PartDescription.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.Notes.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.Notes.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.Notes.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.UoM.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.UoM.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.UoM.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.Manufacturer.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.Manufacturer.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.Manufacturer.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.ManufacturerModelNumber.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.ManufacturerModelNumber.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.ManufacturerModelNumber.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.ASIN.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.ASIN.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.ASIN.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.UPC.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.UPC.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.UPC.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.Status.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.Status.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.Status.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.StandardOrderQTY.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.StandardOrderQTY.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.StandardOrderQTY.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.RawPartCost.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.RawPartCost.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.RawPartCost.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.MinimumOnHandQty.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.MinimumOnHandQty.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.AverageLeadTime_Days.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.AverageLeadTime_Days.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.AverageLeadTime_Days.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.Procured.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.Procured.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.Procured.accentColor"
+    },
+    {
+      "key": "backgroundColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSubmit"
+    }
+  ],
+  "fieldLimitExceeded": false,
+  "fixedFooter": true,
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.46adf7030d667f0ad9002aa31f997573.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "t9vqy5dcyu",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 41,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 0,
+  "onSubmit": "{{QueryUpdateSkuInfo.run().then(() => {\n  closeModal('ModalSkuEdit');\n  QueryTop1kInventory.run();\n  showAlert('SKU Info Updated', 'success');\n}).catch(() => {\n  showAlert('Error. Get Connor!', 'error');\n});}}",
+  "parentColumnSpace": 6.9375,
+  "parentId": "ohzap0fv86",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetButtonLabel": "Reset",
+  "resetButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "useSourceData": false,
-    "schema": {"__root_schema__": {
-        "labelTextSize": "0.875rem",
-        "identifier": "__root_schema__",
-        "boxShadow": "none",
-        "isRequired": false,
-        "isCustomField": false,
-        "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-        "dataType": "object",
-        "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-        "accessor": "__root_schema__",
-        "isVisible": true,
-        "label": "",
-        "originalIdentifier": "__root_schema__",
-        "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-        "children": {
-            "Status": {
-                "labelTextSize": "0.875rem",
-                "identifier": "Status",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isFilterable": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Status))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "dataType": "string",
-                "accessor": "Status",
-                "isVisible": true,
-                "label": "Status",
-                "serverSideFiltering": false,
-                "originalIdentifier": "Status",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "children": {},
-                "options": "[\n  {\n    \"label\": \"active\",\n    \"value\": \"active\"\n  },\n  {\n    \"label\": \"inactive\",\n    \"value\": \"inactive\"\n  }\n]",
-                "position": 15,
-                "isDisabled": false,
-                "sourceData": "active",
-                "fieldType": "Select"
-            },
-            "RawPartCost": {
-                "labelTextSize": "0.875rem",
-                "identifier": "RawPartCost",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.RawPartCost))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "dataType": "number",
-                "accessor": "RawPartCost",
-                "isVisible": true,
-                "label": "Raw Part Cost",
-                "originalIdentifier": "RawPartCost",
-                "decimalsInCurrency": 6,
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "position": 17,
-                "currencyCountryCode": "USD",
-                "isDisabled": false,
-                "sourceData": 0.05,
-                "fieldType": "Currency Input"
-            },
-            "MinimumOnHandQty": {
-                "labelTextSize": "0.875rem",
-                "identifier": "MinimumOnHandQty",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "0",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "dataType": "null",
-                "accessor": "MinimumOnHandQty",
-                "isVisible": true,
-                "label": "Minimum On Hand Qty",
-                "originalIdentifier": "MinimumOnHandQty",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 18,
-                "isDisabled": false,
-                "fieldType": "Number Input"
-            },
-            "ManufacturerModelNumber": {
-                "labelTextSize": "0.875rem",
-                "identifier": "ManufacturerModelNumber",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ManufacturerModelNumber))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "dataType": "string",
-                "accessor": "ManufacturerModelNumber",
-                "isVisible": true,
-                "label": "Manufacturer Model Number",
-                "originalIdentifier": "ManufacturerModelNumber",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 12,
-                "isDisabled": false,
-                "sourceData": "N/A",
-                "fieldType": "Text Input"
-            },
-            "WIPOnHand": {
-                "labelTextSize": "0.875rem",
-                "identifier": "WIPOnHand",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.WIPOnHand))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "dataType": "number",
-                "accessor": "WIPOnHand",
-                "isVisible": true,
-                "label": "WIP On Hand",
-                "originalIdentifier": "WIPOnHand",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 3,
-                "isDisabled": false,
-                "sourceData": 5614,
-                "fieldType": "Number Input"
-            },
-            "VendorPart": {
-                "labelTextSize": "0.875rem",
-                "identifier": "VendorPart",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.VendorPart))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "dataType": "string",
-                "accessor": "VendorPart",
-                "isVisible": true,
-                "label": "Vendor Part",
-                "originalIdentifier": "VendorPart",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 6,
-                "isDisabled": false,
-                "sourceData": "N/A",
-                "fieldType": "Text Input"
-            },
-            "ASIN": {
-                "labelTextSize": "0.875rem",
-                "identifier": "ASIN",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ASIN))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "dataType": "string",
-                "accessor": "ASIN",
-                "isVisible": true,
-                "label": "ASIN",
-                "originalIdentifier": "ASIN",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 13,
-                "isDisabled": false,
-                "sourceData": "N/A",
-                "fieldType": "Text Input"
-            },
-            "UPC": {
-                "labelTextSize": "0.875rem",
-                "identifier": "UPC",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.UPC))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "dataType": "null",
-                "accessor": "UPC",
-                "isVisible": true,
-                "label": "UPC",
-                "originalIdentifier": "UPC",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 14,
-                "isDisabled": false,
-                "fieldType": "Number Input"
-            },
-            "Procured": {
-                "labelTextSize": "0.875rem",
-                "identifier": "Procured",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isFilterable": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Procured))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "dataType": "string",
-                "accessor": "Procured",
-                "tooltip": "Indicate if an item is purchasable.",
-                "isVisible": true,
-                "label": "Procured",
-                "serverSideFiltering": false,
-                "originalIdentifier": "Procured",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "children": {},
-                "options": "[\n  {\n    \"label\": \"YES\",\n    \"value\": \"YES\"\n  },\n  {\n    \"label\": \"NO\",\n    \"value\": \"NO\"\n  }\n]",
-                "position": 20,
-                "isDisabled": false,
-                "sourceData": "YES",
-                "fieldType": "Select"
-            },
-            "Vendor": {
-                "labelTextSize": "0.875rem",
-                "identifier": "Vendor",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Vendor))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "dataType": "string",
-                "accessor": "Vendor",
-                "isVisible": true,
-                "label": "Vendor",
-                "originalIdentifier": "Vendor",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 4,
-                "isDisabled": false,
-                "sourceData": "Models Inc",
-                "fieldType": "Text Input"
-            },
-            "TEPartNumber": {
-                "labelTextSize": "0.875rem",
-                "identifier": "TEPartNumber",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.TEPartNumber))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "dataType": "string",
-                "accessor": "TEPartNumber",
-                "isVisible": true,
-                "label": "TE Part Number",
-                "originalIdentifier": "TEPartNumber",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 5,
-                "isDisabled": false,
-                "sourceData": "422184-007 D",
-                "fieldType": "Text Input"
-            },
-            "StandardOrderQTY": {
-                "labelTextSize": "0.875rem",
-                "identifier": "StandardOrderQTY",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.StandardOrderQTY))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "dataType": "number",
-                "accessor": "StandardOrderQTY",
-                "isVisible": true,
-                "label": "Standard Order QTY",
-                "originalIdentifier": "StandardOrderQTY",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 16,
-                "isDisabled": false,
-                "sourceData": 300000,
-                "fieldType": "Number Input"
-            },
-            "AverageLeadTime_Days": {
-                "labelTextSize": "0.875rem",
-                "identifier": "AverageLeadTime_Days",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.AverageLeadTime_Days))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "dataType": "number",
-                "accessor": "AverageLeadTime_Days",
-                "isVisible": true,
-                "label": "Average Lead Time Days",
-                "originalIdentifier": "AverageLeadTime_Days",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 19,
-                "isDisabled": false,
-                "sourceData": 7,
-                "fieldType": "Number Input"
-            },
-            "UoM": {
-                "labelTextSize": "0.875rem",
-                "identifier": "UoM",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.UoM))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "dataType": "string",
-                "accessor": "UoM",
-                "isVisible": true,
-                "label": "UoM",
-                "originalIdentifier": "UoM",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 10,
-                "isDisabled": false,
-                "sourceData": "pcs",
-                "fieldType": "Text Input"
-            },
-            "PartName": {
-                "labelTextSize": "0.875rem",
-                "identifier": "PartName",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PartName))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "dataType": "string",
-                "accessor": "PartName",
-                "isVisible": true,
-                "label": "Part Name",
-                "originalIdentifier": "PartName",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 1,
-                "isDisabled": false,
-                "sourceData": "Plunger",
-                "fieldType": "Text Input"
-            },
-            "PartDescription": {
-                "labelTextSize": "0.875rem",
-                "identifier": "PartDescription",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PartDescription))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "dataType": "string",
-                "accessor": "PartDescription",
-                "isVisible": true,
-                "label": "Part Description",
-                "originalIdentifier": "PartDescription",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 8,
-                "isDisabled": false,
-                "sourceData": "Part that is pushed by the magnet that causes the dot to actuate",
-                "fieldType": "Text Input"
-            },
-            "Manufacturer": {
-                "labelTextSize": "0.875rem",
-                "identifier": "Manufacturer",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Manufacturer))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "dataType": "string",
-                "accessor": "Manufacturer",
-                "isVisible": true,
-                "label": "Manufacturer",
-                "originalIdentifier": "Manufacturer",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 11,
-                "isDisabled": false,
-                "sourceData": "N/A",
-                "fieldType": "Text Input"
-            },
-            "NewOnHand": {
-                "labelTextSize": "0.875rem",
-                "identifier": "NewOnHand",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.NewOnHand))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "dataType": "number",
-                "accessor": "NewOnHand",
-                "isVisible": true,
-                "label": "New On Hand",
-                "originalIdentifier": "NewOnHand",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 2,
-                "isDisabled": false,
-                "sourceData": 65308,
-                "fieldType": "Number Input"
-            },
-            "ManufacturerPart": {
-                "labelTextSize": "0.875rem",
-                "identifier": "ManufacturerPart",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ManufacturerPart))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "dataType": "string",
-                "accessor": "ManufacturerPart",
-                "isVisible": true,
-                "label": "Manufacturer Part",
-                "originalIdentifier": "ManufacturerPart",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 7,
-                "isDisabled": false,
-                "sourceData": "N/A",
-                "fieldType": "Text Input"
-            },
-            "SKU": {
-                "labelTextSize": "0.875rem",
-                "identifier": "SKU",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.SKU))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "dataType": "number",
-                "accessor": "SKU",
-                "isVisible": true,
-                "label": "SKU",
-                "originalIdentifier": "SKU",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 0,
-                "isDisabled": true,
-                "sourceData": 412006,
-                "fieldType": "Number Input"
-            },
-            "Notes": {
-                "labelTextSize": "0.875rem",
-                "identifier": "Notes",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Notes))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "dataType": "string",
-                "accessor": "Notes",
-                "isVisible": true,
-                "label": "Notes",
-                "originalIdentifier": "Notes",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 9,
-                "isDisabled": false,
-                "sourceData": "N/A",
-                "fieldType": "Text Input"
-            }
+    "boxShadow": "none",
+    "buttonColor": "#eab308",
+    "buttonVariant": "TERTIARY",
+    "iconAlign": "left",
+    "iconName": "refresh",
+    "placement": "CENTER"
+  },
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "schema": {
+    "__root_schema__": {
+      "accessor": "__root_schema__",
+      "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+      "cellBoxShadow": "none",
+      "children": {
+        "ASIN": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "accessor": "ASIN",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ASIN))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "ASIN",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "ASIN",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "ASIN",
+          "position": 13,
+          "sourceData": "N/A"
         },
-        "position": -1,
-        "isDisabled": false,
-        "sourceData": {
-            "SkuDataFetch.data": {},
-            "actionId": "65f9dd7ffdb1c038a9c0ebeb",
-            "body": "export default {\n\tSkuDataFetch: async() =>  {\n\t\tconst SkuData = QueryTop1kInventory.data\n\n\t\treturn SkuData\n\t}\n}",
-            "ENTITY_TYPE": "JSACTION"
+        "AverageLeadTime_Days": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "accessor": "AverageLeadTime_Days",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.AverageLeadTime_Days))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "AverageLeadTime_Days",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Average Lead Time Days",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "AverageLeadTime_Days",
+          "position": 19,
+          "sourceData": 7
         },
-        "cellBoxShadow": "none",
-        "fieldType": "Object"
-    }},
-    "mobileBottomRow": 41,
-    "widgetName": "SkuUpdateForm",
-    "submitButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-        "iconName": "key-enter",
-        "buttonVariant": "PRIMARY",
-        "iconAlign": "left",
-        "placement": "CENTER"
-    },
-    "dynamicPropertyPathList": [],
-    "displayName": "JSON Form",
-    "bottomRow": 67,
-    "fieldLimitExceeded": false,
-    "parentRowSpace": 10,
-    "title": "Edit SKU\n\n",
-    "hideCard": false,
-    "mobileRightColumn": 25,
-    "parentColumnSpace": 6.9375,
-    "dynamicTriggerPathList": [{"key": "onSubmit"}],
-    "borderWidth": "",
-    "sourceData": "{{InventoryListTable.selectedRow}}",
-    "resetButtonLabel": "Reset",
-    "key": "t9vqy5dcyu",
-    "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "r6x5oqxtc0",
-    "minWidth": 450,
-    "parentId": "ohzap0fv86",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 0,
-    "scrollContents": true,
-    "responsiveBehavior": "fill",
-    "fixedFooter": true,
-    "mobileLeftColumn": 0,
-    "maxDynamicHeight": 9000,
-    "minDynamicHeight": 4
+        "Manufacturer": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "accessor": "Manufacturer",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Manufacturer))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "Manufacturer",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Manufacturer",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "Manufacturer",
+          "position": 11,
+          "sourceData": "N/A"
+        },
+        "ManufacturerModelNumber": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "accessor": "ManufacturerModelNumber",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ManufacturerModelNumber))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "ManufacturerModelNumber",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Manufacturer Model Number",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "ManufacturerModelNumber",
+          "position": 12,
+          "sourceData": "N/A"
+        },
+        "ManufacturerPart": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "accessor": "ManufacturerPart",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ManufacturerPart))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "ManufacturerPart",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Manufacturer Part",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "ManufacturerPart",
+          "position": 7,
+          "sourceData": "N/A"
+        },
+        "MinimumOnHandQty": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "accessor": "MinimumOnHandQty",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "0",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "MinimumOnHandQty",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Minimum On Hand Qty",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "MinimumOnHandQty",
+          "position": 18
+        },
+        "NewOnHand": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "accessor": "NewOnHand",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.NewOnHand))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "NewOnHand",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "New On Hand",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "NewOnHand",
+          "position": 2,
+          "sourceData": 65308
+        },
+        "Notes": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "accessor": "Notes",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Notes))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "Notes",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Notes",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "Notes",
+          "position": 9,
+          "sourceData": "N/A"
+        },
+        "PartDescription": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "accessor": "PartDescription",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PartDescription))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "PartDescription",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Part Description",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "PartDescription",
+          "position": 8,
+          "sourceData": "Part that is pushed by the magnet that causes the dot to actuate"
+        },
+        "PartName": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "accessor": "PartName",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PartName))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "PartName",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Part Name",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "PartName",
+          "position": 1,
+          "sourceData": "Plunger"
+        },
+        "Procured": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "accessor": "Procured",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Procured))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "fieldType": "Select",
+          "identifier": "Procured",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isFilterable": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Procured",
+          "labelTextSize": "0.875rem",
+          "options": "[\n  {\n    \"label\": \"YES\",\n    \"value\": \"YES\"\n  },\n  {\n    \"label\": \"NO\",\n    \"value\": \"NO\"\n  }\n]",
+          "originalIdentifier": "Procured",
+          "position": 20,
+          "serverSideFiltering": false,
+          "sourceData": "YES",
+          "tooltip": "Indicate if an item is purchasable."
+        },
+        "RawPartCost": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "accessor": "RawPartCost",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "currencyCountryCode": "USD",
+          "dataType": "number",
+          "decimalsInCurrency": 6,
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.RawPartCost))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "fieldType": "Currency Input",
+          "identifier": "RawPartCost",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Raw Part Cost",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "RawPartCost",
+          "position": 17,
+          "sourceData": 0.05
+        },
+        "SKU": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "accessor": "SKU",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.SKU))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "SKU",
+          "isCustomField": false,
+          "isDisabled": true,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "SKU",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "SKU",
+          "position": 0,
+          "sourceData": 412006
+        },
+        "StandardOrderQTY": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "accessor": "StandardOrderQTY",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.StandardOrderQTY))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "StandardOrderQTY",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Standard Order QTY",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "StandardOrderQTY",
+          "position": 16,
+          "sourceData": 300000
+        },
+        "Status": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "accessor": "Status",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Status))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "fieldType": "Select",
+          "identifier": "Status",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isFilterable": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Status",
+          "labelTextSize": "0.875rem",
+          "options": "[\n  {\n    \"label\": \"active\",\n    \"value\": \"active\"\n  },\n  {\n    \"label\": \"inactive\",\n    \"value\": \"inactive\"\n  }\n]",
+          "originalIdentifier": "Status",
+          "position": 15,
+          "serverSideFiltering": false,
+          "sourceData": "active"
+        },
+        "TEPartNumber": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "accessor": "TEPartNumber",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.TEPartNumber))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "TEPartNumber",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "TE Part Number",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "TEPartNumber",
+          "position": 5,
+          "sourceData": "422184-007 D"
+        },
+        "UPC": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "accessor": "UPC",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.UPC))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "UPC",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "UPC",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "UPC",
+          "position": 14
+        },
+        "UoM": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "accessor": "UoM",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.UoM))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "UoM",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "UoM",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "UoM",
+          "position": 10,
+          "sourceData": "pcs"
+        },
+        "Vendor": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "accessor": "Vendor",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Vendor))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "Vendor",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Vendor",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "Vendor",
+          "position": 4,
+          "sourceData": "Models Inc"
+        },
+        "VendorPart": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "accessor": "VendorPart",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.VendorPart))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "VendorPart",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Vendor Part",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "VendorPart",
+          "position": 6,
+          "sourceData": "N/A"
+        },
+        "WIPOnHand": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "accessor": "WIPOnHand",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.WIPOnHand))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "WIPOnHand",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "WIP On Hand",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "WIPOnHand",
+          "position": 3,
+          "sourceData": 5614
+        }
+      },
+      "dataType": "object",
+      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
+      "fieldType": "Object",
+      "identifier": "__root_schema__",
+      "isCustomField": false,
+      "isDisabled": false,
+      "isRequired": false,
+      "isVisible": true,
+      "label": "",
+      "labelTextSize": "0.875rem",
+      "originalIdentifier": "__root_schema__",
+      "position": -1,
+      "sourceData": {
+        "ENTITY_TYPE": "JSACTION",
+        "SkuDataFetch.data": {},
+        "actionId": "65f9dd7ffdb1c038a9c0ebeb",
+        "body": "export default {\n\tSkuDataFetch: async() =>  {\n\t\tconst SkuData = QueryTop1kInventory.data\n\n\t\treturn SkuData\n\t}\n}"
+      }
+    }
+  },
+  "scrollContents": true,
+  "showReset": true,
+  "sourceData": "{{InventoryListTable.selectedRow}}",
+  "submitButtonLabel": "Submit",
+  "submitButtonStyles": {
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "boxShadow": "none",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonVariant": "PRIMARY",
+    "iconAlign": "left",
+    "iconName": "key-enter",
+    "placement": "CENTER"
+  },
+  "tags": [
+    "Suggested",
+    "Layout"
+  ],
+  "title": "Edit SKU\n\n",
+  "topRow": 0,
+  "type": "JSON_FORM_WIDGET",
+  "useSourceData": false,
+  "version": 1,
+  "widgetId": "r6x5oqxtc0",
+  "widgetName": "SkuUpdateForm"
 }

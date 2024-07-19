@@ -1,86 +1,102 @@
 {
-    "boxShadow": "none",
-    "widgetName": "ButtonGroup2",
-    "isCanvas": false,
-    "displayName": "Button Group",
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 0,
-    "bottomRow": 4,
-    "parentRowSpace": 10,
-    "type": "BUTTON_GROUP_WIDGET",
-    "groupButtons": {
-        "groupButtonqv2h68oubh": {
-            "onClick": "{{showModal('ModalPasswordReset');}}",
-            "buttonType": "SIMPLE",
-            "buttonColor": "#b91c1c",
-            "iconName": "reset",
-            "widgetId": "a3kbhnaj0v",
-            "menuItems": {},
-            "index": 2,
-            "id": "groupButtonqv2h68oubh",
-            "label": "Password Reset",
-            "isDisabled": false,
-            "isVisible": true,
-            "placement": "CENTER"
-        },
-        "groupButton1": {
-            "onClick": "{{showModal('ModalNewEmployee');}}",
-            "buttonType": "SIMPLE",
-            "iconName": "new-person",
-            "buttonColor": "#7e22ce",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 0,
-            "label": "New Employee",
-            "id": "groupButton1",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "groupButton2": {
-            "onClick": "{{showModal('ModalEditEmployee');}}",
-            "buttonType": "SIMPLE",
-            "iconName": "edit",
-            "buttonColor": "#1d4ed8",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 1,
-            "label": "Edit Employee Info",
-            "id": "groupButton2",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        }
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonVariant": "TERTIARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "displayName": "Button Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton2.onClick"
     },
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 28.84375,
-    "dynamicTriggerPathList": [
-        {"key": "groupButtons.groupButton2.onClick"},
-        {"key": "groupButtons.groupButton1.onClick"},
-        {"key": "groupButtons.groupButtonqv2h68oubh.onClick"}
-    ],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [{"key": "borderRadius"}],
-    "key": "2bihr5hfnw",
-    "orientation": "horizontal",
-    "isDeprecated": false,
-    "rightColumn": 27,
-    "widgetId": "5gqo33mivw",
-    "minWidth": 450,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "r1zk2eaq3k",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 6,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 10,
-    "buttonVariant": "TERTIARY"
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonqv2h68oubh.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "#7e22ce",
+      "buttonType": "SIMPLE",
+      "iconName": "new-person",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "New Employee",
+      "menuItems": {},
+      "onClick": "{{showModal('ModalNewEmployee');}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "#1d4ed8",
+      "buttonType": "SIMPLE",
+      "iconName": "edit",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Edit Employee Info",
+      "menuItems": {},
+      "onClick": "{{showModal('ModalEditEmployee');}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButtonqv2h68oubh": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "iconName": "reset",
+      "id": "groupButtonqv2h68oubh",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Password Reset",
+      "menuItems": {},
+      "onClick": "{{showModal('ModalPasswordReset');}}",
+      "placement": "CENTER",
+      "widgetId": "a3kbhnaj0v"
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "2bihr5hfnw",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "orientation": "horizontal",
+  "originalBottomRow": 10,
+  "originalTopRow": 6,
+  "parentColumnSpace": 28.84375,
+  "parentId": "r1zk2eaq3k",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 27,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 0,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "5gqo33mivw",
+  "widgetName": "ButtonGroup2"
 }

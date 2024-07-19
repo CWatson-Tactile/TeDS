@@ -1,154 +1,178 @@
 {
-    "isCompact": false,
-    "boxShadow": "none",
-    "mobileBottomRow": 5,
-    "widgetName": "ButtonLotEntry",
-    "configureMenuItems": {
-        "label": "Configure menu items",
-        "id": "config",
-        "config": {
-            "id": "config",
-            "label": "Menu Item",
-            "isVisible": true,
-            "isDisabled": false
-        }
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 15,
+  "boxShadow": "none",
+  "configureMenuItems": {
+    "config": {
+      "id": "config",
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Menu Item"
     },
-    "displayName": "Menu button",
-    "iconSVG": "/static/media/icon.631848e88e7a3db05f6015f22835e81b.svg",
-    "topRow": 11,
-    "bottomRow": 15,
-    "parentRowSpace": 10,
-    "type": "MENU_BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 18,
-    "animateLoading": true,
-    "parentColumnSpace": 15.546875,
-    "dynamicTriggerPathList": [
-        {"key": "menuItems.menuItem1.onClick"},
-        {"key": "menuItems.menuItemne71gg3f15.onClick"},
-        {"key": "menuItems.menuItem2.onClick"},
-        {"key": "menuItems.menuItem3.onClick"},
-        {"key": "menuItems.menuItemnddfrt0luq.onClick"},
-        {"key": "menuItems.menuItemg89aircyb6.onClick"},
-        {"key": "menuItems.menuItem9jk15ncvha.onClick"},
-        {"key": "menuItems.menuItemlwzwxco322.onClick"},
-        {"key": "menuItems.menuItem6xaxauz1cv.onClick"}
-    ],
-    "leftColumn": 8,
-    "dynamicBindingPathList": [{"key": "menuColor"}],
-    "isDisabled": false,
-    "sourceData": "[]",
-    "key": "02g3vpb4kv",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "iconName": "add",
-    "menuVariant": "PRIMARY",
-    "widgetId": "oljmh7nnzv",
-    "menuItems": {
-        "menuItemlc48d4qaaa": {
-            "widgetId": "ql957zhlqt",
-            "index": 0,
-            "id": "menuItemlc48d4qaaa",
-            "label": "Honeycombs",
-            "isDisabled": false,
-            "isVisible": true
-        },
-        "menuItem6xaxauz1cv": {
-            "onClick": "{{showModal('ModalPlungerCoreplateLotEntry');}}",
-            "widgetId": "0k52588ujq",
-            "index": 7,
-            "id": "menuItem6xaxauz1cv",
-            "label": "Plunger & Coreplate",
-            "isDisabled": false,
-            "isVisible": true
-        },
-        "menuItem1": {
-            "onClick": "{{showModal('ModalCoilLotEntry');}}",
-            "widgetId": "",
-            "index": 1,
-            "label": "Coil Station",
-            "id": "menuItem1",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "menuItem3": {
-            "onClick": "{{showModal('ModalGlueStationLotEntry');}}",
-            "widgetId": "",
-            "index": 3,
-            "label": "Glue Station",
-            "id": "menuItem3",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "menuItemne71gg3f15": {
-            "onClick": "{{showModal('ModalBurnInLotEntry');}}",
-            "widgetId": "zgvfbn1y4q",
-            "index": 9,
-            "id": "menuItemne71gg3f15",
-            "label": "Burn-In Lots",
-            "isDisabled": true,
-            "isVisible": true
-        },
-        "menuItem9jk15ncvha": {
-            "onClick": "{{showModal('ModalPostGlueEqcLotEntry');}}",
-            "widgetId": "kuhn3adza9",
-            "index": 4,
-            "id": "menuItem9jk15ncvha",
-            "label": "Post-Glue EQC",
-            "isDisabled": false,
-            "isVisible": true
-        },
-        "menuItem2": {
-            "onClick": "{{showModal('ModalCoreplateWeldLotEntry');}}",
-            "widgetId": "",
-            "index": 8,
-            "label": "Coreplate Weld",
-            "id": "menuItem2",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "menuItemnddfrt0luq": {
-            "onClick": "{{showModal('ModalRubberMagnetLotEntry');}}",
-            "widgetId": "q03dhab96d",
-            "index": 6,
-            "id": "menuItemnddfrt0luq",
-            "label": "Rubber & Magnet",
-            "isDisabled": false,
-            "isVisible": true
-        },
-        "menuItemg89aircyb6": {
-            "onClick": "{{showModal('ModalPalletLoadLotEntry');}}",
-            "widgetId": "m567v90ixs",
-            "index": 2,
-            "id": "menuItemg89aircyb6",
-            "label": "Pallet Load",
-            "isDisabled": false,
-            "isVisible": true
-        },
-        "menuItemlwzwxco322": {
-            "onClick": "{{showModal('ModalModulePcbSolderLotEntry');}}",
-            "widgetId": "lsr4yxxnd5",
-            "index": 5,
-            "id": "menuItemlwzwxco322",
-            "label": "Module PCB Solder",
-            "isDisabled": false,
-            "isVisible": true
-        }
+    "id": "config",
+    "label": "Configure menu items"
+  },
+  "displayName": "Menu button",
+  "dynamicBindingPathList": [
+    {
+      "key": "menuColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "menuItems.menuItem1.onClick"
     },
-    "isVisible": true,
-    "label": "Lot Entry",
-    "version": 1,
-    "parentId": "0",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 1,
-    "originalTopRow": 11,
-    "borderRadius": "0px",
-    "mobileLeftColumn": 2,
-    "menuItemsSource": "STATIC",
-    "menuColor": "{{appsmith.theme.colors.primaryColor}}",
-    "originalBottomRow": 15,
-    "iconAlign": "left",
-    "placement": "CENTER"
+    {
+      "key": "menuItems.menuItemne71gg3f15.onClick"
+    },
+    {
+      "key": "menuItems.menuItem2.onClick"
+    },
+    {
+      "key": "menuItems.menuItem3.onClick"
+    },
+    {
+      "key": "menuItems.menuItemnddfrt0luq.onClick"
+    },
+    {
+      "key": "menuItems.menuItemg89aircyb6.onClick"
+    },
+    {
+      "key": "menuItems.menuItem9jk15ncvha.onClick"
+    },
+    {
+      "key": "menuItems.menuItemlwzwxco322.onClick"
+    },
+    {
+      "key": "menuItems.menuItem6xaxauz1cv.onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconAlign": "left",
+  "iconName": "add",
+  "iconSVG": "/static/media/icon.631848e88e7a3db05f6015f22835e81b.svg",
+  "isCompact": false,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "02g3vpb4kv",
+  "label": "Lot Entry",
+  "leftColumn": 8,
+  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+  "menuItems": {
+    "menuItem1": {
+      "id": "menuItem1",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Coil Station",
+      "onClick": "{{showModal('ModalCoilLotEntry');}}",
+      "widgetId": ""
+    },
+    "menuItem2": {
+      "id": "menuItem2",
+      "index": 8,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Coreplate Weld",
+      "onClick": "{{showModal('ModalCoreplateWeldLotEntry');}}",
+      "widgetId": ""
+    },
+    "menuItem3": {
+      "id": "menuItem3",
+      "index": 3,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Glue Station",
+      "onClick": "{{showModal('ModalGlueStationLotEntry');}}",
+      "widgetId": ""
+    },
+    "menuItem6xaxauz1cv": {
+      "id": "menuItem6xaxauz1cv",
+      "index": 7,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Plunger & Coreplate",
+      "onClick": "{{showModal('ModalPlungerCoreplateLotEntry');}}",
+      "widgetId": "0k52588ujq"
+    },
+    "menuItem9jk15ncvha": {
+      "id": "menuItem9jk15ncvha",
+      "index": 4,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Post-Glue EQC",
+      "onClick": "{{showModal('ModalPostGlueEqcLotEntry');}}",
+      "widgetId": "kuhn3adza9"
+    },
+    "menuItemg89aircyb6": {
+      "id": "menuItemg89aircyb6",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Pallet Load",
+      "onClick": "{{showModal('ModalPalletLoadLotEntry');}}",
+      "widgetId": "m567v90ixs"
+    },
+    "menuItemlc48d4qaaa": {
+      "id": "menuItemlc48d4qaaa",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Honeycombs",
+      "widgetId": "ql957zhlqt"
+    },
+    "menuItemlwzwxco322": {
+      "id": "menuItemlwzwxco322",
+      "index": 5,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Module PCB Solder",
+      "onClick": "{{showModal('ModalModulePcbSolderLotEntry');}}",
+      "widgetId": "lsr4yxxnd5"
+    },
+    "menuItemnddfrt0luq": {
+      "id": "menuItemnddfrt0luq",
+      "index": 6,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Rubber & Magnet",
+      "onClick": "{{showModal('ModalRubberMagnetLotEntry');}}",
+      "widgetId": "q03dhab96d"
+    },
+    "menuItemne71gg3f15": {
+      "id": "menuItemne71gg3f15",
+      "index": 9,
+      "isDisabled": true,
+      "isVisible": true,
+      "label": "Burn-In Lots",
+      "onClick": "{{showModal('ModalBurnInLotEntry');}}",
+      "widgetId": "zgvfbn1y4q"
+    }
+  },
+  "menuItemsSource": "STATIC",
+  "menuVariant": "PRIMARY",
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 18,
+  "mobileTopRow": 1,
+  "originalBottomRow": 15,
+  "originalTopRow": 11,
+  "parentColumnSpace": 15.546875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "sourceData": "[]",
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 11,
+  "type": "MENU_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "oljmh7nnzv",
+  "widgetName": "ButtonLotEntry"
 }

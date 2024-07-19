@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_90eb684e-7ca0-4564-bd7c-293afa289009",
+  "id": "Delivery Tracking_JS_SkuData",
   "unpublishedCollection": {
     "name": "JS_SkuData",
     "pageId": "Delivery Tracking",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Delivery Tracking_JS_SkuData",
-  "deleted": false,
-  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_90eb684e-7ca0-4564-bd7c-293afa289009"
+    "variables": []
+  }
 }

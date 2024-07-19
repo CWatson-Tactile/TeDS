@@ -1,72 +1,86 @@
 {
-    "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-    "widgetName": "ButtonGroup2",
-    "isCanvas": false,
-    "dynamicPropertyPathList": [],
-    "displayName": "Button Group",
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 10,
-    "bottomRow": 17,
-    "parentRowSpace": 10,
-    "type": "BUTTON_GROUP_WIDGET",
-    "groupButtons": {
-        "groupButton1": {
-            "onClick": "{{storeValue('LoginType', '2').then(() => {\n  showModal(ModalPinLogin.name);\n});}}",
-            "buttonType": "SIMPLE",
-            "iconName": "pin",
-            "buttonColor": "#d8b4fe",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 0,
-            "label": "PIN Login",
-            "id": "groupButton1",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "groupButton2": {
-            "onClick": "{{showModal('ModalEmployeeIDLogin');}}",
-            "buttonType": "SIMPLE",
-            "iconName": "id-number",
-            "buttonColor": "#93c5fd",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 1,
-            "label": "Employee ID Login",
-            "id": "groupButton2",
-            "placement": "CENTER",
-            "isVisible": false,
-            "isDisabled": true
-        }
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 17,
+  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "displayName": "Button Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
     },
-    "hideCard": false,
-    "animateLoading": true,
-    "parentColumnSpace": 16.1875,
-    "dynamicTriggerPathList": [
-        {"key": "groupButtons.groupButton1.onClick"},
-        {"key": "groupButtons.groupButton2.onClick"}
-    ],
-    "leftColumn": 35,
-    "dynamicBindingPathList": [{"key": "borderRadius"}],
-    "key": "a9u5xmp74j",
-    "orientation": "horizontal",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "o6boxmhnkt",
-    "minWidth": 450,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "0",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 10,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 17,
-    "buttonVariant": "PRIMARY"
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "#d8b4fe",
+      "buttonType": "SIMPLE",
+      "iconName": "pin",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "PIN Login",
+      "menuItems": {},
+      "onClick": "{{storeValue('LoginType', '2').then(() => {\n  showModal(ModalPinLogin.name);\n});}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "#93c5fd",
+      "buttonType": "SIMPLE",
+      "iconName": "id-number",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": true,
+      "isVisible": false,
+      "label": "Employee ID Login",
+      "menuItems": {},
+      "onClick": "{{showModal('ModalEmployeeIDLogin');}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "a9u5xmp74j",
+  "leftColumn": 35,
+  "minWidth": 450,
+  "orientation": "horizontal",
+  "originalBottomRow": 17,
+  "originalTopRow": 10,
+  "parentColumnSpace": 16.1875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 10,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "o6boxmhnkt",
+  "widgetName": "ButtonGroup2"
 }

@@ -1,196 +1,220 @@
 {
-    "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-    "mobileBottomRow": 62,
-    "widgetName": "ButtonGroup2",
-    "isCanvas": false,
-    "displayName": "Button Group",
-    "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 43,
-    "bottomRow": 47,
-    "parentRowSpace": 10,
-    "type": "BUTTON_GROUP_WIDGET",
-    "groupButtons": {
-        "groupButton28wsl62m34": {
-            "onClick": "{{showModal('ModalLabelGenerator');}}",
-            "buttonType": "SIMPLE",
-            "buttonColor": "#000000",
-            "iconName": "label",
-            "widgetId": "zwl56d868w",
-            "menuItems": {},
-            "index": 4,
-            "id": "groupButton28wsl62m34",
-            "label": "Label Generator",
-            "isDisabled": false,
-            "isVisible": true,
-            "placement": "CENTER"
-        },
-        "groupButton8dbz598e9y": {
-            "buttonType": "MENU",
-            "buttonColor": "#93c5fd",
-            "iconName": "minimize",
-            "widgetId": "k8de1el5l3",
-            "menuItems": {
-                "menuItem4hlvazogkm": {
-                    "backgroundColor": "",
-                    "onClick": "{{showModal('ModalTabletCheckIn');}}",
-                    "iconName": "log-in",
-                    "widgetId": "hehnhoicb6",
-                    "iconColor": "#1d9c1f",
-                    "index": 0,
-                    "id": "menuItem4hlvazogkm",
-                    "label": "Check IN",
-                    "isDisabled": false,
-                    "isVisible": true
-                },
-                "menuItemj8udbezoew": {
-                    "onClick": "{{showModal('ModalTabletCheckOut');}}",
-                    "iconName": "log-out",
-                    "widgetId": "otteri6qc2",
-                    "iconColor": "#b91c1c",
-                    "index": 1,
-                    "iconAlign": "left",
-                    "id": "menuItemj8udbezoew",
-                    "label": "Check OUT",
-                    "isDisabled": false,
-                    "isVisible": true
-                }
-            },
-            "index": 5,
-            "id": "groupButton8dbz598e9y",
-            "label": "Tablet check in & out",
-            "isDisabled": false,
-            "isVisible": true,
-            "placement": "CENTER"
-        },
-        "groupButton3": {
-            "onClick": "{{showModal(ModalTabletDetails.name);}}",
-            "buttonType": "SIMPLE",
-            "iconName": "eye-open",
-            "buttonColor": "#7e22ce",
-            "widgetId": "",
-            "menuItems": {
-                "menuItem1": {
-                    "backgroundColor": "#FFFFFF",
-                    "onClick": "",
-                    "widgetId": "",
-                    "index": 0,
-                    "label": "First Option",
-                    "id": "menuItem1",
-                    "isVisible": true,
-                    "isDisabled": false
-                },
-                "menuItem3": {
-                    "backgroundColor": "#DD4B34",
-                    "onClick": "",
-                    "iconName": "trash",
-                    "widgetId": "",
-                    "iconColor": "#FFFFFF",
-                    "iconAlign": "right",
-                    "index": 2,
-                    "label": "Delete",
-                    "id": "menuItem3",
-                    "isVisible": true,
-                    "isDisabled": false,
-                    "textColor": "#FFFFFF"
-                },
-                "menuItem2": {
-                    "backgroundColor": "#FFFFFF",
-                    "onClick": "",
-                    "widgetId": "",
-                    "index": 1,
-                    "label": "Second Option",
-                    "id": "menuItem2",
-                    "isVisible": true,
-                    "isDisabled": false
-                }
-            },
-            "index": 2,
-            "label": "View Tablet Info",
-            "id": "groupButton3",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "groupButton1": {
-            "onClick": "{{showModal('Modal_Add_Tablet');}}",
-            "buttonType": "SIMPLE",
-            "iconName": "add",
-            "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 0,
-            "label": "Add New Tablet",
-            "id": "groupButton1",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "groupButton2": {
-            "onClick": "{{showModal('Modal_Tablet_Detail_Edit');}}",
-            "buttonType": "SIMPLE",
-            "iconName": "edit",
-            "buttonColor": "#b91c1c",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 1,
-            "label": "Edit Tablet Info",
-            "id": "groupButton2",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        },
-        "groupButtontay0ny5pyp": {
-            "onClick": "{{QueryTop5kTablets.run()}}",
-            "buttonType": "SIMPLE",
-            "buttonColor": "#eab308",
-            "iconName": "refresh",
-            "widgetId": "h1smor34qn",
-            "menuItems": {},
-            "index": 3,
-            "id": "groupButtontay0ny5pyp",
-            "label": "Refresh List",
-            "isDisabled": false,
-            "isVisible": true,
-            "placement": "CENTER"
-        }
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 47,
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "displayName": "Button Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "groupButtons.groupButton1.buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
     },
-    "hideCard": false,
-    "mobileRightColumn": 53,
-    "animateLoading": true,
-    "parentColumnSpace": 15.453125,
-    "dynamicTriggerPathList": [
-        {"key": "groupButtons.groupButton1.onClick"},
-        {"key": "groupButtons.groupButton2.onClick"},
-        {"key": "groupButtons.groupButtontay0ny5pyp.onClick"},
-        {"key": "groupButtons.groupButton28wsl62m34.onClick"},
-        {"key": "groupButtons.groupButton8dbz598e9y.menuItems.menuItem4hlvazogkm.onClick"},
-        {"key": "groupButtons.groupButton8dbz598e9y.menuItems.menuItemj8udbezoew.onClick"},
-        {"key": "groupButtons.groupButton3.onClick"}
-    ],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [{"key": "groupButtons.groupButton1.buttonColor"}],
-    "key": "4qcrjwmof6",
-    "orientation": "horizontal",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "l9n8tda8us",
-    "minWidth": 450,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "0",
-    "tags": ["Buttons"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 58,
-    "responsiveBehavior": "fill",
-    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 43,
-    "borderRadius": "0px",
-    "mobileLeftColumn": 29,
-    "originalBottomRow": 47,
-    "buttonVariant": "PRIMARY"
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtontay0ny5pyp.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton28wsl62m34.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton8dbz598e9y.menuItems.menuItem4hlvazogkm.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton8dbz598e9y.menuItems.menuItemj8udbezoew.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "add",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Add New Tablet",
+      "menuItems": {},
+      "onClick": "{{showModal('Modal_Add_Tablet');}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "iconName": "edit",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Edit Tablet Info",
+      "menuItems": {},
+      "onClick": "{{showModal('Modal_Tablet_Detail_Edit');}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton28wsl62m34": {
+      "buttonColor": "#000000",
+      "buttonType": "SIMPLE",
+      "iconName": "label",
+      "id": "groupButton28wsl62m34",
+      "index": 4,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Label Generator",
+      "menuItems": {},
+      "onClick": "{{showModal('ModalLabelGenerator');}}",
+      "placement": "CENTER",
+      "widgetId": "zwl56d868w"
+    },
+    "groupButton3": {
+      "buttonColor": "#7e22ce",
+      "buttonType": "SIMPLE",
+      "iconName": "eye-open",
+      "id": "groupButton3",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "View Tablet Info",
+      "menuItems": {
+        "menuItem1": {
+          "backgroundColor": "#FFFFFF",
+          "id": "menuItem1",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "First Option",
+          "onClick": "",
+          "widgetId": ""
+        },
+        "menuItem2": {
+          "backgroundColor": "#FFFFFF",
+          "id": "menuItem2",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Second Option",
+          "onClick": "",
+          "widgetId": ""
+        },
+        "menuItem3": {
+          "backgroundColor": "#DD4B34",
+          "iconAlign": "right",
+          "iconColor": "#FFFFFF",
+          "iconName": "trash",
+          "id": "menuItem3",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Delete",
+          "onClick": "",
+          "textColor": "#FFFFFF",
+          "widgetId": ""
+        }
+      },
+      "onClick": "{{showModal(ModalTabletDetails.name);}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton8dbz598e9y": {
+      "buttonColor": "#93c5fd",
+      "buttonType": "MENU",
+      "iconName": "minimize",
+      "id": "groupButton8dbz598e9y",
+      "index": 5,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Tablet check in & out",
+      "menuItems": {
+        "menuItem4hlvazogkm": {
+          "backgroundColor": "",
+          "iconColor": "#1d9c1f",
+          "iconName": "log-in",
+          "id": "menuItem4hlvazogkm",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Check IN",
+          "onClick": "{{showModal('ModalTabletCheckIn');}}",
+          "widgetId": "hehnhoicb6"
+        },
+        "menuItemj8udbezoew": {
+          "iconAlign": "left",
+          "iconColor": "#b91c1c",
+          "iconName": "log-out",
+          "id": "menuItemj8udbezoew",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Check OUT",
+          "onClick": "{{showModal('ModalTabletCheckOut');}}",
+          "widgetId": "otteri6qc2"
+        }
+      },
+      "placement": "CENTER",
+      "widgetId": "k8de1el5l3"
+    },
+    "groupButtontay0ny5pyp": {
+      "buttonColor": "#eab308",
+      "buttonType": "SIMPLE",
+      "iconName": "refresh",
+      "id": "groupButtontay0ny5pyp",
+      "index": 3,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Refresh List",
+      "menuItems": {},
+      "onClick": "{{QueryTop5kTablets.run()}}",
+      "placement": "CENTER",
+      "widgetId": "h1smor34qn"
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "4qcrjwmof6",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 62,
+  "mobileLeftColumn": 29,
+  "mobileRightColumn": 53,
+  "mobileTopRow": 58,
+  "orientation": "horizontal",
+  "originalBottomRow": 47,
+  "originalTopRow": 43,
+  "parentColumnSpace": 15.453125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "topRow": 43,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "l9n8tda8us",
+  "widgetName": "ButtonGroup2"
 }

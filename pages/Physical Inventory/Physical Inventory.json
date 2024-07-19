@@ -1,128 +1,32 @@
 {
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_6626d5519c4fdd0abab249e0",
   "unpublishedPage": {
-    "name": "Physical Inventory",
-    "slug": "physical-inventory",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 1080,
-          "containerStyle": "none",
-          "snapRows": 77,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 89,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
           "minHeight": 790,
           "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Physical Inventory_QueryInventoryHistory",
-              "name": "QueryInventoryHistory",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Physical Inventory_QueryTop1kInventory",
-              "name": "QueryTop1kInventory",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Physical Inventory_QuerySelectAdjustmentCodes",
-              "name": "QuerySelectAdjustmentCodes",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Physical Inventory__$QueryEmployeeList$_QueryEmployeeListModule",
-              "name": "_$QueryEmployeeList$_QueryEmployeeListModule",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Physical Inventory_JSAdjustmentCodes.AdjustmentCodeFetcher",
-              "name": "JSAdjustmentCodes.AdjustmentCodeFetcher",
-              "collectionId": "Physical Inventory_JSAdjustmentCodes",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  const AdjustmentCode = QuerySelectAdjustmentCodes.data.map(i => ({\n    label: i.Code + \" - \" + i.CodeName,\n    value: i.Code\n  }));\n  return AdjustmentCode;\n  Response.sort();\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Physical Inventory_JS_SkuData.SkuDataFetch",
-              "name": "JS_SkuData.SkuDataFetch",
-              "collectionId": "Physical Inventory_JS_SkuData",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  const SkuData = QueryTop1kInventory.data;\n  return SkuData;\n  Response.sort();\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Physical Inventory_JS_SkuName.SkuDataFetcher",
-              "name": "JS_SkuName.SkuDataFetcher",
-              "collectionId": "Physical Inventory_JS_SkuName",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  const SkuData = QueryTop1kInventory.data.map(i => ({\n    label: i.SKU + \" \" + i.PartName,\n    value: i.SKU\n  }));\n  return SkuData;\n  Response.sort();\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Physical Inventory_JS_InvTransData.InvTransDataFetch",
-              "name": "JS_InvTransData.InvTransDataFetch",
-              "collectionId": "Physical Inventory_JS_InvTransData",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  const TansData = QueryInventoryHistory.data;\n  return TansData.reverse();\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Physical Inventory",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "parentRowSpace": 1,
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 77,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 89,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_6626d5519c4fdd0abab249e0"
+    "name": "Physical Inventory",
+    "slug": "physical-inventory"
+  }
 }

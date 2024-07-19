@@ -1,20 +1,15 @@
 {
-  "packageUUID": "40fbc923-c4c9-40b0-89f6-f8b44197b355",
+  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_61bff4af-9c65-49ba-be0b-0503dbb9f340",
+  "id": "Physical Inventory_QueryEmployeeList",
   "moduleUUID": "c6e48dfd-dd36-4c28-8333-afafd518afb7",
+  "packageUUID": "40fbc923-c4c9-40b0-89f6-f8b44197b355",
   "type": "QUERY_MODULE",
   "unpublishedModuleInstance": {
-    "version": "0.0.5",
-    "name": "QueryEmployeeList",
     "contextType": "PAGE",
-    "pageId": "Physical Inventory",
     "inputs": {},
     "moduleInputs": {},
-    "jsonPathKeys": [],
-    "isValid": true,
-    "invalids": [],
-    "userPermissions": []
-  },
-  "id": "Physical Inventory_QueryEmployeeList",
-  "deleted": false,
-  "gitSyncId": "65f4a492fdb1c038a9c0e4c5_61bff4af-9c65-49ba-be0b-0503dbb9f340"
+    "name": "QueryEmployeeList",
+    "pageId": "Physical Inventory",
+    "version": "0.0.5"
+  }
 }

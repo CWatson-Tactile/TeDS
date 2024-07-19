@@ -1,74 +1,84 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
-    "onSubmit": "{{showModal('ModalBadgeLoginPasswordEntry').then(() => {\n  QueryEmployeeList.run().then(() => {\n    ;\n  });\n}).catch(() => {});}}",
-    "topRow": 0,
-    "labelWidth": 5,
-    "type": "INPUT_WIDGET_V2",
-    "maxNum": "999999999999999",
-    "animateLoading": true,
-    "resetOnSubmit": false,
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "regex"}
-    ],
-    "labelStyle": "",
-    "inputType": "NUMBER",
-    "maxChars": "20",
-    "placeholderText": "",
-    "isDisabled": false,
-    "validation": "",
-    "isRequired": true,
-    "dynamicHeight": "FIXED",
-    "iconName": "badge",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "showStepArrows": false,
-    "isVisible": true,
-    "version": 2,
-    "tags": [
-        "Suggested",
-        "Inputs"
-    ],
-    "minNum": "-999999999999999",
-    "isLoading": false,
-    "regex": "{{BadgeID.text = QueryEmployeeList.data.map(EmpBadge => EmpBadge.EmployeeBadgeNumber).join(\"|\")}}",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "widgetName": "BadgeID",
-    "dynamicPropertyPathList": [],
-    "displayName": "Input",
-    "searchTags": [
-        "form",
-        "text input",
-        "number",
-        "textarea"
-    ],
-    "bottomRow": 6.6,
-    "parentRowSpace": 10,
-    "autoFocus": true,
-    "hideCard": false,
-    "parentColumnSpace": 18.90625,
-    "dynamicTriggerPathList": [
-        {"key": "onTextChanged"},
-        {"key": "onSubmit"}
-    ],
-    "labelPosition": "Top",
-    "key": "g1dfbnabg8",
-    "labelTextSize": "0.875rem",
-    "onTextChanged": "",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "crifng4df5",
-    "errorMessage": "Invalid Badge #",
-    "minWidth": 450,
-    "label": "Scan Badge",
-    "parentId": "qtn008n8qv",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "maxDynamicHeight": 9000,
-    "shouldAllowAutofill": false,
-    "iconAlign": "left",
-    "defaultText": "",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 6.6,
+  "boxShadow": "none",
+  "defaultText": "",
+  "displayName": "Input",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "regex"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    },
+    {
+      "key": "onSubmit"
+    }
+  ],
+  "errorMessage": "Invalid Badge #",
+  "hideCard": false,
+  "iconAlign": "left",
+  "iconName": "badge",
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.f2c34197dbcf03595098986de898928f.svg",
+  "inputType": "NUMBER",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "g1dfbnabg8",
+  "label": "Scan Badge",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxChars": "20",
+  "maxDynamicHeight": 9000,
+  "maxNum": "999999999999999",
+  "minDynamicHeight": 4,
+  "minNum": "-999999999999999",
+  "minWidth": 450,
+  "onSubmit": "{{showModal('ModalBadgeLoginPasswordEntry').then(() => {\n  QueryEmployeeList.run().then(() => {\n    ;\n  });\n}).catch(() => {});}}",
+  "onTextChanged": "",
+  "parentColumnSpace": 18.90625,
+  "parentId": "qtn008n8qv",
+  "parentRowSpace": 10,
+  "placeholderText": "",
+  "regex": "{{BadgeID.text = QueryEmployeeList.data.map(EmpBadge => EmpBadge.EmployeeBadgeNumber).join(\"|\")}}",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": false,
+  "rightColumn": 64,
+  "searchTags": [
+    "form",
+    "text input",
+    "number",
+    "textarea"
+  ],
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "tags": [
+    "Suggested",
+    "Inputs"
+  ],
+  "topRow": 0,
+  "type": "INPUT_WIDGET_V2",
+  "validation": "",
+  "version": 2,
+  "widgetId": "crifng4df5",
+  "widgetName": "BadgeID"
 }

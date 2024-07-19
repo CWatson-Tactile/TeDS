@@ -1,757 +1,919 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "borderColor": "#E0DEDE",
-    "iconSVG": "/static/media/icon.46adf7030d667f0ad9002aa31f997573.svg",
-    "onSubmit": "{{InsertQueryModulePcbSolder.run().then(() => {\n  showAlert('Lot entered successfully', 'success');\n  resetWidget(\"ModalModulePcbSolderLotEntry\", true);\n  closeModal('ModalModulePcbSolderLotEntry');\n  SelectQueryModulePCBSolderLots.run();\n}).catch(() => {\n  showAlert('Lot entry failed. \\nGet Connor!', 'error');\n});}}",
-    "topRow": 4,
-    "type": "JSON_FORM_WIDGET",
-    "animateLoading": true,
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "boxShadow"},
-        {"key": "submitButtonStyles.buttonColor"},
-        {"key": "submitButtonStyles.borderRadius"},
-        {"key": "resetButtonStyles.borderRadius"},
-        {"key": "schema.__root_schema__.defaultValue"},
-        {"key": "schema.__root_schema__.borderRadius"},
-        {"key": "schema.__root_schema__.children.OtherFailCount.defaultValue"},
-        {"key": "schema.__root_schema__.children.OtherFailCount.borderRadius"},
-        {"key": "schema.__root_schema__.children.OtherFailCount.accentColor"},
-        {"key": "schema.__root_schema__.children.UnitsProducedCount.defaultValue"},
-        {"key": "schema.__root_schema__.children.UnitsProducedCount.borderRadius"},
-        {"key": "schema.__root_schema__.children.UnitsProducedCount.accentColor"},
-        {"key": "schema.__root_schema__.children.UnitsFailCount.defaultValue"},
-        {"key": "schema.__root_schema__.children.UnitsFailCount.borderRadius"},
-        {"key": "schema.__root_schema__.children.UnitsFailCount.accentColor"},
-        {"key": "schema.__root_schema__.children.UnitsPassCount.defaultValue"},
-        {"key": "schema.__root_schema__.children.UnitsPassCount.borderRadius"},
-        {"key": "schema.__root_schema__.children.UnitsPassCount.accentColor"},
-        {"key": "schema.__root_schema__.children.LotStartTime.defaultValue"},
-        {"key": "schema.__root_schema__.children.LotStartTime.borderRadius"},
-        {"key": "schema.__root_schema__.children.LotStartTime.accentColor"},
-        {"key": "schema.__root_schema__.children.LotStartEmpID.borderRadius"},
-        {"key": "schema.__root_schema__.children.LotStartEmpID.accentColor"},
-        {"key": "schema.__root_schema__.children.LotEndTime.defaultValue"},
-        {"key": "schema.__root_schema__.children.LotEndTime.borderRadius"},
-        {"key": "schema.__root_schema__.children.LotEndTime.accentColor"},
-        {"key": "schema.__root_schema__.children.LotEndEmpID.borderRadius"},
-        {"key": "schema.__root_schema__.children.LotEndEmpID.accentColor"},
-        {"key": "schema.__root_schema__.children.Notes.defaultValue"},
-        {"key": "schema.__root_schema__.children.Notes.borderRadius"},
-        {"key": "schema.__root_schema__.children.Notes.accentColor"},
-        {"key": "schema.__root_schema__.cellBorderRadius"},
-        {"key": "schema.__root_schema__.children.ModuleEqcLotNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.ModuleEqcLotNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.ModuleEqcLotNum.accentColor"},
-        {"key": "schema.__root_schema__.children.ModulePcbLotNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.ModulePcbLotNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.ModulePcbLotNum.accentColor"},
-        {"key": "schema.__root_schema__.children.FluxLotNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.FluxLotNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.FluxLotNum.accentColor"},
-        {"key": "schema.__root_schema__.children.FluxMaintLogNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.FluxMaintLogNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.FluxMaintLogNum.accentColor"},
-        {"key": "schema.__root_schema__.children.FluxVersionLogNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.FluxVersionLogNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.FluxVersionLogNum.accentColor"},
-        {"key": "schema.__root_schema__.children.LaserMaintLogNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.LaserMaintLogNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.LaserMaintLogNum.accentColor"},
-        {"key": "schema.__root_schema__.children.LaserVersionLogNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.LaserVersionLogNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.LaserVersionLogNum.accentColor"},
-        {"key": "schema.__root_schema__.children.ColumnShortCount.defaultValue"},
-        {"key": "schema.__root_schema__.children.ColumnShortCount.borderRadius"},
-        {"key": "schema.__root_schema__.children.ColumnShortCount.accentColor"},
-        {"key": "schema.__root_schema__.children.HoneycombShortCount.defaultValue"},
-        {"key": "schema.__root_schema__.children.HoneycombShortCount.borderRadius"},
-        {"key": "schema.__root_schema__.children.HoneycombShortCount.accentColor"},
-        {"key": "schema.__root_schema__.children.MosfetOpenFailCount.defaultValue"},
-        {"key": "schema.__root_schema__.children.MosfetOpenFailCount.borderRadius"},
-        {"key": "schema.__root_schema__.children.MosfetOpenFailCount.accentColor"},
-        {"key": "schema.__root_schema__.children.MosfetLowCount.defaultValue"},
-        {"key": "schema.__root_schema__.children.MosfetLowCount.borderRadius"},
-        {"key": "schema.__root_schema__.children.MosfetLowCount.accentColor"},
-        {"key": "schema.__root_schema__.children.ModulePcbSolderLotNum.defaultValue"},
-        {"key": "schema.__root_schema__.children.ModulePcbSolderLotNum.borderRadius"},
-        {"key": "schema.__root_schema__.children.ModulePcbSolderLotNum.accentColor"},
-        {"key": "schema.__root_schema__.children.LotStartEmpID.options"},
-        {"key": "schema.__root_schema__.children.LotEndEmpID.options"},
-        {"key": "schema.__root_schema__.children.LotStartEmpID.defaultValue"},
-        {"key": "schema.__root_schema__.children.LotEndEmpID.defaultValue"},
-        {"key": "backgroundColor"}
-    ],
-    "showReset": true,
-    "flexVerticalAlignment": "start",
-    "dynamicHeight": "FIXED",
-    "autoGenerateForm": true,
-    "resetButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-        "buttonColor": "#eab308",
-        "iconName": "refresh",
-        "buttonVariant": "TERTIARY",
-        "iconAlign": "left",
-        "placement": "CENTER"
+  "animateLoading": true,
+  "autoGenerateForm": true,
+  "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "",
+  "bottomRow": 67,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "childStylesheet": {
+    "ARRAY": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "cellBoxShadow": "none"
     },
-    "isVisible": true,
-    "version": 1,
-    "tags": [
-        "Suggested",
-        "Layout"
-    ],
-    "isLoading": false,
-    "submitButtonLabel": "Submit",
-    "childStylesheet": {
-        "CHECKBOX": {
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "ARRAY": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-            "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "cellBoxShadow": "none"
-        },
-        "CURRENCY_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "DATEPICKER": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "PHONE_NUMBER_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "OBJECT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "cellBoxShadow": "none"
-        },
-        "MULTISELECT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "SELECT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "NUMBER_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "PASSWORD_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "EMAIL_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "RADIO_GROUP": {
-            "boxShadow": "none",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "SWITCH": {
-            "boxShadow": "none",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "TEXT_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        },
-        "MULTILINE_TEXT_INPUT": {
-            "boxShadow": "none",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "accentColor": "{{appsmith.theme.colors.primaryColor}}"
-        }
+    "CHECKBOX": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
     },
-    "disabledWhenInvalid": true,
+    "CURRENCY_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "DATEPICKER": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "EMAIL_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "MULTILINE_TEXT_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "MULTISELECT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "NUMBER_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "OBJECT": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "cellBoxShadow": "none"
+    },
+    "PASSWORD_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "PHONE_NUMBER_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "RADIO_GROUP": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "boxShadow": "none"
+    },
+    "SELECT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "SWITCH": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "boxShadow": "none"
+    },
+    "TEXT_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    }
+  },
+  "disabledWhenInvalid": true,
+  "displayName": "JSON Form",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "submitButtonStyles.buttonColor"
+    },
+    {
+      "key": "submitButtonStyles.borderRadius"
+    },
+    {
+      "key": "resetButtonStyles.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.OtherFailCount.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.OtherFailCount.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.OtherFailCount.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.UnitsProducedCount.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.UnitsProducedCount.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.UnitsProducedCount.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.UnitsFailCount.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.UnitsFailCount.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.UnitsFailCount.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.UnitsPassCount.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.UnitsPassCount.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.UnitsPassCount.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotStartTime.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotStartTime.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotStartTime.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotStartEmpID.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotStartEmpID.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotEndTime.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotEndTime.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotEndTime.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotEndEmpID.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotEndEmpID.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.Notes.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.Notes.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.Notes.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.cellBorderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.ModuleEqcLotNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.ModuleEqcLotNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.ModuleEqcLotNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.ModulePcbLotNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.ModulePcbLotNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.ModulePcbLotNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.FluxLotNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.FluxLotNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.FluxLotNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.FluxMaintLogNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.FluxMaintLogNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.FluxMaintLogNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.FluxVersionLogNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.FluxVersionLogNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.FluxVersionLogNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.LaserMaintLogNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.LaserMaintLogNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.LaserMaintLogNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.LaserVersionLogNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.LaserVersionLogNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.LaserVersionLogNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.ColumnShortCount.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.ColumnShortCount.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.ColumnShortCount.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.HoneycombShortCount.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.HoneycombShortCount.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.HoneycombShortCount.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.MosfetOpenFailCount.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.MosfetOpenFailCount.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.MosfetOpenFailCount.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.MosfetLowCount.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.MosfetLowCount.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.MosfetLowCount.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.ModulePcbSolderLotNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.ModulePcbSolderLotNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.ModulePcbSolderLotNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotStartEmpID.options"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotEndEmpID.options"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotStartEmpID.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotEndEmpID.defaultValue"
+    },
+    {
+      "key": "backgroundColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "schema.__root_schema__.children.LotStartTime.dateFormat"
+    },
+    {
+      "key": "schema.__root_schema__.children.LotEndTime.dateFormat"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSubmit"
+    }
+  ],
+  "fieldLimitExceeded": false,
+  "fixedFooter": true,
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.46adf7030d667f0ad9002aa31f997573.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "1a156tlbta",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 51,
+  "mobileLeftColumn": 10,
+  "mobileRightColumn": 74,
+  "mobileTopRow": 10,
+  "onSubmit": "{{InsertQueryModulePcbSolder.run().then(() => {\n  showAlert('Lot entered successfully', 'success');\n  resetWidget(\"ModalModulePcbSolderLotEntry\", true);\n  closeModal('ModalModulePcbSolderLotEntry');\n  SelectQueryModulePCBSolderLots.run();\n}).catch(() => {\n  showAlert('Lot entry failed. \\nGet Connor!', 'error');\n});}}",
+  "parentColumnSpace": 7.84375,
+  "parentId": "ug667bh0cs",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetButtonLabel": "Reset",
+  "resetButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "useSourceData": false,
-    "schema": {"__root_schema__": {
-        "labelTextSize": "0.875rem",
-        "identifier": "__root_schema__",
-        "boxShadow": "none",
-        "isRequired": false,
-        "isCustomField": false,
-        "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-        "dataType": "object",
-        "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-        "accessor": "__root_schema__",
-        "isVisible": true,
-        "label": "",
-        "originalIdentifier": "__root_schema__",
-        "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-        "children": {
-            "UnitsPassCount": {
-                "labelTextSize": "0.875rem",
-                "identifier": "UnitsPassCount",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (Number(formData.UnitsProducedCount)-Number(formData.UnitsFailCount)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "UnitsPassCount",
-                "isVisible": true,
-                "label": "Units Pass Count",
-                "originalIdentifier": "UnitsPassCount",
-                "regex": "^[0-9]+$",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 15,
-                "isDisabled": true,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "ModulePcbLotNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "ModulePcbLotNum",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ModulePcbLotNum))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "ModulePcbLotNum",
-                "isVisible": true,
-                "label": "Module Pcb Lot #",
-                "originalIdentifier": "ModulePcbLotNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 2,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "FluxMaintLogNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "FluxMaintLogNum",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.FluxMaintLogNum))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "FluxMaintLogNum",
-                "isVisible": true,
-                "label": "Flux Maint Log #",
-                "originalIdentifier": "FluxMaintLogNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 4,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "HoneycombShortCount": {
-                "labelTextSize": "0.875rem",
-                "identifier": "HoneycombShortCount",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.HoneycombShortCount))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "HoneycombShortCount",
-                "isVisible": true,
-                "label": "Honeycomb Short Count",
-                "originalIdentifier": "HoneycombShortCount",
-                "regex": "^[0-9]+$",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 10,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "LotStartTime": {
-                "boxShadow": "none",
-                "minDate": "2023-12-31T12:30:00.000-05:00",
-                "dateFormat": "YYYY-MM-DD h:mm A",
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.LotStartTime))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-                "accessor": "LotStartTime",
-                "shortcuts": false,
-                "convertToISO": true,
-                "children": {},
-                "isDisabled": false,
-                "sourceData": "",
-                "labelTextSize": "0.875rem",
-                "identifier": "LotStartTime",
-                "isRequired": true,
-                "isCustomField": false,
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-                "dataType": "string",
-                "isVisible": true,
-                "label": "Lot Start Time",
-                "originalIdentifier": "LotStartTime",
-                "timePrecision": "minute",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-                "closeOnSelection": false,
-                "maxDate": "2121-12-31T18:29:00.000Z",
-                "position": 16,
-                "fieldType": "Datepicker"
-            },
-            "UnitsProducedCount": {
-                "labelTextSize": "0.875rem",
-                "identifier": "UnitsProducedCount",
-                "boxShadow": "none",
-                "isRequired": true,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.UnitsProducedCount))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "UnitsProducedCount",
-                "isVisible": true,
-                "label": "Units Produced Count",
-                "originalIdentifier": "UnitsProducedCount",
-                "regex": "^[0-9]+$",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 8,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "ModulePcbSolderLotNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "ModulePcbSolderLotNum",
-                "boxShadow": "none",
-                "isRequired": true,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ModulePcbSolderLotNum))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "ModulePcbSolderLotNum",
-                "isVisible": true,
-                "label": "Module Pcb Solder Lot #",
-                "originalIdentifier": "ModulePcbSolderLotNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 0,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "LaserMaintLogNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "LaserMaintLogNum",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.LaserMaintLogNum))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "LaserMaintLogNum",
-                "isVisible": true,
-                "label": "Laser Maint Log #",
-                "originalIdentifier": "LaserMaintLogNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 6,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "ColumnShortCount": {
-                "labelTextSize": "0.875rem",
-                "identifier": "ColumnShortCount",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ColumnShortCount))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "ColumnShortCount",
-                "isVisible": true,
-                "label": "Column Short Count",
-                "originalIdentifier": "ColumnShortCount",
-                "regex": "^[0-9]+$",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 9,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "UnitsFailCount": {
-                "labelTextSize": "0.875rem",
-                "identifier": "UnitsFailCount",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (Number(formData.ColumnShortCount)\n+Number(formData.HoneycombShortCount)\n+Number(formData.MosfetLowCount)\n+Number(formData.MosfetOpenFailCount)\n+Number(formData.OtherFailCount)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "UnitsFailCount",
-                "isVisible": true,
-                "label": "Units Fail Count",
-                "originalIdentifier": "UnitsFailCount",
-                "regex": "^[0-9]+$",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "maxChars": "",
-                "position": 14,
-                "isDisabled": true,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "MosfetLowCount": {
-                "labelTextSize": "0.875rem",
-                "identifier": "MosfetLowCount",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.MosfetLowCount))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "MosfetLowCount",
-                "isVisible": true,
-                "label": "Mosfet Low Count",
-                "originalIdentifier": "MosfetLowCount",
-                "regex": "^[0-9]+$",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 12,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "OtherFailCount": {
-                "labelTextSize": "0.875rem",
-                "identifier": "OtherFailCount",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.OtherFailCount))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "OtherFailCount",
-                "isVisible": true,
-                "label": "Other Fail Count",
-                "originalIdentifier": "OtherFailCount",
-                "regex": "^[0-9]+$",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 13,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "FluxLotNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "FluxLotNum",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.FluxLotNum))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "FluxLotNum",
-                "isVisible": true,
-                "label": "Flux Lot #",
-                "originalIdentifier": "FluxLotNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 3,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "MosfetOpenFailCount": {
-                "labelTextSize": "0.875rem",
-                "identifier": "MosfetOpenFailCount",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.MosfetOpenFailCount))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "MosfetOpenFailCount",
-                "isVisible": true,
-                "label": "Mosfet Open Fail Count",
-                "originalIdentifier": "MosfetOpenFailCount",
-                "regex": "^[0-9]+$",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 11,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "LotEndTime": {
-                "boxShadow": "none",
-                "minDate": "1920-12-31T18:30:00.000Z",
-                "dateFormat": "YYYY-MM-DD h:mm A",
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.LotEndTime))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-                "accessor": "LotEndTime",
-                "shortcuts": false,
-                "convertToISO": true,
-                "children": {},
-                "isDisabled": false,
-                "sourceData": "",
-                "labelTextSize": "0.875rem",
-                "identifier": "LotEndTime",
-                "isRequired": false,
-                "isCustomField": false,
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-                "dataType": "string",
-                "isVisible": true,
-                "label": "Lot End Time",
-                "originalIdentifier": "LotEndTime",
-                "timePrecision": "minute",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-                "closeOnSelection": false,
-                "maxDate": "2121-12-31T18:29:00.000Z",
-                "position": 18,
-                "fieldType": "Datepicker"
-            },
-            "FluxVersionLogNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "FluxVersionLogNum",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.FluxVersionLogNum))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "FluxVersionLogNum",
-                "isVisible": true,
-                "label": "Flux Version Log #",
-                "originalIdentifier": "FluxVersionLogNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 5,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "LaserVersionLogNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "LaserVersionLogNum",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.LaserVersionLogNum))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "LaserVersionLogNum",
-                "isVisible": true,
-                "label": "Laser Version Log #",
-                "originalIdentifier": "LaserVersionLogNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 7,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            },
-            "LotStartEmpID": {
-                "labelTextSize": "0.875rem",
-                "identifier": "LotStartEmpID",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isFilterable": true,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (appsmith.store.EmpID))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "LotStartEmpID",
-                "isVisible": true,
-                "label": "Lot Start Emp ID",
-                "serverSideFiltering": true,
-                "originalIdentifier": "LotStartEmpID",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-                "children": {},
-                "options": "{{JSEmployeeNames.EmpNames.data}}",
-                "position": 17,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Select"
-            },
-            "LotEndEmpID": {
-                "labelTextSize": "0.875rem",
-                "identifier": "LotEndEmpID",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isFilterable": true,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (appsmith.store.EmpID))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "LotEndEmpID",
-                "isVisible": true,
-                "label": "Lot End Emp ID",
-                "serverSideFiltering": true,
-                "originalIdentifier": "LotEndEmpID",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "children": {},
-                "options": "{{JSEmployeeNames.EmpNames.data}}",
-                "position": 19,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Select"
-            },
-            "Notes": {
-                "labelTextSize": "0.875rem",
-                "identifier": "Notes",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Notes))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "Notes",
-                "isVisible": true,
-                "label": "Notes",
-                "originalIdentifier": "Notes",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 20,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Multiline Text Input"
-            },
-            "ModuleEqcLotNum": {
-                "labelTextSize": "0.875rem",
-                "identifier": "ModuleEqcLotNum",
-                "boxShadow": "none",
-                "isRequired": false,
-                "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ModuleEqcLotNum))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "dataType": "string",
-                "accessor": "ModuleEqcLotNum",
-                "isVisible": true,
-                "label": "Module Eqc Lot #",
-                "originalIdentifier": "ModuleEqcLotNum",
-                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
-                "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 1,
-                "isDisabled": false,
-                "sourceData": "",
-                "fieldType": "Text Input"
-            }
+    "boxShadow": "none",
+    "buttonColor": "#eab308",
+    "buttonVariant": "TERTIARY",
+    "iconAlign": "left",
+    "iconName": "refresh",
+    "placement": "CENTER"
+  },
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "schema": {
+    "__root_schema__": {
+      "accessor": "__root_schema__",
+      "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+      "cellBoxShadow": "none",
+      "children": {
+        "ColumnShortCount": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "accessor": "ColumnShortCount",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ColumnShortCount))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "ColumnShortCount",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Column Short Count",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "ColumnShortCount",
+          "position": 9,
+          "regex": "^[0-9]+$",
+          "sourceData": ""
         },
-        "position": -1,
-        "isDisabled": false,
-        "sourceData": {
-            "UnitsPassCount": "",
-            "MaintLogNum": "",
-            "WeldFailCount": "",
-            "ArgonLotNum": "",
-            "LotStartTime": "",
-            "CoreplateWeldLotNum": "",
-            "UnitsProducedCount": "",
-            "MosfetPreWeldFailCount": "",
-            "MagnetModuleLotNum": "",
-            "UnitsFailCount": "",
-            "OtherFailCount": "",
-            "CoreplateLotNum": "",
-            "PlungerLotNum": "",
-            "VersionLogNum": "",
-            "MosfetPostWeldFailCount": "",
-            "LotEndTime": "",
-            "LotStartEmpID": "",
-            "LotEndEmpID": "",
-            "Notes": ""
+        "FluxLotNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "accessor": "FluxLotNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.FluxLotNum))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "FluxLotNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Flux Lot #",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "FluxLotNum",
+          "position": 3,
+          "sourceData": ""
         },
-        "cellBoxShadow": "none",
-        "fieldType": "Object"
-    }},
-    "mobileBottomRow": 51,
-    "widgetName": "FormModulePcbSolderLotEntry",
-    "submitButtonStyles": {
-        "boxShadow": "none",
-        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-        "iconName": "key-enter",
-        "buttonVariant": "PRIMARY",
-        "iconAlign": "left",
-        "placement": "CENTER"
-    },
-    "dynamicPropertyPathList": [
-        {"key": "schema.__root_schema__.children.LotStartTime.dateFormat"},
-        {"key": "schema.__root_schema__.children.LotEndTime.dateFormat"},
-        {"key": "sourceData"},
-        {"key": "sourceData"}
-    ],
-    "displayName": "JSON Form",
-    "bottomRow": 67,
-    "fieldLimitExceeded": false,
-    "parentRowSpace": 10,
-    "title": "Module PCB Solder lot entry",
-    "hideCard": false,
-    "mobileRightColumn": 74,
-    "shouldScrollContents": true,
-    "parentColumnSpace": 7.84375,
-    "dynamicTriggerPathList": [{"key": "onSubmit"}],
-    "borderWidth": "",
-    "sourceData": "{\n  \"ModulePcbSolderLotNum\":\"\",\n  \"ModuleEqcLotNum\": \"\",\n  \"ModulePcbLotNum\": \"\",\n  \"FluxLotNum\": \"\",\n  \"FluxMaintLogNum\": \"\",\n  \"FluxVersionLogNum\": \"\",\n  \"LaserMaintLogNum\": \"\",\n  \"LaserVersionLogNum\": \"\",\n  \"UnitsProducedCount\": \"\",\n  \"ColumnShortCount\": \"\",\n  \"HoneycombShortCount\": \"\",\n  \"MosfetOpenFailCount\": \"\",\n  \"MosfetLowCount\": \"\",\n  \"OtherFailCount\": \"\",\n  \"UnitsFailCount\": \"\",\n  \"UnitsPassCount\": \"\",\n  \"LotStartTime\": \"\",\n  \"LotStartEmpID\": \"\",\n  \"LotEndTime\": \"\",\n  \"LotEndEmpID\": \"\",\n  \"Notes\": \"\"\n}",
-    "resetButtonLabel": "Reset",
-    "key": "1a156tlbta",
-    "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "vm2x9zfa4b",
-    "minWidth": 450,
-    "parentId": "ug667bh0cs",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 10,
-    "scrollContents": true,
-    "responsiveBehavior": "fill",
-    "fixedFooter": true,
-    "mobileLeftColumn": 10,
-    "maxDynamicHeight": 9000,
-    "minDynamicHeight": 4
+        "FluxMaintLogNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "accessor": "FluxMaintLogNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.FluxMaintLogNum))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "FluxMaintLogNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Flux Maint Log #",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "FluxMaintLogNum",
+          "position": 4,
+          "sourceData": ""
+        },
+        "FluxVersionLogNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "accessor": "FluxVersionLogNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.FluxVersionLogNum))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "FluxVersionLogNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Flux Version Log #",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "FluxVersionLogNum",
+          "position": 5,
+          "sourceData": ""
+        },
+        "HoneycombShortCount": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "accessor": "HoneycombShortCount",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.HoneycombShortCount))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "HoneycombShortCount",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Honeycomb Short Count",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "HoneycombShortCount",
+          "position": 10,
+          "regex": "^[0-9]+$",
+          "sourceData": ""
+        },
+        "LaserMaintLogNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "accessor": "LaserMaintLogNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.LaserMaintLogNum))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "LaserMaintLogNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Laser Maint Log #",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "LaserMaintLogNum",
+          "position": 6,
+          "sourceData": ""
+        },
+        "LaserVersionLogNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "accessor": "LaserVersionLogNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.LaserVersionLogNum))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "LaserVersionLogNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Laser Version Log #",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "LaserVersionLogNum",
+          "position": 7,
+          "sourceData": ""
+        },
+        "LotEndEmpID": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "accessor": "LotEndEmpID",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (appsmith.store.EmpID))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "fieldType": "Select",
+          "identifier": "LotEndEmpID",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isFilterable": true,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Lot End Emp ID",
+          "labelTextSize": "0.875rem",
+          "options": "{{JSEmployeeNames.EmpNames.data}}",
+          "originalIdentifier": "LotEndEmpID",
+          "position": 19,
+          "serverSideFiltering": true,
+          "sourceData": ""
+        },
+        "LotEndTime": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+          "accessor": "LotEndTime",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "closeOnSelection": false,
+          "convertToISO": true,
+          "dataType": "string",
+          "dateFormat": "YYYY-MM-DD h:mm A",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.LotEndTime))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+          "fieldType": "Datepicker",
+          "identifier": "LotEndTime",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Lot End Time",
+          "labelTextSize": "0.875rem",
+          "maxDate": "2121-12-31T18:29:00.000Z",
+          "minDate": "1920-12-31T18:30:00.000Z",
+          "originalIdentifier": "LotEndTime",
+          "position": 18,
+          "shortcuts": false,
+          "sourceData": "",
+          "timePrecision": "minute"
+        },
+        "LotStartEmpID": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+          "accessor": "LotStartEmpID",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (appsmith.store.EmpID))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "fieldType": "Select",
+          "identifier": "LotStartEmpID",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isFilterable": true,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Lot Start Emp ID",
+          "labelTextSize": "0.875rem",
+          "options": "{{JSEmployeeNames.EmpNames.data}}",
+          "originalIdentifier": "LotStartEmpID",
+          "position": 17,
+          "serverSideFiltering": true,
+          "sourceData": ""
+        },
+        "LotStartTime": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+          "accessor": "LotStartTime",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "closeOnSelection": false,
+          "convertToISO": true,
+          "dataType": "string",
+          "dateFormat": "YYYY-MM-DD h:mm A",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.LotStartTime))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+          "fieldType": "Datepicker",
+          "identifier": "LotStartTime",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": true,
+          "isVisible": true,
+          "label": "Lot Start Time",
+          "labelTextSize": "0.875rem",
+          "maxDate": "2121-12-31T18:29:00.000Z",
+          "minDate": "2023-12-31T12:30:00.000-05:00",
+          "originalIdentifier": "LotStartTime",
+          "position": 16,
+          "shortcuts": false,
+          "sourceData": "",
+          "timePrecision": "minute"
+        },
+        "ModuleEqcLotNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "accessor": "ModuleEqcLotNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ModuleEqcLotNum))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "ModuleEqcLotNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Module Eqc Lot #",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "ModuleEqcLotNum",
+          "position": 1,
+          "sourceData": ""
+        },
+        "ModulePcbLotNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "accessor": "ModulePcbLotNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ModulePcbLotNum))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "ModulePcbLotNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Module Pcb Lot #",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "ModulePcbLotNum",
+          "position": 2,
+          "sourceData": ""
+        },
+        "ModulePcbSolderLotNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "accessor": "ModulePcbSolderLotNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ModulePcbSolderLotNum))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "ModulePcbSolderLotNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": true,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Module Pcb Solder Lot #",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "ModulePcbSolderLotNum",
+          "position": 0,
+          "sourceData": ""
+        },
+        "MosfetLowCount": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "accessor": "MosfetLowCount",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.MosfetLowCount))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "MosfetLowCount",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Mosfet Low Count",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "MosfetLowCount",
+          "position": 12,
+          "regex": "^[0-9]+$",
+          "sourceData": ""
+        },
+        "MosfetOpenFailCount": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "accessor": "MosfetOpenFailCount",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.MosfetOpenFailCount))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "MosfetOpenFailCount",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Mosfet Open Fail Count",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "MosfetOpenFailCount",
+          "position": 11,
+          "regex": "^[0-9]+$",
+          "sourceData": ""
+        },
+        "Notes": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+          "accessor": "Notes",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Notes))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+          "fieldType": "Multiline Text Input",
+          "iconAlign": "left",
+          "identifier": "Notes",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Notes",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "Notes",
+          "position": 20,
+          "sourceData": ""
+        },
+        "OtherFailCount": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+          "accessor": "OtherFailCount",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.OtherFailCount))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "OtherFailCount",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Other Fail Count",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "OtherFailCount",
+          "position": 13,
+          "regex": "^[0-9]+$",
+          "sourceData": ""
+        },
+        "UnitsFailCount": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+          "accessor": "UnitsFailCount",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (Number(formData.ColumnShortCount)\n+Number(formData.HoneycombShortCount)\n+Number(formData.MosfetLowCount)\n+Number(formData.MosfetOpenFailCount)\n+Number(formData.OtherFailCount)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "UnitsFailCount",
+          "isCustomField": false,
+          "isDisabled": true,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Units Fail Count",
+          "labelTextSize": "0.875rem",
+          "maxChars": "",
+          "originalIdentifier": "UnitsFailCount",
+          "position": 14,
+          "regex": "^[0-9]+$",
+          "sourceData": ""
+        },
+        "UnitsPassCount": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+          "accessor": "UnitsPassCount",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (Number(formData.UnitsProducedCount)-Number(formData.UnitsFailCount)))(FormModulePcbSolderLotEntry.sourceData, FormModulePcbSolderLotEntry.formData, FormModulePcbSolderLotEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "UnitsPassCount",
+          "isCustomField": false,
+          "isDisabled": true,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Units Pass Count",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "UnitsPassCount",
+          "position": 15,
+          "regex": "^[0-9]+$",
+          "sourceData": ""
+        },
+        "UnitsProducedCount": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+          "accessor": "UnitsProducedCount",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.UnitsProducedCount))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "UnitsProducedCount",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": true,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Units Produced Count",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "UnitsProducedCount",
+          "position": 8,
+          "regex": "^[0-9]+$",
+          "sourceData": ""
+        }
+      },
+      "dataType": "object",
+      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(FormCoreplateWeldEntry.sourceData, FormCoreplateWeldEntry.formData, FormCoreplateWeldEntry.fieldState)}}",
+      "fieldType": "Object",
+      "identifier": "__root_schema__",
+      "isCustomField": false,
+      "isDisabled": false,
+      "isRequired": false,
+      "isVisible": true,
+      "label": "",
+      "labelTextSize": "0.875rem",
+      "originalIdentifier": "__root_schema__",
+      "position": -1,
+      "sourceData": {
+        "ArgonLotNum": "",
+        "CoreplateLotNum": "",
+        "CoreplateWeldLotNum": "",
+        "LotEndEmpID": "",
+        "LotEndTime": "",
+        "LotStartEmpID": "",
+        "LotStartTime": "",
+        "MagnetModuleLotNum": "",
+        "MaintLogNum": "",
+        "MosfetPostWeldFailCount": "",
+        "MosfetPreWeldFailCount": "",
+        "Notes": "",
+        "OtherFailCount": "",
+        "PlungerLotNum": "",
+        "UnitsFailCount": "",
+        "UnitsPassCount": "",
+        "UnitsProducedCount": "",
+        "VersionLogNum": "",
+        "WeldFailCount": ""
+      }
+    }
+  },
+  "scrollContents": true,
+  "shouldScrollContents": true,
+  "showReset": true,
+  "sourceData": "{\n  \"ModulePcbSolderLotNum\":\"\",\n  \"ModuleEqcLotNum\": \"\",\n  \"ModulePcbLotNum\": \"\",\n  \"FluxLotNum\": \"\",\n  \"FluxMaintLogNum\": \"\",\n  \"FluxVersionLogNum\": \"\",\n  \"LaserMaintLogNum\": \"\",\n  \"LaserVersionLogNum\": \"\",\n  \"UnitsProducedCount\": \"\",\n  \"ColumnShortCount\": \"\",\n  \"HoneycombShortCount\": \"\",\n  \"MosfetOpenFailCount\": \"\",\n  \"MosfetLowCount\": \"\",\n  \"OtherFailCount\": \"\",\n  \"UnitsFailCount\": \"\",\n  \"UnitsPassCount\": \"\",\n  \"LotStartTime\": \"\",\n  \"LotStartEmpID\": \"\",\n  \"LotEndTime\": \"\",\n  \"LotEndEmpID\": \"\",\n  \"Notes\": \"\"\n}",
+  "submitButtonLabel": "Submit",
+  "submitButtonStyles": {
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "boxShadow": "none",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonVariant": "PRIMARY",
+    "iconAlign": "left",
+    "iconName": "key-enter",
+    "placement": "CENTER"
+  },
+  "tags": [
+    "Suggested",
+    "Layout"
+  ],
+  "title": "Module PCB Solder lot entry",
+  "topRow": 4,
+  "type": "JSON_FORM_WIDGET",
+  "useSourceData": false,
+  "version": 1,
+  "widgetId": "vm2x9zfa4b",
+  "widgetName": "FormModulePcbSolderLotEntry"
 }

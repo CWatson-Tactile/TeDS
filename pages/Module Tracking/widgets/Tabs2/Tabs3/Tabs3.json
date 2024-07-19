@@ -1,672 +1,808 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "borderColor": "#E0DEDE",
-    "isCanvas": true,
-    "iconSVG": "/static/media/icon.02aab13974bb96ab5effaedb467a923c.svg",
-    "topRow": 4,
-    "type": "TABS_WIDGET",
-    "animateLoading": true,
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "boxShadow"},
-        {"key": "backgroundColor"}
-    ],
-    "children": [
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "",
+  "bottomRow": 55,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "children": [
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 470,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": true,
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
         {
-            "needsErrorInfo": false,
-            "tabId": "tab1",
-            "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-            "mobileBottomRow": 150,
-            "widgetName": "Canvas13",
-            "displayName": "Canvas",
-            "bottomRow": 470,
-            "topRow": 0,
-            "parentRowSpace": 1,
-            "type": "CANVAS_WIDGET",
-            "canExtend": true,
-            "hideCard": true,
-            "shouldScrollContents": false,
-            "minHeight": 150,
-            "mobileRightColumn": 64,
-            "parentColumnSpace": 1,
-            "dynamicTriggerPathList": [],
-            "leftColumn": 0,
-            "dynamicBindingPathList": [
-                {"key": "borderRadius"},
-                {"key": "boxShadow"}
-            ],
-            "isDisabled": false,
-            "key": "u4xls8y6s4",
-            "isDeprecated": false,
-            "tabName": "Honeycomb Marking",
-            "rightColumn": 64,
-            "detachFromLayout": true,
-            "dynamicHeight": "AUTO_HEIGHT",
-            "widgetId": "n633rnngkt",
-            "onCanvasUI": {
-                "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-                "disableParentSelection": true,
-                "focusColorCSSVar": "--on-canvas-ui-widget-selection",
-                "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
-                "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
-            },
-            "minWidth": 450,
-            "isVisible": true,
-            "version": 1,
-            "parentId": "45raodgiza",
-            "renderMode": "CANVAS",
-            "isLoading": false,
-            "mobileTopRow": 0,
-            "responsiveBehavior": "fill",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "mobileLeftColumn": 0,
-            "maxDynamicHeight": 9000,
-            "minDynamicHeight": 4,
-            "flexLayers": []
+          "key": "borderRadius"
         },
         {
-            "needsErrorInfo": false,
-            "tabId": "tab2",
-            "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-            "mobileBottomRow": 150,
-            "widgetName": "Canvas14",
-            "displayName": "Canvas",
-            "bottomRow": 470,
-            "topRow": 0,
-            "parentRowSpace": 1,
-            "type": "CANVAS_WIDGET",
-            "canExtend": true,
-            "hideCard": true,
-            "shouldScrollContents": false,
-            "minHeight": 150,
-            "mobileRightColumn": 64,
-            "parentColumnSpace": 1,
-            "dynamicTriggerPathList": [],
-            "leftColumn": 0,
-            "dynamicBindingPathList": [
-                {"key": "borderRadius"},
-                {"key": "boxShadow"}
-            ],
-            "isDisabled": false,
-            "key": "u4xls8y6s4",
-            "isDeprecated": false,
-            "tabName": "Glue ",
-            "rightColumn": 64,
-            "detachFromLayout": true,
-            "dynamicHeight": "AUTO_HEIGHT",
-            "widgetId": "xibjp9ibka",
-            "onCanvasUI": {
-                "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-                "disableParentSelection": true,
-                "focusColorCSSVar": "--on-canvas-ui-widget-selection",
-                "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
-                "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
-            },
-            "minWidth": 450,
-            "isVisible": true,
-            "version": 1,
-            "parentId": "45raodgiza",
-            "renderMode": "CANVAS",
-            "isLoading": false,
-            "mobileTopRow": 0,
-            "responsiveBehavior": "fill",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "mobileLeftColumn": 0,
-            "maxDynamicHeight": 9000,
-            "minDynamicHeight": 4,
-            "flexLayers": [
-                {"children": [{
-                    "id": "8kij8fj1go",
-                    "align": "start"
-                }]},
-                {"children": [{
-                    "id": "82xd7mtfuo",
-                    "align": "start"
-                }]},
-                {"children": [{
-                    "id": "qqv8vj23gf",
-                    "align": "start"
-                }]},
-                {"children": [{
-                    "id": "xeeni5e46m",
-                    "align": "start"
-                }]},
-                {"children": [{
-                    "id": "hcgcu67cy3",
-                    "align": "start"
-                }]},
-                {"children": [{
-                    "id": "ygqwt7y644",
-                    "align": "start"
-                }]},
-                {"children": [{
-                    "id": "s3yhj70lqr",
-                    "align": "start"
-                }]},
-                {"children": [{
-                    "id": "6fn1ftzzlx",
-                    "align": "start"
-                }]},
-                {"children": [{
-                    "id": "il6hwybg6s",
-                    "align": "start"
-                }]},
-                {"children": [{
-                    "id": "icfbjgvtp0",
-                    "align": "start"
-                }]},
-                {"children": [{
-                    "id": "g2kkqelrk4",
-                    "align": "start"
-                }]},
-                {"children": [{
-                    "id": "1xsusv32n7",
-                    "align": "start"
-                }]},
-                {"children": [{
-                    "id": "iq9m2po8iv",
-                    "align": "start"
-                }]},
-                {"children": [{
-                    "id": "magjkrcnvv",
-                    "align": "start"
-                }]},
-                {"children": [{
-                    "id": "kuc8ayily8",
-                    "align": "start"
-                }]}
-            ]
-        },
-        {
-            "needsErrorInfo": false,
-            "tabId": "tabjk1i8w8x7j",
-            "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-            "mobileBottomRow": 691,
-            "widgetName": "Canvas15",
-            "displayName": "Canvas",
-            "topRow": 1,
-            "bottomRow": 470,
-            "parentRowSpace": 1,
-            "type": "CANVAS_WIDGET",
-            "canExtend": false,
-            "hideCard": true,
-            "minHeight": 690,
-            "mobileRightColumn": 64,
-            "parentColumnSpace": 1,
-            "dynamicTriggerPathList": [],
-            "leftColumn": 0,
-            "dynamicBindingPathList": [
-                {"key": "borderRadius"},
-                {"key": "boxShadow"}
-            ],
-            "key": "u4xls8y6s4",
-            "isDeprecated": false,
-            "tabName": "Pre-Solder EQC",
-            "rightColumn": 64,
-            "detachFromLayout": true,
-            "dynamicHeight": "AUTO_HEIGHT",
-            "widgetId": "ij9ml22f7f",
-            "onCanvasUI": {
-                "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-                "disableParentSelection": true,
-                "focusColorCSSVar": "--on-canvas-ui-widget-selection",
-                "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
-                "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
-            },
-            "containerStyle": "none",
-            "minWidth": 450,
-            "isVisible": true,
-            "version": 1,
-            "parentId": "45raodgiza",
-            "renderMode": "CANVAS",
-            "isLoading": false,
-            "mobileTopRow": 1,
-            "responsiveBehavior": "fill",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "mobileLeftColumn": 0,
-            "maxDynamicHeight": 9000,
-            "minDynamicHeight": 4,
-            "flexLayers": []
-        },
-        {
-            "needsErrorInfo": false,
-            "tabId": "tabtk2rcx73e2",
-            "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-            "mobileBottomRow": 691,
-            "widgetName": "Canvas16",
-            "displayName": "Canvas",
-            "topRow": 1,
-            "bottomRow": 470,
-            "parentRowSpace": 1,
-            "type": "CANVAS_WIDGET",
-            "canExtend": false,
-            "hideCard": true,
-            "minHeight": 690,
-            "mobileRightColumn": 64,
-            "parentColumnSpace": 1,
-            "dynamicTriggerPathList": [],
-            "leftColumn": 0,
-            "dynamicBindingPathList": [
-                {"key": "borderRadius"},
-                {"key": "boxShadow"}
-            ],
-            "key": "u4xls8y6s4",
-            "isDeprecated": false,
-            "tabName": "Post-Solder EQC",
-            "rightColumn": 64,
-            "detachFromLayout": true,
-            "dynamicHeight": "AUTO_HEIGHT",
-            "widgetId": "vamjo52vj4",
-            "onCanvasUI": {
-                "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-                "disableParentSelection": true,
-                "focusColorCSSVar": "--on-canvas-ui-widget-selection",
-                "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
-                "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
-            },
-            "containerStyle": "none",
-            "minWidth": 450,
-            "isVisible": true,
-            "version": 1,
-            "parentId": "45raodgiza",
-            "renderMode": "CANVAS",
-            "isLoading": false,
-            "mobileTopRow": 1,
-            "responsiveBehavior": "fill",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "mobileLeftColumn": 0,
-            "maxDynamicHeight": 9000,
-            "minDynamicHeight": 4,
-            "flexLayers": [{"children": [{
-                "id": "zg2rqvtgiw",
-                "align": "start"
-            }]}]
-        },
-        {
-            "needsErrorInfo": false,
-            "tabId": "tabd5g637834w",
-            "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-            "mobileBottomRow": 691,
-            "widgetName": "Canvas17",
-            "displayName": "Canvas",
-            "topRow": 1,
-            "bottomRow": 470,
-            "parentRowSpace": 1,
-            "type": "CANVAS_WIDGET",
-            "canExtend": false,
-            "hideCard": true,
-            "minHeight": 690,
-            "mobileRightColumn": 64,
-            "parentColumnSpace": 1,
-            "dynamicTriggerPathList": [],
-            "leftColumn": 0,
-            "dynamicBindingPathList": [
-                {"key": "borderRadius"},
-                {"key": "boxShadow"}
-            ],
-            "key": "u4xls8y6s4",
-            "isDeprecated": false,
-            "tabName": "PCB Solder ",
-            "rightColumn": 64,
-            "detachFromLayout": true,
-            "dynamicHeight": "AUTO_HEIGHT",
-            "widgetId": "9hbfrsabjn",
-            "onCanvasUI": {
-                "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-                "disableParentSelection": true,
-                "focusColorCSSVar": "--on-canvas-ui-widget-selection",
-                "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
-                "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
-            },
-            "containerStyle": "none",
-            "minWidth": 450,
-            "isVisible": true,
-            "version": 1,
-            "parentId": "45raodgiza",
-            "renderMode": "CANVAS",
-            "isLoading": false,
-            "mobileTopRow": 1,
-            "responsiveBehavior": "fill",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "mobileLeftColumn": 0,
-            "maxDynamicHeight": 9000,
-            "minDynamicHeight": 4,
-            "flexLayers": []
-        },
-        {
-            "needsErrorInfo": false,
-            "tabId": "tabcj9warg9hh",
-            "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-            "mobileBottomRow": 691,
-            "widgetName": "Canvas18",
-            "displayName": "Canvas",
-            "topRow": 1,
-            "bottomRow": 470,
-            "parentRowSpace": 1,
-            "type": "CANVAS_WIDGET",
-            "canExtend": false,
-            "hideCard": true,
-            "minHeight": 690,
-            "mobileRightColumn": 64,
-            "parentColumnSpace": 1,
-            "dynamicTriggerPathList": [],
-            "leftColumn": 0,
-            "dynamicBindingPathList": [
-                {"key": "borderRadius"},
-                {"key": "boxShadow"}
-            ],
-            "key": "u4xls8y6s4",
-            "isDeprecated": false,
-            "tabName": "Foam-Magnet ",
-            "rightColumn": 64,
-            "detachFromLayout": true,
-            "dynamicHeight": "AUTO_HEIGHT",
-            "widgetId": "7tqb81idlx",
-            "onCanvasUI": {
-                "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-                "disableParentSelection": true,
-                "focusColorCSSVar": "--on-canvas-ui-widget-selection",
-                "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
-                "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
-            },
-            "containerStyle": "none",
-            "minWidth": 450,
-            "isVisible": true,
-            "version": 1,
-            "parentId": "45raodgiza",
-            "renderMode": "CANVAS",
-            "isLoading": false,
-            "mobileTopRow": 1,
-            "responsiveBehavior": "fill",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "mobileLeftColumn": 0,
-            "maxDynamicHeight": 9000,
-            "minDynamicHeight": 4,
-            "flexLayers": [{"children": [{
-                "id": "tcyckz5xgw",
-                "align": "start"
-            }]}]
-        },
-        {
-            "needsErrorInfo": false,
-            "tabId": "tabswskgpdyy6",
-            "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-            "mobileBottomRow": 691,
-            "widgetName": "Canvas19",
-            "displayName": "Canvas",
-            "topRow": 1,
-            "bottomRow": 470,
-            "parentRowSpace": 1,
-            "type": "CANVAS_WIDGET",
-            "canExtend": false,
-            "hideCard": true,
-            "minHeight": 690,
-            "mobileRightColumn": 64,
-            "parentColumnSpace": 1,
-            "dynamicTriggerPathList": [],
-            "leftColumn": 0,
-            "dynamicBindingPathList": [
-                {"key": "borderRadius"},
-                {"key": "boxShadow"}
-            ],
-            "key": "u4xls8y6s4",
-            "isDeprecated": false,
-            "tabName": "Coreplate-Plunger ",
-            "rightColumn": 64,
-            "detachFromLayout": true,
-            "dynamicHeight": "AUTO_HEIGHT",
-            "widgetId": "q1fl3100gb",
-            "onCanvasUI": {
-                "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-                "disableParentSelection": true,
-                "focusColorCSSVar": "--on-canvas-ui-widget-selection",
-                "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
-                "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
-            },
-            "containerStyle": "none",
-            "minWidth": 450,
-            "isVisible": true,
-            "version": 1,
-            "parentId": "45raodgiza",
-            "renderMode": "CANVAS",
-            "isLoading": false,
-            "mobileTopRow": 1,
-            "responsiveBehavior": "fill",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "mobileLeftColumn": 0,
-            "maxDynamicHeight": 9000,
-            "minDynamicHeight": 4,
-            "flexLayers": [{"children": [{
-                "id": "tg1uwegl49",
-                "align": "start"
-            }]}]
-        },
-        {
-            "needsErrorInfo": false,
-            "tabId": "tabxei4nd6n16",
-            "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-            "mobileBottomRow": 691,
-            "widgetName": "Canvas20",
-            "displayName": "Canvas",
-            "topRow": 1,
-            "bottomRow": 470,
-            "parentRowSpace": 1,
-            "type": "CANVAS_WIDGET",
-            "canExtend": false,
-            "hideCard": true,
-            "minHeight": 690,
-            "mobileRightColumn": 64,
-            "parentColumnSpace": 1,
-            "dynamicTriggerPathList": [],
-            "leftColumn": 0,
-            "dynamicBindingPathList": [
-                {"key": "borderRadius"},
-                {"key": "boxShadow"}
-            ],
-            "key": "u4xls8y6s4",
-            "isDeprecated": false,
-            "tabName": "Coreplate Weld ",
-            "rightColumn": 64,
-            "detachFromLayout": true,
-            "dynamicHeight": "AUTO_HEIGHT",
-            "widgetId": "qyun5iujrx",
-            "onCanvasUI": {
-                "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-                "disableParentSelection": true,
-                "focusColorCSSVar": "--on-canvas-ui-widget-selection",
-                "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
-                "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
-            },
-            "containerStyle": "none",
-            "minWidth": 450,
-            "isVisible": true,
-            "version": 1,
-            "parentId": "45raodgiza",
-            "renderMode": "CANVAS",
-            "isLoading": false,
-            "mobileTopRow": 1,
-            "responsiveBehavior": "fill",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "mobileLeftColumn": 0,
-            "maxDynamicHeight": 9000,
-            "minDynamicHeight": 4,
-            "flexLayers": [{"children": [{
-                "id": "nf255eonho",
-                "align": "start"
-            }]}]
-        },
-        {
-            "needsErrorInfo": false,
-            "tabId": "tabo2rlgp0zaz",
-            "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-            "mobileBottomRow": 511,
-            "widgetName": "Canvas22",
-            "displayName": "Canvas",
-            "topRow": 1,
-            "bottomRow": 470,
-            "parentRowSpace": 1,
-            "type": "CANVAS_WIDGET",
-            "canExtend": false,
-            "hideCard": true,
-            "minHeight": 510,
-            "mobileRightColumn": 64,
-            "parentColumnSpace": 1,
-            "dynamicTriggerPathList": [],
-            "leftColumn": 0,
-            "dynamicBindingPathList": [
-                {"key": "borderRadius"},
-                {"key": "boxShadow"}
-            ],
-            "key": "4nod65uv7b",
-            "isDeprecated": false,
-            "tabName": "Burn-In",
-            "rightColumn": 64,
-            "detachFromLayout": true,
-            "dynamicHeight": "AUTO_HEIGHT",
-            "widgetId": "1so9elmdgn",
-            "onCanvasUI": {
-                "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-                "disableParentSelection": true,
-                "focusColorCSSVar": "--on-canvas-ui-widget-selection",
-                "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
-                "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
-            },
-            "containerStyle": "none",
-            "minWidth": 450,
-            "isVisible": true,
-            "version": 1,
-            "parentId": "45raodgiza",
-            "renderMode": "CANVAS",
-            "isLoading": false,
-            "mobileTopRow": 1,
-            "responsiveBehavior": "fill",
-            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-            "mobileLeftColumn": 0,
-            "maxDynamicHeight": 9000,
-            "minDynamicHeight": 4,
-            "flexLayers": [{"children": [{
-                "id": "tuv5b1ep0q",
-                "align": "start"
-            }]}]
+          "key": "boxShadow"
         }
-    ],
-    "flexVerticalAlignment": "stretch",
-    "dynamicHeight": "AUTO_HEIGHT",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "onCanvasUI": {
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isDisabled": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "u4xls8y6s4",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 150,
+      "minWidth": 450,
+      "mobileBottomRow": 150,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 64,
+      "mobileTopRow": 0,
+      "needsErrorInfo": false,
+      "onCanvasUI": {
+        "disableParentSelection": true,
         "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-        "disableParentSelection": false,
         "focusColorCSSVar": "--on-canvas-ui-widget-selection",
         "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+      },
+      "parentColumnSpace": 1,
+      "parentId": "45raodgiza",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 64,
+      "shouldScrollContents": false,
+      "tabId": "tab1",
+      "tabName": "Honeycomb Marking",
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "n633rnngkt",
+      "widgetName": "Canvas13"
     },
-    "shouldShowTabs": true,
-    "isVisible": true,
-    "version": 3,
-    "tags": ["Layout"],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 55,
-    "needsErrorInfo": false,
-    "mobileBottomRow": 34,
-    "widgetName": "Tabs3",
-    "displayName": "Tabs",
-    "bottomRow": 55,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "shouldScrollContents": true,
-    "mobileRightColumn": 83,
-    "parentColumnSpace": 28.25,
-    "dynamicTriggerPathList": [],
-    "borderWidth": "",
-    "key": "wxwk94vr0a",
-    "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "thumbnailSVG": "/static/media/thumbnail.902d280515fd575657e8ccf99545112b.svg",
-    "widgetId": "45raodgiza",
-    "defaultTab": "",
-    "minWidth": 450,
-    "tabsObj": {
-        "tabcj9warg9hh": {
-            "widgetId": "7tqb81idlx",
-            "index": 5,
-            "id": "tabcj9warg9hh",
-            "label": "Foam-Magnet ",
-            "isVisible": true
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 470,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": true,
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
         },
-        "tabo2rlgp0zaz": {
-            "widgetId": "1so9elmdgn",
-            "index": 8,
-            "id": "tabo2rlgp0zaz",
-            "label": "Burn-In",
-            "isVisible": true
-        },
-        "tabxei4nd6n16": {
-            "widgetId": "qyun5iujrx",
-            "index": 7,
-            "id": "tabxei4nd6n16",
-            "label": "Coreplate Weld ",
-            "isVisible": true
-        },
-        "tabtk2rcx73e2": {
-            "widgetId": "vamjo52vj4",
-            "isDuplicateLabel": false,
-            "index": 4,
-            "id": "tabtk2rcx73e2",
-            "label": "Post-Solder EQC",
-            "isVisible": true
-        },
-        "tab1": {
-            "widgetId": "n633rnngkt",
-            "positioning": "vertical",
-            "isDuplicateLabel": false,
-            "index": 0,
-            "label": "Honeycomb Marking",
-            "id": "tab1",
-            "isVisible": true
-        },
-        "tab2": {
-            "widgetId": "xibjp9ibka",
-            "positioning": "vertical",
-            "isDuplicateLabel": false,
-            "index": 1,
-            "label": "Glue ",
-            "id": "tab2",
-            "isVisible": true
-        },
-        "tabswskgpdyy6": {
-            "widgetId": "q1fl3100gb",
-            "index": 6,
-            "id": "tabswskgpdyy6",
-            "label": "Coreplate-Plunger ",
-            "isVisible": true
-        },
-        "tabjk1i8w8x7j": {
-            "widgetId": "ij9ml22f7f",
-            "isDuplicateLabel": false,
-            "index": 2,
-            "id": "tabjk1i8w8x7j",
-            "label": "Pre-Solder EQC",
-            "isVisible": true
-        },
-        "tabd5g637834w": {
-            "widgetId": "9hbfrsabjn",
-            "isDuplicateLabel": false,
-            "index": 3,
-            "id": "tabd5g637834w",
-            "label": "PCB Solder ",
-            "isVisible": true
+        {
+          "key": "boxShadow"
         }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "8kij8fj1go"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "82xd7mtfuo"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "qqv8vj23gf"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "xeeni5e46m"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "hcgcu67cy3"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "ygqwt7y644"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "s3yhj70lqr"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "6fn1ftzzlx"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "il6hwybg6s"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "icfbjgvtp0"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "g2kkqelrk4"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "1xsusv32n7"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "iq9m2po8iv"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "magjkrcnvv"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "kuc8ayily8"
+            }
+          ]
+        }
+      ],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isDisabled": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "u4xls8y6s4",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 150,
+      "minWidth": 450,
+      "mobileBottomRow": 150,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 64,
+      "mobileTopRow": 0,
+      "needsErrorInfo": false,
+      "onCanvasUI": {
+        "disableParentSelection": true,
+        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+      },
+      "parentColumnSpace": 1,
+      "parentId": "45raodgiza",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 64,
+      "shouldScrollContents": false,
+      "tabId": "tab2",
+      "tabName": "Glue ",
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "xibjp9ibka",
+      "widgetName": "Canvas14"
     },
-    "parentId": "hwtj7sgciq",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 19,
-    "responsiveBehavior": "fill",
-    "originalTopRow": 4,
-    "mobileLeftColumn": 19,
-    "maxDynamicHeight": 9000,
-    "minDynamicHeight": 10
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 470,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "u4xls8y6s4",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 690,
+      "minWidth": 450,
+      "mobileBottomRow": 691,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 64,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "onCanvasUI": {
+        "disableParentSelection": true,
+        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+      },
+      "parentColumnSpace": 1,
+      "parentId": "45raodgiza",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 64,
+      "tabId": "tabjk1i8w8x7j",
+      "tabName": "Pre-Solder EQC",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "ij9ml22f7f",
+      "widgetName": "Canvas15"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 470,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "zg2rqvtgiw"
+            }
+          ]
+        }
+      ],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "u4xls8y6s4",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 690,
+      "minWidth": 450,
+      "mobileBottomRow": 691,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 64,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "onCanvasUI": {
+        "disableParentSelection": true,
+        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+      },
+      "parentColumnSpace": 1,
+      "parentId": "45raodgiza",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 64,
+      "tabId": "tabtk2rcx73e2",
+      "tabName": "Post-Solder EQC",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "vamjo52vj4",
+      "widgetName": "Canvas16"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 470,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "u4xls8y6s4",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 690,
+      "minWidth": 450,
+      "mobileBottomRow": 691,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 64,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "onCanvasUI": {
+        "disableParentSelection": true,
+        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+      },
+      "parentColumnSpace": 1,
+      "parentId": "45raodgiza",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 64,
+      "tabId": "tabd5g637834w",
+      "tabName": "PCB Solder ",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "9hbfrsabjn",
+      "widgetName": "Canvas17"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 470,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "tcyckz5xgw"
+            }
+          ]
+        }
+      ],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "u4xls8y6s4",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 690,
+      "minWidth": 450,
+      "mobileBottomRow": 691,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 64,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "onCanvasUI": {
+        "disableParentSelection": true,
+        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+      },
+      "parentColumnSpace": 1,
+      "parentId": "45raodgiza",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 64,
+      "tabId": "tabcj9warg9hh",
+      "tabName": "Foam-Magnet ",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "7tqb81idlx",
+      "widgetName": "Canvas18"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 470,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "tg1uwegl49"
+            }
+          ]
+        }
+      ],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "u4xls8y6s4",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 690,
+      "minWidth": 450,
+      "mobileBottomRow": 691,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 64,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "onCanvasUI": {
+        "disableParentSelection": true,
+        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+      },
+      "parentColumnSpace": 1,
+      "parentId": "45raodgiza",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 64,
+      "tabId": "tabswskgpdyy6",
+      "tabName": "Coreplate-Plunger ",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "q1fl3100gb",
+      "widgetName": "Canvas19"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 470,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "nf255eonho"
+            }
+          ]
+        }
+      ],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "u4xls8y6s4",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 690,
+      "minWidth": 450,
+      "mobileBottomRow": 691,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 64,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "onCanvasUI": {
+        "disableParentSelection": true,
+        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+      },
+      "parentColumnSpace": 1,
+      "parentId": "45raodgiza",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 64,
+      "tabId": "tabxei4nd6n16",
+      "tabName": "Coreplate Weld ",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "qyun5iujrx",
+      "widgetName": "Canvas20"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 470,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "tuv5b1ep0q"
+            }
+          ]
+        }
+      ],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "4nod65uv7b",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 510,
+      "minWidth": 450,
+      "mobileBottomRow": 511,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 64,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "onCanvasUI": {
+        "disableParentSelection": true,
+        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+      },
+      "parentColumnSpace": 1,
+      "parentId": "45raodgiza",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 64,
+      "tabId": "tabo2rlgp0zaz",
+      "tabName": "Burn-In",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "1so9elmdgn",
+      "widgetName": "Canvas22"
+    }
+  ],
+  "defaultTab": "",
+  "displayName": "Tabs",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "backgroundColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "stretch",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.02aab13974bb96ab5effaedb467a923c.svg",
+  "isCanvas": true,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "wxwk94vr0a",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 10,
+  "minWidth": 450,
+  "mobileBottomRow": 34,
+  "mobileLeftColumn": 19,
+  "mobileRightColumn": 83,
+  "mobileTopRow": 19,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "originalBottomRow": 55,
+  "originalTopRow": 4,
+  "parentColumnSpace": 28.25,
+  "parentId": "hwtj7sgciq",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "shouldScrollContents": true,
+  "shouldShowTabs": true,
+  "tabsObj": {
+    "tab1": {
+      "id": "tab1",
+      "index": 0,
+      "isDuplicateLabel": false,
+      "isVisible": true,
+      "label": "Honeycomb Marking",
+      "positioning": "vertical",
+      "widgetId": "n633rnngkt"
+    },
+    "tab2": {
+      "id": "tab2",
+      "index": 1,
+      "isDuplicateLabel": false,
+      "isVisible": true,
+      "label": "Glue ",
+      "positioning": "vertical",
+      "widgetId": "xibjp9ibka"
+    },
+    "tabcj9warg9hh": {
+      "id": "tabcj9warg9hh",
+      "index": 5,
+      "isVisible": true,
+      "label": "Foam-Magnet ",
+      "widgetId": "7tqb81idlx"
+    },
+    "tabd5g637834w": {
+      "id": "tabd5g637834w",
+      "index": 3,
+      "isDuplicateLabel": false,
+      "isVisible": true,
+      "label": "PCB Solder ",
+      "widgetId": "9hbfrsabjn"
+    },
+    "tabjk1i8w8x7j": {
+      "id": "tabjk1i8w8x7j",
+      "index": 2,
+      "isDuplicateLabel": false,
+      "isVisible": true,
+      "label": "Pre-Solder EQC",
+      "widgetId": "ij9ml22f7f"
+    },
+    "tabo2rlgp0zaz": {
+      "id": "tabo2rlgp0zaz",
+      "index": 8,
+      "isVisible": true,
+      "label": "Burn-In",
+      "widgetId": "1so9elmdgn"
+    },
+    "tabswskgpdyy6": {
+      "id": "tabswskgpdyy6",
+      "index": 6,
+      "isVisible": true,
+      "label": "Coreplate-Plunger ",
+      "widgetId": "q1fl3100gb"
+    },
+    "tabtk2rcx73e2": {
+      "id": "tabtk2rcx73e2",
+      "index": 4,
+      "isDuplicateLabel": false,
+      "isVisible": true,
+      "label": "Post-Solder EQC",
+      "widgetId": "vamjo52vj4"
+    },
+    "tabxei4nd6n16": {
+      "id": "tabxei4nd6n16",
+      "index": 7,
+      "isVisible": true,
+      "label": "Coreplate Weld ",
+      "widgetId": "qyun5iujrx"
+    }
+  },
+  "tags": [
+    "Layout"
+  ],
+  "thumbnailSVG": "/static/media/thumbnail.902d280515fd575657e8ccf99545112b.svg",
+  "topRow": 4,
+  "type": "TABS_WIDGET",
+  "version": 3,
+  "widgetId": "45raodgiza",
+  "widgetName": "Tabs3"
 }
