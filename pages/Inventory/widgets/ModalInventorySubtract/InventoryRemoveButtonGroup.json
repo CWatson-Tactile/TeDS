@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 45.000000024536995,
+  "bottomRow": 45.000000043633165,
   "boxShadow": "none",
   "buttonVariant": "PRIMARY",
   "childStylesheet": {
@@ -15,11 +15,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "groupButtons.groupButton2.onClick"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "groupButtons.groupButton2.onClick"
@@ -54,7 +50,7 @@
       "isVisible": true,
       "label": "Submit Adjustment",
       "menuItems": {},
-      "onClick": "{{QueryNegInvAdjTrack.run().then(() => {\n  QueryMoveToWip.run();\n  QuerySubtractInventory.run().then(() => {\n    JS_InvTransData.InvTransDataFetch();\n  });\n  QueryUpdateWIPInventory.run();\n  closeModal('ModalInventorySubtract');\n  showAlert('Adjustment Successfull!', '');\n}).catch(() => {\n  showAlert('Error...Get Connor!', 'error');\n});}}",
+      "onClick": "{{QueryNegInvAdjTrack.run().then(() => {\n  QuerySubtractInventory.run();\n}).catch(() => {\n  showAlert('Error. Get Connor!', 'error');\n});}}",
       "placement": "CENTER",
       "widgetId": ""
     }
@@ -69,8 +65,8 @@
   "leftColumn": 0,
   "minWidth": 450,
   "orientation": "horizontal",
-  "originalBottomRow": 45.000000024218025,
-  "originalTopRow": 41.00000002417096,
+  "originalBottomRow": 45.000000036852725,
+  "originalTopRow": 41.000000036807066,
   "parentColumnSpace": 5.625,
   "parentId": "ugftbbdbgn",
   "parentRowSpace": 10,
@@ -83,7 +79,7 @@
   "tags": [
     "Buttons"
   ],
-  "topRow": 41.00000002451986,
+  "topRow": 41.00000004358585,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,
   "widgetId": "tdumm64yh0",

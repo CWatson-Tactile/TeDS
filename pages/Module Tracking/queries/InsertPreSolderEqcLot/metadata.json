@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE dbo.ModuleTracker \nSET \n\tCurrentStatus='PreSolderEqcPass',\n\tPreSolderEqcScanDateTime='{{appsmith.store.IsoTimeNow}}',\n\tPreSolderEqcScanEmpId='{{appsmith.store.EmpID}}'\n\nWHERE ModuleSerialNum={{PreSolderEqcSerialInput.text}}",
+      "body": "UPDATE dbo.ModuleTracker \nSET \n\tCurrentStatus='PreSolderEqcPass',\n\tPreSolderEqcScanDateTime='{{appsmith.store.IsoTimeNow}}',\n\tPreSolderEqcScanEmpId='{{appsmith.store.EmpID}}',\n\tPreSolderEqcLotNum='{{PreSolderEqcLotNum.text}}'\n\nWHERE ModuleSerialNum={{PreSolderEqcSerialInput.text}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

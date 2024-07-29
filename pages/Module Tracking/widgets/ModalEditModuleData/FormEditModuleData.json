@@ -779,8 +779,7 @@
           "label": "Pcb Solder Lot Num",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "PcbSolderLotNum",
-          "position": 22,
-          "sourceData": null
+          "position": 22
         },
         "PcbSolderScanDateTime": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
@@ -801,8 +800,7 @@
           "label": "Pcb Solder Scan Date Time",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "PcbSolderScanDateTime",
-          "position": 24,
-          "sourceData": null
+          "position": 24
         },
         "PcbSolderScanEmpId": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
@@ -823,8 +821,7 @@
           "label": "Pcb Solder Scan Emp Id",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "PcbSolderScanEmpId",
-          "position": 23,
-          "sourceData": null
+          "position": 23
         },
         "PostSolderEqcLotNum": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
@@ -845,8 +842,7 @@
           "label": "Post Solder Eqc Lot Num",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "PostSolderEqcLotNum",
-          "position": 25,
-          "sourceData": null
+          "position": 25
         },
         "PostSolderEqcScanDateTime": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
@@ -867,8 +863,7 @@
           "label": "Post Solder Eqc Scan Date Time",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "PostSolderEqcScanDateTime",
-          "position": 27,
-          "sourceData": null
+          "position": 27
         },
         "PostSolderEqcScanEmpId": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
@@ -889,8 +884,7 @@
           "label": "Post Solder Eqc Scan Emp Id",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "PostSolderEqcScanEmpId",
-          "position": 26,
-          "sourceData": null
+          "position": 26
         },
         "PreSolderEqcLotNum": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
@@ -911,8 +905,7 @@
           "label": "Pre Solder Eqc Lot Num",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "PreSolderEqcLotNum",
-          "position": 19,
-          "sourceData": null
+          "position": 19
         },
         "PreSolderEqcScanDateTime": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
@@ -933,8 +926,7 @@
           "label": "Pre Solder Eqc Scan Date Time",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "PreSolderEqcScanDateTime",
-          "position": 21,
-          "sourceData": null
+          "position": 21
         },
         "PreSolderEqcScanEmpId": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",
@@ -955,8 +947,7 @@
           "label": "Pre Solder Eqc Scan Emp Id",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "PreSolderEqcScanEmpId",
-          "position": 20,
-          "sourceData": null
+          "position": 20
         },
         "RubberMagnetLotNum": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormEditModuleData.sourceData, FormEditModuleData.formData, FormEditModuleData.fieldState)}}",

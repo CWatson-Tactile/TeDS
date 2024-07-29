@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 51.399999999995636,
+  "bottomRow": 51.39999999999418,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -33,7 +33,7 @@
   "minWidth": 120,
   "onClick": "{{QueryAddNewEmployee.run().then(() => {\n  closeModal('ModalNewEmployee');\n  resetWidget(\"ModalNewEmployee\", true);\n  showAlert('New Employee Added!', '');\n  QueryEmployeeList.run();\n});}}",
   "originalBottomRow": 51.39999999999418,
-  "originalTopRow": 47.400000000790946,
+  "originalTopRow": 47.40000000080114,
   "parentColumnSpace": 6.96875,
   "parentId": "ksc2nz6yt9",
   "parentRowSpace": 10,
@@ -50,7 +50,7 @@
     "Buttons"
   ],
   "text": "Submit",
-  "topRow": 47.40000000079386,
+  "topRow": 47.40000000080114,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "eccsxut8x3",

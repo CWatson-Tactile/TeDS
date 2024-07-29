@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "0px",
   "borderWidth": "",
-  "bottomRow": 43,
+  "bottomRow": 44,
   "boxShadow": "none",
   "canFreezeColumn": false,
   "cellBackground": "",
@@ -64,7 +64,7 @@
   "columnUpdatedAt": 1719684585803,
   "columnWidthMap": {
     "CurrentStatus": 195,
-    "HoneycombLotNum": 167,
+    "HoneycombLotNum": 233,
     "HoneycombScanDateTime": 235,
     "ModuleSerialNum": 121,
     "PostGlueEqcLotNum": 177
@@ -207,8 +207,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 43,
-  "originalTopRow": 9,
+  "originalBottomRow": 44,
+  "originalTopRow": 10,
   "parentColumnSpace": 14.921875,
   "parentId": "mdrhq8c4iz",
   "parentRowSpace": 10,
@@ -1174,7 +1174,7 @@
   ],
   "textSize": "1.25rem",
   "thumbnailSVG": "/static/media/thumbnail.d0492f06681daa69baf92b07d3829dfc.svg",
-  "topRow": 9,
+  "topRow": 10,
   "totalRecordsCount": "5",
   "type": "TABLE_WIDGET_V2",
   "variant": "VARIANT3",

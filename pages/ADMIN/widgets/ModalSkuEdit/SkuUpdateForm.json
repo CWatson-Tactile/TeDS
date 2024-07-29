@@ -302,6 +302,9 @@
     },
     {
       "key": "backgroundColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.MinimumOnHandQty.defaultValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -470,7 +473,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "null",
-          "defaultValue": "0",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.MinimumOnHandQty\n))(SkuUpdateForm.sourceData, SkuUpdateForm.formData, SkuUpdateForm.fieldState)}}",
           "fieldType": "Number Input",
           "iconAlign": "left",
           "identifier": "MinimumOnHandQty",

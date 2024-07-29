@@ -452,10 +452,26 @@
     },
     {
       "key": "schema.__root_schema__.children.Use.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.HarwareRevisionNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.HarwareRevisionNum.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.HarwareRevisionNum.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "schema.__root_schema__.children.Date_of_Manufacture.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.Date_Assigned.defaultValue"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onSubmit"
@@ -538,7 +554,7 @@
           "label": "Capture Plate Version",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "CapturePlateVersion",
-          "position": 29
+          "position": 30
         },
         "Capture_Plate_Material": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
@@ -603,12 +619,12 @@
           "identifier": "Date_of_Manufacture",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
+          "isRequired": true,
           "isVisible": true,
           "label": "Date Of Manufacture",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "Date_of_Manufacture",
-          "position": 25,
+          "position": 26,
           "shortcuts": false,
           "sourceData": "2024-04-24",
           "timePrecision": "minute"
@@ -699,7 +715,7 @@
           "label": "Enclosure Bottom Version",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "EnclosureBottomVersion",
-          "position": 28
+          "position": 29
         },
         "EnclosureTopVersion": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
@@ -720,7 +736,7 @@
           "label": "Enclosure Top Version",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "EnclosureTopVersion",
-          "position": 27
+          "position": 28
         },
         "Enclosure_Bottom_Material": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
@@ -787,7 +803,30 @@
           "label": "Front Button Version",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "FrontButtonVersion",
-          "position": 32
+          "position": 33
+        },
+        "HarwareRevisionNum": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
+          "accessor": "HarwareRevisionNum",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.HarwareRevisionNum))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
+          "fieldType": "Select",
+          "identifier": "HarwareRevisionNum",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isFilterable": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Hardware Rev. #",
+          "labelTextSize": "0.875rem",
+          "options": "[\n{\n    \"label\": \"Rubber (A6.1)\",\n    \"value\": \"A6.1\"\n  },\n  {\n    \"label\": \"Foam (A6)\",\n    \"value\": \"A6\"\n  }\n]",
+          "originalIdentifier": "HarwareRevisionNum",
+          "position": 13,
+          "serverSideFiltering": false,
+          "sourceData": null
         },
         "ID": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
@@ -801,14 +840,14 @@
           "iconAlign": "left",
           "identifier": "ID",
           "isCustomField": false,
-          "isDisabled": false,
+          "isDisabled": true,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "ID",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "ID",
-          "position": 33,
+          "position": 34,
           "sourceData": 268
         },
         "Indicator": {
@@ -828,10 +867,11 @@
           "isVisible": true,
           "label": "Indicator",
           "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"None\",\n    \"value\": \" \"\n  },\n  {\n    \"label\": \"Foam\",\n    \"value\": \"F\"\n  }\n]",
+          "options": "[\n  {\n    \"label\": \"None\",\n    \"value\": \" \"\n  },\n  {\n    \"label\": \"Foam\",\n    \"value\": \"F\"\n  },\n\t{\n\t\t\"label\": \"Upgraded\",\n\t\t\"value\": \"U\"\n\t}\n]",
           "originalIdentifier": "Indicator",
-          "position": 35,
-          "serverSideFiltering": false
+          "position": 36,
+          "serverSideFiltering": false,
+          "tooltip": "Adding an indicator adds a symbol to the label. (ex: selecting 'foam' adds a 'F')"
         },
         "Keyboard_Type": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
@@ -892,13 +932,13 @@
           "identifier": "Module_1",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
+          "isRequired": true,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "Module 1",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "Module_1",
-          "position": 13,
+          "position": 14,
           "sourceData": "7550"
         },
         "Module_10": {
@@ -914,13 +954,13 @@
           "identifier": "Module_10",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
+          "isRequired": true,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "Module 10",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "Module_10",
-          "position": 22,
+          "position": 23,
           "sourceData": "8020"
         },
         "Module_11": {
@@ -936,13 +976,13 @@
           "identifier": "Module_11",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
+          "isRequired": true,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "Module 11",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "Module_11",
-          "position": 23,
+          "position": 24,
           "sourceData": "8386"
         },
         "Module_12": {
@@ -958,13 +998,13 @@
           "identifier": "Module_12",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
+          "isRequired": true,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "Module 12",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "Module_12",
-          "position": 24,
+          "position": 25,
           "sourceData": "7563"
         },
         "Module_2": {
@@ -980,13 +1020,13 @@
           "identifier": "Module_2",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
+          "isRequired": true,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "Module 2",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "Module_2",
-          "position": 14,
+          "position": 15,
           "sourceData": "8021"
         },
         "Module_3": {
@@ -1002,13 +1042,13 @@
           "identifier": "Module_3",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
+          "isRequired": true,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "Module 3",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "Module_3",
-          "position": 15,
+          "position": 16,
           "sourceData": "6910"
         },
         "Module_4": {
@@ -1024,13 +1064,13 @@
           "identifier": "Module_4",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
+          "isRequired": true,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "Module 4",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "Module_4",
-          "position": 16,
+          "position": 17,
           "sourceData": "8379"
         },
         "Module_5": {
@@ -1046,13 +1086,13 @@
           "identifier": "Module_5",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
+          "isRequired": true,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "Module 5",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "Module_5",
-          "position": 17,
+          "position": 18,
           "sourceData": "7997"
         },
         "Module_6": {
@@ -1068,13 +1108,13 @@
           "identifier": "Module_6",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
+          "isRequired": true,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "Module 6",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "Module_6",
-          "position": 18,
+          "position": 19,
           "sourceData": "8401"
         },
         "Module_7": {
@@ -1090,13 +1130,13 @@
           "identifier": "Module_7",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
+          "isRequired": true,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "Module 7",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "Module_7",
-          "position": 19,
+          "position": 20,
           "sourceData": "8168"
         },
         "Module_8": {
@@ -1112,13 +1152,13 @@
           "identifier": "Module_8",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
+          "isRequired": true,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "Module 8",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "Module_8",
-          "position": 20,
+          "position": 21,
           "sourceData": "7990"
         },
         "Module_9": {
@@ -1134,13 +1174,13 @@
           "identifier": "Module_9",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
+          "isRequired": true,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "Module 9",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "Module_9",
-          "position": 21,
+          "position": 22,
           "sourceData": "7515"
         },
         "NavigationButtonVersion": {
@@ -1162,7 +1202,7 @@
           "label": "Navigation Button Version",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "NavigationButtonVersion",
-          "position": 30
+          "position": 31
         },
         "Notes": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
@@ -1172,7 +1212,7 @@
           "children": {},
           "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Notes))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
-          "fieldType": "Text Input",
+          "fieldType": "Multiline Text Input",
           "iconAlign": "left",
           "identifier": "Notes",
           "isCustomField": false,
@@ -1183,7 +1223,7 @@
           "label": "Notes",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "Notes",
-          "position": 26
+          "position": 27
         },
         "Organization_Owner": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
@@ -1248,7 +1288,7 @@
           "label": "Perkins Button Version",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "PerkinsButtonVersion",
-          "position": 31
+          "position": 32
         },
         "Status": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
@@ -1292,8 +1332,9 @@
           "labelTextSize": "0.875rem",
           "options": "[\n  {\n    \"label\": \"Standard\",\n    \"value\": \" \"\n  },\n  {\n    \"label\": \"Internal\",\n    \"value\": \"Internal Use Only\"\n  }\n]",
           "originalIdentifier": "Use",
-          "position": 34,
-          "serverSideFiltering": false
+          "position": 35,
+          "serverSideFiltering": false,
+          "tooltip": "Marking as 'internal' will apply a special watermark to the label."
         }
       },
       "dataType": "object",

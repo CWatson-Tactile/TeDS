@@ -30,7 +30,7 @@
   "hideCard": false,
   "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
   "isDeprecated": false,
-  "isDisabled": false,
+  "isDisabled": true,
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,

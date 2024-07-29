@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 17,
+  "bottomRow": 14,
   "boxShadow": "none",
   "defaultText": "{{ QueryTop1kInventory.data.find(row => row.SKU === InventoryAddSku.selectedOptionValue).NewOnHand }}",
   "displayName": "Input",
@@ -58,7 +58,7 @@
     "Suggested",
     "Inputs"
   ],
-  "topRow": 10,
+  "topRow": 7,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "q6fomqzafs",

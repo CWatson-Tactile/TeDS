@@ -172,6 +172,8 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 4.8,
   "needsHeightForContent": true,
+  "originalBottomRow": 29,
+  "originalTopRow": 4,
   "parentColumnSpace": 16.109375,
   "parentId": "mxjikq5rpl",
   "parentRowSpace": 10,

@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
-  "bottomRow": 151,
+  "bottomRow": 158,
   "boxShadow": "none",
   "childStylesheet": {
     "ARRAY": {
@@ -142,12 +142,6 @@
       "key": "schema.__root_schema__.children.VendorPart.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.ManufacturerPart.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.ManufacturerPart.borderRadius"
-    },
-    {
       "key": "schema.__root_schema__.children.PartDescription.defaultValue"
     },
     {
@@ -230,6 +224,21 @@
     },
     {
       "key": "schema.__root_schema__.children.MinimumOnHandQty.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.ManufacturerPart.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.ManufacturerPart.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.ManufacturerPart.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.Procured.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.Procured.accentColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -299,7 +308,7 @@
           "maxChars": "10",
           "originalIdentifier": "ASIN",
           "placeholderText": "",
-          "position": 12,
+          "position": 11,
           "regex": "^[a-zA-Z0-9]{10}$",
           "sourceData": "",
           "tooltip": "(example: B082PN4X5J)"
@@ -320,10 +329,10 @@
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Manufacturer",
+          "label": "Manufacturer Name",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "Manufacturer",
-          "position": 10,
+          "position": 8,
           "sourceData": ""
         },
         "ManufacturerModelNumber": {
@@ -342,10 +351,10 @@
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Manufacturer Model Number",
+          "label": "Manufacturer Model #",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "ManufacturerModelNumber",
-          "position": 11,
+          "position": 9,
           "sourceData": ""
         },
         "ManufacturerPart": {
@@ -355,7 +364,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "N/A",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ManufacturerPart))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "ManufacturerPart",
@@ -364,10 +373,10 @@
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Manufacturer Part",
+          "label": "Manufacturer Part #",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "ManufacturerPart",
-          "position": 6,
+          "position": 10,
           "sourceData": ""
         },
         "MinimumOnHandQty": {
@@ -389,8 +398,10 @@
           "label": "Minimum On Hand Qty",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "MinimumOnHandQty",
+          "placeholderText": "",
           "position": 17,
-          "sourceData": ""
+          "sourceData": "",
+          "tooltip": "This item will be flagged for procurment when the 'NEW' On-Hand qty reaches this #"
         },
         "NewOnHand": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
@@ -433,7 +444,7 @@
           "label": "Notes",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "Notes",
-          "position": 8,
+          "position": 7,
           "sourceData": ""
         },
         "PartDescription": {
@@ -455,7 +466,7 @@
           "label": "Part Description",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "PartDescription",
-          "position": 7,
+          "position": 6,
           "sourceData": ""
         },
         "PartName": {
@@ -480,6 +491,30 @@
           "position": 0,
           "sourceData": ""
         },
+        "Procured": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+          "accessor": "Procured",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "YES",
+          "fieldType": "Select",
+          "identifier": "Procured",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isFilterable": false,
+          "isRequired": true,
+          "isVisible": true,
+          "label": "Procured",
+          "labelTextSize": "0.875rem",
+          "options": "[\n  {\n    \"label\": \"YES\",\n    \"value\": \"YES\"\n  },\n  {\n    \"label\": \"NO\",\n    \"value\": \"NO\"\n  }\n]",
+          "originalIdentifier": "Procured",
+          "position": 18,
+          "serverSideFiltering": false,
+          "sourceData": "",
+          "tooltip": "Select if this item is purchased from a Vendor."
+        },
         "RawPartCost": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
           "accessor": "RawPartCost",
@@ -488,7 +523,7 @@
           "children": {},
           "currencyCountryCode": "USD",
           "dataType": "string",
-          "decimalsInCurrency": 2,
+          "decimalsInCurrency": 6,
           "defaultValue": "0",
           "fieldType": "Currency Input",
           "identifier": "RawPartCost",
@@ -544,7 +579,7 @@
           "labelTextSize": "0.875rem",
           "options": "[\n  {\n    \"label\": \"Active\",\n    \"value\": \"active\"\n  },\n  {\n    \"label\": \"Inactive\",\n    \"value\": \"inactive\"\n  }\n]",
           "originalIdentifier": "Status",
-          "position": 14,
+          "position": 13,
           "serverSideFiltering": false,
           "sourceData": ""
         },
@@ -564,7 +599,7 @@
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "TE Part Number",
+          "label": "TE Part #",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "TEPartNumber",
           "position": 4,
@@ -589,7 +624,7 @@
           "label": "UPC (Universal Product Code)",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "UPC",
-          "position": 13,
+          "position": 12,
           "regex": "^[0-9]+$",
           "sourceData": "",
           "validation": "{{((sourceData, formData, fieldState) => (formData.UPC.length == 12))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}"
@@ -613,7 +648,7 @@
           "labelTextSize": "0.875rem",
           "options": "[\n  {\n    \"label\": \"pcs\",\n    \"value\": \"pcs\"\n  },\n  {\n    \"label\": \"spool(s)\",\n    \"value\": \"spool(s)\"\n  },\n  {\n    \"label\": \"roll\",\n    \"value\": \"roll\"\n  },\n  {\n    \"label\": \"sheet(s)\",\n    \"value\": \"sheet(s)\"\n  },\n  {\n    \"label\": \"bar\",\n    \"value\": \"bar\"\n  },\n  {\n    \"label\": \"strip(s)\",\n    \"value\": \"strip(s)\"\n  }\n]",
           "originalIdentifier": "UoM",
-          "position": 9,
+          "position": 14,
           "serverSideFiltering": false,
           "sourceData": ""
         },
@@ -633,7 +668,7 @@
           "isRequired": true,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Vendor",
+          "label": "Vendor Name",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "Vendor",
           "position": 3,
@@ -655,7 +690,7 @@
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Vendor Part",
+          "label": "Vendor Part #",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "VendorPart",
           "position": 5,
@@ -701,6 +736,7 @@
         "Manufacturer": "",
         "ManufacturerModelNumber": "",
         "ManufacturerPart": "",
+        "MinimumOnHandQty": "",
         "NewOnHand": "",
         "Notes": "",
         "PartDescription": "",
@@ -719,7 +755,7 @@
   },
   "scrollContents": true,
   "showReset": true,
-  "sourceData": "{\n  \"PartName\": \"\",\n  \"NewOnHand\": \"\",\n  \"WIPOnHand\": \"\",\n  \"Vendor\": \"\",\n  \"TEPartNumber\": \"\",\n  \"VendorPart\": \"\",\n  \"ManufacturerPart\": \"\",\n  \"PartDescription\": \"\",\n  \"Notes\": \"\",\n  \"UoM\": \"\",\n  \"Manufacturer\": \"\",\n  \"ManufacturerModelNumber\": \"\",\n  \"ASIN\": \"\",\n  \"UPC\": \"\",\n  \"Status\": \"\",\n  \"StandardOrderQTY\": \"\",\n  \"RawPartCost\": \"\",\n\t\"MinimumOnHandQty\":\"\"\n}",
+  "sourceData": "{\n  \"PartName\": \"\",\n  \"NewOnHand\": \"\",\n  \"WIPOnHand\": \"\",\n  \"Vendor\": \"\",\n  \"TEPartNumber\": \"\",\n  \"VendorPart\": \"\",\n  \"PartDescription\": \"\",\n  \"Notes\": \"\",\n  \"UoM\": \"\",\n  \"Manufacturer\": \"\",\n  \"ManufacturerModelNumber\": \"\",\n\t\"ManufacturerPart\": \"\",\n  \"ASIN\": \"\",\n  \"UPC\": \"\",\n  \"Status\": \"\",\n  \"StandardOrderQTY\": \"\",\n  \"RawPartCost\": \"\",\n\t\"MinimumOnHandQty\":\"\",\n\t\"Procured\":\"\"\n}",
   "submitButtonLabel": "Submit",
   "submitButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",

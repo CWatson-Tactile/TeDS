@@ -1,0 +1,8 @@
+UPDATE dbo.ModuleTracker 
+SET 
+	CurrentStatus='PcbSolderEqcPass',
+	PcbSolderScanDateTime='{{appsmith.store.IsoTimeNow}}',
+	PcbSolderScanEmpId='{{appsmith.store.EmpID}}',
+	PcbSolderLotNum='{{PcbSolderLotNum.text}}'
+
+WHERE ModuleSerialNum={{PcbSolderSerialInput.text}}

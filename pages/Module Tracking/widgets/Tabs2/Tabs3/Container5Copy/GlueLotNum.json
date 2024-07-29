@@ -28,7 +28,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "tajynjfdo6",
-  "leftColumn": 32,
+  "leftColumn": 30,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -52,7 +52,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 44,
+  "rightColumn": 42,
   "searchTags": [
     "typography",
     "paragraph",

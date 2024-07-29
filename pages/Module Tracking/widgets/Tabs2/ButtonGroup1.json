@@ -42,7 +42,7 @@
       "iconName": "add",
       "id": "groupButton1",
       "index": 1,
-      "isDisabled": true,
+      "isDisabled": false,
       "isVisible": true,
       "label": "Add new module",
       "menuItems": {},

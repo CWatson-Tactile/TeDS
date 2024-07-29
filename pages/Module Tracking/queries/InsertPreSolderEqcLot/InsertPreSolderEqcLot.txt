@@ -2,6 +2,7 @@ UPDATE dbo.ModuleTracker
 SET 
 	CurrentStatus='PreSolderEqcPass',
 	PreSolderEqcScanDateTime='{{appsmith.store.IsoTimeNow}}',
-	PreSolderEqcScanEmpId='{{appsmith.store.EmpID}}'
+	PreSolderEqcScanEmpId='{{appsmith.store.EmpID}}',
+	PreSolderEqcLotNum='{{PreSolderEqcLotNum.text}}'
 
 WHERE ModuleSerialNum={{PreSolderEqcSerialInput.text}}

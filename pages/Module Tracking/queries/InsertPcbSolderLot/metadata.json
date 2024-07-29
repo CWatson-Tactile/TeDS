@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "666b27d34105bf614fd3798d_de5ce312-c6cf-4107-99a5-41d845a77f7f",
-  "id": "Module Tracking_SelectLast5PoSolderEqcModules",
+  "gitSyncId": "666b27d34105bf614fd3798d_de81ddcd-cb55-41fe-82cd-80c5c786d177",
+  "id": "Module Tracking_InsertPcbSolderLot",
   "pluginId": "mssql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT TOP 5 * FROM dbo.ModuleTracker WHERE (CurrentStatus = 'PreSolderPass') ORDER BY ID DESC",
+      "body": "UPDATE dbo.ModuleTracker \nSET \n\tCurrentStatus='PcbSolderEqcPass',\n\tPcbSolderScanDateTime='{{appsmith.store.IsoTimeNow}}',\n\tPcbSolderScanEmpId='{{appsmith.store.EmpID}}',\n\tPcbSolderLotNum='{{PcbSolderLotNum.text}}'\n\nWHERE ModuleSerialNum={{PcbSolderSerialInput.text}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,9 +22,13 @@
       "name": "TE-ModuleTracking-Azure",
       "pluginId": "mssql-plugin"
     },
-    "dynamicBindingPathList": [],
-    "executeOnLoad": true,
-    "name": "SelectLast5PoSolderEqcModules",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "executeOnLoad": false,
+    "name": "InsertPcbSolderLot",
     "pageId": "Module Tracking",
     "userSetOnLoad": false
   }

@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
-  "bottomRow": 46.199999999998546,
+  "bottomRow": 46,
   "boxShadow": "none",
   "children": [
     {
@@ -128,8 +128,8 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
   "minWidth": 450,
-  "originalBottomRow": 46.19999999999709,
-  "originalTopRow": 6.199999999998545,
+  "originalBottomRow": 46,
+  "originalTopRow": 6,
   "parentColumnSpace": 6.96875,
   "parentId": "ksc2nz6yt9",
   "parentRowSpace": 10,
@@ -143,7 +143,7 @@
   "tags": [
     "Layout"
   ],
-  "topRow": 6.199999999998545,
+  "topRow": 6,
   "type": "FORM_WIDGET",
   "widgetId": "5p0n21apmt",
   "widgetName": "NewEmployeeForm"

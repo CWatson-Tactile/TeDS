@@ -46,7 +46,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 25,
   "originalBottomRow": 49,
-  "originalTopRow": 42.39999999987879,
+  "originalTopRow": 42.39999999986844,
   "parentColumnSpace": 9.359375000000004,
   "parentId": "084ydvbxx8",
   "parentRowSpace": 10,
@@ -68,7 +68,7 @@
     "Inputs"
   ],
   "tooltip": "Universal Product Code",
-  "topRow": 42.39999999987805,
+  "topRow": 42.39999999983519,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "yt02wy1dlm",

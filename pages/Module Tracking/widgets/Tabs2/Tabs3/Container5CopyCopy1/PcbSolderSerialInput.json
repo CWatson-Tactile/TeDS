@@ -62,7 +62,7 @@
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 28,
+  "rightColumn": 27,
   "searchTags": [
     "form",
     "text input",
@@ -79,7 +79,7 @@
   "tooltip": "Press 'Enter' when done",
   "topRow": 0,
   "type": "INPUT_WIDGET_V2",
-  "validation": "{{SelectLast5GlueModules.data.some(u => u.ModuleSerialNum === PreSolderEqcSerialInput.text)}}",
+  "validation": "{{SelectLast5PrSolderEqcPass.data.some(u => u.ModuleSerialNum === PreSolderEqcSerialInput.text)}}",
   "version": 2,
   "widgetId": "lli04gvl3f",
   "widgetName": "PcbSolderSerialInput"

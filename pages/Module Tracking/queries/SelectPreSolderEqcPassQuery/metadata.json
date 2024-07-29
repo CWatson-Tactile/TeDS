@@ -1,6 +1,6 @@
 {
   "gitSyncId": "666b27d34105bf614fd3798d_01637512-98a9-4b1b-afa2-5207993707bb",
-  "id": "Module Tracking_Query1",
+  "id": "Module Tracking_SelectPreSolderEqcPassQuery",
   "pluginId": "mssql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "dynamicBindingPathList": [],
     "executeOnLoad": false,
-    "name": "Query1",
+    "name": "SelectPreSolderEqcPassQuery",
     "pageId": "Module Tracking",
     "userSetOnLoad": false
   }

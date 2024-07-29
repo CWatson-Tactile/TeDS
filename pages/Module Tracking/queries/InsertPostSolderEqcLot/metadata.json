@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "666b27d34105bf614fd3798d_b8ccdb83-582c-4b2e-95cf-39c6ed554aa2",
-  "id": "Module Tracking_InsertGlueStationLot",
+  "gitSyncId": "666b27d34105bf614fd3798d_12777ea9-bf6f-4d1b-a6f6-3fd79ecb5cfc",
+  "id": "Module Tracking_InsertPostSolderEqcLot",
   "pluginId": "mssql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE dbo.ModuleTracker \nSET \n\tCurrentStatus='Glued',\n\tGlueStationScanDateTime='{{appsmith.store.IsoTimeNow}}',\n\tGlueStationScanEmpId='{{appsmith.store.EmpID}}',\n\tGlueStationLotNum='{{GlueLotNum.text}}'\n\nWHERE ModuleSerialNum={{GlueSerialInput.text}}",
+      "body": "UPDATE dbo.ModuleTracker \nSET \n\tCurrentStatus='PostSolderEqc',\n\tPostSolderEqcScanDateTime='{{appsmith.store.IsoTimeNow}}',\n\tPostSolderEqcScanEmpId='{{appsmith.store.EmpID}}',\n\tPostSolderEqcLotNum='{{PostSolderEqcLotNum.text}}'\n\nWHERE ModuleSerialNum={{PostSolderEqcSerialInput.text}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "InsertGlueStationLot",
+    "name": "InsertPostSolderEqcLot",
     "pageId": "Module Tracking",
     "userSetOnLoad": false
   }

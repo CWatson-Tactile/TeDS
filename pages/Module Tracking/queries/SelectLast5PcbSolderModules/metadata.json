@@ -23,7 +23,7 @@
       "pluginId": "mssql-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "SelectLast5PcbSolderModules",
     "pageId": "Module Tracking",
     "userSetOnLoad": false

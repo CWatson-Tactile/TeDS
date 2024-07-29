@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
-  "bottomRow": 108,
+  "bottomRow": 110,
   "boxShadow": "none",
   "children": [
     {
@@ -121,7 +121,7 @@
   "tags": [
     "Layout"
   ],
-  "topRow": 43,
+  "topRow": 45,
   "type": "CONTAINER_WIDGET",
   "version": 1,
   "widgetId": "edirprapo8",
