@@ -149,7 +149,7 @@
           "isDisabled": false,
           "isVisible": true,
           "label": "Check IN",
-          "onClick": "{{showModal('ModalTabletCheckIn');}}",
+          "onClick": "{{QueryASSIGNEDTablets.run().then(() => {\n  showModal(ModalTabletCheckIn.name);\n});}}",
           "widgetId": "hehnhoicb6"
         },
         "menuItemj8udbezoew": {
@@ -161,7 +161,7 @@
           "isDisabled": false,
           "isVisible": true,
           "label": "Check OUT",
-          "onClick": "{{showModal('ModalTabletCheckOut');}}",
+          "onClick": "{{QueryNewTablets.run().then(() => {\n  showModal(ModalTabletCheckOut.name);\n});}}",
           "widgetId": "otteri6qc2"
         }
       },
@@ -176,9 +176,9 @@
       "index": 3,
       "isDisabled": false,
       "isVisible": true,
-      "label": "Refresh List",
+      "label": "Refresh",
       "menuItems": {},
-      "onClick": "{{QueryTop5kTablets.run()}}",
+      "onClick": "{{QueryTop5kTablets.run().then(() => {\n  QueryEmployeeList.run();\n  ApprovedPersonelList.run();\n  QueryASSIGNEDTablets.run();\n  QueryNewTablets.run();\n});}}",
       "placement": "CENTER",
       "widgetId": "h1smor34qn"
     }

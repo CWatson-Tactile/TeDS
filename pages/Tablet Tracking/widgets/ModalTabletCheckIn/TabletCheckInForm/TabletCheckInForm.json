@@ -1,9 +1,9 @@
 {
   "animateLoading": true,
-  "backgroundColor": "#FFFFFF",
+  "backgroundColor": "#dcfce7",
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "1",
+  "borderWidth": "",
   "bottomRow": 52.2,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
@@ -50,6 +50,7 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
   "hideCard": false,
   "iconSVG": "https://appcdn.appsmith.com/static/media/icon.e17c486a34778f3bae299c9110e00cf6.svg",
   "isCanvas": true,

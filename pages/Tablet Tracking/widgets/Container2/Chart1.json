@@ -7,12 +7,12 @@
   "boxShadow": "none",
   "chartData": {
     "0lj41m7rsk": {
-      "data": "[\n  {\n    \"x\": \"Left\",\n    \"y\": {{\nQueryTop5kTablets.data\n  .filter(item => item\n    .Model_Number\n    .includes('1001-L'))\n  .length.toString()\n}}\n  }\n  \n]",
-      "seriesName": "Left"
+      "data": "[\n  {\n    \"x\": \"Right\",\n    \"y\": {{\nQueryTop5kTablets.data\n  .filter(item => item\n    .Model_Number\n    .includes('1001-R'))\n  .length.toString()\n}}\n  }\n  \n]",
+      "seriesName": "Right"
     },
     "gaslqs215x": {
-      "data": "[\n  {\n    \"x\": \"Right\",\n    \"y\": {{\nQueryTop5kTablets.data\n  .filter(item => item\n    .Model_Number\n    .includes('1001-R'))\n  .length.toString()\n}}\n  }]",
-      "seriesName": "Right"
+      "data": "[\n  {\n    \"x\": \"Left\",\n    \"y\": {{\nQueryTop5kTablets.data\n  .filter(item => item\n    .Model_Number\n    .includes('1001-L'))\n  .length.toString()\n}}\n  }]",
+      "seriesName": "Left"
     }
   },
   "chartName": "Total # of Tablets: {{QueryTop5kTablets.data.length}}",

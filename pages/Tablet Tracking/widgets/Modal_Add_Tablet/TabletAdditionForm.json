@@ -428,6 +428,9 @@
     },
     {
       "key": "schema.__root_schema__.children.HarwareRevisionNum.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.Date_of_Manufacture.defaultValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -437,6 +440,9 @@
     },
     {
       "key": "onSubmit"
+    },
+    {
+      "key": "schema.__root_schema__.children.Date_of_Manufacture.defaultValue"
     }
   ],
   "dynamicTriggerPathList": [
@@ -584,6 +590,7 @@
           "convertToISO": true,
           "dataType": "string",
           "dateFormat": "D MMMM, YYYY",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (JSCurrentTime1))(TabletAdditionForm.sourceData, TabletAdditionForm.formData, TabletAdditionForm.fieldState)}}",
           "fieldType": "Datepicker",
           "identifier": "Date_of_Manufacture",
           "isCustomField": false,
@@ -593,7 +600,7 @@
           "label": "Date Of Manufacture",
           "labelTextSize": "0.875rem",
           "maxDate": "2121-12-31T18:29:00.000Z",
-          "minDate": "1920-12-31T18:30:00.000Z",
+          "minDate": "2022-01-01T12:30:00.000-05:00",
           "originalIdentifier": "Date_of_Manufacture",
           "position": 0,
           "shortcuts": false,

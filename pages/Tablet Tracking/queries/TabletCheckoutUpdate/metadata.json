@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE dbo.TabletTracker SET \n      Assigned_to = '{{TabletCheckoutForm.data.Input2}}',\n      Date_Assigned = '{{TabletCheckoutForm.data.DatePicker1}}',\n\t\t\tStatus = 'ASSIGNED'\nWhere Device_Name = '{{TabletCheckoutForm.data.TabletCheckoutSelection}}';\n\t",
+      "body": "UPDATE dbo.TabletTracker SET \n      Assigned_to = '{{TabletCheckoutForm.data.Input2}}',\n      Date_Assigned = '{{TabletCheckoutForm.data.DatePicker1}}',\n\t\t\tStatus = 'ASSIGNED'\nWhere DeviceSerialNumber = '{{TabletCheckoutForm.data.TabletCheckoutSelection}}';\n\t",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

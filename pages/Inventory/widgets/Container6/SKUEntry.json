@@ -57,7 +57,7 @@
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 26,
+  "rightColumn": 12,
   "searchTags": [
     "dropdown"
   ],

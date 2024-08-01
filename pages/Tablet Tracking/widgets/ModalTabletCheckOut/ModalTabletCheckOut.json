@@ -1,5 +1,6 @@
 {
   "animateLoading": true,
+  "backgroundColor": "#fee2e2",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 39.2,
   "boxShadow": "none",
@@ -19,7 +20,7 @@
       "isVisible": true,
       "key": "rah1my8v4p",
       "leftColumn": 0,
-      "minHeight": 354.00000000000006,
+      "minHeight": 392.0000000000073,
       "minWidth": 450,
       "mobileBottomRow": 398,
       "mobileLeftColumn": 0,
@@ -85,5 +86,5 @@
   "version": 2,
   "widgetId": "hwk14jlzt0",
   "widgetName": "ModalTabletCheckOut",
-  "width": 774
+  "width": 534
 }

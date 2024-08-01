@@ -1,4 +1,4 @@
-INSERT INTO dbo.TabletTracker (Device_Name, Status, Date_of_Manufacture, PCB_Serial, Model_Number, Enclosure_Top_Material, Enclosure_Bottom_Material, Capture_Plate_Material, Dot_Material, Keyboard_Type, Module_1, Module_2, Module_3, Module_4, Module_5, Module_6, Module_7, Module_8, Module_9, Module_10, Module_11, Module_12, [Use], Indicator, HarwareRevisionNum) 
+INSERT INTO dbo.TabletTracker (Device_Name, Status, Date_of_Manufacture, PCB_Serial, Model_Number, Enclosure_Top_Material, Enclosure_Bottom_Material, Capture_Plate_Material, Dot_Material, Keyboard_Type, Module_1, Module_2, Module_3, Module_4, Module_5, Module_6, Module_7, Module_8, Module_9, Module_10, Module_11, Module_12, [Use], Indicator, HarwareRevisionNum, DeviceSerialNumber, Notes) 
 VALUES
 ('{{TabletAdditionForm.formData.Device_Name}}',
 '{{TabletAdditionForm.formData.Status}}',  
@@ -22,4 +22,6 @@ VALUES
 '{{TabletAdditionForm.formData.Module_12}}', 
 '{{TabletAdditionForm.formData.Use}}',
 '{{TabletAdditionForm.formData.Indicator}}',
-'{{TabletAdditionForm.formData.HardwareRevisionNumber}}')
+'{{TabletAdditionForm.formData.HarwareRevisionNum}}',
+'{{TabletAdditionForm.formData.DeviceSerialNumber}}',
+'{{TabletAdditionForm.formData.Notes}}')

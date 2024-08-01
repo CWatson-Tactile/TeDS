@@ -1,0 +1,14 @@
+{
+  "gitSyncId": "666b27d34105bf614fd3798d_7ca23aa1-cf6b-4bf2-b794-557a06c31e77",
+  "id": "Tablet Tracking__$JSCurrentTime1$_JSCurrentTime",
+  "isPublic": true,
+  "moduleInstanceId": "Tablet Tracking_JSCurrentTime1",
+  "rootModuleInstanceId": "Tablet Tracking_JSCurrentTime1",
+  "unpublishedCollection": {
+    "contextType": "PAGE",
+    "name": "_$JSCurrentTime1$_JSCurrentTime",
+    "pageId": "Tablet Tracking",
+    "pluginId": "js-plugin",
+    "pluginType": "JS"
+  }
+}

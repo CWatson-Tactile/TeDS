@@ -81,7 +81,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "6qi3p01bio",
-  "leftColumn": 16,
+  "leftColumn": 15,
   "minWidth": 450,
   "mobileBottomRow": 35,
   "mobileLeftColumn": 0,
@@ -93,7 +93,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 50,
+  "rightColumn": 49,
   "searchTags": [
     "click",
     "submit"

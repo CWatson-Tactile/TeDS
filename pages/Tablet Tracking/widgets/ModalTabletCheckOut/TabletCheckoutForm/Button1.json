@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderRadius": "0px",
   "bottomRow": 27,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -10,9 +10,6 @@
   "dynamicBindingPathList": [
     {
       "key": "buttonColor"
-    },
-    {
-      "key": "borderRadius"
     }
   ],
   "dynamicTriggerPathList": [
@@ -30,7 +27,7 @@
   "key": "g0f04c30ct",
   "leftColumn": 49,
   "minWidth": 120,
-  "onClick": "{{TabletCheckoutUpdate.run().then(() => {\n  resetWidget(\"TabletCheckoutForm\", true);\n  closeModal('ModalTabletCheckOut');\n  showAlert('Tablet Checked Out', 'success');\n}).catch(() => {\n  showAlert('Hmm....IDK what happened...Report to Connor!', 'error');\n});}}",
+  "onClick": "{{TabletCheckoutUpdate.run().then(() => {\n  resetWidget(\"TabletCheckoutForm\", true);\n  closeModal('ModalTabletCheckOut');\n  showAlert('Tablet Checked Out', 'success');\n  QueryTop5kTablets.run();\n  QueryNewTablets.run();\n}).catch(() => {\n  showAlert('Hmm....IDK what happened...Report to Connor!', 'error');\n});}}",
   "parentId": "ni2ulfq7q5",
   "placement": "CENTER",
   "recaptchaType": "V3",
