@@ -1,0 +1,7 @@
+UPDATE dbo.CadenceIssueTracking 
+SET 
+TicketStatus = 'CLOSED',
+CloseDate = {{moment(FormCloseTicket.formData.CloseDate)}},
+TicketCloseEmpID = '{{FormCloseTicket.formData.TicketCloseEmpID}}'
+
+WHERE TicketID={{FormCloseTicket.formData.TicketID}}

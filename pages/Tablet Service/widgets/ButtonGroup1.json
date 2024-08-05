@@ -3,7 +3,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 16,
   "boxShadow": "none",
-  "buttonVariant": "PRIMARY",
+  "buttonVariant": "TERTIARY",
   "childStylesheet": {
     "button": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
@@ -13,6 +13,9 @@
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "groupButtons.groupButton1.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [],
@@ -28,11 +31,14 @@
     },
     {
       "key": "groupButtons.groupButtonp3s53zsukq.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonc9kyrzoco2.onClick"
     }
   ],
   "groupButtons": {
     "groupButton1": {
-      "buttonColor": "#b91c1c",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
       "iconName": "annotation",
       "id": "groupButton1",
@@ -60,6 +66,23 @@
       "placement": "CENTER",
       "widgetId": ""
     },
+    "groupButtonc9kyrzoco2": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "iconName": "folder-close",
+      "id": "groupButtonc9kyrzoco2",
+      "index": 4,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Close Ticket",
+      "menuItems": {},
+      "onClick": "{{showModal(ModalCloseTicket.name);}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "slirx9kq7z"
+    },
     "groupButtonoo6zfcs1kz": {
       "buttonColor": "#7e22ce",
       "buttonType": "SIMPLE",
@@ -84,7 +107,7 @@
       "isVisible": true,
       "label": "REFRESH",
       "menuItems": {},
-      "onClick": "{{Select_dbo_CadenceIssueTracking1.run()}}",
+      "onClick": "{{SelectTicketsQuery.run()}}",
       "placement": "CENTER",
       "widgetId": "79eze24o1q"
     }
@@ -105,7 +128,7 @@
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 64,
+  "rightColumn": 39,
   "searchTags": [
     "click",
     "submit"

@@ -1,0 +1,14 @@
+{
+  "gitSyncId": "666b27d34105bf614fd3798d_0b7fc520-c1f2-4b1f-b22f-bb6deded9024",
+  "id": "Tablet Service__$JSCurrentTime1$_JSCurrentTime",
+  "isPublic": true,
+  "moduleInstanceId": "Tablet Service_JSCurrentTime1",
+  "rootModuleInstanceId": "Tablet Service_JSCurrentTime1",
+  "unpublishedCollection": {
+    "contextType": "PAGE",
+    "name": "_$JSCurrentTime1$_JSCurrentTime",
+    "pageId": "Tablet Service",
+    "pluginId": "js-plugin",
+    "pluginType": "JS"
+  }
+}

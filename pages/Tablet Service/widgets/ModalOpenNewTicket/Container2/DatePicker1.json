@@ -5,9 +5,9 @@
   "bottomRow": 7,
   "boxShadow": "none",
   "closeOnSelection": true,
-  "dateFormat": "YYYY-MM-DDTHH:mm:ss.sssZ",
+  "dateFormat": "LLL",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "2024-06-12T00:02:08.088-04:00",
+  "defaultDate": "{{JSCurrentTime1}}",
   "displayName": "DatePicker",
   "dynamicBindingPathList": [
     {
@@ -15,10 +15,17 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultDate"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultDate"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "firstDayOfWeek": 0,
   "hideCard": false,
@@ -37,7 +44,7 @@
   "leftColumn": 32,
   "maxDate": "2121-12-31T18:29:00.000Z",
   "maxDynamicHeight": 9000,
-  "minDate": "1920-12-31T18:30:00.000Z",
+  "minDate": "2020-12-31T18:30:00.000Z",
   "minDynamicHeight": 4,
   "minWidth": 450,
   "mobileBottomRow": 6,

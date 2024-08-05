@@ -33,7 +33,7 @@
   "key": "au9ey2eekj",
   "leftColumn": 43,
   "minWidth": 120,
-  "onClick": "{{QueryCreateNewTicket.run().then(() => {\n  showAlert('Ticket Created', 'success');\n  closeModal('ModalOpenNewTicket');\n  Select_dbo_CadenceIssueTracking1.run();\n}).catch(() => {\n  showAlert('Unknown Error. Get Connor!', 'error');\n});}}",
+  "onClick": "{{QueryCreateNewTicket.run().then(() => {\n  showAlert('Ticket Created', 'success');\n  closeModal('ModalOpenNewTicket');\n  SelectTicketsQuery.run();\n}).catch(() => {\n  showAlert('Unknown Error. Get Connor!', 'error');\n});}}",
   "originalBottomRow": 51,
   "originalTopRow": 47,
   "parentId": "ysv9ghtrs5",

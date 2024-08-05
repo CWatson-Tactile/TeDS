@@ -5,8 +5,8 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
-  "bottomRow": 67,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "bottomRow": 56,
+  "boxShadow": "none",
   "childStylesheet": {
     "ARRAY": {
       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -91,19 +91,10 @@
       "key": "borderRadius"
     },
     {
-      "key": "boxShadow"
-    },
-    {
-      "key": "submitButtonStyles.buttonColor"
-    },
-    {
-      "key": "submitButtonStyles.borderRadius"
-    },
-    {
-      "key": "resetButtonStyles.buttonColor"
-    },
-    {
       "key": "resetButtonStyles.borderRadius"
+    },
+    {
+      "key": "sourceData"
     },
     {
       "key": "schema.__root_schema__.children.TicketID.defaultValue"
@@ -157,10 +148,22 @@
       "key": "schema.__root_schema__.children.Notes.borderRadius"
     },
     {
+      "key": "schema.__root_schema__.children.TickedCreatorEmpID.defaultValue"
+    },
+    {
       "key": "schema.__root_schema__.children.TickedCreatorEmpID.accentColor"
     },
     {
       "key": "schema.__root_schema__.children.TickedCreatorEmpID.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.TicketStatus.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.TicketStatus.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.TicketStatus.borderRadius"
     },
     {
       "key": "schema.__root_schema__.defaultValue"
@@ -172,142 +175,129 @@
       "key": "schema.__root_schema__.cellBorderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.TickedCreatorEmpID.options"
-    },
-    {
-      "key": "schema.__root_schema__.children.TickedCreatorEmpID.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.TicketStatus.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.TicketStatus.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.TicketStatus.accentColor"
-    },
-    {
-      "key": "sourceData"
-    },
-    {
       "key": "backgroundColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Notes.validation"
-    },
-    {
-      "key": "schema.__root_schema__.children.CloseDate.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.CloseDate.borderRadius"
     },
     {
       "key": "schema.__root_schema__.children.CloseDate.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.TicketCloseEmpID.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.TicketCloseEmpID.borderRadius"
+      "key": "schema.__root_schema__.children.CloseDate.borderRadius"
     },
     {
       "key": "schema.__root_schema__.children.TicketCloseEmpID.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.ClosingNotes.defaultValue"
+      "key": "schema.__root_schema__.children.TicketCloseEmpID.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.ClosingNotes.borderRadius"
+      "key": "schema.__root_schema__.children.ClosingNotes.defaultValue"
     },
     {
       "key": "schema.__root_schema__.children.ClosingNotes.accentColor"
     },
     {
+      "key": "schema.__root_schema__.children.ClosingNotes.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.TicketCloseEmpID.options"
+    },
+    {
+      "key": "schema.__root_schema__.children.TicketCloseEmpID.defaultValue"
+    },
+    {
       "key": "schema.__root_schema__.children.IssueDate.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.CloseDate.defaultValue"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "sourceData"
-    },
-    {
-      "key": "schema.__root_schema__.children.IssueDate.defaultValue"
+      "key": "schema.__root_schema__.children.CloseDate.defaultValue"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onSubmit"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "fieldLimitExceeded": false,
   "fixedFooter": true,
   "flexVerticalAlignment": "start",
   "hideCard": false,
-  "iconSVG": "/static/media/icon.46adf7030d667f0ad9002aa31f997573.svg",
+  "iconSVG": "/static/media/icon.34c54aae7fdde5e91750190831917417.svg",
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "nbeds1wcci",
+  "key": "vkcxuizkki",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 41,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 25,
-  "mobileTopRow": 0,
-  "onSubmit": "{{QueryUpdateTicket.run().then(() => {\n  showAlert('Ticket updated successfully!', 'success');\n  resetWidget(\"ModalUpdateTicket\", true);\n  closeModal('ModalUpdateTicket');\n}).catch(() => {\n  showAlert('Error. Get Connor!', 'error');\n});}}",
+  "mobileBottomRow": 50,
+  "mobileLeftColumn": 17,
+  "mobileRightColumn": 42,
+  "mobileTopRow": 9,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
   "parentColumnSpace": 6.9375,
-  "parentId": "h1awql65s6",
+  "parentId": "u0fzwlx1c3",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetButtonLabel": "Reset",
   "resetButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "boxShadow": "none",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "buttonVariant": "SECONDARY"
+    "buttonColor": "#22c55e",
+    "buttonVariant": "TERTIARY"
   },
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "schema": {
     "__root_schema__": {
       "accessor": "__root_schema__",
-      "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+      "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
       "boxShadow": "none",
-      "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+      "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
       "cellBoxShadow": "none",
       "children": {
         "CloseDate": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "accessor": "CloseDate",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "boxShadow": "none",
           "children": {},
+          "closeOnSelection": false,
+          "convertToISO": false,
           "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.CloseDate))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "dateFormat": "LLL",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (JSCurrentTime1))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
+          "fieldType": "Datepicker",
           "identifier": "CloseDate",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
           "label": "Close Date",
           "labelTextSize": "0.875rem",
+          "maxDate": "2121-12-31T18:29:00.000Z",
+          "minDate": "1920-12-31T18:30:00.000Z",
           "originalIdentifier": "CloseDate",
-          "position": 8
+          "position": 8,
+          "shortcuts": false,
+          "timePrecision": "minute"
         },
         "ClosingNotes": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "accessor": "ClosingNotes",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ClosingNotes))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ClosingNotes))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "ClosingNotes",
@@ -322,13 +312,13 @@
           "position": 10
         },
         "DeviceName": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "accessor": "DeviceName",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.DeviceName))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.DeviceName))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "DeviceName",
@@ -340,44 +330,44 @@
           "label": "Device Name",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "DeviceName",
-          "position": 2,
-          "sourceData": "R-5687"
+          "position": 3,
+          "sourceData": "L-0034"
         },
         "IssueDate": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "accessor": "IssueDate",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "closeOnSelection": false,
           "convertToISO": false,
           "dataType": "number",
-          "dateFormat": "LLL",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.IssueDate)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "dateFormat": "YYYY-MM-DD hh:mm:ss A",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.IssueDate.toString()))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "fieldType": "Datepicker",
           "identifier": "IssueDate",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Issue Date",
           "labelTextSize": "0.875rem",
           "maxDate": "2121-12-31T18:29:00.000Z",
           "minDate": "1920-12-31T18:30:00.000Z",
           "originalIdentifier": "IssueDate",
-          "position": 4,
+          "position": 5,
           "shortcuts": false,
-          "sourceData": 1706662326490,
+          "sourceData": 1718164711170,
           "timePrecision": "minute"
         },
         "IssueType": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "accessor": "IssueType",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.IssueType))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.IssueType))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "IssueType",
@@ -385,21 +375,21 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Issue Type",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "IssueType",
-          "position": 3,
+          "position": 4,
           "sourceData": "Calibration Fail"
         },
         "Notes": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "accessor": "Notes",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Notes))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Notes))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "fieldType": "Multiline Text Input",
           "iconAlign": "left",
           "identifier": "Notes",
@@ -407,23 +397,21 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Notes",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "Notes",
-          "placeholderText": "Max of 500 characters",
-          "position": 5,
-          "sourceData": "test",
-          "validation": "{{((sourceData, formData, fieldState) => (formData.Notes.length <500))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}"
+          "position": 6,
+          "sourceData": ""
         },
         "PCBSerial": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "accessor": "PCBSerial",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PCBSerial))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.PCBSerial))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "PCBSerial",
@@ -431,70 +419,70 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "PCB Serial",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "PCBSerial",
-          "position": 1,
-          "sourceData": "C156F7BAD877"
+          "position": 2,
+          "sourceData": "FFEF3117F422"
         },
         "TickedCreatorEmpID": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "accessor": "TickedCreatorEmpID",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (SelectQueryEmployeeList.data.find(row => row.EmployeeID === appsmith.store.EmpID).EmployeeFirstName + \" \" + SelectQueryEmployeeList.data.find(row => row.EmployeeID === appsmith.store.EmpID).EmployeeLastName))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
-          "fieldType": "Select",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.TickedCreatorEmpID))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
           "identifier": "TickedCreatorEmpID",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": false,
+          "label": "Ticked Creator Emp ID",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "TickedCreatorEmpID",
+          "position": 7,
+          "sourceData": "Connor Watson"
+        },
+        "TicketCloseEmpID": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
+          "accessor": "TicketCloseEmpID",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (appsmith.store.EmpID))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
+          "fieldType": "Select",
+          "identifier": "TicketCloseEmpID",
           "isCustomField": false,
           "isDisabled": false,
           "isFilterable": false,
           "isRequired": false,
           "isVisible": true,
-          "label": "Ticked Creator Emp ID",
-          "labelTextSize": "0.875rem",
-          "options": "{{SelectQueryEmployeeList.data.map( (obj) =>{ return  {'label': obj.EmployeeFirstName+\" \"+obj.EmployeeLastName, \n'value': obj.EmployeeID}})}}",
-          "originalIdentifier": "TickedCreatorEmpID",
-          "position": 6,
-          "serverSideFiltering": false,
-          "sourceData": "Connor Watson"
-        },
-        "TicketCloseEmpID": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
-          "accessor": "TicketCloseEmpID",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.TicketCloseEmpID))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "TicketCloseEmpID",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
           "label": "Ticket Close Emp ID",
           "labelTextSize": "0.875rem",
+          "options": "{{SelectQueryEmployeeList.data.map( (obj) =>{ return  {'label': obj.EmployeeFirstName+\" \"+obj.EmployeeLastName, \n'value': obj.EmployeeID}})}}",
           "originalIdentifier": "TicketCloseEmpID",
-          "position": 9
+          "position": 9,
+          "serverSideFiltering": false
         },
         "TicketID": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "accessor": "TicketID",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.TicketID))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.TicketID))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "fieldType": "Number Input",
           "iconAlign": "left",
           "identifier": "TicketID",
           "isCustomField": false,
-          "isDisabled": true,
+          "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
@@ -502,16 +490,16 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "TicketID",
           "position": 0,
-          "sourceData": 11
+          "sourceData": 19
         },
         "TicketStatus": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "accessor": "TicketStatus",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.TicketStatus))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.TicketStatus))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "TicketStatus",
@@ -520,14 +508,14 @@
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Ticket Status",
+          "label": "Current Ticket Status",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "TicketStatus",
-          "position": 7
+          "position": 1
         }
       },
       "dataType": "object",
-      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(FormUpdateTicket.sourceData, FormUpdateTicket.formData, FormUpdateTicket.fieldState)}}",
+      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(FormCloseTicket.sourceData, FormCloseTicket.formData, FormCloseTicket.fieldState)}}",
       "fieldType": "Object",
       "identifier": "__root_schema__",
       "isCustomField": false,
@@ -539,35 +527,39 @@
       "originalIdentifier": "__root_schema__",
       "position": -1,
       "sourceData": {
-        "DeviceName": "R-5687",
-        "IssueDate": 1701293222380,
+        "DeviceName": "L-0034",
+        "IssueDate": 1718164711170,
         "IssueType": "Calibration Fail",
-        "Notes": "test",
-        "PCBSerial": "C156F7BAD877",
+        "Notes": "",
+        "PCBSerial": "FFEF3117F422",
         "TickedCreatorEmpID": "Connor Watson",
-        "TicketID": 12
+        "TicketID": 19
       }
     }
   },
-  "scrollContents": false,
+  "scrollContents": true,
   "showReset": true,
   "sourceData": "{{TableTicketData.selectedRow}}",
   "submitButtonLabel": "Submit",
   "submitButtonStyles": {
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "boxShadow": "none",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "buttonVariant": "PRIMARY"
+    "borderRadius": "0px",
+    "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+    "buttonColor": "#b91c1c",
+    "buttonVariant": "PRIMARY",
+    "iconAlign": "left",
+    "iconName": "key-enter",
+    "placement": "CENTER"
   },
   "tags": [
     "Suggested",
     "Layout"
   ],
-  "title": "Update Ticket Details",
+  "thumbnailSVG": "/static/media/thumbnail.1092bbfe332a9ea2da2aa7e3efd01db2.svg",
+  "title": "Close Ticket",
   "topRow": 0,
   "type": "JSON_FORM_WIDGET",
   "useSourceData": false,
   "version": 1,
-  "widgetId": "4qcu2gr5ij",
-  "widgetName": "FormUpdateTicket"
+  "widgetId": "n4z6ojkpw4",
+  "widgetName": "FormCloseTicket"
 }

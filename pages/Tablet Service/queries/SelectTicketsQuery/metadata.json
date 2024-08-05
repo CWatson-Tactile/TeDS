@@ -1,11 +1,11 @@
 {
   "gitSyncId": "656ce12b7cc83c64328e6401_656ce12c7cc83c64328e642f",
-  "id": "Tablet Service_Select_dbo_CadenceIssueTracking1",
+  "id": "Tablet Service_SelectTicketsQuery",
   "pluginId": "mssql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT TOP 5000 * FROM dbo.CadenceIssueTracking",
+      "body": "SELECT TOP 5000 * FROM dbo.CadenceIssueTracking ORDER BY TicketID DESC",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -24,7 +24,7 @@
     },
     "dynamicBindingPathList": [],
     "executeOnLoad": true,
-    "name": "Select_dbo_CadenceIssueTracking1",
+    "name": "SelectTicketsQuery",
     "pageId": "Tablet Service",
     "userSetOnLoad": false
   }

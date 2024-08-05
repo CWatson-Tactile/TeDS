@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
-  "bottomRow": 252,
+  "bottomRow": 260,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -200,9 +200,6 @@
     },
     {
       "key": "schema.__root_schema__.children.Module_1.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.Module_1.defaultValue"
     },
     {
       "key": "schema.__root_schema__.children.Keyboard_Type.borderRadius"
@@ -461,6 +458,15 @@
     },
     {
       "key": "schema.__root_schema__.children.HarwareRevisionNum.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.Module_1.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField1.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField1.accentColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -927,7 +933,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_1 = 'null' ? '' : sourceData.Module_1))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_1 = sourceData.Module_1 == 'null' ? '' : sourceData.Module_1))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "Module_1",
@@ -949,7 +955,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_10 = 'null' ? '' : sourceData.Module_10))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_10 = sourceData.Module_10 == 'null' ? '' : sourceData.Module_10))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "Module_10",
@@ -971,7 +977,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_11 = 'null' ? '' : sourceData.Module_11))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_11 = sourceData.Module_11 == 'null' ? '' : sourceData.Module_11))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "Module_11",
@@ -993,7 +999,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_12 = 'null' ? '' : sourceData.Module_12))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_12 = sourceData.Module_12 == 'null' ? '' : sourceData.Module_12))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "Module_12",
@@ -1015,7 +1021,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_2 = 'null' ? '' : sourceData.Module_2))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_2 = sourceData.Module_2 == 'null' ? '' : sourceData.Module_2))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "Module_2",
@@ -1037,7 +1043,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_3 = 'null' ? '' : sourceData.Module_3))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_3 = sourceData.Module_3 == 'null' ? '' : sourceData.Module_3))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "Module_3",
@@ -1059,7 +1065,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_4 = 'null' ? '' : sourceData.Module_4))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_4 = sourceData.Module_4 == 'null' ? '' : sourceData.Module_4))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "Module_4",
@@ -1081,7 +1087,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_5 = 'null' ? '' : sourceData.Module_5))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_5 = sourceData.Module_5 == 'null' ? '' : sourceData.Module_5))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "Module_5",
@@ -1103,7 +1109,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_6 = 'null' ? '' : sourceData.Module_6))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_6 = sourceData.Module_6 == 'null' ? '' : sourceData.Module_6))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "Module_6",
@@ -1125,7 +1131,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_7 = 'null' ? '' : sourceData.Module_7))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_7 = sourceData.Module_7 == 'null' ? '' : sourceData.Module_7))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "Module_7",
@@ -1147,7 +1153,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_8 = 'null' ? '' : sourceData.Module_8))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_8 = sourceData.Module_8 == 'null' ? '' : sourceData.Module_8))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "Module_8",
@@ -1169,7 +1175,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_9 = 'null' ? '' : sourceData.Module_9))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Module_9 = sourceData.Module_9 == 'null' ? '' : sourceData.Module_9))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "Module_9",
@@ -1336,6 +1342,27 @@
           "position": 35,
           "serverSideFiltering": false,
           "tooltip": "Marking as 'internal' will apply a special watermark to the label."
+        },
+        "customField1": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
+          "accessor": "customField1",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(TabletDetailEditForm.sourceData, TabletDetailEditForm.formData, TabletDetailEditForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "customField1",
+          "isCustomField": true,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Custom Field 1",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "customField1",
+          "position": 37,
+          "sourceData": ""
         }
       },
       "dataType": "object",

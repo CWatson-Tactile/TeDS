@@ -1,1 +1,3 @@
-INSERT INTO dbo.CadenceIssueTracking (PCBSerial, DeviceName, IssueType, IssueDate, Notes, TickedCreatorEmpID) VALUES ({{NewTicketSelectCadence.selectedOptionValue}}, {{NewTicketSelectCadence.selectedOptionLabel}}, {{NewTicketIssueType.selectedOptionLabel}}, GETDATE(), {{NewTicketNotes.text}}, {{SelectEmpID.selectedOptionValue}})
+INSERT INTO dbo.CadenceIssueTracking (PCBSerial, DeviceName, IssueType, IssueDate, Notes, TickedCreatorEmpID, TicketStatus) VALUES ({{NewTicketSelectCadence.selectedOptionValue}}, {{NewTicketSelectCadence.selectedOptionLabel}}, {{NewTicketIssueType.selectedOptionLabel}}, 																						{{moment().format(DatePicker1.selectedDate)}}, 																					{{NewTicketNotes.text}}, 
+{{SelectEmpID.selectedOptionValue}}, 
+'OPEN')

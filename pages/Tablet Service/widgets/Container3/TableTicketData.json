@@ -4,8 +4,8 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
-  "bottomRow": 53,
-  "boxShadow": "none",
+  "bottomRow": 42,
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "canFreezeColumn": true,
   "childStylesheet": {
     "button": {
@@ -38,9 +38,12 @@
     "IssueDate",
     "Notes",
     "TickedCreatorEmpID",
-    "TicketStatus"
+    "TicketStatus",
+    "CloseDate",
+    "TicketCloseEmpID",
+    "ClosingNotes"
   ],
-  "columnUpdatedAt": 1710532383393,
+  "columnUpdatedAt": 1722621154259,
   "columnWidthMap": {
     "DeviceName": 135,
     "IssueDate": 158,
@@ -89,6 +92,15 @@
     },
     {
       "key": "primaryColumns.TicketStatus.computedValue"
+    },
+    {
+      "key": "primaryColumns.CloseDate.computedValue"
+    },
+    {
+      "key": "primaryColumns.TicketCloseEmpID.computedValue"
+    },
+    {
+      "key": "primaryColumns.ClosingNotes.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -125,6 +137,74 @@
   "parentId": "lwgw860z9n",
   "parentRowSpace": 10,
   "primaryColumns": {
+    "CloseDate": {
+      "alias": "CloseDate",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{TableTicketData.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"CloseDate\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "CloseDate",
+      "index": 8,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "CloseDate",
+      "notation": "standard",
+      "originalId": "CloseDate",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "ClosingNotes": {
+      "alias": "ClosingNotes",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{TableTicketData.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ClosingNotes\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "ClosingNotes",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "ClosingNotes",
+      "notation": "standard",
+      "originalId": "ClosingNotes",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "DeviceName": {
       "alias": "DeviceName",
       "allowCellWrapping": false,
@@ -319,6 +399,40 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "TicketCloseEmpID": {
+      "alias": "TicketCloseEmpID",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{TableTicketData.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TicketCloseEmpID\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "TicketCloseEmpID",
+      "index": 9,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "TicketCloseEmpID",
+      "notation": "standard",
+      "originalId": "TicketCloseEmpID",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "TicketID": {
       "alias": "TicketID",
       "allowCellWrapping": false,
@@ -391,7 +505,7 @@
   "rightColumn": 64,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
-  "tableData": "{{Select_dbo_CadenceIssueTracking1.data}}",
+  "tableData": "{{SelectTicketsQuery.data}}",
   "tags": [
     "Suggested",
     "Display"

@@ -5,12 +5,12 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE dbo.CadenceIssueTracking \nSET \nPCBSerial={{FormUpdateTicket.formData.PCBSerial}}, \nDeviceName={{FormUpdateTicket.formData.DeviceName}}, \nIssueType={{FormUpdateTicket.formData.IssueType}}, \nIssueDate={{FormUpdateTicket.formData.IssueDate}}, \nNotes={{FormUpdateTicket.formData.Notes}}, \nTickedCreatorEmpID={{FormUpdateTicket.formData.TickedCreatorEmpID}}\n\nWHERE TicketID={{FormUpdateTicket.formData.TicketID}} -- Specify a valid condition here. Removing the condition may update every row in the table!",
+      "body": "UPDATE dbo.CadenceIssueTracking \nSET \nPCBSerial={{FormUpdateTicket.formData.PCBSerial}}, \nDeviceName={{FormUpdateTicket.formData.DeviceName}}, \nIssueType={{FormUpdateTicket.formData.IssueType}}, \nIssueDate={{moment(FormUpdateTicket.formData.IssueDate)}}, \nNotes={{FormUpdateTicket.formData.Notes}}, \nTickedCreatorEmpID={{FormUpdateTicket.formData.TickedCreatorEmpID}}\n\nWHERE TicketID={{FormUpdateTicket.formData.TicketID}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000

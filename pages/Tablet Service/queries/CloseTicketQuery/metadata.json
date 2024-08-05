@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "656ce12b7cc83c64328e6401_656ce12c7cc83c64328e643f",
-  "id": "Tablet Service_QueryCreateNewTicket",
+  "gitSyncId": "666b27d34105bf614fd3798d_6bf25ef4-3cf2-471c-a1c3-21d1e18e956c",
+  "id": "Tablet Service_CloseTicketQuery",
   "pluginId": "mssql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO dbo.CadenceIssueTracking (PCBSerial, DeviceName, IssueType, IssueDate, Notes, TickedCreatorEmpID, TicketStatus) VALUES ({{NewTicketSelectCadence.selectedOptionValue}}, {{NewTicketSelectCadence.selectedOptionLabel}}, {{NewTicketIssueType.selectedOptionLabel}}, \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t{{moment().format(DatePicker1.selectedDate)}}, \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t{{NewTicketNotes.text}}, \n{{SelectEmpID.selectedOptionValue}}, \n'OPEN')",
+      "body": "UPDATE dbo.CadenceIssueTracking \nSET \nTicketStatus = 'CLOSED',\nCloseDate = {{moment(FormCloseTicket.formData.CloseDate)}},\nTicketCloseEmpID = '{{FormCloseTicket.formData.TicketCloseEmpID}}'\n\nWHERE TicketID={{FormCloseTicket.formData.TicketID}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "QueryCreateNewTicket",
+    "name": "CloseTicketQuery",
     "pageId": "Tablet Service",
     "userSetOnLoad": false
   }

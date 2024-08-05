@@ -3,8 +3,8 @@ SET
 PCBSerial={{FormUpdateTicket.formData.PCBSerial}}, 
 DeviceName={{FormUpdateTicket.formData.DeviceName}}, 
 IssueType={{FormUpdateTicket.formData.IssueType}}, 
-IssueDate={{FormUpdateTicket.formData.IssueDate}}, 
+IssueDate={{moment(FormUpdateTicket.formData.IssueDate)}}, 
 Notes={{FormUpdateTicket.formData.Notes}}, 
 TickedCreatorEmpID={{FormUpdateTicket.formData.TickedCreatorEmpID}}
 
-WHERE TicketID={{FormUpdateTicket.formData.TicketID}} -- Specify a valid condition here. Removing the condition may update every row in the table!
+WHERE TicketID={{FormUpdateTicket.formData.TicketID}}
