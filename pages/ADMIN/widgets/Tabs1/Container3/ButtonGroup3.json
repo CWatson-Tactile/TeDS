@@ -13,6 +13,9 @@
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "groupButtons.groupButton4te6zbu1a0.buttonColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -24,6 +27,9 @@
     },
     {
       "key": "groupButtons.groupButtonhwhalp1y80.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton4te6zbu1a0.onClick"
     }
   ],
   "groupButtons": {
@@ -54,6 +60,22 @@
       "onClick": "{{showModal('ModalSkuEdit');}}",
       "placement": "CENTER",
       "widgetId": ""
+    },
+    "groupButton4te6zbu1a0": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "id": "groupButton4te6zbu1a0",
+      "index": 3,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Physical Inventory",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Physical Inventory', {}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "kdrdlhk1ue"
     },
     "groupButtonhwhalp1y80": {
       "buttonColor": "#000000",
@@ -88,7 +110,7 @@
   "parentId": "bqhmwdpeiu",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 29,
+  "rightColumn": 39,
   "searchTags": [
     "click",
     "submit"

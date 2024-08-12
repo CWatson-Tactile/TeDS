@@ -140,7 +140,7 @@
   "minWidth": 450,
   "orientation": "horizontal",
   "originalBottomRow": 63,
-  "originalTopRow": 59,
+  "originalTopRow": 58.99999999999926,
   "parentColumnSpace": 16.109375,
   "parentId": "ewjibdgf02",
   "parentRowSpace": 10,
@@ -153,7 +153,7 @@
   "tags": [
     "Buttons"
   ],
-  "topRow": 59,
+  "topRow": 58.99999999999926,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,
   "widgetId": "7ha3vzrufe",

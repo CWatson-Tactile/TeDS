@@ -3,7 +3,7 @@
   "borderColor": "#e0dede",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 29,
+  "bottomRow": 31,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -38,8 +38,8 @@
   "mobileLeftColumn": 0,
   "mobileRightColumn": 16,
   "mobileTopRow": 0,
-  "originalBottomRow": 33,
-  "originalTopRow": 27,
+  "originalBottomRow": 29,
+  "originalTopRow": 25,
   "overflow": "NONE",
   "parentColumnSpace": 6.5166015625,
   "parentId": "j8w77olbjw",

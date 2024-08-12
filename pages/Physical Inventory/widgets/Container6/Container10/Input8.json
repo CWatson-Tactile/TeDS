@@ -46,7 +46,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 20,
   "originalBottomRow": 49,
-  "originalTopRow": 42.3999999998544,
+  "originalTopRow": 42.39999999985366,
   "parentColumnSpace": 9.359375000000004,
   "parentId": "6x0edzfuf2",
   "parentRowSpace": 10,
@@ -67,7 +67,7 @@
     "Inputs"
   ],
   "tooltip": "Amazon Standard Identification Number",
-  "topRow": 42.39999999985366,
+  "topRow": 42.39999999985292,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "7rsqd0tjs2",

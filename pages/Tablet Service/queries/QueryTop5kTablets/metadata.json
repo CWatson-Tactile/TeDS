@@ -23,7 +23,7 @@
       "pluginId": "mssql-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "QueryTop5kTablets",
     "pageId": "Tablet Service",
     "userSetOnLoad": false
